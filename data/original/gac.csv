@@ -1,0 +1,465 @@
+,,,,,,,,,Playing Time,Playing Time,Playing Time,Playing Time,Playing Time,Playing Time,Performance,Performance,Performance,Performance,Performance,Performance,Performance,,GCA Types,GCA Types,GCA Types,GCA Types,GCA Types,GCA Types,,-additional
+Rk,Player,GCA,Min,Season,Age,Nation,Team,Comp,MP,Min,90s,Starts,Subs,unSub,Gls,Ast,G+A,G-PK,PK,PKatt,PKm,GCA,PassLive,PassDead,TO,Sh,Fld,Def,Pos,-9999
+1,Lamine Yamal,29,2867,2024-2025,17,es ESP,Barcelona,es La Liga,35,2867,31.9,31,4,0,9,13,22,9,0,0,0,29,20,0,5,2,2,0,FW,82ec26c1
+2,Mohamed Salah,27,3380,2024-2025,32,eg EGY,Liverpool,eng Premier League,38,3380,37.6,38,0,0,29,18,47,20,9,9,0,27,20,0,5,2,0,0,FW,e342ad68
+3,Florian Wirtz,26,2359,2024-2025,21,de GER,Leverkusen,de Bundesliga,31,2359,26.2,25,6,0,10,12,22,8,2,4,2,26,18,0,4,3,1,0,MFFW,e7fcf289
+4,Michael Olise,25,2352,2024-2025,22,fr FRA,Bayern Munich,de Bundesliga,34,2352,26.1,28,6,0,12,15,27,12,0,0,0,25,13,3,2,3,4,0,FWMF,c4486bac
+5,Désiré Doué,24,1743,2024-2025,19,fr FRA,Paris S-G,fr Ligue 1,31,1743,19.4,18,13,1,6,6,12,6,0,0,0,24,15,0,4,1,3,1,FWMF,9e7483ff
+6,Omar Marmoush,23,2640,2024-2025,25,eg EGY,2 Teams,2 Comps,33,2640,29.3,31,2,0,22,9,31,20,2,2,0,23,8,3,6,3,3,0,FWMF,0e0102eb
+7,Bukayo Saka,23,1741,2024-2025,22,eng ENG,Arsenal,eng Premier League,25,1741,19.3,20,5,0,6,10,16,5,1,1,0,23,14,5,2,1,1,0,FWMF,bc7dc64d
+8,Raphinha,22,2848,2024-2025,27,br BRA,Barcelona,es La Liga,36,2848,31.6,32,4,1,18,9,27,16,2,2,0,22,11,2,4,2,2,1,FWMF,3423f250
+9,Mikkel Damsgaard,21,2934,2024-2025,24,dk DEN,Brentford,eng Premier League,38,2934,32.6,34,4,0,2,10,12,2,0,0,0,21,15,3,1,0,1,1,MFFW,215f3907
+10,Harry Kane,21,2394,2024-2025,31,eng ENG,Bayern Munich,de Bundesliga,31,2394,26.6,28,3,0,26,9,35,17,9,9,0,21,12,0,2,4,3,0,FW,21a66f6a
+11,Alex Baena,21,2609,2024-2025,23,es ESP,Villarreal,es La Liga,32,2609,29.0,30,2,0,7,9,16,7,0,1,1,21,17,2,1,0,1,0,MFFW,518f2234
+12,Lassine Sinayoko,20,2315,2024-2025,24,ml MLI,Auxerre,fr Ligue 1,34,2315,25.7,25,9,0,5,8,13,4,1,1,0,20,11,0,4,1,4,0,FWMF,5e5249c8
+13,Bryan Mbeumo,20,3417,2024-2025,24,cm CMR,Brentford,eng Premier League,38,3417,38.0,38,0,0,20,7,27,15,5,6,1,20,11,3,2,3,1,0,FW,6afaebf2
+14,Bradley Barcola,20,2200,2024-2025,21,fr FRA,Paris S-G,fr Ligue 1,34,2200,24.4,27,7,0,14,10,24,14,0,0,0,20,17,0,1,2,0,0,FW,a0d55a09
+15,Rayan Cherki,20,2055,2024-2025,20,fr FRA,Lyon,fr Ligue 1,30,2055,22.8,22,8,0,8,11,19,8,0,0,0,20,15,2,1,2,0,0,FWMF,b34c63a5
+16,Mason Greenwood,19,2820,2024-2025,22,eng ENG,Marseille,fr Ligue 1,34,2820,31.3,32,2,0,21,5,26,14,7,9,2,19,15,0,1,2,1,0,FWMF,58eee997
+17,Maghnes Akliouche,19,2413,2024-2025,22,fr FRA,Monaco,fr Ligue 1,32,2413,26.8,27,5,0,5,10,15,4,1,1,0,19,17,0,0,2,0,0,FWMF,b625b241
+18,Gaëtan Perrin,18,2710,2024-2025,28,fr FRA,Auxerre,fr Ligue 1,34,2710,30.1,31,3,0,10,11,21,10,0,0,0,18,8,7,2,0,1,0,MFFW,10dd88f9
+19,Anthony Elanga,18,2516,2024-2025,22,se SWE,Nott'ham Forest,eng Premier League,38,2516,28.0,31,7,0,6,11,17,6,0,0,0,18,10,4,1,0,3,0,FWMF,2fba6108
+20,Vinicius Júnior,18,2264,2024-2025,24,br BRA,Real Madrid,es La Liga,30,2264,25.2,24,6,0,11,8,19,9,2,3,1,18,11,0,5,0,2,0,FW,7111d552
+21,Amad Diallo,18,1907,2024-2025,22,ci CIV,Manchester Utd,eng Premier League,26,1907,21.2,20,6,2,8,6,14,8,0,0,0,18,7,0,4,1,2,4,MFFW,9dc96f10
+22,Evann Guessand,17,2578,2024-2025,23,ci CIV,Nice,fr Ligue 1,33,2578,28.6,30,3,1,12,8,20,12,0,0,0,17,10,0,3,2,1,1,FWMF,b73f17f8
+23,Sebastian Nanasi,17,2129,2024-2025,22,se SWE,Strasbourg,fr Ligue 1,31,2129,23.7,26,5,1,6,4,10,6,0,0,0,17,11,4,0,2,0,0,MFFW,ce747d2a
+24,Nicolás Paz,16,2700,2024-2025,19,ar ARG,Como,it Serie A,35,2700,30.0,30,5,1,6,8,14,6,0,1,1,16,14,0,2,0,0,0,MFFW,01bb93d5
+25,Rafael Leão,16,2335,2024-2025,25,pt POR,Milan,it Serie A,34,2335,25.9,25,9,2,8,8,16,8,0,0,0,16,10,0,3,1,2,0,FW,20730eae
+26,Morgan Rogers,16,3132,2024-2025,22,eng ENG,Aston Villa,eng Premier League,37,3132,34.8,37,0,0,8,10,18,8,0,0,0,16,14,0,1,0,1,0,FWMF,2e5915f1
+27,Luis Díaz,16,2420,2024-2025,27,co COL,Liverpool,eng Premier League,36,2420,26.9,28,8,2,13,5,18,13,0,0,0,16,13,0,1,0,2,0,FW,4a1a9578
+28,Romelu Lukaku,16,2872,2024-2025,31,be BEL,Napoli,it Serie A,36,2872,31.9,35,1,0,14,10,24,11,3,4,1,16,15,0,1,0,0,0,FW,5eae500a
+29,Ludovic Blas,16,2304,2024-2025,26,fr FRA,Rennes,fr Ligue 1,29,2304,25.6,26,3,0,6,8,14,6,0,0,0,16,7,4,1,1,2,1,MFFW,6191093d
+30,Alex Iwobi,16,3001,2024-2025,28,ng NGA,Fulham,eng Premier League,38,3001,33.3,35,3,0,9,6,15,9,0,0,0,16,13,0,2,1,0,0,FWMF,6ca5ec4b
+31,Marcus Thuram,16,2304,2024-2025,26,fr FRA,Inter,it Serie A,32,2304,25.6,27,5,3,14,4,18,14,0,0,0,16,10,0,2,1,3,0,FW,6f8cd6d0
+32,Ritsu Doan,16,2877,2024-2025,26,jp JPN,Freiburg,de Bundesliga,34,2877,32.0,33,1,0,10,7,17,10,0,0,0,16,11,1,1,1,1,1,FWMF,d01bbb6f
+33,Matheus Cunha,16,2606,2024-2025,25,br BRA,Wolves,eng Premier League,33,2606,29.0,29,4,0,15,6,21,15,0,0,0,16,10,0,4,0,1,1,MFFW,dc62b55d
+34,Julián Álvarez,15,2526,2024-2025,24,ar ARG,Atlético Madrid,es La Liga,37,2526,28.1,30,7,0,17,4,21,13,4,4,0,15,10,1,0,3,0,1,FW,15ab5a2b
+35,Kylian Mbappé,15,2918,2024-2025,25,fr FRA,Real Madrid,es La Liga,34,2918,32.4,34,0,0,31,3,34,24,7,9,2,15,8,1,2,3,1,0,FW,42fd9c7f
+36,Vincenzo Grifo,15,2457,2024-2025,31,it ITA,Freiburg,de Bundesliga,34,2457,27.3,31,3,0,8,11,19,8,0,3,3,15,10,4,1,0,0,0,FWMF,54e4866f
+37,Moses Simon,15,2627,2024-2025,29,ng NGA,Nantes,fr Ligue 1,32,2627,29.2,31,1,0,8,10,18,4,4,4,0,15,9,1,2,2,1,0,FWMF,5f3eaaf5
+38,Jarrod Bowen,15,2980,2024-2025,27,eng ENG,West Ham,eng Premier League,34,2980,33.1,34,0,0,13,8,21,12,1,1,0,15,11,2,1,1,0,0,FWMF,79c84d1c
+39,Ademola Lookman,15,2266,2024-2025,26,ng NGA,Atalanta,it Serie A,31,2266,25.2,28,3,2,15,5,20,14,1,1,0,15,10,0,3,1,1,0,MFFW,7c104bb7
+40,Zuriko Davitashvili,15,2790,2024-2025,23,ge GEO,Saint-Étienne,fr Ligue 1,33,2790,31.0,32,1,0,9,8,17,7,2,2,0,15,8,1,4,0,2,0,FWMF,88b4d2e3
+41,Son Heung-min,15,2122,2024-2025,32,kr KOR,Tottenham,eng Premier League,30,2122,23.6,24,6,0,7,9,16,6,1,2,1,15,13,0,0,1,1,0,FW,92e7e919
+42,Ousmane Dembélé,15,1745,2024-2025,27,fr FRA,Paris S-G,fr Ligue 1,29,1745,19.4,20,9,1,21,6,27,20,1,1,0,15,11,0,1,2,1,0,FW,b19db005
+43,Cole Palmer,15,3201,2024-2025,22,eng ENG,Chelsea,eng Premier League,37,3201,35.6,36,1,0,15,8,23,11,4,5,1,15,11,0,2,1,1,0,MFFW,dc7f8a28
+44,Jacob Murphy,15,2385,2024-2025,29,eng ENG,Newcastle Utd,eng Premier League,35,2385,26.5,31,4,2,8,12,20,8,0,0,0,15,14,0,0,0,1,0,FW,de112b84
+45,Luis Henrique,15,2625,2024-2025,22,br BRA,Marseille,fr Ligue 1,33,2625,29.2,29,4,1,7,7,14,7,0,0,0,15,15,0,0,0,0,0,DFFW,f36d5624
+46,Sávio,15,1779,2024-2025,20,br BRA,Manchester City,eng Premier League,29,1779,19.8,21,8,7,1,8,9,1,0,0,0,15,10,0,2,1,1,1,FWMF,fe6e7156
+47,Christian Pulisic,14,2496,2024-2025,25,us USA,Milan,it Serie A,34,2496,27.7,29,5,0,11,9,20,8,3,4,1,14,6,3,0,3,1,1,FWMF,1bf33a9a
+48,Tim Kleindienst,14,2744,2024-2025,28,de GER,Gladbach,de Bundesliga,31,2744,30.5,31,0,0,16,7,23,15,1,2,1,14,9,1,0,1,2,1,FW,258a6f4d
+49,Charles De Ketelaere,14,2089,2024-2025,23,be BEL,Atalanta,it Serie A,36,2089,23.2,25,11,0,7,7,14,7,0,0,0,14,11,0,1,2,0,0,MFFW,2ef7c612
+50,Andrej Kramarić,14,2781,2024-2025,33,hr CRO,Hoffenheim,de Bundesliga,32,2781,30.9,32,0,0,11,8,19,8,3,3,0,14,11,1,0,1,1,0,MFFW,603cb947
+51,Iñaki Williams,14,2660,2024-2025,30,gh GHA,Athletic Club,es La Liga,35,2660,29.6,29,6,0,6,8,14,6,0,0,0,14,10,0,3,1,0,0,FW,6a99e0b1
+52,Alexander Isak,14,2774,2024-2025,24,se SWE,Newcastle Utd,eng Premier League,34,2774,30.8,34,0,0,23,6,29,19,4,4,0,14,11,0,1,0,1,1,FW,8e92be30
+53,Ante Budimir,14,2971,2024-2025,33,hr CRO,Osasuna,es La Liga,38,2971,33.0,34,4,0,21,4,25,13,8,8,0,14,3,0,1,2,8,0,FW,8f3565b3
+54,Federico Dimarco,14,2200,2024-2025,26,it ITA,Inter,it Serie A,33,2200,24.4,29,4,2,4,7,11,4,0,0,0,14,10,2,0,2,0,0,DFFW,970b8574
+55,Alassane Pléa,14,1920,2024-2025,31,fr FRA,Gladbach,de Bundesliga,30,1920,21.3,24,6,2,11,4,15,10,1,1,0,14,10,1,2,0,1,0,MFFW,bc6bd723
+56,Valentín Castellanos,14,2395,2024-2025,25,ar ARG,Lazio,it Serie A,29,2395,26.6,28,1,2,10,3,13,8,2,3,1,14,7,0,1,3,2,1,FW,da76bab4
+57,Álex Berenguer,14,2361,2024-2025,29,es ESP,Athletic Club,es La Liga,36,2361,26.2,28,8,1,6,7,13,6,0,1,1,14,6,4,2,1,1,0,FWMF,dc1c2fce
+58,Khvicha Kvaratskhelia,14,2112,2024-2025,23,ge GEO,2 Teams,2 Comps,31,2112,23.5,26,5,2,9,6,15,8,1,1,0,14,10,0,3,1,0,0,FWMF,dea88efd
+59,Mateo Retegui,14,2408,2024-2025,25,it ITA,Atalanta,it Serie A,36,2408,26.8,32,4,0,25,8,33,21,4,5,1,14,11,0,0,2,1,0,FW,e7695e6c
+60,Dani Raba,14,1895,2024-2025,28,es ESP,Leganés,es La Liga,29,1895,21.1,24,5,5,8,6,14,4,4,5,1,14,8,1,3,0,1,1,FWMF,ea6a7ab4
+61,Jeremy Doku,14,1526,2024-2025,22,be BEL,Manchester City,eng Premier League,29,1526,17.0,16,13,4,3,6,9,3,0,0,0,14,11,0,3,0,0,0,FWMF,fffea3e5
+62,Mohamed Amoura,13,2487,2024-2025,24,dz ALG,Wolfsburg,de Bundesliga,31,2487,27.6,29,2,0,10,9,19,8,2,2,0,13,12,0,1,0,0,0,FW,6597f8b6
+63,Iago Aspas,13,1754,2024-2025,36,es ESP,Celta Vigo,es La Liga,30,1754,19.5,19,11,3,10,5,15,5,5,6,1,13,11,0,0,1,1,0,FWMF,7dcf86f6
+64,Serge Gnabry,13,1250,2024-2025,29,de GER,Bayern Munich,de Bundesliga,27,1250,13.9,13,14,2,7,5,12,7,0,1,1,13,8,0,4,0,0,1,FWMF,88e357ef
+65,Nico Williams,13,2005,2024-2025,22,es ESP,Athletic Club,es La Liga,29,2005,22.3,22,7,0,5,5,10,5,0,0,0,13,9,2,1,0,1,0,FW,afdc14d7
+66,Yankuba Minteh,13,1855,2024-2025,20,gm GAM,Brighton,eng Premier League,32,1855,20.6,20,12,1,6,4,10,6,0,0,0,13,6,0,6,1,0,0,FWMF,c3cf087d
+67,Antoine Griezmann,13,2489,2024-2025,33,fr FRA,Atlético Madrid,es La Liga,38,2489,27.7,29,9,0,8,7,15,7,1,2,1,13,12,0,0,1,0,0,FWMF,df69b544
+68,Antoine Semenyo,13,3211,2024-2025,24,gh GHA,Bournemouth,eng Premier League,37,3211,35.7,36,1,0,11,5,16,11,0,0,0,13,7,1,2,1,2,0,FW,efd2ec23
+69,Anthony Gordon,12,2452,2024-2025,23,eng ENG,Newcastle Utd,eng Premier League,34,2452,27.2,28,6,0,6,5,11,5,1,2,1,12,9,1,1,0,1,0,FWMF,2bd83368
+70,Brahim Díaz,12,1395,2024-2025,24,ma MAR,Real Madrid,es La Liga,31,1395,15.5,16,15,0,4,2,6,4,0,0,0,12,7,0,1,3,0,1,FWMF,407feb71
+71,Georges Mikautadze,12,1455,2024-2025,23,ge GEO,Lyon,fr Ligue 1,34,1455,16.2,13,21,0,11,6,17,8,3,4,1,12,8,0,2,0,2,0,FW,4788cb6b
+72,Hugo Ekitike,12,2585,2024-2025,22,fr FRA,Eint Frankfurt,de Bundesliga,33,2585,28.7,31,2,0,15,8,23,14,1,3,2,12,9,0,2,0,1,0,FW,5b92d896
+73,Rubén García,12,2439,2024-2025,31,es ESP,Osasuna,es La Liga,36,2439,27.1,30,6,0,5,5,10,5,0,0,0,12,8,1,0,1,2,0,FWMF,5c96b017
+74,Marvin Ducksch,12,2437,2024-2025,30,de GER,Werder Bremen,de Bundesliga,32,2437,27.1,30,2,0,8,8,16,7,1,2,1,12,9,2,0,1,0,0,FW,638a4d71
+75,Dani Rodríguez,12,2186,2024-2025,36,es ESP,Mallorca,es La Liga,37,2186,24.3,26,11,0,4,7,11,4,0,0,0,12,9,2,0,0,1,0,MFFW,70f8e0bd
+76,Dani Olmo,12,1225,2024-2025,26,es ESP,Barcelona,es La Liga,25,1225,13.6,13,12,2,10,3,13,8,2,2,0,12,3,1,3,1,4,0,MFFW,ae44e8e2
+77,Ollie Watkins,12,2617,2024-2025,28,eng ENG,Aston Villa,eng Premier League,38,2617,29.1,31,7,0,16,8,24,14,2,2,0,12,8,0,1,1,2,0,FW,aed3a70f
+78,Patrick Wimmer,12,1787,2024-2025,23,at AUT,Wolfsburg,de Bundesliga,29,1787,19.9,22,7,0,3,4,7,3,0,0,0,12,7,1,1,1,1,1,MFFW,cb11b429
+79,Robin Hack,11,2195,2024-2025,25,de GER,Gladbach,de Bundesliga,33,2195,24.4,27,6,1,4,7,11,4,0,0,0,11,10,0,0,0,1,0,FWMF,0174ba21
+80,Kingsley Coman,11,1293,2024-2025,28,fr FRA,Bayern Munich,de Bundesliga,28,1293,14.4,14,14,0,5,4,9,5,0,0,0,11,6,0,3,1,1,0,FW,042e8a49
+81,Jean-Ricner Bellegarde,11,1695,2024-2025,26,fr FRA,Wolves,eng Premier League,35,1695,18.8,20,15,2,2,7,9,2,0,0,0,11,8,1,0,0,1,1,MFFW,10f0fdd3
+82,Callum Hudson-Odoi,11,2210,2024-2025,23,eng ENG,Nott'ham Forest,eng Premier League,31,2210,24.6,25,6,1,5,2,7,5,0,0,0,11,7,0,2,0,2,0,FWMF,15f3ec41
+83,Arda Güler,11,1261,2024-2025,19,tr TUR,Real Madrid,es La Liga,28,1261,14.0,14,14,10,3,4,7,3,0,0,0,11,4,3,1,2,1,0,MFFW,3741ca58
+84,Karim Adeyemi,11,1447,2024-2025,22,de GER,Dortmund,de Bundesliga,25,1447,16.1,17,8,0,7,6,13,7,0,0,0,11,7,0,3,1,0,0,FWMF,501055d8
+85,Yeremi Pino,11,1958,2024-2025,21,es ESP,Villarreal,es La Liga,34,1958,21.8,25,9,1,4,7,11,4,0,0,0,11,8,0,0,2,1,0,MFFW,540ec57b
+86,Marcus Tavernier,11,1948,2024-2025,25,eng ENG,Bournemouth,eng Premier League,29,1948,21.6,20,9,0,3,5,8,3,0,0,0,11,5,3,0,2,1,0,FWMF,5c0da4a4
+87,Malick Fofana,11,1599,2024-2025,19,be BEL,Lyon,fr Ligue 1,29,1599,17.8,16,13,0,5,4,9,5,0,0,0,11,8,0,2,1,0,0,FW,8236f673
+88,Amine Gouiri,11,2097,2024-2025,24,dz ALG,2 Teams,fr Ligue 1,33,2097,23.3,23,10,0,13,5,18,13,0,0,0,11,6,1,2,2,0,0,FWMF,aad56ca3
+89,Farid El Melali,11,1911,2024-2025,27,dz ALG,Angers,fr Ligue 1,32,1911,21.2,22,10,0,2,3,5,2,0,0,0,11,3,2,1,0,3,2,FW,d21e361a
+90,Kevin De Bruyne,11,1714,2024-2025,33,be BEL,Manchester City,eng Premier League,28,1714,19.0,19,9,5,4,7,11,4,0,0,0,11,9,1,0,1,0,0,MFFW,e46012d4
+91,Santiago Castro,11,2310,2024-2025,19,ar ARG,Bologna,it Serie A,36,2310,25.7,27,9,1,8,4,12,8,0,1,1,11,8,0,2,1,0,0,FW,ee5565ae
+92,Mohamed Ali Cho,11,1642,2024-2025,20,fr FRA,Nice,fr Ligue 1,27,1642,18.2,21,6,2,3,4,7,3,0,0,0,11,8,0,1,1,1,0,FWMF,f8405304
+93,Breel Embolo,10,1852,2024-2025,27,ch SUI,Monaco,fr Ligue 1,29,1852,20.6,19,10,5,6,4,10,6,0,0,0,10,6,0,1,2,1,0,FWMF,0b4f388a
+94,Jamie Gittens,10,1793,2024-2025,19,eng ENG,Dortmund,de Bundesliga,32,1793,19.9,21,11,2,8,3,11,8,0,0,0,10,4,0,6,0,0,0,FWMF,10745192
+95,Yoane Wissa,10,2930,2024-2025,27,cd COD,Brentford,eng Premier League,35,2930,32.6,34,1,0,19,4,23,19,0,0,0,10,8,0,0,1,1,0,FW,2500cef9
+96,Jorge de Frutos,10,2518,2024-2025,27,es ESP,Rayo Vallecano,es La Liga,36,2518,28.0,30,6,0,6,3,9,6,0,0,0,10,5,0,3,0,1,1,FWMF,38ce1150
+97,Jamie Vardy,10,2837,2024-2025,37,eng ENG,Leicester City,eng Premier League,35,2837,31.5,35,0,0,9,4,13,8,1,2,1,10,5,0,2,1,2,0,FW,45963054
+98,Jean-Philippe Mateta,10,2661,2024-2025,27,fr FRA,Crystal Palace,eng Premier League,37,2661,29.6,33,4,0,14,2,16,12,2,2,0,10,5,0,3,2,0,0,FW,50e6dc35
+99,Adam Hložek,10,1879,2024-2025,22,cz CZE,Hoffenheim,de Bundesliga,27,1879,20.9,22,5,0,8,4,12,8,0,0,0,10,6,1,2,1,0,0,FWMF,5521f419
+100,Matteo Politano,10,2835,2024-2025,30,it ITA,Napoli,it Serie A,37,2835,31.5,34,3,0,3,4,7,3,0,0,0,10,8,1,0,0,1,0,FWMF,5e861944
+101,Kaoru Mitoma,10,2616,2024-2025,27,jp JPN,Brighton,eng Premier League,36,2616,29.1,28,8,0,10,4,14,10,0,0,0,10,9,0,0,0,1,0,FWMF,74618572
+102,Nick Woltemade,10,1629,2024-2025,22,de GER,Stuttgart,de Bundesliga,28,1629,18.1,17,11,5,12,2,14,10,2,3,1,10,5,0,4,1,0,0,FWMF,7ca196eb
+103,Loïs Openda,10,2467,2024-2025,24,be BEL,RB Leipzig,de Bundesliga,33,2467,27.4,28,5,0,9,5,14,9,0,1,1,10,5,0,0,2,3,0,FWMF,8652a85c
+104,Christantus Uche,10,2502,2024-2025,21,ng NGA,Getafe,es La Liga,33,2502,27.8,30,3,0,4,6,10,4,0,0,0,10,8,0,0,0,2,0,FWMF,87941696
+105,Mathias Pereira Lage,10,1583,2024-2025,27,pt POR,Brest,fr Ligue 1,29,1583,17.6,18,11,5,2,7,9,2,0,0,0,10,5,3,1,0,1,0,FWMF,8846a40f
+106,Serhou Guirassy,10,2603,2024-2025,28,gn GUI,Dortmund,de Bundesliga,30,2603,28.9,29,1,0,21,4,25,18,3,4,1,10,5,0,0,3,2,0,FW,923f4dda
+107,Adama Traoré,10,1786,2024-2025,28,es ESP,Fulham,eng Premier League,36,1786,19.8,18,18,1,2,7,9,2,0,0,0,10,9,0,1,0,0,0,FWMF,9a28eba4
+108,Nicolas Jackson,10,2242,2024-2025,23,sn SEN,Chelsea,eng Premier League,30,2242,24.9,28,2,1,10,5,15,10,0,0,0,10,7,0,2,1,0,0,FW,9c36ed83
+109,Eberechi Eze,10,2605,2024-2025,26,eng ENG,Crystal Palace,eng Premier League,34,2605,28.9,31,3,0,8,8,16,7,1,2,1,10,9,1,0,0,0,0,MFFW,ae4fc6a4
+110,Mohammed Kudus,10,2605,2024-2025,23,gh GHA,West Ham,eng Premier League,32,2605,28.9,31,1,0,5,3,8,5,0,0,0,10,6,0,1,3,0,0,FWMF,b62878a5
+111,Kenan Yıldız,10,2414,2024-2025,19,tr TUR,Juventus,it Serie A,35,2414,26.8,28,7,1,7,4,11,7,0,0,0,10,7,0,2,1,0,0,FWMF,d8cda243
+112,Jadon Sancho,10,1775,2024-2025,24,eng ENG,Chelsea,eng Premier League,31,1775,19.7,19,12,1,3,4,7,3,0,0,0,10,9,0,0,0,1,0,FW,dbf053da
+113,Luis Rioja,10,2872,2024-2025,30,es ESP,2 Teams,es La Liga,37,2872,31.9,33,4,0,5,3,8,3,2,2,0,10,8,1,0,1,0,0,FW,eb3dd471
+114,Alexis Saelemaekers,10,1494,2024-2025,25,be BEL,2 Teams,it Serie A,23,1494,16.6,18,5,5,7,3,10,7,0,0,0,10,5,0,1,2,2,0,DFFW,ee251371
+115,Enzo Millot,10,1858,2024-2025,22,fr FRA,Stuttgart,de Bundesliga,29,1858,20.6,22,7,2,6,5,11,6,0,1,1,10,8,0,1,1,0,0,MFFW,f76022e7
+116,Dwight McNeil,10,1376,2024-2025,24,eng ENG,Everton,eng Premier League,21,1376,15.3,15,6,0,4,6,10,4,0,0,0,10,5,2,2,0,0,1,MFFW,fc15fb84
+117,Badredine Bouanani,9,1108,2024-2025,19,dz ALG,Nice,fr Ligue 1,26,1108,12.3,11,15,5,3,3,6,2,1,1,0,9,5,1,1,1,1,0,MFFW,0400dd2f
+118,Romain Del Castillo,9,1270,2024-2025,28,fr FRA,Brest,fr Ligue 1,26,1270,14.1,14,12,0,6,4,10,3,3,4,1,9,7,1,0,0,1,0,FW,0be95d34
+119,Dodi Lukebakio,9,3103,2024-2025,26,be BEL,Sevilla,es La Liga,38,3103,34.5,36,2,0,11,2,13,10,1,1,0,9,6,0,2,0,1,0,FW,0c61c77c
+120,Matthis Abline,9,2789,2024-2025,21,fr FRA,Nantes,fr Ligue 1,34,2789,31.0,33,1,0,9,2,11,8,1,1,0,9,6,0,2,1,0,0,FW,0e46fa2f
+121,Jamie Leweling,9,1682,2024-2025,23,de GER,Stuttgart,de Bundesliga,27,1682,18.7,22,5,0,2,2,4,2,0,0,0,9,3,0,1,3,2,0,MFFW,13fe7b69
+122,Diogo Jota,9,1208,2024-2025,27,pt POR,Liverpool,eng Premier League,26,1208,13.4,14,12,3,6,3,9,6,0,0,0,9,5,0,2,1,1,0,FW,178ae8f8
+123,Sofiane Diop,9,1070,2024-2025,24,fr FRA,Nice,fr Ligue 1,28,1070,11.9,8,20,1,6,4,10,6,0,0,0,9,7,1,0,0,1,0,MFFW,19053e31
+124,Óscar Rodríguez Arnaiz,9,1335,2024-2025,26,es ESP,Leganés,es La Liga,29,1335,14.8,12,17,5,1,4,5,1,0,0,0,9,5,1,1,1,0,1,MFFW,19709006
+125,Issa Soumaré,9,1911,2024-2025,23,sn SEN,Le Havre,fr Ligue 1,29,1911,21.2,21,8,1,5,4,9,5,0,0,0,9,6,0,1,1,1,0,FWMF,1d8aa290
+126,Erling Haaland,9,2742,2024-2025,24,no NOR,Manchester City,eng Premier League,31,2742,30.5,31,0,1,22,3,25,19,3,4,1,9,6,0,2,1,0,0,FW,1f44ac21
+127,Andrea Cambiaso,9,2230,2024-2025,24,it ITA,Juventus,it Serie A,33,2230,24.8,25,8,0,2,3,5,2,0,0,0,9,7,1,0,1,0,0,DFFW,247ed022
+128,Leroy Sané,9,1647,2024-2025,28,de GER,Bayern Munich,de Bundesliga,30,1647,18.3,17,13,2,11,5,16,11,0,0,0,9,7,0,1,0,0,1,FW,2b114be3
+129,Florian Thauvin,9,1973,2024-2025,31,fr FRA,Udinese,it Serie A,25,1973,21.9,24,1,0,8,3,11,7,1,3,2,9,4,1,0,4,0,0,FWMF,2b9fdeea
+130,Benjamin Šeško,9,2400,2024-2025,21,si SVN,RB Leipzig,de Bundesliga,33,2400,26.7,30,3,0,13,5,18,11,2,2,0,9,4,0,2,2,1,0,FWMF,3260690c
+131,Thomas Müller,9,1234,2024-2025,34,de GER,Bayern Munich,de Bundesliga,30,1234,13.7,12,18,4,1,4,5,1,0,0,0,9,7,0,1,1,0,0,MFFW,3c6089ab
+132,Harvey Barnes,9,1766,2024-2025,26,eng ENG,Newcastle Utd,eng Premier League,33,1766,19.6,17,16,1,9,4,13,9,0,0,0,9,6,0,1,1,1,0,FW,3ea50f67
+133,Lucas Beltrán,9,1969,2024-2025,23,ar ARG,Fiorentina,it Serie A,33,1969,21.9,21,12,4,5,4,9,3,2,3,1,9,8,0,0,0,1,0,FWMF,482d2bc3
+134,David Neres,9,1294,2024-2025,27,br BRA,Napoli,it Serie A,28,1294,14.4,13,15,1,2,4,6,2,0,0,0,9,5,1,2,0,1,0,FW,4f1e6a0b
+135,Kevin Schade,9,2313,2024-2025,22,de GER,Brentford,eng Premier League,38,2313,25.7,26,12,0,11,2,13,11,0,0,0,9,5,0,1,3,0,0,FW,52afb588
+136,Gustav Isaksen,9,2233,2024-2025,23,dk DEN,Lazio,it Serie A,37,2233,24.8,29,8,0,4,2,6,4,0,0,0,9,6,0,2,0,1,0,FW,5715bb71
+137,Francisco Conceição,9,1347,2024-2025,21,pt POR,Juventus,it Serie A,26,1347,15.0,12,14,2,3,3,6,3,0,0,0,9,5,1,1,1,1,0,FWMF,5ef3d210
+138,Pedro Neto,9,2277,2024-2025,24,pt POR,Chelsea,eng Premier League,35,2277,25.3,24,11,1,4,6,10,4,0,0,0,9,5,1,2,1,0,0,FW,7ba2eaa9
+139,Pablo Fornals,9,1841,2024-2025,28,es ESP,Betis,es La Liga,26,1841,20.5,22,4,2,2,0,2,2,0,0,0,9,9,0,0,0,0,0,MFFW,82927de4
+140,Dan Ndoye,9,2155,2024-2025,23,ch SUI,Bologna,it Serie A,30,2155,23.9,26,4,1,8,4,12,6,2,2,0,9,8,0,0,0,1,0,FW,8e697a8f
+141,Rodrygo,9,1945,2024-2025,23,br BRA,Real Madrid,es La Liga,30,1945,21.6,22,8,1,6,5,11,6,0,0,0,9,7,0,1,0,1,0,FWMF,8f5e92a6
+142,Carlos Vicente,9,3099,2024-2025,25,es ESP,Alavés,es La Liga,37,3099,34.4,35,2,1,5,5,10,4,1,1,0,9,6,1,1,1,0,0,FWMF,90df343e
+143,Raúl Moro,9,2350,2024-2025,21,es ESP,Valladolid,es La Liga,33,2350,26.1,26,7,0,4,5,9,4,0,0,0,9,6,0,2,0,1,0,MFFW,919dd4b1
+144,Shuto Machino,9,1967,2024-2025,24,jp JPN,Holstein Kiel,de Bundesliga,32,1967,21.9,23,9,2,11,2,13,9,2,2,0,9,8,1,0,0,0,0,FWMF,964dde35
+145,Antony,9,1366,2024-2025,24,br BRA,Betis,es La Liga,17,1366,15.2,15,2,0,5,2,7,5,0,0,0,9,6,0,1,2,0,0,FW,99127249
+146,Bryan Zaragoza,9,1856,2024-2025,23,es ESP,Osasuna,es La Liga,27,1856,20.6,22,5,1,1,6,7,1,0,0,0,9,6,1,1,1,0,0,FWMF,a96103b2
+147,Joelinton,9,2403,2024-2025,27,br BRA,Newcastle Utd,eng Premier League,29,2403,26.7,29,0,0,4,3,7,4,0,0,0,9,7,0,0,1,0,1,MFFW,c17bfb65
+148,Diego López,9,2763,2024-2025,22,es ESP,Valencia,es La Liga,38,2763,30.7,35,3,0,8,5,13,8,0,0,0,9,7,0,1,0,1,0,MFFW,c487901c
+149,Giovani Lo Celso,9,1463,2024-2025,28,ar ARG,Betis,es La Liga,25,1463,16.3,15,10,0,8,3,11,6,2,3,1,9,6,1,2,0,0,0,MFFW,d7553721
+150,Mattia Zaccagni,9,2708,2024-2025,29,it ITA,Lazio,it Serie A,34,2708,30.1,33,1,0,8,6,14,6,2,2,0,9,7,2,0,0,0,0,FW,d85c238b
+151,Junya Ito,9,2703,2024-2025,31,jp JPN,Reims,fr Ligue 1,33,2703,30.0,31,2,0,4,3,7,4,0,0,0,9,7,1,0,1,0,0,FWMF,dbd3a428
+152,Dejan Kulusevski,9,2394,2024-2025,24,se SWE,Tottenham,eng Premier League,32,2394,26.6,27,5,0,7,4,11,7,0,0,0,9,7,1,1,0,0,0,MFFW,df3cda47
+153,João Pedro,9,1957,2024-2025,22,br BRA,Brighton,eng Premier League,27,1957,21.7,23,4,0,10,6,16,5,5,5,0,9,6,0,0,0,3,0,FWMF,e8832875
+154,Phil Foden,9,1787,2024-2025,24,eng ENG,Manchester City,eng Premier League,28,1787,19.9,20,8,5,7,2,9,7,0,0,0,9,5,1,0,3,0,0,MFFW,ed1e53f3
+155,Tammy Abraham,9,1192,2024-2025,26,eng ENG,2 Teams,it Serie A,29,1192,13.2,12,17,7,3,4,7,2,1,2,1,9,7,0,0,1,1,0,FW,f586779e
+156,Valentino Lazaro,8,2324,2024-2025,28,at AUT,Torino,it Serie A,33,2324,25.8,26,7,1,0,6,6,0,0,0,0,8,5,3,0,0,0,0,DFFW,016ff750
+157,Jonathan Burkardt,8,2127,2024-2025,24,de GER,Mainz 05,de Bundesliga,29,2127,23.6,28,1,0,18,2,20,16,2,2,0,8,6,0,0,1,1,0,FW,05f99a4a
+158,Chris Führich,8,1997,2024-2025,26,de GER,Stuttgart,de Bundesliga,33,1997,22.2,23,10,0,2,3,5,2,0,0,0,8,6,1,0,1,0,0,MFFW,0cf778df
+159,Jacob Ramsey,8,1636,2024-2025,23,eng ENG,Aston Villa,eng Premier League,29,1636,18.2,19,10,0,1,3,4,1,0,0,0,8,7,0,0,0,1,0,FWMF,1544f145
+160,Takefusa Kubo,8,2388,2024-2025,23,jp JPN,Real Sociedad,es La Liga,36,2388,26.5,27,9,1,5,0,5,5,0,0,0,8,2,0,5,0,1,0,MFFW,16aa3654
+161,Williot Swedberg,8,1361,2024-2025,20,se SWE,Celta Vigo,es La Liga,32,1361,15.1,15,17,1,4,5,9,4,0,0,0,8,6,0,1,1,0,0,FWMF,184fe4b2
+162,Cody Gakpo,8,1952,2024-2025,25,nl NED,Liverpool,eng Premier League,35,1952,21.7,23,12,0,10,4,14,10,0,0,0,8,3,0,3,1,1,0,FW,1971591f
+163,Roberto Piccoli,8,3145,2024-2025,23,it ITA,Cagliari,it Serie A,37,3145,34.9,37,0,0,10,1,11,9,1,1,0,8,3,0,1,1,3,0,FW,1cadaf34
+164,Boulaye Dia,8,2199,2024-2025,27,sn SEN,Lazio,it Serie A,35,2199,24.4,27,8,2,9,3,12,9,0,0,0,8,7,0,0,1,0,0,MFFW,244bc2c8
+165,Leandro Trossard,8,2559,2024-2025,29,be BEL,Arsenal,eng Premier League,38,2559,28.4,28,10,0,8,7,15,8,0,0,0,8,8,0,0,0,0,0,FW,38ceb24a
+166,Bernardo Silva,8,2671,2024-2025,29,pt POR,Manchester City,eng Premier League,33,2671,29.7,29,4,5,4,4,8,4,0,0,0,8,8,0,0,0,0,0,MFFW,3eb22ec9
+167,Keane Lewis-Potter,8,3102,2024-2025,23,eng ENG,Brentford,eng Premier League,38,3102,34.5,36,2,0,1,3,4,1,0,0,0,8,6,0,0,0,2,0,DFFW,41f08ac8
+168,Ludovic Ajorque,8,2508,2024-2025,30,fr FRA,Brest,fr Ligue 1,31,2508,27.9,29,2,0,13,2,15,13,0,1,1,8,3,0,1,3,1,0,FW,462475ed
+169,Josué Casimir,8,2010,2024-2025,22,fr FRA,Le Havre,fr Ligue 1,27,2010,22.3,23,4,0,4,4,8,4,0,0,0,8,3,0,1,1,3,0,FWMF,481f76cf
+170,Jon Guridi,8,2101,2024-2025,29,es ESP,Alavés,es La Liga,33,2101,23.3,27,6,3,3,1,4,2,1,1,0,8,5,0,2,1,0,0,MFFW,4c0a6a48
+171,Iliman Ndiaye,8,2444,2024-2025,24,sn SEN,Everton,eng Premier League,33,2444,27.2,29,4,0,9,0,9,7,2,2,0,8,5,0,2,0,1,0,FW,5ed97752
+172,Ange-Yoan Bonny,8,2551,2024-2025,20,fr FRA,Parma,it Serie A,37,2551,28.3,30,7,0,6,4,10,4,2,3,1,8,4,0,2,1,1,0,FW,64629ba4
+173,Habib Diarra,8,2360,2024-2025,20,sn SEN,Strasbourg,fr Ligue 1,30,2360,26.2,27,3,0,4,5,9,2,2,2,0,8,6,0,0,0,2,0,MFFW,6d0fe035
+174,Evanilson,8,2339,2024-2025,24,br BRA,Bournemouth,eng Premier League,31,2339,26.0,28,3,1,10,1,11,10,0,1,1,8,2,0,1,1,4,0,FW,6f3cc2fe
+175,Cucho,8,1150,2024-2025,25,co COL,Betis,es La Liga,15,1150,12.8,14,1,1,5,1,6,5,0,0,0,8,5,0,1,0,2,0,FW,71b47ab9
+176,Dušan Vlahović,8,1792,2024-2025,24,rs SRB,Juventus,it Serie A,29,1792,19.9,21,8,3,10,4,14,6,4,4,0,8,5,0,3,0,0,0,FW,79443529
+177,John McGinn,8,2238,2024-2025,29,sct SCO,Aston Villa,eng Premier League,34,2238,24.9,27,7,0,1,4,5,1,0,0,0,8,6,2,0,0,0,0,MFFW,90f91999
+178,Lucas Stassin,8,1900,2024-2025,19,be BEL,Saint-Étienne,fr Ligue 1,28,1900,21.1,23,5,0,12,4,16,12,0,0,0,8,4,0,2,1,1,0,FW,a47d6f3a
+179,Nikola Vlašić,8,2128,2024-2025,26,hr CRO,Torino,it Serie A,30,2128,23.6,23,7,1,5,4,9,3,2,2,0,8,6,0,1,0,1,0,MFFW,aa8e289e
+180,Tiago Tomás,8,1901,2024-2025,22,pt POR,Wolfsburg,de Bundesliga,32,1901,21.1,23,9,1,6,1,7,6,0,0,0,8,4,0,1,2,1,0,FWMF,b492126a
+181,Noni Madueke,8,2052,2024-2025,22,eng ENG,Chelsea,eng Premier League,32,2052,22.8,27,5,1,7,3,10,7,0,0,0,8,5,0,0,1,1,1,FW,bf34eebd
+182,Georginio Rutter,8,1672,2024-2025,22,fr FRA,Brighton,eng Premier League,28,1672,18.6,19,9,0,5,3,8,5,0,0,0,8,3,0,3,1,1,0,MFFW,c64c01fc
+183,Jonathan David,8,2562,2024-2025,24,ca CAN,Lille,fr Ligue 1,32,2562,28.5,28,4,0,16,5,21,10,6,7,1,8,5,0,1,1,1,0,FW,ce50fd99
+184,Danny Welbeck,8,2128,2024-2025,33,eng ENG,Brighton,eng Premier League,30,2128,23.6,24,6,0,10,4,14,9,1,1,0,8,7,0,0,1,0,0,FW,ce5143da
+185,Franck Honorat,8,1456,2024-2025,27,fr FRA,Gladbach,de Bundesliga,19,1456,16.2,18,1,1,4,7,11,4,0,0,0,8,4,4,0,0,0,0,FW,db7849ca
+186,Deniz Undav,8,1735,2024-2025,28,de GER,Stuttgart,de Bundesliga,27,1735,19.3,20,7,0,9,3,12,9,0,0,0,8,4,0,0,3,0,1,FWMF,dd549382
+187,Paulo Dybala,8,1428,2024-2025,30,ar ARG,Roma,it Serie A,24,1428,15.9,16,8,7,6,3,9,3,3,3,0,8,5,1,0,0,2,0,FWMF,e0921a4f
+188,Gonçalo Guedes,8,1003,2024-2025,27,pt POR,Wolves,eng Premier League,29,1003,11.1,10,19,4,2,4,6,2,0,0,0,8,7,0,1,0,0,0,MFFW,e6bc67d7
+189,Dominic Solanke,8,2208,2024-2025,26,eng ENG,Tottenham,eng Premier League,27,2208,24.5,25,2,1,9,3,12,8,1,1,0,8,6,0,0,1,1,0,FW,e77dc3b2
+190,Lautaro Martínez,8,2580,2024-2025,26,ar ARG,Inter,it Serie A,31,2580,28.7,31,0,1,12,3,15,12,0,0,0,8,5,0,1,2,0,0,FW,f7036e1c
+191,Viktor Tsyhankov,8,1925,2024-2025,26,ua UKR,Girona,es La Liga,27,1925,21.4,23,4,1,2,5,7,2,0,0,0,8,4,3,0,0,1,0,FWMF,f7e87032
+192,Sergi Darder,7,2767,2024-2025,30,es ESP,Mallorca,es La Liga,38,2767,30.7,34,4,0,2,6,8,2,0,0,0,7,5,2,0,0,0,0,MFFW,070a3904
+193,Tom Bischof,7,2570,2024-2025,19,de GER,Hoffenheim,de Bundesliga,31,2570,28.6,30,1,0,5,2,7,5,0,0,0,7,6,1,0,0,0,0,MFFW,07d3bfec
+194,Brennan Johnson,7,2185,2024-2025,23,wls WAL,Tottenham,eng Premier League,33,2185,24.3,24,9,2,11,3,14,11,0,0,0,7,5,0,1,0,1,0,FW,0cd31129
+195,Marvin Pieringer,7,2225,2024-2025,24,de GER,Heidenheim,de Bundesliga,31,2225,24.7,26,5,0,7,4,11,4,3,3,0,7,3,0,0,1,2,1,FWMF,11407d95
+196,Jim Allevinah,7,1771,2024-2025,29,ga GAB,Angers,fr Ligue 1,28,1771,19.7,23,5,0,1,3,4,1,0,0,0,7,4,0,0,2,1,0,FW,1956b948
+197,Alfon,7,1381,2024-2025,25,es ESP,Celta Vigo,es La Liga,26,1381,15.3,14,12,9,5,2,7,5,0,0,0,7,4,0,0,2,1,0,FWMF,1c772b46
+198,Dennis Man,7,2007,2024-2025,25,ro ROU,Parma,it Serie A,33,2007,22.3,23,10,2,4,4,8,4,0,0,0,7,5,1,0,1,0,0,FWMF,2079b3cc
+199,Javi Puado,7,2989,2024-2025,26,es ESP,Espanyol,es La Liga,35,2989,33.2,35,0,0,12,4,16,7,5,5,0,7,6,0,0,0,1,0,FWMF,2683eda7
+200,Benedict Hollerbach,7,2559,2024-2025,23,de GER,Union Berlin,de Bundesliga,34,2559,28.4,30,4,0,9,1,10,9,0,0,0,7,3,0,1,1,2,0,FWMF,2a158218
+201,Stephy Mavididi,7,1628,2024-2025,26,eng ENG,Leicester City,eng Premier League,30,1628,18.1,16,14,3,4,1,5,4,0,0,0,7,6,0,1,0,0,0,FW,30144daa
+202,Fares Chaïbi,7,1021,2024-2025,21,dz ALG,Eint Frankfurt,de Bundesliga,26,1021,11.3,10,16,4,1,3,4,1,0,0,0,7,6,1,0,0,0,0,MFFW,357103bd
+203,Eliesse Ben Seghir,7,1761,2024-2025,19,ma MAR,Monaco,fr Ligue 1,33,1761,19.6,19,14,1,6,3,9,4,2,2,0,7,4,1,0,1,1,0,MFFW,3bd65247
+204,Moise Kean,7,2712,2024-2025,24,it ITA,Fiorentina,it Serie A,32,2712,30.1,31,1,0,19,3,22,18,1,2,1,7,2,0,3,2,0,0,FW,3d50bcdb
+205,Nikola Krstović,7,3070,2024-2025,24,me MNE,Lecce,it Serie A,37,3070,34.1,37,0,0,11,5,16,9,2,3,1,7,6,0,0,1,0,0,FW,473803c9
+206,Gabriel Martinelli,7,2305,2024-2025,23,br BRA,Arsenal,eng Premier League,33,2305,25.6,25,8,2,8,4,12,8,0,0,0,7,4,0,1,1,1,0,FWMF,48a5a5d6
+207,Simon Adingra,7,1107,2024-2025,22,ci CIV,Brighton,eng Premier League,29,1107,12.3,12,17,6,2,2,4,2,0,0,0,7,5,0,1,1,0,0,FWMF,4dcec659
+208,Alieu Fadera,7,1656,2024-2025,22,gm GAM,Como,it Serie A,28,1656,18.4,20,8,6,1,3,4,1,0,0,0,7,6,0,1,0,0,0,FWDF,53210e42
+209,Eldor Shomurodov,7,1106,2024-2025,29,uz UZB,Roma,it Serie A,27,1106,12.3,11,16,10,4,4,8,4,0,0,0,7,7,0,0,0,0,0,FWMF,57469b2d
+210,Nicolas Pépé,7,1509,2024-2025,29,ci CIV,Villarreal,es La Liga,28,1509,16.8,15,13,0,3,6,9,3,0,0,0,7,7,0,0,0,0,0,FWMF,57e3f0c7
+211,Gaetano Oristanio,7,2339,2024-2025,21,it ITA,Venezia,it Serie A,37,2339,26.0,29,8,1,3,3,6,3,0,0,0,7,4,0,1,0,2,0,FWMF,5cfc74fc
+212,Maximilian Beier,7,1601,2024-2025,21,de GER,Dortmund,de Bundesliga,29,1601,17.8,17,12,1,8,5,13,8,0,0,0,7,5,0,1,1,0,0,FWMF,5db45ee5
+213,Yann Gboho,7,2346,2024-2025,23,fr FRA,Toulouse,fr Ligue 1,31,2346,26.1,27,4,0,5,4,9,5,0,0,0,7,5,0,0,2,0,0,MFFW,6be41a31
+214,Borja Iglesias,7,1975,2024-2025,31,es ESP,Celta Vigo,es La Liga,37,1975,21.9,24,13,1,11,3,14,11,0,0,0,7,3,0,0,1,3,0,FW,75645f0e
+215,Léo Scienza,7,1164,2024-2025,25,br BRA,Heidenheim,de Bundesliga,25,1164,12.9,13,12,6,3,3,6,3,0,0,0,7,3,2,0,0,2,0,FWMF,79064bc9
+216,Gaëtan Laborde,7,1846,2024-2025,30,fr FRA,Nice,fr Ligue 1,28,1846,20.5,20,8,0,11,4,15,7,4,4,0,7,6,0,0,0,1,0,FW,7cdda3bf
+217,Mahdi Camara,7,2673,2024-2025,26,fr FRA,Brest,fr Ligue 1,34,2673,29.7,31,3,0,5,3,8,5,0,0,0,7,4,0,1,1,1,0,MFFW,8577e60a
+218,Álvaro García,7,2573,2024-2025,31,es ESP,Rayo Vallecano,es La Liga,36,2573,28.6,28,8,0,4,5,9,4,0,0,0,7,6,0,0,1,0,0,FWMF,90bbd822
+219,Kamory Doumbia,7,1334,2024-2025,21,ml MLI,Brest,fr Ligue 1,30,1334,14.8,13,17,1,3,2,5,3,0,0,0,7,2,1,1,1,0,2,MFFW,9226aa22
+220,Ferrán Torres,7,1115,2024-2025,24,es ESP,Barcelona,es La Liga,27,1115,12.4,12,15,2,10,6,16,10,0,0,0,7,6,0,1,0,0,0,FWMF,9e1035f8
+221,Benjamín Domínguez,7,1294,2024-2025,20,ar ARG,Bologna,it Serie A,24,1294,14.4,16,8,11,3,2,5,3,0,0,0,7,6,0,1,0,0,0,FW,a83b47fa
+222,Marius Bülter,7,1742,2024-2025,31,de GER,Hoffenheim,de Bundesliga,25,1742,19.4,22,3,0,7,2,9,7,0,0,0,7,4,0,2,0,1,0,FWDF,ab5b7dc1
+223,Raúl Jiménez,7,2515,2024-2025,33,mx MEX,Fulham,eng Premier League,38,2515,27.9,30,8,0,12,3,15,9,3,3,0,7,4,0,0,1,1,1,FW,b561db50
+224,Isaac Romero,7,2174,2024-2025,24,es ESP,Sevilla,es La Liga,31,2174,24.2,26,5,1,4,2,6,4,0,1,1,7,4,0,1,2,0,0,FW,be719093
+225,Abde Ezzalzouli,7,2004,2024-2025,22,ma MAR,Betis,es La Liga,32,2004,22.3,23,9,1,2,2,4,2,0,1,1,7,4,0,0,2,1,0,FWMF,bed68338
+226,Fermin López,7,1258,2024-2025,21,es ESP,Barcelona,es La Liga,28,1258,14.0,12,16,3,6,5,11,6,0,0,0,7,7,0,0,0,0,0,MFFW,c1fe5f0b
+227,Zakaria Aboukhlal,7,1914,2024-2025,24,ma MAR,Toulouse,fr Ligue 1,26,1914,21.3,22,4,0,7,2,9,6,1,2,1,7,3,0,1,0,3,0,MFFW,c2a6033c
+228,Paul Wanner,7,1786,2024-2025,18,de GER,Heidenheim,de Bundesliga,29,1786,19.8,20,9,4,3,2,5,2,1,1,0,7,5,0,0,2,0,0,MFFW,cb64672e
+229,Yaser Asprilla,7,1414,2024-2025,20,co COL,Girona,es La Liga,27,1414,15.7,15,12,3,3,1,4,3,0,0,0,7,5,2,0,0,0,0,FWMF,d139daf9
+230,Keito Nakamura,7,2663,2024-2025,24,jp JPN,Reims,fr Ligue 1,32,2663,29.6,31,1,0,11,2,13,11,0,0,0,7,4,0,1,2,0,0,FWMF,d97af612
+231,Liam Delap,7,2622,2024-2025,21,eng ENG,Ipswich Town,eng Premier League,37,2622,29.1,32,5,0,12,2,14,10,2,2,0,7,3,0,2,0,2,0,FW,dd897ee7
+232,Alexander Bernhardsson,7,1274,2024-2025,25,se SWE,Holstein Kiel,de Bundesliga,19,1274,14.2,15,4,1,7,2,9,7,0,0,0,7,2,0,2,1,1,1,FWMF,dea1d183
+233,Hákon Arnar Haraldsson,7,1769,2024-2025,21,is ISL,Lille,fr Ligue 1,25,1769,19.7,21,4,1,5,3,8,5,0,0,0,7,5,1,0,1,0,0,MFFW,e2ae54db
+234,Patrick Dorgu,7,1841,2024-2025,19,dk DEN,Lecce,it Serie A,21,1841,20.5,21,0,1,3,1,4,3,0,0,0,7,5,0,0,1,1,0,DFFW,e6536124
+235,Ermedin Demirović,7,1869,2024-2025,26,ba BIH,Stuttgart,de Bundesliga,34,1869,20.8,20,14,0,15,1,16,15,0,2,2,7,4,0,0,2,1,0,FW,ed79b7d3
+236,Nathan Tella,7,1373,2024-2025,25,ng NGA,Leverkusen,de Bundesliga,27,1373,15.3,17,10,3,2,4,6,2,0,0,0,7,6,0,1,0,0,0,MFFW,f1e94cd6
+237,Bilal El Khannouss,7,2201,2024-2025,20,ma MAR,Leicester City,eng Premier League,32,2201,24.5,27,5,3,2,3,5,2,0,0,0,7,5,1,0,1,0,0,MFFW,f7042636
+238,Takumi Minamino,7,2248,2024-2025,29,jp JPN,Monaco,fr Ligue 1,31,2248,25.0,27,4,0,6,3,9,6,0,0,0,7,5,0,1,1,0,0,MFFW,f833a830
+239,Vedat Muriqi,6,2070,2024-2025,30,xk KVX,Mallorca,es La Liga,29,2070,23.0,24,5,0,7,2,9,5,2,3,1,6,5,0,0,0,1,0,FW,0cadc46d
+240,Matias Fernandez-Pardo,6,1075,2024-2025,19,be BEL,Lille,fr Ligue 1,22,1075,11.9,12,10,3,4,2,6,4,0,0,0,6,3,0,1,0,1,1,FWMF,0cdb6a2a
+241,Rémy Cabella,6,1019,2024-2025,34,fr FRA,Lille,fr Ligue 1,23,1019,11.3,12,11,4,1,2,3,1,0,0,0,6,2,1,0,1,2,0,FWMF,148e136f
+242,Ander Barrenetxea,6,1274,2024-2025,22,es ESP,Real Sociedad,es La Liga,30,1274,14.2,14,16,3,1,3,4,1,0,0,0,6,4,0,0,2,0,0,MFFW,200e89e1
+243,Jonas Wind,6,1978,2024-2025,25,dk DEN,Wolfsburg,de Bundesliga,31,1978,22.0,21,10,2,9,3,12,8,1,2,1,6,5,0,0,1,0,0,FWMF,2077ae86
+244,Dango Ouattara,6,2019,2024-2025,22,bf BFA,Bournemouth,eng Premier League,32,2019,22.4,21,11,0,7,4,11,7,0,0,0,6,4,0,1,1,0,0,FW,2f9e4435
+245,Fabio Miretti,6,1696,2024-2025,20,it ITA,Genoa,it Serie A,25,1696,18.8,22,3,2,3,3,6,3,0,0,0,6,4,2,0,0,0,0,MFFW,34693494
+246,Oladapo Afolayan,6,1652,2024-2025,26,eng ENG,St. Pauli,de Bundesliga,32,1652,18.4,17,15,2,3,1,4,3,0,0,0,6,3,0,3,0,0,0,FWMF,5054c359
+247,Thierno Barry,6,2333,2024-2025,21,fr FRA,Villarreal,es La Liga,35,2333,25.9,25,10,0,11,4,15,10,1,1,0,6,5,0,1,0,0,0,FW,52c3244b
+248,Artem Dovbyk,6,2435,2024-2025,27,ua UKR,Roma,it Serie A,32,2435,27.1,27,5,3,12,2,14,10,2,2,0,6,3,0,2,1,0,0,FW,5b847bb0
+249,Irvin Cardona,6,1683,2024-2025,26,fr FRA,2 Teams,2 Comps,31,1683,18.7,18,13,2,6,4,10,6,0,1,1,6,4,0,0,2,0,0,FWMF,5e080f73
+250,Manuel Fuster,6,1008,2024-2025,26,es ESP,Las Palmas,es La Liga,28,1008,11.2,8,20,10,2,1,3,2,0,0,0,6,5,0,0,0,0,1,FWMF,618f396a
+251,Miguel,6,1736,2024-2025,24,es ESP,Leganés,es La Liga,34,1736,19.3,17,17,3,1,3,4,0,1,2,1,6,5,0,1,0,0,0,FW,6763373d
+252,Osame Sahraoui,6,1301,2024-2025,23,ma MAR,Lille,fr Ligue 1,30,1301,14.5,10,20,1,3,3,6,3,0,0,0,6,5,0,0,1,0,0,FWMF,6f9fa232
+253,Alexis Claude-Maurice,6,2127,2024-2025,26,fr FRA,Augsburg,de Bundesliga,28,2127,23.6,25,3,3,9,2,11,9,0,0,0,6,3,0,1,0,2,0,MFFW,741418c3
+254,Jens Odgaard,6,1972,2024-2025,25,dk DEN,Bologna,it Serie A,29,1972,21.9,24,5,3,6,1,7,6,0,0,0,6,4,0,0,2,0,0,MFFW,75374ee7
+255,Oliver McBurnie,6,1849,2024-2025,28,sct SCO,Las Palmas,es La Liga,34,1849,20.5,20,14,4,3,6,9,3,0,0,0,6,6,0,0,0,0,0,FW,78b8ac63
+256,Alejandro Garnacho,6,2208,2024-2025,20,ar ARG,Manchester Utd,eng Premier League,36,2208,24.5,23,13,0,6,2,8,6,0,0,0,6,4,0,0,1,1,0,MFFW,7aa8adfe
+257,Sebastiano Esposito,6,2350,2024-2025,22,it ITA,Empoli,it Serie A,33,2350,26.1,27,6,1,8,0,8,7,1,2,1,6,0,0,2,3,1,0,FWMF,7ff93107
+258,Daniel Maldini,6,1577,2024-2025,22,it ITA,2 Teams,it Serie A,30,1577,17.5,18,12,2,6,0,6,6,0,0,0,6,4,0,0,2,0,0,MFFW,801831fe
+259,Sandro Ramírez,6,2052,2024-2025,29,es ESP,Las Palmas,es La Liga,31,2052,22.8,25,6,1,9,3,12,8,1,1,0,6,3,1,0,0,2,0,FWMF,833fb62e
+260,Lee Kang-in,6,1677,2024-2025,23,kr KOR,Paris S-G,fr Ligue 1,30,1677,18.6,19,11,2,6,6,12,6,0,0,0,6,5,1,0,0,0,0,FWMF,8455ad90
+261,Sorba Thomas,6,1335,2024-2025,24,wls WAL,Nantes,fr Ligue 1,25,1335,14.8,15,10,4,1,3,4,1,0,0,0,6,6,0,0,0,0,0,FWMF,8725a42e
+262,Assane Diao,6,1539,2024-2025,18,sn SEN,2 Teams,2 Comps,25,1539,17.1,16,9,8,9,3,12,9,0,0,0,6,4,0,1,0,1,0,FWMF,8ae7d0ec
+263,Félix Lemaréchal,6,1789,2024-2025,20,fr FRA,Strasbourg,fr Ligue 1,27,1789,19.9,20,7,5,4,3,7,4,0,0,0,6,6,0,0,0,0,0,MFFW,8ca9415f
+264,Lucas Paquetá,6,2390,2024-2025,26,br BRA,West Ham,eng Premier League,33,2390,26.6,27,6,1,4,0,4,2,2,2,0,6,3,0,0,2,1,0,MFFW,9b6f7fd5
+265,Patrick Cutrone,6,2065,2024-2025,26,it ITA,Como,it Serie A,33,2065,22.9,23,10,5,7,4,11,7,0,1,1,6,6,0,0,0,0,0,FW,a4fe8cda
+266,Omari Hutchinson,6,2594,2024-2025,20,eng ENG,Ipswich Town,eng Premier League,31,2594,28.8,30,1,1,3,2,5,3,0,0,0,6,6,0,0,0,0,0,MFFW,bd9553e6
+267,Arnaud Kalimuendo,6,2593,2024-2025,22,fr FRA,Rennes,fr Ligue 1,33,2593,28.8,31,2,0,17,3,20,12,5,8,3,6,4,0,0,2,0,0,FWMF,bf4c41f9
+268,Randal Kolo Muani,6,1525,2024-2025,25,fr FRA,2 Teams,2 Comps,26,1525,16.9,15,11,4,10,2,12,8,2,2,0,6,2,0,2,1,1,0,FW,c0b3669f
+269,Alberto Moleiro,6,2729,2024-2025,20,es ESP,Las Palmas,es La Liga,35,2729,30.3,32,3,1,6,1,7,6,0,0,0,6,3,0,1,1,1,0,FWMF,c2c8897d
+270,Lucas Höler,6,1880,2024-2025,30,de GER,Freiburg,de Bundesliga,31,1880,20.9,21,10,2,6,4,10,6,0,1,1,6,3,0,1,1,1,0,FWMF,ca618d23
+271,Juan Cruz,6,2272,2024-2025,24,es ESP,Leganés,es La Liga,34,2272,25.2,26,8,4,5,4,9,5,0,0,0,6,6,0,0,0,0,0,FWMF,cc2dd8a5
+272,Domingos André Ribeiro Almeida,6,1997,2024-2025,24,pt POR,Valencia,es La Liga,34,1997,22.2,24,10,2,0,4,4,0,0,0,0,6,5,1,0,0,0,0,MFFW,e6697917
+273,Musa Al-Taamari,6,1692,2024-2025,27,jo JOR,2 Teams,fr Ligue 1,26,1692,18.8,19,7,0,3,1,4,3,0,0,0,6,3,0,1,1,1,0,FWMF,f15f8b2b
+274,Jørgen Strand Larsen,6,2606,2024-2025,24,no NOR,Wolves,eng Premier League,35,2606,29.0,30,5,0,14,4,18,14,0,0,0,6,6,0,0,0,0,0,FW,f553b2b3
+275,Gonçalo Ramos,6,1073,2024-2025,23,pt POR,Paris S-G,fr Ligue 1,22,1073,11.9,12,10,0,10,3,13,8,2,3,1,6,4,0,0,1,1,0,FW,f63cda26
+276,Jofre,5,2188,2024-2025,23,es ESP,Espanyol,es La Liga,37,2188,24.3,26,11,0,3,3,6,3,0,0,0,5,4,0,0,0,1,0,MFFW,030ef8d6
+277,Phil Harres,5,1553,2024-2025,22,de GER,Holstein Kiel,de Bundesliga,26,1553,17.3,17,9,1,8,1,9,8,0,0,0,5,1,0,0,2,2,0,FW,07db670d
+278,Andrea Pinamonti,5,2863,2024-2025,25,it ITA,Genoa,it Serie A,36,2863,31.8,33,3,1,10,1,11,10,0,1,1,5,3,0,0,2,0,0,FW,08aa9cd1
+279,Giuseppe Pezzella,5,2889,2024-2025,26,it ITA,Empoli,it Serie A,35,2889,32.1,34,1,2,0,3,3,0,0,0,0,5,5,0,0,0,0,0,DFFW,149c5f5d
+280,Akor Adams,5,1215,2024-2025,24,ng NGA,2 Teams,2 Comps,19,1215,13.5,14,5,1,3,1,4,3,0,0,0,5,2,0,1,0,2,0,FW,2ccd39ed
+281,Phillip Tietz,5,1700,2024-2025,27,de GER,Augsburg,de Bundesliga,34,1700,18.9,19,15,0,7,2,9,6,1,1,0,5,2,0,1,2,0,0,FW,3397e7b5
+282,Hugo Duro,5,2177,2024-2025,24,es ESP,Valencia,es La Liga,31,2177,24.2,25,6,2,11,2,13,10,1,1,0,5,1,0,0,1,3,0,FW,37e103f8
+283,Gianluca Gaetano,5,1017,2024-2025,24,it ITA,2 Teams,it Serie A,28,1017,11.3,8,20,7,2,4,6,2,0,0,0,5,5,0,0,0,0,0,MFFW,3b387cc7
+284,Mathias Honsak,5,1186,2024-2025,27,at AUT,Heidenheim,de Bundesliga,22,1186,13.2,12,10,0,5,1,6,5,0,0,0,5,0,2,3,0,0,0,FWDF,3dbdbb6a
+285,Facundo Buonanotte,5,1530,2024-2025,19,ar ARG,Leicester City,eng Premier League,31,1530,17.0,14,17,3,5,2,7,5,0,0,0,5,1,2,2,0,0,0,FWMF,468a7a91
+286,Isaac Palazón Camacho,5,2176,2024-2025,29,es ESP,Rayo Vallecano,es La Liga,35,2176,24.2,25,10,0,4,4,8,4,0,0,0,5,2,3,0,0,0,0,MFFW,49dbab27
+287,Neal Maupay,5,1051,2024-2025,27,fr FRA,2 Teams,2 Comps,22,1051,11.7,13,9,11,4,4,8,4,0,0,0,5,5,0,0,0,0,0,FWMF,4bcf39f6
+288,Eren Dinkçi,5,1204,2024-2025,22,de GER,Freiburg,de Bundesliga,23,1204,13.4,13,10,2,0,3,3,0,0,0,0,5,5,0,0,0,0,0,MFFW,4ccd8957
+289,Chris Wood,5,2980,2024-2025,32,nz NZL,Nott'ham Forest,eng Premier League,36,2980,33.1,35,1,0,20,3,23,17,3,3,0,5,4,0,0,0,0,1,FW,4e9a0555
+290,Gianluca Caprari,5,1666,2024-2025,31,it ITA,Monza,it Serie A,34,1666,18.5,18,16,0,3,2,5,1,2,2,0,5,5,0,0,0,0,0,MFFW,54e53b7e
+291,Steven Skrzybski,5,1333,2024-2025,31,de GER,Holstein Kiel,de Bundesliga,24,1333,14.8,15,9,0,6,3,9,5,1,1,0,5,4,1,0,0,0,0,MFFW,58ce23e5
+292,Jeong Woo-yeong,5,1278,2024-2025,24,kr KOR,Union Berlin,de Bundesliga,23,1278,14.2,17,6,0,3,2,5,3,0,0,0,5,3,1,1,0,0,0,MFFW,6190474d
+293,Andrea Colpani,5,1465,2024-2025,25,it ITA,Fiorentina,it Serie A,25,1465,16.3,18,7,2,2,1,3,2,0,0,0,5,3,0,0,2,0,0,FWMF,6499048c
+294,Iván Sánchez,5,1413,2024-2025,31,es ESP,Valladolid,es La Liga,32,1413,15.7,11,21,6,2,1,3,2,0,0,0,5,5,0,0,0,0,0,MFFW,70107d4d
+295,Himad Abdelli,5,2849,2024-2025,24,dz ALG,Angers,fr Ligue 1,32,2849,31.7,32,0,0,6,1,7,3,3,4,1,5,3,0,2,0,0,0,MFFW,7978cbf0
+296,Bryan Gil,5,1738,2024-2025,23,es ESP,Girona,es La Liga,25,1738,19.3,21,4,0,3,3,6,3,0,0,0,5,5,0,0,0,0,0,FWMF,7b5ab7f2
+297,Ayoze Pérez,5,1982,2024-2025,31,es ESP,Villarreal,es La Liga,30,1982,22.0,22,8,0,19,2,21,19,0,0,0,5,2,0,2,1,0,0,FW,819aa8e7
+298,Valentin Mihaila,5,1300,2024-2025,24,ro ROU,Parma,it Serie A,21,1300,14.4,16,5,2,0,3,3,0,0,0,0,5,3,2,0,0,0,0,FWMF,81a4c239
+299,Sergio Camello,5,1148,2024-2025,23,es ESP,Rayo Vallecano,es La Liga,23,1148,12.8,14,9,2,3,2,5,3,0,0,0,5,2,0,2,0,0,1,FW,873619c6
+300,Marco Grüll,5,1192,2024-2025,26,at AUT,Werder Bremen,de Bundesliga,30,1192,13.2,13,17,1,6,1,7,6,0,0,0,5,2,0,0,1,2,0,FWMF,8babb812
+301,Mikel Oyarzabal,5,2268,2024-2025,27,es ESP,Real Sociedad,es La Liga,35,2268,25.2,28,7,2,9,3,12,5,4,4,0,5,3,0,0,0,2,0,FW,8c3c640c
+302,Ben Johnson,5,1357,2024-2025,24,eng ENG,Ipswich Town,eng Premier League,23,1357,15.1,14,9,9,1,2,3,1,0,0,0,5,4,0,0,1,0,0,DFFW,9319781b
+303,Giorgos Masouras,5,1065,2024-2025,30,gr GRE,Bochum,de Bundesliga,14,1065,11.8,12,2,0,2,1,3,2,0,0,0,5,2,0,0,3,0,0,FWMF,9d689a5b
+304,Alexandre Lacazette,5,2067,2024-2025,33,fr FRA,Lyon,fr Ligue 1,30,2067,23.0,24,6,0,15,2,17,10,5,6,1,5,2,0,0,3,0,0,FW,9dbb75ca
+305,M'Bala Nzola,5,1468,2024-2025,27,ao ANG,Lens,fr Ligue 1,21,1468,16.3,16,5,1,6,1,7,6,0,0,0,5,3,0,1,1,0,0,FW,a4948e67
+306,Thijs Dallinga,5,1162,2024-2025,23,nl NED,Bologna,it Serie A,31,1162,12.9,11,20,7,3,2,5,3,0,0,0,5,3,0,0,0,1,1,FW,b70afb45
+307,Albert Guðmundsson,5,1285,2024-2025,27,is ISL,Fiorentina,it Serie A,24,1285,14.3,16,8,3,6,1,7,4,2,2,0,5,3,0,0,0,2,0,FWMF,b79858d5
+308,Shavy Babicka,5,1195,2024-2025,24,ga GAB,Toulouse,fr Ligue 1,30,1195,13.3,11,19,2,4,2,6,4,0,0,0,5,3,0,1,0,1,0,MFFW,c6f0d5d4
+309,Riccardo Orsolini,5,1892,2024-2025,27,it ITA,Bologna,it Serie A,30,1892,21.0,23,7,3,15,4,19,12,3,3,0,5,4,0,0,0,1,0,FW,e14ec482
+310,Jack Clarke,5,1192,2024-2025,23,eng ENG,Ipswich Town,eng Premier League,32,1192,13.2,12,20,3,0,4,4,0,0,0,0,5,4,1,0,0,0,0,FWMF,e16932d8
+311,Mamadou Sylla,5,1594,2024-2025,30,sn SEN,Valladolid,es La Liga,29,1594,17.7,17,12,6,5,1,6,1,4,4,0,5,2,0,1,0,2,0,FWMF,e5ec95f8
+312,Fábio Silva,5,1879,2024-2025,22,pt POR,Las Palmas,es La Liga,24,1879,20.9,22,2,0,10,3,13,8,2,3,1,5,3,0,1,1,0,0,FW,e7aa9d7c
+313,Alexander Sørloth,5,1578,2024-2025,28,no NOR,Atlético Madrid,es La Liga,35,1578,17.5,15,20,2,20,2,22,19,1,1,0,5,2,0,2,1,0,0,FW,e92cd3f7
+314,Che Adams,5,2662,2024-2025,28,sct SCO,Torino,it Serie A,36,2662,29.6,30,6,1,9,3,12,9,0,1,1,5,4,0,0,1,0,0,FW,f2bf1b0f
+315,Emmanuel Gyasi,5,3225,2024-2025,30,gh GHA,Empoli,it Serie A,37,3225,35.8,37,0,0,2,1,3,2,0,0,0,5,4,1,0,0,0,0,DFFW,f9758dae
+316,Jesus Rodríguez,5,1126,2024-2025,18,es ESP,Betis,es La Liga,21,1126,12.5,15,6,3,2,0,2,2,0,0,0,5,3,0,0,1,1,0,FW,f9f74e43
+317,Mama Samba Baldé,5,1193,2024-2025,28,gw GNB,2 Teams,fr Ligue 1,29,1193,13.3,12,17,0,2,3,5,2,0,0,0,5,4,0,0,0,1,0,FW,fb14aa28
+318,Tete Morente,4,2034,2024-2025,27,es ESP,Lecce,it Serie A,31,2034,22.6,23,8,5,3,2,5,3,0,0,0,4,2,1,1,0,0,0,FWMF,004d185e
+319,Anass Zaroury,4,1416,2024-2025,23,ma MAR,Lens,fr Ligue 1,28,1416,15.7,16,12,4,2,2,4,2,0,0,0,4,3,0,0,0,1,0,FWMF,07d65234
+320,Coba da Costa,4,1014,2024-2025,22,es ESP,Getafe,es La Liga,19,1014,11.3,12,7,11,1,1,2,1,0,0,0,4,3,0,0,1,0,0,MFFW,0b3358f0
+321,Gavi,4,1094,2024-2025,19,es ESP,Barcelona,es La Liga,26,1094,12.2,14,12,3,1,1,2,1,0,0,0,4,4,0,0,0,0,0,MFFW,19cae58d
+322,Nicolás González,4,1767,2024-2025,26,ar ARG,Juventus,it Serie A,26,1767,19.6,23,3,1,3,2,5,3,0,0,0,4,3,0,0,1,0,0,FWMF,2374aaca
+323,Leon Bailey,4,1150,2024-2025,26,jm JAM,Aston Villa,eng Premier League,24,1150,12.8,14,10,5,1,2,3,1,0,0,0,4,4,0,0,0,0,0,FWMF,3a233281
+324,Alejo Véliz,4,1134,2024-2025,20,ar ARG,Espanyol,es La Liga,27,1134,12.6,10,17,11,1,0,1,1,0,0,0,4,2,0,0,0,2,0,FW,3f7bafbe
+325,Joshua King,4,1688,2024-2025,32,no NOR,Toulouse,fr Ligue 1,28,1688,18.8,21,7,0,6,3,9,6,0,0,0,4,3,0,0,0,1,0,FWMF,43458538
+326,Ridle Baku,4,1176,2024-2025,26,de GER,Wolfsburg,de Bundesliga,15,1176,13.1,14,1,0,2,1,3,2,0,0,0,4,3,0,0,0,1,0,FWMF,442b56fa
+327,Oumar Diakité,4,1646,2024-2025,20,ci CIV,Reims,fr Ligue 1,26,1646,18.3,20,6,3,4,1,5,4,0,1,1,4,4,0,0,0,0,0,FW,44435c8f
+328,Nicolas Viola,4,1284,2024-2025,34,it ITA,Cagliari,it Serie A,27,1284,14.3,18,9,10,3,1,4,3,0,0,0,4,2,1,0,0,1,0,FWMF,45392b06
+329,Denzel Dumfries,4,1959,2024-2025,28,nl NED,Inter,it Serie A,29,1959,21.8,20,9,4,7,2,9,7,0,0,0,4,2,0,0,1,1,0,DFFW,481c9ece
+330,Darwin Núñez,4,1139,2024-2025,25,uy URU,Liverpool,eng Premier League,30,1139,12.7,8,22,5,5,2,7,5,0,0,0,4,3,0,0,0,1,0,FW,4d77b365
+331,Dominic Calvert-Lewin,4,1620,2024-2025,27,eng ENG,Everton,eng Premier League,26,1620,18.0,19,7,0,3,1,4,3,0,0,0,4,1,0,2,0,1,0,FW,59e6e5bf
+332,Adrian Beck,4,1609,2024-2025,27,de GER,Heidenheim,de Bundesliga,32,1609,17.9,18,14,1,4,1,5,4,0,0,0,4,2,1,1,0,0,0,MFFW,616c09f5
+333,Tim Skarke,4,1174,2024-2025,27,de GER,Union Berlin,de Bundesliga,33,1174,13.0,11,22,1,0,2,2,0,0,0,0,4,3,0,0,1,0,0,FWMF,65857fdf
+334,Adam Armstrong,4,1258,2024-2025,27,eng ENG,Southampton,eng Premier League,20,1258,14.0,15,5,4,2,2,4,2,0,1,1,4,1,0,0,3,0,0,FWMF,68c720b5
+335,Carles Aleñá,4,1555,2024-2025,26,es ESP,2 Teams,es La Liga,24,1555,17.3,18,6,8,0,2,2,0,0,0,0,4,2,1,0,0,1,0,MFFW,6c811eb7
+336,Pablo Durán,4,1405,2024-2025,23,es ESP,Celta Vigo,es La Liga,27,1405,15.6,15,12,10,4,4,8,4,0,0,0,4,3,0,0,1,0,0,FWMF,6db116ec
+337,Giacomo Raspadori,4,1112,2024-2025,24,it ITA,Napoli,it Serie A,26,1112,12.4,11,15,12,6,1,7,6,0,0,0,4,2,0,0,0,2,0,FWMF,6e058f06
+338,Lilian Raolisoa,4,1326,2024-2025,24,fr FRA,Angers,fr Ligue 1,29,1326,14.7,14,15,1,0,3,3,0,0,0,0,4,2,2,0,0,0,0,DFFW,79a793b7
+339,Morgan Guilavogui,4,1821,2024-2025,26,gn GUI,St. Pauli,de Bundesliga,25,1821,20.2,21,4,0,6,2,8,6,0,0,0,4,2,0,1,1,0,0,FWMF,79b51257
+340,Mathys Tel,4,1174,2024-2025,19,fr FRA,2 Teams,2 Comps,21,1174,13.0,13,8,10,2,2,4,1,1,1,0,4,3,0,0,0,1,0,FW,829aa60c
+341,Lorenzo Lucca,4,2366,2024-2025,23,it ITA,Udinese,it Serie A,33,2366,26.3,27,6,0,12,1,13,11,1,1,0,4,0,0,1,3,0,0,FW,83c06f3a
+342,Tomáš Suslov,4,2100,2024-2025,22,sk SVK,Hellas Verona,it Serie A,31,2100,23.3,27,4,0,0,1,1,0,0,0,0,4,1,1,0,0,1,1,MFFW,83fe71b8
+343,Danel Sinani,4,1263,2024-2025,27,lu LUX,St. Pauli,de Bundesliga,26,1263,14.0,14,12,7,2,2,4,2,0,0,0,4,3,0,0,1,0,0,FWMF,96ddfa79
+344,Julio Enciso,4,1174,2024-2025,20,py PAR,2 Teams,eng Premier League,25,1174,13.0,14,11,7,2,3,5,2,0,0,0,4,2,1,1,0,0,0,MFFW,9cfbad36
+345,Emanuel Emegha,4,2307,2024-2025,21,nl NED,Strasbourg,fr Ligue 1,27,2307,25.6,27,0,0,14,3,17,14,0,0,0,4,3,0,1,0,0,0,FW,a0c590b9
+346,Marcus Rashford,4,1434,2024-2025,26,eng ENG,2 Teams,eng Premier League,25,1434,15.9,16,9,1,6,3,9,5,1,1,0,4,3,0,0,1,0,0,FWMF,a1d5bd30
+347,Mika Biereth,4,1239,2024-2025,21,dk DEN,Monaco,fr Ligue 1,16,1239,13.8,16,0,1,13,2,15,12,1,2,1,4,3,0,0,0,1,0,FW,a1d95db3
+348,Joe Willock,4,1094,2024-2025,24,eng ENG,Newcastle Utd,eng Premier League,32,1094,12.2,11,21,1,0,2,2,0,0,0,0,4,4,0,0,0,0,0,MFFW,a3b03921
+349,Aitor Ruibal,4,1320,2024-2025,28,es ESP,Betis,es La Liga,29,1320,14.7,13,16,2,1,3,4,1,0,0,0,4,4,0,0,0,0,0,DFFW,a55d8df5
+350,Mitchel Bakker,4,1147,2024-2025,24,nl NED,Lille,fr Ligue 1,24,1147,12.7,14,10,3,3,2,5,3,0,0,0,4,2,1,0,0,1,0,FWDF,a8567629
+351,Jack Harrison,4,2091,2024-2025,27,eng ENG,Everton,eng Premier League,34,2091,23.2,24,10,4,1,0,1,1,0,0,0,4,1,0,0,1,2,0,FW,aa849a12
+352,Yassine Kechta,4,2117,2024-2025,22,ma MAR,Le Havre,fr Ligue 1,31,2117,23.5,25,6,2,2,0,2,2,0,0,0,4,1,0,1,0,2,0,MFFW,abefc3af
+353,Gabriel Strefezza,4,2640,2024-2025,27,br BRA,Como,it Serie A,37,2640,29.3,32,5,0,6,4,10,6,0,0,0,4,4,0,0,0,0,0,FWMF,ac4a4508
+354,Zito Luvumbo,4,1619,2024-2025,22,ao ANG,Cagliari,it Serie A,26,1619,18.0,19,7,2,2,2,4,2,0,0,0,4,4,0,0,0,0,0,FWMF,b09e0873
+355,Yunus Musah,4,1582,2024-2025,21,us USA,Milan,it Serie A,29,1582,17.6,19,10,5,0,2,2,0,0,0,0,4,4,0,0,0,0,0,MFFW,b51b1b9c
+356,Derrick Köhn,4,1356,2024-2025,25,de GER,Werder Bremen,de Bundesliga,27,1356,15.1,14,13,4,2,2,4,2,0,0,0,4,4,0,0,0,0,0,DFFW,b735b590
+357,Moritz Broschinski,4,1403,2024-2025,23,de GER,Bochum,de Bundesliga,33,1403,15.6,15,18,1,1,3,4,1,0,0,0,4,2,0,1,1,0,0,FWMF,bbd79358
+358,Tyler Dibling,4,1884,2024-2025,18,eng ENG,Southampton,eng Premier League,33,1884,20.9,20,13,1,2,0,2,2,0,0,0,4,2,0,1,1,0,0,FWMF,bdcc89ae
+359,Loïc Nego,4,2466,2024-2025,33,hu HUN,Le Havre,fr Ligue 1,31,2466,27.4,28,3,3,0,0,0,0,0,0,0,4,3,0,0,0,0,1,DFFW,c3b6fa1e
+360,Anuar,4,1732,2024-2025,29,ma MAR,Valladolid,es La Liga,26,1732,19.2,21,5,2,2,0,2,2,0,0,0,4,1,0,2,0,1,0,MFFW,c93231dc
+361,Vitor Roque,4,1245,2024-2025,19,br BRA,Betis,es La Liga,22,1245,13.8,14,8,0,4,0,4,4,0,0,0,4,0,0,0,1,3,0,FW,cb00f1e6
+362,Mikel Merino,4,1591,2024-2025,28,es ESP,Arsenal,eng Premier League,28,1591,17.7,17,11,0,7,2,9,7,0,0,0,4,3,0,0,1,0,0,MFFW,d080ed5e
+363,Amin Sarr,4,1927,2024-2025,23,se SWE,Hellas Verona,it Serie A,32,1927,21.4,25,7,4,4,1,5,4,0,0,0,4,2,0,0,2,0,0,FW,d5326924
+364,Johannes Eggestein,4,1872,2024-2025,26,de GER,St. Pauli,de Bundesliga,27,1872,20.8,22,5,5,3,4,7,2,1,2,1,4,4,0,0,0,0,0,FW,d571df78
+365,Kiké,4,2559,2024-2025,34,es ESP,Alavés,es La Liga,35,2559,28.4,29,6,2,13,0,13,10,3,3,0,4,3,0,0,0,1,0,FW,e897d8ba
+366,Alejandro Jiménez,4,1274,2024-2025,19,es ESP,Milan,it Serie A,22,1274,14.2,14,8,6,0,1,1,0,0,0,0,4,3,0,0,1,0,0,DFFW,faa13947
+367,Joshua Zirkzee,3,1411,2024-2025,23,nl NED,Manchester Utd,eng Premier League,32,1411,15.7,14,18,0,3,1,4,3,0,0,0,3,1,0,0,1,1,0,FWMF,028e70b9
+368,Lorenzo Colombo,3,2248,2024-2025,22,it ITA,Empoli,it Serie A,37,2248,25.0,26,11,0,6,2,8,5,1,1,0,3,1,0,1,1,0,0,FWMF,04df29a5
+369,Tanguy Coulibaly,3,1494,2024-2025,23,fr FRA,Montpellier,fr Ligue 1,25,1494,16.6,17,8,2,3,0,3,3,0,0,0,3,1,0,1,1,0,0,FWMF,05ba9d7c
+370,Daniel Mosquera,3,1385,2024-2025,24,co COL,Hellas Verona,it Serie A,35,1385,15.4,12,23,2,5,1,6,5,0,0,0,3,2,0,0,1,0,0,FW,091b9eb8
+371,Antonio Sanabria,3,1327,2024-2025,28,py PAR,Torino,it Serie A,26,1327,14.7,16,10,10,2,1,3,2,0,1,1,3,1,1,0,0,1,0,FW,0a447501
+372,Álvaro Morata,3,1106,2024-2025,31,es ESP,Milan,it Serie A,16,1106,12.3,13,3,0,5,0,5,5,0,0,0,3,2,0,0,1,0,0,FWMF,129af0db
+373,Cristhian Stuani,3,1084,2024-2025,37,uy URU,Girona,es La Liga,32,1084,12.0,6,26,6,11,2,13,8,3,3,0,3,2,0,0,1,0,0,FW,220c11f1
+374,Gerrit Holtmann,3,1146,2024-2025,29,ph PHI,Bochum,de Bundesliga,23,1146,12.7,12,11,2,2,1,3,2,0,0,0,3,1,1,0,0,0,1,DFFW,2979c05a
+375,Leonardo Spinazzola,3,1527,2024-2025,31,it ITA,Napoli,it Serie A,27,1527,17.0,17,10,6,1,1,2,1,0,0,0,3,3,0,0,0,0,0,DFFW,3626daea
+376,Unai Gómez,3,1296,2024-2025,21,es ESP,Athletic Club,es La Liga,32,1296,14.4,14,18,4,1,3,4,1,0,0,0,3,2,0,0,1,0,0,MFFW,37db6cae
+377,Pedro,3,1108,2024-2025,37,es ESP,Lazio,it Serie A,30,1108,12.3,6,24,6,10,1,11,8,2,2,0,3,3,0,0,0,0,0,FWMF,3ca7254a
+378,Frank Magri,3,1526,2024-2025,24,cm CMR,Toulouse,fr Ligue 1,31,1526,17.0,17,14,0,5,1,6,5,0,0,0,3,1,0,1,0,1,0,FWMF,42fdb11d
+379,Myron Boadu,3,1050,2024-2025,23,nl NED,Bochum,de Bundesliga,19,1050,11.7,11,8,3,9,1,10,8,1,1,0,3,1,0,2,0,0,0,FW,5b479568
+380,Patrik Schick,3,1695,2024-2025,28,cz CZE,Leverkusen,de Bundesliga,31,1695,18.8,19,12,2,21,0,21,20,1,1,0,3,1,0,0,1,1,0,FW,5d4f7d61
+381,Carlos Martín,3,1346,2024-2025,22,es ESP,Alavés,es La Liga,26,1346,15.0,16,10,10,2,2,4,2,0,0,0,3,1,0,0,2,0,0,FWMF,64035864
+382,Umar Sadiq,3,1061,2024-2025,27,ng NGA,2 Teams,es La Liga,23,1061,11.8,11,12,13,5,0,5,5,0,0,0,3,0,0,1,1,0,1,FW,686cbe7d
+383,Vitinha,3,1341,2024-2025,24,pt POR,Genoa,it Serie A,25,1341,14.9,16,9,1,2,3,5,2,0,0,0,3,3,0,0,0,0,0,FWMF,74d4cec6
+384,Florian Sotoca,3,1807,2024-2025,33,fr FRA,Lens,fr Ligue 1,31,1807,20.1,22,9,0,1,1,2,1,0,0,0,3,3,0,0,0,0,0,FWMF,7a42d0df
+385,Arnaud Nordin,3,1172,2024-2025,26,fr FRA,Montpellier,fr Ligue 1,16,1172,13.0,14,2,0,4,1,5,3,1,2,1,3,3,0,0,0,0,0,FW,7b9a9e25
+386,Samuel Essende,3,1652,2024-2025,26,cd COD,Augsburg,de Bundesliga,30,1652,18.4,21,9,1,7,2,9,7,0,0,0,3,2,0,1,0,0,0,FW,821550ce
+387,Junior Adamu,3,1558,2024-2025,23,at AUT,Freiburg,de Bundesliga,25,1558,17.3,19,6,5,2,2,4,2,0,0,0,3,2,0,0,1,0,0,FW,82e12fe7
+388,Philipp Hofmann,3,2291,2024-2025,31,de GER,Bochum,de Bundesliga,32,2291,25.5,27,5,0,3,3,6,3,0,0,0,3,2,0,0,1,0,0,FW,877bc844
+389,Robert Lewandowski,3,2684,2024-2025,35,pl POL,Barcelona,es La Liga,34,2684,29.8,32,2,2,27,2,29,24,3,4,1,3,2,0,0,1,0,0,FW,8d78e732
+390,John Yeboah,3,1233,2024-2025,24,ec ECU,Venezia,it Serie A,33,1233,13.7,11,22,0,1,1,2,1,0,0,0,3,2,0,0,0,1,0,FWMF,8dfdc6c3
+391,Timothy Weah,3,1648,2024-2025,24,us USA,Juventus,it Serie A,30,1648,18.3,18,12,2,5,2,7,5,0,0,0,3,2,0,0,1,0,0,DFFW,8eec784d
+392,Christopher Operi,3,1169,2024-2025,27,ci CIV,Le Havre,fr Ligue 1,13,1169,13.0,13,0,0,0,2,2,0,0,0,0,3,1,1,0,1,0,0,DFFW,914bb955
+393,Mario Götze,3,1555,2024-2025,32,de GER,Eint Frankfurt,de Bundesliga,24,1555,17.3,18,6,4,3,2,5,3,0,0,0,3,3,0,0,0,0,0,MFFW,9efa1d25
+394,Teun Koopmeiners,3,2000,2024-2025,26,nl NED,Juventus,it Serie A,28,2000,22.2,23,5,1,3,3,6,3,0,0,0,3,2,1,0,0,0,0,MFFW,a26fb8aa
+395,Eddie Nketiah,3,1041,2024-2025,25,eng ENG,2 Teams,eng Premier League,29,1041,11.6,9,20,4,3,1,4,3,0,0,0,3,2,0,0,0,1,0,FW,a53649b7
+396,Kamaldeen Sulemana,3,1414,2024-2025,22,gh GHA,Southampton,eng Premier League,26,1414,15.7,17,9,2,1,1,2,1,0,0,0,3,1,0,1,1,0,0,FWMF,a62f8bf1
+397,Victor Boniface,3,1019,2024-2025,23,ng NGA,Leverkusen,de Bundesliga,19,1019,11.3,12,7,5,8,1,9,8,0,1,1,3,1,0,2,0,0,0,FW,b146275b
+398,Matteo Cancellieri,3,1437,2024-2025,22,it ITA,Parma,it Serie A,27,1437,16.0,19,8,2,3,0,3,3,0,0,0,3,1,0,2,0,0,0,FWMF,b6a1cdf9
+399,Harry Wilson,3,1173,2024-2025,27,wls WAL,Fulham,eng Premier League,25,1173,13.0,12,13,3,6,1,7,6,0,0,0,3,2,0,0,0,1,0,FWMF,c6dc9ecd
+400,Roberto Férnandez,3,1510,2024-2025,22,es ESP,Espanyol,es La Liga,19,1510,16.8,18,1,0,6,0,6,6,0,0,0,3,0,0,0,0,2,1,FW,c981fc98
+401,Peque,3,1146,2024-2025,21,es ESP,Sevilla,es La Liga,26,1146,12.7,14,12,11,1,1,2,1,0,0,0,3,3,0,0,0,0,0,MFFW,cb971b4f
+402,Elif Elmas,3,1027,2024-2025,24,mk MKD,Torino,it Serie A,13,1027,11.4,12,1,1,4,0,4,4,0,0,0,3,1,0,1,1,0,0,FWMF,cf007308
+403,Cyle Larin,3,1783,2024-2025,29,ca CAN,Mallorca,es La Liga,32,1783,19.8,21,11,4,7,2,9,6,1,1,0,3,1,0,0,1,1,0,FW,e7af9060
+404,Joel Pohjanpalo,3,1616,2024-2025,29,fi FIN,Venezia,it Serie A,20,1616,18.0,19,1,0,6,0,6,3,3,4,1,3,1,0,0,1,1,0,FW,ea003d07
+405,Dany Mota,3,2118,2024-2025,26,pt POR,Monza,it Serie A,31,2118,23.5,24,7,0,5,2,7,5,0,0,0,3,3,0,0,0,0,0,FWMF,efc9e31f
+406,Abdallah Sima,3,1250,2024-2025,23,sn SEN,Brest,fr Ligue 1,27,1250,13.9,14,13,1,7,2,9,7,0,0,0,3,2,0,0,0,1,0,FWMF,fdbde523
+407,Jeremie Boga,3,1063,2024-2025,27,ci CIV,Nice,fr Ligue 1,21,1063,11.8,12,9,3,1,2,3,1,0,0,0,3,2,0,0,1,0,0,MFFW,fe012aca
+408,Kai Havertz,3,1878,2024-2025,25,de GER,Arsenal,eng Premier League,23,1878,20.9,21,2,1,9,3,12,9,0,0,0,3,2,0,0,1,0,0,FWMF,fed7cb61
+409,Casper Tengstedt,3,1535,2024-2025,24,dk DEN,Hellas Verona,it Serie A,25,1535,17.1,20,5,4,6,1,7,5,1,1,0,3,2,0,0,1,0,0,FW,ff2fb007
+410,Pontus Almqvist,2,1120,2024-2025,25,se SWE,Parma,it Serie A,29,1120,12.4,10,19,7,1,1,2,1,0,0,0,2,2,0,0,0,0,0,FWMF,0917188a
+411,Takuma Asano,2,1067,2024-2025,29,jp JPN,Mallorca,es La Liga,21,1067,11.9,13,8,2,2,1,3,2,0,0,0,2,2,0,0,0,0,0,FWMF,13ddc856
+412,Ernest Nuamah,2,1062,2024-2025,20,gh GHA,Lyon,fr Ligue 1,23,1062,11.8,13,10,1,3,1,4,3,0,0,0,2,2,0,0,0,0,0,FWMF,234a703c
+413,Wahbi Khazri,2,1127,2024-2025,33,tn TUN,Montpellier,fr Ligue 1,30,1127,12.5,10,20,2,1,1,2,1,0,0,0,2,1,0,1,0,0,0,FWMF,2677a1de
+414,Milan Đurić,2,1545,2024-2025,34,ba BIH,2 Teams,it Serie A,27,1545,17.2,16,11,3,5,1,6,5,0,0,0,2,1,0,0,1,0,0,FW,405f6586
+415,Dani de Wit,2,1158,2024-2025,26,nl NED,Bochum,de Bundesliga,28,1158,12.9,11,17,5,2,1,3,2,0,0,0,2,0,0,0,1,1,0,MFFW,48a2b92a
+416,Angelo Fulgini,2,1055,2024-2025,27,fr FRA,Lens,fr Ligue 1,23,1055,11.7,11,12,6,1,1,2,1,0,0,0,2,2,0,0,0,0,0,MFFW,4b96c347
+417,Mostafa Mohamed,2,1261,2024-2025,26,eg EGY,Nantes,fr Ligue 1,30,1261,14.0,11,19,0,5,0,5,5,0,0,0,2,0,0,1,0,1,0,FW,595e6f3e
+418,Alex Sola,2,1041,2024-2025,25,es ESP,Getafe,es La Liga,19,1041,11.6,13,6,16,0,1,1,0,0,0,0,2,2,0,0,0,0,0,MFFW,5fa714d5
+419,Pep Chavarría,2,2589,2024-2025,26,es ESP,Rayo Vallecano,es La Liga,34,2589,28.8,28,6,2,0,1,1,0,0,0,0,2,2,0,0,0,0,0,DFFW,63c5e56b
+420,Borja Mayoral,2,1117,2024-2025,27,es ESP,Getafe,es La Liga,24,1117,12.4,7,17,1,5,1,6,4,1,1,0,2,1,0,0,1,0,0,FW,64e8ed6d
+421,Antoine Hainaut,2,1211,2024-2025,22,fr FRA,Parma,it Serie A,25,1211,13.5,10,15,12,2,0,2,2,0,0,0,2,2,0,0,0,0,0,DFFW,6503f220
+422,Anastasios Douvikas,2,1289,2024-2025,24,gr GRE,2 Teams,2 Comps,33,1289,14.3,12,21,3,5,3,8,5,0,0,0,2,2,0,0,0,0,0,FW,853ca71c
+423,Yann Karamoh,2,1056,2024-2025,26,fr FRA,Torino,it Serie A,29,1056,11.7,10,19,7,0,1,1,0,0,0,0,2,1,0,0,1,0,0,MFFW,8b66d9cc
+424,Keinan Davis,2,1072,2024-2025,26,eng ENG,Udinese,it Serie A,23,1072,11.9,10,13,2,2,1,3,2,0,0,0,2,0,0,1,1,0,0,FW,9deaf2c8
+425,Roberto Navarro,2,1293,2024-2025,22,es ESP,Mallorca,es La Liga,23,1293,14.4,15,8,2,1,0,1,1,0,0,0,2,2,0,0,0,0,0,MFFW,c997b942
+426,Morten Thorsby,2,1911,2024-2025,28,no NOR,Genoa,it Serie A,30,1911,21.2,22,8,2,0,1,1,0,0,0,0,2,2,0,0,0,0,0,MFFW,d1b49282
+427,Arthur Atta,2,1259,2024-2025,21,fr FRA,Udinese,it Serie A,27,1259,14.0,12,15,3,0,1,1,0,0,0,0,2,0,0,0,2,0,0,MFFW,d3ddf88b
+428,Jordan Ayew,2,1674,2024-2025,32,gh GHA,2 Teams,eng Premier League,31,1674,18.6,19,12,6,5,0,5,4,1,1,0,2,1,0,0,1,0,0,FWMF,da052c14
+429,Adri Embarba,2,1624,2024-2025,32,es ESP,Rayo Vallecano,es La Liga,35,1624,18.0,18,17,3,1,1,2,1,0,0,0,2,2,0,0,0,0,0,FWMF,db8f0eba
+430,Santiago Pierotti,2,1952,2024-2025,23,ar ARG,Lecce,it Serie A,36,1952,21.7,22,14,1,4,2,6,4,0,0,0,2,2,0,0,0,0,0,FW,ec315772
+431,Marvin,2,1042,2024-2025,24,es ESP,Las Palmas,es La Liga,23,1042,11.6,9,14,1,0,0,0,0,0,0,0,2,2,0,0,0,0,0,DFFW,efaefda0
+432,Ramón Terrats,2,1361,2024-2025,23,es ESP,2 Teams,es La Liga,26,1361,15.1,16,10,5,4,1,5,4,0,0,0,2,2,0,0,0,0,0,MFFW,f36016a5
+433,Carlos Soler,2,1419,2024-2025,27,es ESP,West Ham,eng Premier League,31,1419,15.8,14,17,2,1,1,2,1,0,0,0,2,2,0,0,0,0,0,MFFW,fed17f5a
+434,Marshall Munetsi,1,1080,2024-2025,28,zw ZIM,Wolves,eng Premier League,14,1080,12.0,12,2,0,2,1,3,2,0,0,0,1,1,0,0,0,0,0,MFFW,2acf0cd7
+435,Aleksandr Golovin,1,1159,2024-2025,28,ru RUS,Monaco,fr Ligue 1,19,1159,12.9,13,6,2,3,0,3,3,0,0,0,1,1,0,0,0,0,0,MFFW,3708e9fa
+436,Jesper Lindstrøm,1,1251,2024-2025,24,dk DEN,Everton,eng Premier League,25,1251,13.9,15,10,3,0,1,1,0,0,0,0,1,1,0,0,0,0,0,FW,37dc1a48
+437,Alessandro Zanoli,1,1727,2024-2025,23,it ITA,Genoa,it Serie A,31,1727,19.2,19,12,4,1,0,1,1,0,0,0,1,1,0,0,0,0,0,FWDF,3b12b11f
+438,Rasmus Højlund,1,2020,2024-2025,21,dk DEN,Manchester Utd,eng Premier League,32,2020,22.4,23,9,2,4,0,4,4,0,0,0,1,0,0,0,0,1,0,FW,491a433d
+439,André Ayew,1,1463,2024-2025,34,gh GHA,Le Havre,fr Ligue 1,27,1463,16.3,15,12,0,4,1,5,4,0,0,0,1,1,0,0,0,0,0,FW,5dbefa9d
+440,Gorka Guruzeta,1,1856,2024-2025,27,es ESP,Athletic Club,es La Liga,36,1856,20.6,21,15,1,7,2,9,7,0,0,0,1,1,0,0,0,0,0,FW,6b5ea2f4
+441,Abel Ruiz,1,1362,2024-2025,24,es ESP,Girona,es La Liga,23,1362,15.1,17,6,4,4,0,4,3,1,2,1,1,0,0,0,1,0,0,FW,6cbf8d0d
+442,Bertuğ Yıldırım,1,1093,2024-2025,22,tr TUR,Getafe,es La Liga,22,1093,12.1,14,8,12,1,0,1,1,0,0,0,1,0,0,0,0,1,0,FW,7410d325
+443,Adrià Altimira,1,1638,2024-2025,23,es ESP,Leganés,es La Liga,22,1638,18.2,19,3,14,0,0,0,0,0,0,0,1,1,0,0,0,0,0,DFFW,757a3431
+444,Esteban Lepaul,1,1638,2024-2025,24,fr FRA,Angers,fr Ligue 1,28,1638,18.2,18,10,4,9,0,9,9,0,0,0,1,1,0,0,0,0,0,FW,85ce1949
+445,Sheraldo Becker,1,1003,2024-2025,29,sr SUR,Real Sociedad,es La Liga,22,1003,11.1,11,11,4,2,1,3,2,0,0,0,1,1,0,0,0,0,0,FWMF,8eb55dbb
+446,Carles Pérez,1,1440,2024-2025,26,es ESP,Getafe,es La Liga,27,1440,16.0,15,12,11,3,0,3,3,0,0,0,1,0,0,0,0,0,1,MFFW,a8f21b9f
+447,Marcos André,1,1200,2024-2025,27,br BRA,Valladolid,es La Liga,22,1200,13.3,14,8,13,1,2,3,1,0,0,0,1,1,0,0,0,0,0,FW,ae86d473
+448,Antoniu,1,1033,2024-2025,21,es ESP,Espanyol,es La Liga,26,1033,11.5,13,13,9,0,1,1,0,0,0,0,1,1,0,0,0,0,0,FWMF,af784a9e
+449,Diego,1,1205,2024-2025,24,es ESP,Leganés,es La Liga,28,1205,13.4,13,15,6,3,0,3,3,0,0,0,1,0,0,0,0,1,0,FW,b85a5126
+450,Paul Onuachu,1,1056,2024-2025,30,ng NGA,Southampton,eng Premier League,25,1056,11.7,11,14,3,4,1,5,4,0,0,0,1,1,0,0,0,0,0,FW,c06d1086
+451,Noah Weißhaupt,1,1252,2024-2025,22,de GER,2 Teams,de Bundesliga,22,1252,13.9,13,9,8,1,0,1,1,0,0,0,1,1,0,0,0,0,0,FWMF,dd676a97
+452,Beto,1,1543,2024-2025,26,gw GNB,Everton,eng Premier League,30,1543,17.1,15,15,8,8,0,8,8,0,0,0,1,1,0,0,0,0,0,FW,ed5c0319
+453,Toni Martínez,1,1019,2024-2025,27,es ESP,Alavés,es La Liga,28,1019,11.3,9,19,8,4,0,4,4,0,0,0,1,0,0,0,1,0,0,FW,f3945e07
+454,Khalil Fayad,1,1034,2024-2025,20,fr FRA,Montpellier,fr Ligue 1,20,1034,11.5,10,10,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,MFFW,faf00ab8
+455,Cameron Archer,0,1454,2024-2025,23,eng ENG,Southampton,eng Premier League,35,1454,16.2,13,22,2,2,0,2,2,0,1,1,0,0,0,0,0,0,0,FW,05e8ca6d
+456,Nicolás Domínguez,0,1981,2024-2025,26,ar ARG,Nott'ham Forest,eng Premier League,34,1981,22.0,23,11,3,0,1,1,0,0,0,0,0,0,0,0,0,0,0,MFFW,20b3a502
+457,Juanmi Latasa,0,1404,2024-2025,23,es ESP,Valladolid,es La Liga,28,1404,15.6,14,14,3,3,0,3,3,0,0,0,0,0,0,0,0,0,0,FW,2bea832e
+458,Sammie Szmodics,0,1005,2024-2025,28,ie IRL,Ipswich Town,eng Premier League,20,1005,11.2,13,7,2,4,0,4,4,0,0,0,0,0,0,0,0,0,0,FWMF,39944392
+459,Christian Kouamé,0,1135,2024-2025,26,ci CIV,2 Teams,it Serie A,26,1135,12.6,10,16,3,1,1,2,1,0,0,0,0,0,0,0,0,0,0,FWMF,58e933d2
+460,Randy Nteka,0,1144,2024-2025,26,ao ANG,Rayo Vallecano,es La Liga,24,1144,12.7,16,8,9,3,0,3,3,0,0,0,0,0,0,0,0,0,0,FW,a6103274
+461,Jordan Pefok,0,1299,2024-2025,28,us USA,2 Teams,2 Comps,25,1299,14.4,16,9,2,1,1,2,1,0,0,0,0,0,0,0,0,0,0,FW,b684a484
+462,Adama Boiro,0,1109,2024-2025,22,es ESP,Athletic Club,es La Liga,18,1109,12.3,13,5,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,DFFW,e7992f7b
+463,Arnaut Danjuma,0,1547,2024-2025,27,nl NED,2 Teams,es La Liga,28,1547,17.2,18,10,5,4,0,4,4,0,0,0,0,0,0,0,0,0,0,FW,f08490a6
