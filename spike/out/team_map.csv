@@ -1,0 +1,169 @@
+league,understat_team,club_id,club_name,score,source
+ENG-Premier League,Arsenal,11,Arsenal FC,100.0,auto
+ENG-Premier League,Aston Villa,405,Aston Villa,100.0,auto
+ENG-Premier League,Bournemouth,989,AFC Bournemouth,100.0,auto
+ENG-Premier League,Brentford,1148,Brentford FC,100.0,auto
+ENG-Premier League,Brighton,1237,Brighton & Hove Albion,100.0,auto
+ENG-Premier League,Burnley,1132,Burnley FC,100.0,auto
+ENG-Premier League,Cardiff,603,Cardiff City,100.0,auto
+ENG-Premier League,Chelsea,631,Chelsea FC,100.0,auto
+ENG-Premier League,Crystal Palace,873,Crystal Palace,100.0,auto
+ENG-Premier League,Everton,29,Everton FC,100.0,auto
+ENG-Premier League,Fulham,931,Fulham FC,100.0,auto
+ENG-Premier League,Huddersfield,1110,Huddersfield Town,100.0,auto
+ENG-Premier League,Hull,3008,Hull City,100.0,auto
+ENG-Premier League,Ipswich,677,Ipswich Town,100.0,auto
+ENG-Premier League,Leeds,399,Leeds United,100.0,auto
+ENG-Premier League,Leicester,1003,Leicester City,100.0,auto
+ENG-Premier League,Liverpool,31,Liverpool FC,100.0,auto
+ENG-Premier League,Luton,1031,Luton Town,100.0,auto
+ENG-Premier League,Manchester City,281,Manchester City,100.0,auto
+ENG-Premier League,Manchester United,985,Manchester United,100.0,auto
+ENG-Premier League,Middlesbrough,641,Middlesbrough FC,100.0,auto
+ENG-Premier League,Newcastle United,762,Newcastle United,100.0,auto
+ENG-Premier League,Norwich,1123,Norwich City,100.0,auto
+ENG-Premier League,Nottingham Forest,703,Nottingham Forest,100.0,auto
+ENG-Premier League,Queens Park Rangers,1039,Queens Park Rangers,100.0,auto
+ENG-Premier League,Sheffield United,350,Sheffield United,100.0,auto
+ENG-Premier League,Southampton,180,Southampton FC,100.0,auto
+ENG-Premier League,Stoke,512,Stoke City,100.0,auto
+ENG-Premier League,Sunderland,289,Sunderland AFC,100.0,auto
+ENG-Premier League,Swansea,2288,Swansea City,100.0,auto
+ENG-Premier League,Tottenham,148,Tottenham Hotspur,100.0,auto
+ENG-Premier League,Watford,1010,Watford FC,100.0,auto
+ENG-Premier League,West Bromwich Albion,984,West Bromwich Albion,100.0,auto
+ENG-Premier League,West Ham,379,West Ham United,100.0,auto
+ENG-Premier League,Wolverhampton Wanderers,543,Wolverhampton Wanderers,100.0,auto
+ESP-La Liga,Alaves,1108,Deportivo Alavés,100.0,auto
+ESP-La Liga,Almeria,3302,UD Almería,100.0,auto
+ESP-La Liga,Athletic Club,621,Athletic Bilbao,100.0,override
+ESP-La Liga,Atletico Madrid,13,Atlético de Madrid,100.0,auto
+ESP-La Liga,Barcelona,131,FC Barcelona,100.0,auto
+ESP-La Liga,Cadiz,2687,Cádiz CF,100.0,auto
+ESP-La Liga,Celta Vigo,940,Celta de Vigo,100.0,auto
+ESP-La Liga,Cordoba,993,Córdoba CF,100.0,auto
+ESP-La Liga,Deportivo La Coruna,897,Deportivo de La Coruña,100.0,auto
+ESP-La Liga,Eibar,1533,SD Eibar,100.0,auto
+ESP-La Liga,Elche,1531,Elche CF,100.0,auto
+ESP-La Liga,Espanyol,714,RCD Espanyol Barcelona,100.0,auto
+ESP-La Liga,Getafe,3709,Getafe CF,100.0,auto
+ESP-La Liga,Girona,12321,Girona FC,100.0,auto
+ESP-La Liga,Granada,16795,Granada CF,100.0,auto
+ESP-La Liga,Las Palmas,472,UD Las Palmas,100.0,auto
+ESP-La Liga,Leganes,1244,CD Leganés,100.0,auto
+ESP-La Liga,Levante,3368,Levante UD,100.0,auto
+ESP-La Liga,Malaga,1084,Málaga CF,100.0,auto
+ESP-La Liga,Mallorca,237,RCD Mallorca,100.0,auto
+ESP-La Liga,Osasuna,331,CA Osasuna,100.0,auto
+ESP-La Liga,Rayo Vallecano,367,Rayo Vallecano,100.0,auto
+ESP-La Liga,Real Betis,150,Real Betis Balompié,100.0,auto
+ESP-La Liga,Real Madrid,418,Real Madrid,100.0,auto
+ESP-La Liga,Real Oviedo,2497,Real Oviedo,100.0,auto
+ESP-La Liga,Real Sociedad,681,Real Sociedad,100.0,auto
+ESP-La Liga,Real Valladolid,366,Real Valladolid CF,100.0,auto
+ESP-La Liga,SD Huesca,5358,SD Huesca,100.0,auto
+ESP-La Liga,Sevilla,368,Sevilla FC,100.0,auto
+ESP-La Liga,Sporting Gijon,2448,Sporting Gijón,100.0,auto
+ESP-La Liga,Valencia,1049,Valencia CF,100.0,auto
+ESP-La Liga,Villarreal,1050,Villarreal CF,100.0,auto
+ITA-Serie A,AC Milan,5,AC Milan,100.0,auto
+ITA-Serie A,Atalanta,800,Atalanta BC,100.0,auto
+ITA-Serie A,Benevento,4171,Benevento Calcio,100.0,auto
+ITA-Serie A,Bologna,1025,Bologna Football Club 1909,100.0,auto
+ITA-Serie A,Brescia,19,Brescia Calcio,100.0,auto
+ITA-Serie A,Cagliari,1390,Cagliari Calcio,100.0,auto
+ITA-Serie A,Carpi,4102,AC Carpi,100.0,auto
+ITA-Serie A,Cesena,1429,Cesena FC,100.0,auto
+ITA-Serie A,Chievo,862,Chievo Verona,100.0,auto
+ITA-Serie A,Como,1047,Como 1907,100.0,auto
+ITA-Serie A,Cremonese,2239,US Cremonese,100.0,auto
+ITA-Serie A,Crotone,4083,FC Crotone,100.0,auto
+ITA-Serie A,Empoli,749,FC Empoli,100.0,auto
+ITA-Serie A,Fiorentina,430,ACF Fiorentina,100.0,auto
+ITA-Serie A,Frosinone,8970,Frosinone Calcio,100.0,auto
+ITA-Serie A,Genoa,252,Genoa CFC,100.0,auto
+ITA-Serie A,Inter,46,Inter Milan,100.0,auto
+ITA-Serie A,Juventus,506,Juventus FC,100.0,auto
+ITA-Serie A,Lazio,398,Società Sportiva Lazio S.p.A.,100.0,auto
+ITA-Serie A,Lecce,1005,US Lecce,100.0,auto
+ITA-Serie A,Monza,2919,AC Monza,100.0,auto
+ITA-Serie A,Napoli,6195,SSC Napoli,100.0,auto
+ITA-Serie A,Palermo,458,Palermo FC,100.0,auto
+ITA-Serie A,Parma,130,Parma Calcio 1913,100.0,auto
+ITA-Serie A,Parma Calcio 1913,130,Parma Calcio 1913,100.0,auto
+ITA-Serie A,Pescara,2921,Delfino Pescara 1936,100.0,auto
+ITA-Serie A,Pisa,4172,Pisa Sporting Club,100.0,auto
+ITA-Serie A,Roma,12,Associazione Sportiva Roma,100.0,auto
+ITA-Serie A,SPAL 2013,2722,SPAL,100.0,auto
+ITA-Serie A,Salernitana,380,US Salernitana 1919,100.0,auto
+ITA-Serie A,Sampdoria,1038,UC Sampdoria,100.0,auto
+ITA-Serie A,Sassuolo,6574,US Sassuolo,100.0,auto
+ITA-Serie A,Spezia,3522,Spezia Calcio,100.0,auto
+ITA-Serie A,Torino,416,Torino FC,100.0,auto
+ITA-Serie A,Udinese,410,Udinese Calcio,100.0,auto
+ITA-Serie A,Venezia,607,Venezia FC,100.0,auto
+ITA-Serie A,Verona,276,Hellas Verona,100.0,auto
+GER-Bundesliga,Arminia Bielefeld,10,Arminia Bielefeld,100.0,auto
+GER-Bundesliga,Augsburg,167,FC Augsburg,100.0,auto
+GER-Bundesliga,Bayer Leverkusen,15,Bayer 04 Leverkusen,100.0,auto
+GER-Bundesliga,Bayern Munich,27,Bayern Munich,100.0,auto
+GER-Bundesliga,Bochum,80,VfL Bochum,100.0,auto
+GER-Bundesliga,Borussia Dortmund,16,Borussia Dortmund,100.0,auto
+GER-Bundesliga,Borussia M.Gladbach,18,Borussia Mönchengladbach,100.0,override
+GER-Bundesliga,Darmstadt,105,SV Darmstadt 98,100.0,auto
+GER-Bundesliga,Eintracht Frankfurt,24,Eintracht Frankfurt,100.0,auto
+GER-Bundesliga,FC Cologne,3,1.FC Köln,100.0,override
+GER-Bundesliga,FC Heidenheim,2036,1. Fußballclub Heidenheim 1846,100.0,override
+GER-Bundesliga,Fortuna Duesseldorf,38,Fortuna Düsseldorf,97.29729729729729,auto
+GER-Bundesliga,Freiburg,60,SC Freiburg,100.0,auto
+GER-Bundesliga,Greuther Fuerth,65,SpVgg Greuther Fürth,100.0,override
+GER-Bundesliga,Hamburger SV,41,Hamburger SV,100.0,auto
+GER-Bundesliga,Hannover 96,42,Hannover 96,100.0,auto
+GER-Bundesliga,Hertha Berlin,44,Hertha BSC,100.0,override
+GER-Bundesliga,Hoffenheim,533,TSG 1899 Hoffenheim,100.0,auto
+GER-Bundesliga,Holstein Kiel,269,Holstein Kiel,100.0,auto
+GER-Bundesliga,Ingolstadt,4795,FC Ingolstadt 04,100.0,auto
+GER-Bundesliga,Mainz 05,39,1.FSV Mainz 05,100.0,auto
+GER-Bundesliga,Nuernberg,4,1.FC Nuremberg,100.0,override
+GER-Bundesliga,Paderborn,127,SC Paderborn 07,100.0,auto
+GER-Bundesliga,RasenBallsport Leipzig,23826,RB Leipzig,100.0,override
+GER-Bundesliga,Schalke 04,33,FC Schalke 04,100.0,auto
+GER-Bundesliga,St. Pauli,35,FC St. Pauli,100.0,auto
+GER-Bundesliga,Union Berlin,89,1.FC Union Berlin,100.0,auto
+GER-Bundesliga,VfB Stuttgart,79,VfB Stuttgart,100.0,auto
+GER-Bundesliga,Werder Bremen,86,SV Werder Bremen,100.0,auto
+GER-Bundesliga,Wolfsburg,82,VfL Wolfsburg,100.0,auto
+FRA-Ligue 1,Ajaccio,1147,AC Ajaccio,100.0,auto
+FRA-Ligue 1,Amiens,1416,Amiens SC,100.0,auto
+FRA-Ligue 1,Angers,1420,Angers SCO,100.0,auto
+FRA-Ligue 1,Auxerre,290,AJ Auxerre,100.0,auto
+FRA-Ligue 1,Bordeaux,40,FC Girondins Bordeaux,100.0,auto
+FRA-Ligue 1,Brest,3911,Stade Brestois 29,100.0,override
+FRA-Ligue 1,Caen,1162,SM Caen,100.0,auto
+FRA-Ligue 1,Clermont Foot,3524,Clermont Foot 63,100.0,auto
+FRA-Ligue 1,Dijon,2969,Dijon FCO,100.0,auto
+FRA-Ligue 1,Evian Thonon Gaillard,14171,Thonon Évian Grand Genève FC,100.0,override
+FRA-Ligue 1,GFC Ajaccio,3558,GFC Ajaccio,100.0,auto
+FRA-Ligue 1,Guingamp,855,EA Guingamp,100.0,auto
+FRA-Ligue 1,Le Havre,738,Le Havre AC,100.0,auto
+FRA-Ligue 1,Lens,826,RC Lens,100.0,auto
+FRA-Ligue 1,Lille,1082,LOSC Lille,100.0,auto
+FRA-Ligue 1,Lorient,1158,FC Lorient,100.0,auto
+FRA-Ligue 1,Lyon,1041,Olympique Lyon,100.0,auto
+FRA-Ligue 1,Marseille,244,Olympique Marseille,100.0,auto
+FRA-Ligue 1,Metz,347,FC Metz,100.0,auto
+FRA-Ligue 1,Monaco,162,AS Monaco,100.0,auto
+FRA-Ligue 1,Montpellier,969,Montpellier HSC,100.0,auto
+FRA-Ligue 1,Nancy,1159,AS Nancy-Lorraine,100.0,auto
+FRA-Ligue 1,Nantes,995,FC Nantes,100.0,auto
+FRA-Ligue 1,Nice,417,OGC Nice,100.0,auto
+FRA-Ligue 1,Nimes,1160,Nîmes Olympique,100.0,auto
+FRA-Ligue 1,Paris FC,10004,Paris FC,100.0,auto
+FRA-Ligue 1,Paris Saint Germain,583,Paris Saint-Germain,100.0,auto
+FRA-Ligue 1,Reims,1421,Stade Reims,100.0,auto
+FRA-Ligue 1,Rennes,273,Stade Rennais FC,100.0,override
+FRA-Ligue 1,SC Bastia,595,SC Bastia,100.0,auto
+FRA-Ligue 1,Saint-Etienne,618,AS Saint-Étienne,100.0,auto
+FRA-Ligue 1,Strasbourg,667,RC Strasbourg Alsace,100.0,auto
+FRA-Ligue 1,Toulouse,415,FC Toulouse,100.0,auto
+FRA-Ligue 1,Troyes,1095,ESTAC Troyes,100.0,auto
