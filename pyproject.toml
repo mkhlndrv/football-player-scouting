@@ -1,0 +1,36 @@
+[project]
+name = "scout"
+version = "0.0.1"
+description = "Moneyball replacement scouting for smaller Big-5 clubs"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.2",
+    "pyarrow>=16",
+    "duckdb>=1.0",
+    "soccerdata>=1.8",
+    "requests>=2.32",
+    "rapidfuzz>=3.9",
+    "unidecode>=1.3",
+    "lxml>=5.2",
+]
+
+[dependency-groups]
+dev = ["ruff>=0.5", "pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/scout"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["legacy", "docs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
