@@ -1,0 +1,74 @@
+{
+  "rows": 33061,
+  "players": 9391,
+  "clubs": 167,
+  "by_season": [
+    {
+      "season": 2014,
+      "rows": 2580,
+      "minutes": 3441435.0
+    },
+    {
+      "season": 2015,
+      "rows": 2770,
+      "minutes": 3603000.0
+    },
+    {
+      "season": 2016,
+      "rows": 2731,
+      "minutes": 3606129.0
+    },
+    {
+      "season": 2017,
+      "rows": 2690,
+      "minutes": 3606962.0
+    },
+    {
+      "season": 2018,
+      "rows": 2706,
+      "minutes": 3603082.0
+    },
+    {
+      "season": 2019,
+      "rows": 2727,
+      "minutes": 3399769.0
+    },
+    {
+      "season": 2020,
+      "rows": 2802,
+      "minutes": 3563477.0
+    },
+    {
+      "season": 2021,
+      "rows": 2632,
+      "minutes": 3562682.0
+    },
+    {
+      "season": 2022,
+      "rows": 2885,
+      "minutes": 3600361.0
+    },
+    {
+      "season": 2023,
+      "rows": 2852,
+      "minutes": 3461639.0
+    },
+    {
+      "season": 2024,
+      "rows": 2854,
+      "minutes": 3460199.0
+    },
+    {
+      "season": 2025,
+      "rows": 2832,
+      "minutes": 3458484.0
+    }
+  ],
+  "by_competition": {
+    "ES1": 6792,
+    "FR1": 6747,
+    "GB1": 6504,
+    "IT1": 7102,
+    "L1": 5916
+  }
+}
