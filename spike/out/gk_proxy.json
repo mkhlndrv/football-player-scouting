@@ -1,0 +1,986 @@
+{
+  "scope": "ENG-Premier League 2021-22 to 2023-24, on-target shots = Goal + Saved Shot",
+  "interpretation": "Understat xG is pre-shot, so on-target xG faced is far below goals conceded and prevented_per90 is negative for every keeper; only the within-season ranking is meaningful. Stability is judged on that ranking (year-to-year and split-half).",
+  "season_totals": [
+    {
+      "season": "2122",
+      "conceded": 1037,
+      "xg_faced": 596.9582949532196
+    },
+    {
+      "season": "2223",
+      "conceded": 1038,
+      "xg_faced": 622.985384807922
+    },
+    {
+      "season": "2324",
+      "conceded": 1196,
+      "xg_faced": 723.9649743256159
+    }
+  ],
+  "keeper_seasons_1500min": 64,
+  "year_to_year": [
+    {
+      "from": "2122",
+      "to": "2223",
+      "n": 14,
+      "pearson": 0.5197789493252383,
+      "spearman": 0.47252747252747257
+    },
+    {
+      "from": "2223",
+      "to": "2324",
+      "n": 9,
+      "pearson": 0.41916481794391897,
+      "spearman": 0.5
+    }
+  ],
+  "split_half_pearson": 0.29504465842350885,
+  "split_half_n": 66,
+  "season_table": [
+    {
+      "season": "2122",
+      "player": "Zack Steffen",
+      "minutes": 90,
+      "xg_faced": 0.33770371228456497,
+      "conceded": 0,
+      "prevented_per90": 0.33770371228456497
+    },
+    {
+      "season": "2122",
+      "player": "Danny Ward",
+      "minutes": 90,
+      "xg_faced": 1.3341835662722588,
+      "conceded": 1,
+      "prevented_per90": 0.33418356627225876
+    },
+    {
+      "season": "2122",
+      "player": "Alphonse Areola",
+      "minutes": 90,
+      "xg_faced": 1.086696594953537,
+      "conceded": 1,
+      "prevented_per90": 0.08669659495353699
+    },
+    {
+      "season": "2122",
+      "player": "Kepa",
+      "minutes": 360,
+      "xg_faced": 1.3848134241998196,
+      "conceded": 2,
+      "prevented_per90": -0.1537966439500451
+    },
+    {
+      "season": "2122",
+      "player": "Alisson",
+      "minutes": 3240,
+      "xg_faced": 15.94306192593649,
+      "conceded": 23,
+      "prevented_per90": -0.19602605761287528
+    },
+    {
+      "season": "2122",
+      "player": "José Sá",
+      "minutes": 3291,
+      "xg_faced": 30.913147401995957,
+      "conceded": 41,
+      "prevented_per90": -0.27584829347321904
+    },
+    {
+      "season": "2122",
+      "player": "Ederson",
+      "minutes": 3330,
+      "xg_faced": 13.593660935759544,
+      "conceded": 26,
+      "prevented_per90": -0.33530646119568797
+    },
+    {
+      "season": "2122",
+      "player": "Martin Dubravka",
+      "minutes": 2340,
+      "xg_faced": 24.114078018814325,
+      "conceded": 34,
+      "prevented_per90": -0.3802277685071413
+    },
+    {
+      "season": "2122",
+      "player": "Edouard Mendy",
+      "minutes": 3060,
+      "xg_faced": 17.025939288549125,
+      "conceded": 30,
+      "prevented_per90": -0.38159002092502575
+    },
+    {
+      "season": "2122",
+      "player": "John Ruddy",
+      "minutes": 90,
+      "xg_faced": 0.5440594106912613,
+      "conceded": 1,
+      "prevented_per90": -0.4559405893087387
+    },
+    {
+      "season": "2122",
+      "player": "Nick Pope",
+      "minutes": 3240,
+      "xg_faced": 29.403552900999784,
+      "conceded": 46,
+      "prevented_per90": -0.46101241941667265
+    },
+    {
+      "season": "2122",
+      "player": "Hugo Lloris",
+      "minutes": 3420,
+      "xg_faced": 20.784257182851434,
+      "conceded": 39,
+      "prevented_per90": -0.47936165308285705
+    },
+    {
+      "season": "2122",
+      "player": "Aaron Ramsdale",
+      "minutes": 3060,
+      "xg_faced": 21.184025085531175,
+      "conceded": 38,
+      "prevented_per90": -0.4945874974843772
+    },
+    {
+      "season": "2122",
+      "player": "Fraser Forster",
+      "minutes": 1710,
+      "xg_faced": 23.599270777776837,
+      "conceded": 33,
+      "prevented_per90": -0.4947752222222717
+    },
+    {
+      "season": "2122",
+      "player": "Robert Sánchez",
+      "minutes": 3330,
+      "xg_faced": 23.020239024423063,
+      "conceded": 42,
+      "prevented_per90": -0.5129665128534308
+    },
+    {
+      "season": "2122",
+      "player": "David de Gea",
+      "minutes": 3420,
+      "xg_faced": 33.38829790055752,
+      "conceded": 54,
+      "prevented_per90": -0.5424132131432232
+    },
+    {
+      "season": "2122",
+      "player": "Caoimhin Kelleher",
+      "minutes": 180,
+      "xg_faced": 0.8994408743456006,
+      "conceded": 2,
+      "prevented_per90": -0.5502795628271997
+    },
+    {
+      "season": "2122",
+      "player": "Emiliano Martinez",
+      "minutes": 3240,
+      "xg_faced": 25.61971305310726,
+      "conceded": 46,
+      "prevented_per90": -0.5661190818581316
+    },
+    {
+      "season": "2122",
+      "player": "David Raya",
+      "minutes": 2160,
+      "xg_faced": 13.386139890179038,
+      "conceded": 27,
+      "prevented_per90": -0.5672441712425401
+    },
+    {
+      "season": "2122",
+      "player": "Lukasz Fabianski",
+      "minutes": 3330,
+      "xg_faced": 26.83675838727504,
+      "conceded": 48,
+      "prevented_per90": -0.5719795030466206
+    },
+    {
+      "season": "2122",
+      "player": "Bernd Leno",
+      "minutes": 360,
+      "xg_faced": 6.706436090171337,
+      "conceded": 9,
+      "prevented_per90": -0.5733909774571657
+    },
+    {
+      "season": "2122",
+      "player": "Kasper Schmeichel",
+      "minutes": 3330,
+      "xg_faced": 35.51153046172112,
+      "conceded": 57,
+      "prevented_per90": -0.5807694469805103
+    },
+    {
+      "season": "2122",
+      "player": "Vicente Guaita",
+      "minutes": 2659,
+      "xg_faced": 15.75275534344837,
+      "conceded": 34,
+      "prevented_per90": -0.6176201651333759
+    },
+    {
+      "season": "2122",
+      "player": "Jack Butland",
+      "minutes": 720,
+      "xg_faced": 5.028592604212463,
+      "conceded": 10,
+      "prevented_per90": -0.6214259244734421
+    },
+    {
+      "season": "2122",
+      "player": "Jordan Pickford",
+      "minutes": 3150,
+      "xg_faced": 31.67868646606803,
+      "conceded": 54,
+      "prevented_per90": -0.6377518152551992
+    },
+    {
+      "season": "2122",
+      "player": "Alex McCarthy",
+      "minutes": 1530,
+      "xg_faced": 14.138154353015125,
+      "conceded": 27,
+      "prevented_per90": -0.7565791557049926
+    },
+    {
+      "season": "2122",
+      "player": "Álvaro Fernández",
+      "minutes": 1080,
+      "xg_faced": 12.418036872521043,
+      "conceded": 22,
+      "prevented_per90": -0.7984969272899132
+    },
+    {
+      "season": "2122",
+      "player": "Daniel Bachmann",
+      "minutes": 1080,
+      "xg_faced": 15.98697651643306,
+      "conceded": 26,
+      "prevented_per90": -0.8344186236305784
+    },
+    {
+      "season": "2122",
+      "player": "Tim Krul",
+      "minutes": 2610,
+      "xg_faced": 33.36922671366483,
+      "conceded": 60,
+      "prevented_per90": -0.9183025271150058
+    },
+    {
+      "season": "2122",
+      "player": "Ben Foster",
+      "minutes": 2340,
+      "xg_faced": 22.819143193773925,
+      "conceded": 48,
+      "prevented_per90": -0.9684944925471568
+    },
+    {
+      "season": "2122",
+      "player": "Illan Meslier",
+      "minutes": 3396,
+      "xg_faced": 41.024317857809365,
+      "conceded": 78,
+      "prevented_per90": -0.9799209048283738
+    },
+    {
+      "season": "2122",
+      "player": "Karl Darlow",
+      "minutes": 720,
+      "xg_faced": 5.5986704947426915,
+      "conceded": 14,
+      "prevented_per90": -1.0501661881571636
+    },
+    {
+      "season": "2122",
+      "player": "Angus Gunn",
+      "minutes": 810,
+      "xg_faced": 12.383906573057175,
+      "conceded": 22,
+      "prevented_per90": -1.0684548252158694
+    },
+    {
+      "season": "2122",
+      "player": "Freddie Woodman",
+      "minutes": 360,
+      "xg_faced": 7.694563699886203,
+      "conceded": 12,
+      "prevented_per90": -1.0763590750284493
+    },
+    {
+      "season": "2122",
+      "player": "Jason Steele",
+      "minutes": 90,
+      "xg_faced": 0.8609810099005699,
+      "conceded": 2,
+      "prevented_per90": -1.13901899009943
+    },
+    {
+      "season": "2122",
+      "player": "Willy Caballero",
+      "minutes": 180,
+      "xg_faced": 2.6827538050711155,
+      "conceded": 5,
+      "prevented_per90": -1.1586230974644423
+    },
+    {
+      "season": "2122",
+      "player": "Asmir Begovic",
+      "minutes": 270,
+      "xg_faced": 2.927173717878759,
+      "conceded": 7,
+      "prevented_per90": -1.3576087607070804
+    },
+    {
+      "season": "2122",
+      "player": "Robin Olsen",
+      "minutes": 90,
+      "xg_faced": 1.6136273741722107,
+      "conceded": 3,
+      "prevented_per90": -1.3863726258277893
+    },
+    {
+      "season": "2122",
+      "player": "Jonas Lössl",
+      "minutes": 180,
+      "xg_faced": 1.8343608900904655,
+      "conceded": 5,
+      "prevented_per90": -1.5828195549547674
+    },
+    {
+      "season": "2122",
+      "player": "Wayne Hennessey",
+      "minutes": 180,
+      "xg_faced": 1.6108642611652613,
+      "conceded": 5,
+      "prevented_per90": -1.6945678694173694
+    },
+    {
+      "season": "2122",
+      "player": "Jed Steer",
+      "minutes": 90,
+      "xg_faced": 0.9184972979128361,
+      "conceded": 3,
+      "prevented_per90": -2.081502702087164
+    },
+    {
+      "season": "2223",
+      "player": "Stefan Ortega Moreno",
+      "minutes": 270,
+      "xg_faced": 2.2964811995625496,
+      "conceded": 1,
+      "prevented_per90": 0.43216039985418325
+    },
+    {
+      "season": "2223",
+      "player": "Martin Dubravka",
+      "minutes": 90,
+      "xg_faced": 0.40755291655659676,
+      "conceded": 0,
+      "prevented_per90": 0.40755291655659676
+    },
+    {
+      "season": "2223",
+      "player": "Asmir Begovic",
+      "minutes": 90,
+      "xg_faced": 0.17526329681277275,
+      "conceded": 0,
+      "prevented_per90": 0.17526329681277275
+    },
+    {
+      "season": "2223",
+      "player": "Robin Olsen",
+      "minutes": 180,
+      "xg_faced": 2.7495984230190516,
+      "conceded": 3,
+      "prevented_per90": -0.12520078849047422
+    },
+    {
+      "season": "2223",
+      "player": "Bernd Leno",
+      "minutes": 3240,
+      "xg_faced": 42.66261662915349,
+      "conceded": 49,
+      "prevented_per90": -0.1760384269679586
+    },
+    {
+      "season": "2223",
+      "player": "Alisson",
+      "minutes": 3330,
+      "xg_faced": 34.39429550943896,
+      "conceded": 41,
+      "prevented_per90": -0.178532553798947
+    },
+    {
+      "season": "2223",
+      "player": "Marek Rodák",
+      "minutes": 180,
+      "xg_faced": 1.5806196555495262,
+      "conceded": 2,
+      "prevented_per90": -0.20969017222523692
+    },
+    {
+      "season": "2223",
+      "player": "Nick Pope",
+      "minutes": 3261,
+      "xg_faced": 21.063418086618185,
+      "conceded": 31,
+      "prevented_per90": -0.27423869126168765
+    },
+    {
+      "season": "2223",
+      "player": "Kepa",
+      "minutes": 2567,
+      "xg_faced": 22.357169241644442,
+      "conceded": 31,
+      "prevented_per90": -0.3030209459493573
+    },
+    {
+      "season": "2223",
+      "player": "Sam Johnstone",
+      "minutes": 810,
+      "xg_faced": 6.092887249775231,
+      "conceded": 9,
+      "prevented_per90": -0.32301252780275214
+    },
+    {
+      "season": "2223",
+      "player": "Alphonse Areola",
+      "minutes": 180,
+      "xg_faced": 4.348601022735238,
+      "conceded": 5,
+      "prevented_per90": -0.32569948863238096
+    },
+    {
+      "season": "2223",
+      "player": "Emiliano Martinez",
+      "minutes": 3143,
+      "xg_faced": 25.924939376302063,
+      "conceded": 39,
+      "prevented_per90": -0.3744051721707968
+    },
+    {
+      "season": "2223",
+      "player": "Aaron Ramsdale",
+      "minutes": 3420,
+      "xg_faced": 27.15419489517808,
+      "conceded": 42,
+      "prevented_per90": -0.39067908170584
+    },
+    {
+      "season": "2223",
+      "player": "Ederson",
+      "minutes": 3150,
+      "xg_faced": 17.030334484763443,
+      "conceded": 31,
+      "prevented_per90": -0.3991333004353302
+    },
+    {
+      "season": "2223",
+      "player": "Robert Sánchez",
+      "minutes": 2070,
+      "xg_faced": 17.43590186536312,
+      "conceded": 27,
+      "prevented_per90": -0.41583035367986426
+    },
+    {
+      "season": "2223",
+      "player": "David Raya",
+      "minutes": 3420,
+      "xg_faced": 26.55782173667103,
+      "conceded": 43,
+      "prevented_per90": -0.43268890166655183
+    },
+    {
+      "season": "2223",
+      "player": "David de Gea",
+      "minutes": 3420,
+      "xg_faced": 25.256590681150556,
+      "conceded": 42,
+      "prevented_per90": -0.44061603470656435
+    },
+    {
+      "season": "2223",
+      "player": "Daniel Bentley",
+      "minutes": 180,
+      "xg_faced": 2.1011506877839565,
+      "conceded": 3,
+      "prevented_per90": -0.44942465610802174
+    },
+    {
+      "season": "2223",
+      "player": "Vicente Guaita",
+      "minutes": 2430,
+      "xg_faced": 19.616599858738482,
+      "conceded": 32,
+      "prevented_per90": -0.45864444967635254
+    },
+    {
+      "season": "2223",
+      "player": "Neto",
+      "minutes": 2390,
+      "xg_faced": 25.840867512859404,
+      "conceded": 39,
+      "prevented_per90": -0.49553218570822327
+    },
+    {
+      "season": "2223",
+      "player": "Edouard Mendy",
+      "minutes": 810,
+      "xg_faced": 8.296171752735972,
+      "conceded": 13,
+      "prevented_per90": -0.5226475830293364
+    },
+    {
+      "season": "2223",
+      "player": "Jordan Pickford",
+      "minutes": 3330,
+      "xg_faced": 37.22243184316903,
+      "conceded": 57,
+      "prevented_per90": -0.5345288691035397
+    },
+    {
+      "season": "2223",
+      "player": "Jason Steele",
+      "minutes": 1350,
+      "xg_faced": 11.739143650978804,
+      "conceded": 20,
+      "prevented_per90": -0.5507237566014132
+    },
+    {
+      "season": "2223",
+      "player": "Lukasz Fabianski",
+      "minutes": 3115,
+      "xg_faced": 27.944715327583253,
+      "conceded": 49,
+      "prevented_per90": -0.6083388829911741
+    },
+    {
+      "season": "2223",
+      "player": "José Sá",
+      "minutes": 3240,
+      "xg_faced": 29.242823287844658,
+      "conceded": 54,
+      "prevented_per90": -0.6876993531154262
+    },
+    {
+      "season": "2223",
+      "player": "Keylor Navas",
+      "minutes": 1530,
+      "xg_faced": 18.86593529395759,
+      "conceded": 32,
+      "prevented_per90": -0.7725920415319064
+    },
+    {
+      "season": "2223",
+      "player": "Danny Ward",
+      "minutes": 2340,
+      "xg_faced": 20.535159420222044,
+      "conceded": 42,
+      "prevented_per90": -0.8255707915299213
+    },
+    {
+      "season": "2223",
+      "player": "Dean Henderson",
+      "minutes": 1620,
+      "xg_faced": 15.936453928705305,
+      "conceded": 31,
+      "prevented_per90": -0.836863670627483
+    },
+    {
+      "season": "2223",
+      "player": "Gavin Bazunu",
+      "minutes": 2880,
+      "xg_faced": 24.73692354094237,
+      "conceded": 52,
+      "prevented_per90": -0.8519711393455509
+    },
+    {
+      "season": "2223",
+      "player": "Hugo Lloris",
+      "minutes": 2208,
+      "xg_faced": 17.454916619695723,
+      "conceded": 39,
+      "prevented_per90": -0.8781963334363156
+    },
+    {
+      "season": "2223",
+      "player": "Illan Meslier",
+      "minutes": 3060,
+      "xg_faced": 34.08454048726708,
+      "conceded": 65,
+      "prevented_per90": -0.909278220962733
+    },
+    {
+      "season": "2223",
+      "player": "Fraser Forster",
+      "minutes": 1170,
+      "xg_faced": 11.097526379860938,
+      "conceded": 23,
+      "prevented_per90": -0.915574893856851
+    },
+    {
+      "season": "2223",
+      "player": "Daniel Iversen",
+      "minutes": 1080,
+      "xg_faced": 9.539296181872487,
+      "conceded": 21,
+      "prevented_per90": -0.9550586515106261
+    },
+    {
+      "season": "2223",
+      "player": "Wayne Hennessey",
+      "minutes": 270,
+      "xg_faced": 2.1210441812872887,
+      "conceded": 5,
+      "prevented_per90": -0.9596519395709038
+    },
+    {
+      "season": "2223",
+      "player": "Alex McCarthy",
+      "minutes": 540,
+      "xg_faced": 8.02746163494885,
+      "conceded": 16,
+      "prevented_per90": -1.3287563941751916
+    },
+    {
+      "season": "2223",
+      "player": "Joel Robles",
+      "minutes": 360,
+      "xg_faced": 5.601555213332176,
+      "conceded": 11,
+      "prevented_per90": -1.349611196666956
+    },
+    {
+      "season": "2223",
+      "player": "Mark Travers",
+      "minutes": 990,
+      "xg_faced": 13.185449845157564,
+      "conceded": 29,
+      "prevented_per90": -1.4376863777129487
+    },
+    {
+      "season": "2223",
+      "player": "Joseph Whitworth",
+      "minutes": 180,
+      "xg_faced": 1.2031490076333284,
+      "conceded": 5,
+      "prevented_per90": -1.8984254961833358
+    },
+    {
+      "season": "2223",
+      "player": "Caoimhin Kelleher",
+      "minutes": 90,
+      "xg_faced": 1.103782881051302,
+      "conceded": 4,
+      "prevented_per90": -2.896217118948698
+    },
+    {
+      "season": "2324",
+      "player": "Arijanet Muric",
+      "minutes": 900,
+      "xg_faced": 14.438123128376901,
+      "conceded": 15,
+      "prevented_per90": -0.05618768716230988
+    },
+    {
+      "season": "2324",
+      "player": "Caoimhin Kelleher",
+      "minutes": 900,
+      "xg_faced": 7.19576370716095,
+      "conceded": 10,
+      "prevented_per90": -0.280423629283905
+    },
+    {
+      "season": "2324",
+      "player": "Ederson",
+      "minutes": 2794,
+      "xg_faced": 19.0004543941468,
+      "conceded": 28,
+      "prevented_per90": -0.2898923065593372
+    },
+    {
+      "season": "2324",
+      "player": "Emiliano Martinez",
+      "minutes": 3022,
+      "xg_faced": 35.304332450032234,
+      "conceded": 46,
+      "prevented_per90": -0.3185341096946059
+    },
+    {
+      "season": "2324",
+      "player": "Alisson",
+      "minutes": 2520,
+      "xg_faced": 19.10156184900552,
+      "conceded": 29,
+      "prevented_per90": -0.35351564824980286
+    },
+    {
+      "season": "2324",
+      "player": "David Raya",
+      "minutes": 2880,
+      "xg_faced": 11.555419011972845,
+      "conceded": 23,
+      "prevented_per90": -0.3576431558758486
+    },
+    {
+      "season": "2324",
+      "player": "Jordan Pickford",
+      "minutes": 3420,
+      "xg_faced": 33.02783222962171,
+      "conceded": 48,
+      "prevented_per90": -0.39400441500995503
+    },
+    {
+      "season": "2324",
+      "player": "José Sá",
+      "minutes": 3041,
+      "xg_faced": 44.57043139776215,
+      "conceded": 58,
+      "prevented_per90": -0.39745517073377395
+    },
+    {
+      "season": "2324",
+      "player": "Mark Travers",
+      "minutes": 360,
+      "xg_faced": 3.4044687561690807,
+      "conceded": 5,
+      "prevented_per90": -0.3988828109577298
+    },
+    {
+      "season": "2324",
+      "player": "Stefan Ortega Moreno",
+      "minutes": 450,
+      "xg_faced": 2.995346436277032,
+      "conceded": 5,
+      "prevented_per90": -0.4009307127445936
+    },
+    {
+      "season": "2324",
+      "player": "Nick Pope",
+      "minutes": 1347,
+      "xg_faced": 8.862369218841195,
+      "conceded": 16,
+      "prevented_per90": -0.4769018339304324
+    },
+    {
+      "season": "2324",
+      "player": "André Onana",
+      "minutes": 3420,
+      "xg_faced": 38.408154333010316,
+      "conceded": 57,
+      "prevented_per90": -0.48925909649972854
+    },
+    {
+      "season": "2324",
+      "player": "Aaron Ramsdale",
+      "minutes": 540,
+      "xg_faced": 2.0626026168465614,
+      "conceded": 5,
+      "prevented_per90": -0.4895662305255731
+    },
+    {
+      "season": "2324",
+      "player": "Bart Verbruggen",
+      "minutes": 1890,
+      "xg_faced": 17.01824187580496,
+      "conceded": 28,
+      "prevented_per90": -0.5229408630569067
+    },
+    {
+      "season": "2324",
+      "player": "Guglielmo Vicario",
+      "minutes": 3420,
+      "xg_faced": 37.49091195361689,
+      "conceded": 58,
+      "prevented_per90": -0.5397128433258714
+    },
+    {
+      "season": "2324",
+      "player": "Lukasz Fabianski",
+      "minutes": 630,
+      "xg_faced": 10.059538187459111,
+      "conceded": 14,
+      "prevented_per90": -0.5629231160772699
+    },
+    {
+      "season": "2324",
+      "player": "Bernd Leno",
+      "minutes": 3420,
+      "xg_faced": 35.14665908738971,
+      "conceded": 57,
+      "prevented_per90": -0.5750879187529024
+    },
+    {
+      "season": "2324",
+      "player": "Sam Johnstone",
+      "minutes": 1800,
+      "xg_faced": 15.141480955760926,
+      "conceded": 27,
+      "prevented_per90": -0.5929259522119538
+    },
+    {
+      "season": "2324",
+      "player": "Martin Dubravka",
+      "minutes": 1980,
+      "xg_faced": 28.705310117453337,
+      "conceded": 42,
+      "prevented_per90": -0.6043040855703029
+    },
+    {
+      "season": "2324",
+      "player": "Neto",
+      "minutes": 2880,
+      "xg_faced": 33.80595284560695,
+      "conceded": 54,
+      "prevented_per90": -0.6310639735747827
+    },
+    {
+      "season": "2324",
+      "player": "Robert Sánchez",
+      "minutes": 1438,
+      "xg_faced": 15.915827670134604,
+      "conceded": 26,
+      "prevented_per90": -0.6311373502697397
+    },
+    {
+      "season": "2324",
+      "player": "Alphonse Areola",
+      "minutes": 2715,
+      "xg_faced": 35.224551213439554,
+      "conceded": 56,
+      "prevented_per90": -0.6886889100517275
+    },
+    {
+      "season": "2324",
+      "player": "Dean Henderson",
+      "minutes": 1620,
+      "xg_faced": 14.732581863179803,
+      "conceded": 28,
+      "prevented_per90": -0.7370787853788998
+    },
+    {
+      "season": "2324",
+      "player": "Thomas Kaminski",
+      "minutes": 3410,
+      "xg_faced": 50.73490342870355,
+      "conceded": 81,
+      "prevented_per90": -0.7987855400048918
+    },
+    {
+      "season": "2324",
+      "player": "Matz Sels",
+      "minutes": 1440,
+      "xg_faced": 11.774142330512404,
+      "conceded": 25,
+      "prevented_per90": -0.8266161043429746
+    },
+    {
+      "season": "2324",
+      "player": "Djordje Petrovic",
+      "minutes": 1980,
+      "xg_faced": 15.307822244241834,
+      "conceded": 34,
+      "prevented_per90": -0.849644443443553
+    },
+    {
+      "season": "2324",
+      "player": "Mark Flekken",
+      "minutes": 3293,
+      "xg_faced": 31.80457691801712,
+      "conceded": 63,
+      "prevented_per90": -0.8525927960456907
+    },
+    {
+      "season": "2324",
+      "player": "Matt Turner",
+      "minutes": 1530,
+      "xg_faced": 12.062385660596192,
+      "conceded": 28,
+      "prevented_per90": -0.9375067258472828
+    },
+    {
+      "season": "2324",
+      "player": "James Trafford",
+      "minutes": 2520,
+      "xg_faced": 33.72020053258166,
+      "conceded": 60,
+      "prevented_per90": -0.9385642666935123
+    },
+    {
+      "season": "2324",
+      "player": "Jason Steele",
+      "minutes": 1530,
+      "xg_faced": 15.670774350874126,
+      "conceded": 32,
+      "prevented_per90": -0.9605426852426986
+    },
+    {
+      "season": "2324",
+      "player": "Wes Foderingham",
+      "minutes": 2610,
+      "xg_faced": 44.59969833586365,
+      "conceded": 73,
+      "prevented_per90": -0.9793207470391846
+    },
+    {
+      "season": "2324",
+      "player": "Robin Olsen",
+      "minutes": 360,
+      "xg_faced": 6.448007304221392,
+      "conceded": 11,
+      "prevented_per90": -1.137998173944652
+    },
+    {
+      "season": "2324",
+      "player": "Thomas Strakosha",
+      "minutes": 90,
+      "xg_faced": 0.7513537425547838,
+      "conceded": 2,
+      "prevented_per90": -1.2486462574452162
+    },
+    {
+      "season": "2324",
+      "player": "Daniel Bentley",
+      "minutes": 270,
+      "xg_faced": 1.9883835464715958,
+      "conceded": 6,
+      "prevented_per90": -1.337205484509468
+    },
+    {
+      "season": "2324",
+      "player": "Odisseas Vlachodimos",
+      "minutes": 450,
+      "xg_faced": 5.08308532834053,
+      "conceded": 12,
+      "prevented_per90": -1.383382934331894
+    },
+    {
+      "season": "2324",
+      "player": "Ivo Grbic",
+      "minutes": 776,
+      "xg_faced": 8.165369886904955,
+      "conceded": 24,
+      "prevented_per90": -1.8364906059001984
+    },
+    {
+      "season": "2324",
+      "player": "Loris Karius",
+      "minutes": 90,
+      "xg_faced": 1.0350989121943712,
+      "conceded": 3,
+      "prevented_per90": -1.9649010878056286
+    },
+    {
+      "season": "2324",
+      "player": "Ionut Radu",
+      "minutes": 180,
+      "xg_faced": 1.6512565044686198,
+      "conceded": 7,
+      "prevented_per90": -2.67437174776569
+    }
+  ]
+}
