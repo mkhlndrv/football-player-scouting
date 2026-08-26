@@ -2,6 +2,7 @@ import hashlib
 import json
 import time
 from pathlib import Path
+from urllib.parse import urlencode
 
 import duckdb
 import requests
@@ -47,8 +48,10 @@ def write_json(name: str, obj) -> Path:
 
 
 def polite_get(
-    url: str, params: dict | None = None, headers: dict | None = None
+    url: str, params: dict | None = None, headers: dict | None = None, tls: bool = False
 ) -> requests.Response:
+    """GET with a >=3 s gap and a disk cache. tls=True uses a browser TLS fingerprint
+    (tls_requests) for hosts that 403 plain clients (Sofascore)."""
     global _last_hit
     key = hashlib.sha1(f"{url}|{sorted((params or {}).items())}".encode()).hexdigest()
     cached = CACHE / f"{key}.json"
@@ -62,9 +65,19 @@ def polite_get(
     wait = MIN_GAP_S - (time.monotonic() - _last_hit)
     if wait > 0:
         time.sleep(wait)
-    resp = requests.get(url, params=params, headers={**HEADERS, **(headers or {})}, timeout=30)
+    merged_headers = {**HEADERS, **(headers or {})}
+    if tls:
+        import tls_requests
+
+        full = url if not params else url + "?" + urlencode(params)
+        raw = tls_requests.get(full, headers=merged_headers, timeout=30)
+        resp = requests.Response()
+        resp.status_code, resp._content, resp.url = raw.status_code, raw.text.encode(), full
+    else:
+        resp = requests.get(url, params=params, headers=merged_headers, timeout=30)
     _last_hit = time.monotonic()
-    cached.write_text(json.dumps({"status": resp.status_code, "body": resp.text}))
+    if resp.status_code not in (403, 429) and resp.status_code < 500:  # blocks are not results
+        cached.write_text(json.dumps({"status": resp.status_code, "body": resp.text}))
     return resp
 
 
