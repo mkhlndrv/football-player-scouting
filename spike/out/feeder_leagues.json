@@ -1,0 +1,401 @@
+{
+  "definition": "signings by Big-5 clubs ranked 7th+ by current squad value, seasons 14/15 to 25/26",
+  "unknown_source_share": 0.27752268503334426,
+  "unknown_breakdown": {
+    "reserve_or_youth_teams": 2343,
+    "free_agents": 121,
+    "other_clubs_not_in_dataset": 2613,
+    "other_clubs_top30": [
+      {
+        "from_club_name": "CD Mirandés",
+        "n": 48
+      },
+      {
+        "from_club_name": "Perugia",
+        "n": 43
+      },
+      {
+        "from_club_name": "Bilbao Athletic",
+        "n": 35
+      },
+      {
+        "from_club_name": "Birmingham",
+        "n": 31
+      },
+      {
+        "from_club_name": "Blackburn",
+        "n": 30
+      },
+      {
+        "from_club_name": "Derby",
+        "n": 30
+      },
+      {
+        "from_club_name": "Sevilla Atl.",
+        "n": 29
+      },
+      {
+        "from_club_name": "Atl. Madrileño",
+        "n": 27
+      },
+      {
+        "from_club_name": "Ascoli",
+        "n": 26
+      },
+      {
+        "from_club_name": "Bari",
+        "n": 26
+      },
+      {
+        "from_club_name": "Bolton",
+        "n": 26
+      },
+      {
+        "from_club_name": "1.FC K'lautern",
+        "n": 25
+      },
+      {
+        "from_club_name": "Coventry",
+        "n": 24
+      },
+      {
+        "from_club_name": "Preston",
+        "n": 24
+      },
+      {
+        "from_club_name": "Bristol City",
+        "n": 23
+      },
+      {
+        "from_club_name": "Barnsley",
+        "n": 23
+      },
+      {
+        "from_club_name": "Charlton",
+        "n": 23
+      },
+      {
+        "from_club_name": "Betis Deportivo",
+        "n": 23
+      },
+      {
+        "from_club_name": "Reggiana",
+        "n": 20
+      },
+      {
+        "from_club_name": "Reggina",
+        "n": 20
+      },
+      {
+        "from_club_name": "Pau FC",
+        "n": 19
+      },
+      {
+        "from_club_name": "Albacete",
+        "n": 19
+      },
+      {
+        "from_club_name": "Cosenza",
+        "n": 18
+      },
+      {
+        "from_club_name": "Trapani",
+        "n": 17
+      },
+      {
+        "from_club_name": "Karlsruher SC",
+        "n": 16
+      },
+      {
+        "from_club_name": "Catanzaro",
+        "n": 16
+      },
+      {
+        "from_club_name": "MK Dons",
+        "n": 16
+      },
+      {
+        "from_club_name": "USL Dunkerque",
+        "n": 16
+      },
+      {
+        "from_club_name": "Ternana",
+        "n": 16
+      },
+      {
+        "from_club_name": "Rotherham",
+        "n": 16
+      }
+    ]
+  },
+  "big5_internal": [
+    {
+      "competition_id": "IT1",
+      "competition_name": "serie-a",
+      "country": "Italy",
+      "transfers": 2814,
+      "paid_transfers": 655.0,
+      "players": 953
+    },
+    {
+      "competition_id": "GB1",
+      "competition_name": "premier-league",
+      "country": "England",
+      "transfers": 2049,
+      "paid_transfers": 617.0,
+      "players": 995
+    },
+    {
+      "competition_id": "ES1",
+      "competition_name": "laliga",
+      "country": "Spain",
+      "transfers": 1672,
+      "paid_transfers": 416.0,
+      "players": 790
+    },
+    {
+      "competition_id": "FR1",
+      "competition_name": "ligue-1",
+      "country": "France",
+      "transfers": 1601,
+      "paid_transfers": 566.0,
+      "players": 848
+    },
+    {
+      "competition_id": "L1",
+      "competition_name": "bundesliga",
+      "country": "Germany",
+      "transfers": 1360,
+      "paid_transfers": 476.0,
+      "players": 757
+    }
+  ],
+  "feeders_ranked": [
+    {
+      "competition_id": "BE1",
+      "competition_name": "jupiler-pro-league",
+      "country": "Belgium",
+      "transfers": 515,
+      "paid_transfers": 189.0,
+      "players": 416
+    },
+    {
+      "competition_id": "NL1",
+      "competition_name": "eredivisie",
+      "country": "Netherlands",
+      "transfers": 461,
+      "paid_transfers": 184.0,
+      "players": 366
+    },
+    {
+      "competition_id": "PO1",
+      "competition_name": "liga-portugal",
+      "country": "Portugal",
+      "transfers": 424,
+      "paid_transfers": 153.0,
+      "players": 315
+    },
+    {
+      "competition_id": "TR1",
+      "competition_name": "super-lig",
+      "country": "Türkiye",
+      "transfers": 303,
+      "paid_transfers": 56.0,
+      "players": 237
+    },
+    {
+      "competition_id": "C1",
+      "competition_name": "super-league",
+      "country": "Switzerland",
+      "transfers": 198,
+      "paid_transfers": 83.0,
+      "players": 164
+    },
+    {
+      "competition_id": "BRA1",
+      "competition_name": "campeonato-brasileiro-serie-a",
+      "country": "Brazil",
+      "transfers": 185,
+      "paid_transfers": 101.0,
+      "players": 143
+    },
+    {
+      "competition_id": "A1",
+      "competition_name": "bundesliga",
+      "country": "Austria",
+      "transfers": 177,
+      "paid_transfers": 77.0,
+      "players": 155
+    },
+    {
+      "competition_id": "DK1",
+      "competition_name": "superliga",
+      "country": "Denmark",
+      "transfers": 166,
+      "paid_transfers": 91.0,
+      "players": 143
+    },
+    {
+      "competition_id": "SC1",
+      "competition_name": "scottish-premiership",
+      "country": "Scotland",
+      "transfers": 160,
+      "paid_transfers": 40.0,
+      "players": 139
+    },
+    {
+      "competition_id": "ARG1",
+      "competition_name": "torneo-apertura",
+      "country": "Argentina",
+      "transfers": 134,
+      "paid_transfers": 74.0,
+      "players": 102
+    },
+    {
+      "competition_id": "GR1",
+      "competition_name": "super-league-1",
+      "country": "Greece",
+      "transfers": 131,
+      "paid_transfers": 29.0,
+      "players": 118
+    },
+    {
+      "competition_id": "MLS1",
+      "competition_name": "major-league-soccer",
+      "country": "United States",
+      "transfers": 103,
+      "paid_transfers": 45.0,
+      "players": 90
+    },
+    {
+      "competition_id": "PL1",
+      "competition_name": "pko-bp-ekstraklasa",
+      "country": "Poland",
+      "transfers": 88,
+      "paid_transfers": 39.0,
+      "players": 76
+    },
+    {
+      "competition_id": "SE1",
+      "competition_name": "allsvenskan",
+      "country": "Sweden",
+      "transfers": 87,
+      "paid_transfers": 59.0,
+      "players": 75
+    },
+    {
+      "competition_id": "KR1",
+      "competition_name": "supersport-hnl",
+      "country": "Croatia",
+      "transfers": 87,
+      "paid_transfers": 37.0,
+      "players": 72
+    },
+    {
+      "competition_id": "RU1",
+      "competition_name": "premier-liga",
+      "country": "Russia",
+      "transfers": 85,
+      "paid_transfers": 33.0,
+      "players": 61
+    },
+    {
+      "competition_id": "SER1",
+      "competition_name": "super-liga-srbije",
+      "country": "Serbia",
+      "transfers": 68,
+      "paid_transfers": 44.0,
+      "players": 53
+    },
+    {
+      "competition_id": "NO1",
+      "competition_name": "eliteserien",
+      "country": "Norway",
+      "transfers": 64,
+      "paid_transfers": 31.0,
+      "players": 57
+    },
+    {
+      "competition_id": "MEX1",
+      "competition_name": "liga-mx-clausura",
+      "country": "Mexico",
+      "transfers": 52,
+      "paid_transfers": 14.0,
+      "players": 43
+    },
+    {
+      "competition_id": "TS1",
+      "competition_name": "chance-liga",
+      "country": "Czech Republic",
+      "transfers": 46,
+      "paid_transfers": 21.0,
+      "players": 41
+    },
+    {
+      "competition_id": "JAP1",
+      "competition_name": "j1-league",
+      "country": "Japan",
+      "transfers": 31,
+      "paid_transfers": 21.0,
+      "players": 28
+    },
+    {
+      "competition_id": "RO1",
+      "competition_name": "superliga",
+      "country": "Romania",
+      "transfers": 31,
+      "paid_transfers": 14.0,
+      "players": 27
+    },
+    {
+      "competition_id": "UKR1",
+      "competition_name": "premier-liga",
+      "country": "Ukraine",
+      "transfers": 30,
+      "paid_transfers": 11.0,
+      "players": 27
+    },
+    {
+      "competition_id": "SA1",
+      "competition_name": "saudi-pro-league",
+      "country": "Saudi Arabia",
+      "transfers": 29,
+      "paid_transfers": 3.0,
+      "players": 28
+    },
+    {
+      "competition_id": "COL1",
+      "competition_name": "club not in dataset",
+      "country": "",
+      "transfers": 29,
+      "paid_transfers": 11.0,
+      "players": 17
+    },
+    {
+      "competition_id": "AUS1",
+      "competition_name": "a-league-men",
+      "country": "Australia",
+      "transfers": 27,
+      "paid_transfers": 9.0,
+      "players": 21
+    },
+    {
+      "competition_id": "RSK1",
+      "competition_name": "k-league-1",
+      "country": "Korea, South",
+      "transfers": 10,
+      "paid_transfers": 7.0,
+      "players": 10
+    }
+  ],
+  "FEEDER_TOP8": [
+    "BE1",
+    "NL1",
+    "PO1",
+    "TR1",
+    "C1",
+    "BRA1",
+    "A1",
+    "DK1"
+  ]
+}
