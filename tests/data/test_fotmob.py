@@ -134,10 +134,12 @@ def test_season_name_for_calendar_leagues():
     assert fotmob.season_name("BE1", 2023) == "2023/2024"
 
 
-def test_stat_table_treats_404_as_empty():
-    def not_found(url, params=None, headers=None, **kwargs):
-        return _response({}, status=404)
+def test_stat_table_treats_missing_files_as_empty():
+    for status in (403, 404):  # 403 = S3 AccessDenied on data.fotmob.com (e.g. phys_ts)
 
-    with patch.object(fotmob, "polite_get", not_found):
-        table = fotmob.stat_table(40, 20957, "_goals_prevented")
-    assert table.empty and "stat" in table.columns
+        def missing(url, params=None, headers=None, status=status, **kwargs):
+            return _response({}, status=status)
+
+        with patch.object(fotmob, "polite_get", missing):
+            table = fotmob.stat_table(40, 20957, "phys_ts")
+        assert table.empty and "stat" in table.columns
