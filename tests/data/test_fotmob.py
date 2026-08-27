@@ -5,12 +5,18 @@ import requests
 
 from scout.data import fotmob
 
+SEASONS = [
+    {"id": 20957, "name": "2023/2024", "leagueId": 40},
+    {"id": 12768, "name": "2018/2019", "leagueId": 40},
+]
+DEEP_EMPTY_SEASON = {
+    "statsData": [],
+    "seasons": SEASONS,
+    "statsList": [{"name": "goals", "title": "Top scorer"}],
+}
 DEEP = {
     "statsData": [],
-    "seasons": [
-        {"id": 20957, "name": "2023/2024", "leagueId": 40},
-        {"id": 12768, "name": "2018/2019", "leagueId": 40},
-    ],
+    "seasons": SEASONS,
     "statsList": [
         {"name": "mins_played", "title": "Minutes played", "category": "Top Stat"},
         {"name": "total_tackle", "title": "Tackles per 90", "category": "Defending"},
@@ -81,7 +87,7 @@ def _response(payload, status=200):
 
 def fake_get(url, params=None, headers=None, **kwargs):
     if "leagueseasondeepstats" in url:
-        return _response(DEEP)
+        return _response(DEEP if params["season"] else DEEP_EMPTY_SEASON)
     stat = url.rsplit("/", 1)[-1].removesuffix(".json")
     return _response(STATIC[stat])
 

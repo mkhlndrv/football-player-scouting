@@ -29,16 +29,20 @@ def season_name(comp: str, season: int) -> str:
     return str(season) if comp in CALENDAR_YEAR_LEAGUES else f"{season}/{season + 1}"
 
 
-def league_seasons_and_stats(league_id: int) -> tuple[dict[str, int], pd.DataFrame]:
-    """The deep-stats endpoint lists a league's season ids and its stat vocabulary; the stat
-    argument only has to be a known name."""
+def _deep_stats(league_id: int, season_id) -> dict:
     response = polite_get(
-        DEEP_STATS, params={"id": league_id, "season": "", "type": "players", "stat": "goals"}
+        DEEP_STATS,
+        params={"id": league_id, "season": season_id, "type": "players", "stat": "goals"},
     )
     response.raise_for_status()
-    payload = response.json()
-    seasons = {s["name"]: s["id"] for s in payload["seasons"]}
-    stats = pd.DataFrame(payload["statsList"])
+    return response.json()
+
+
+def league_seasons_and_stats(league_id: int) -> tuple[dict[str, int], pd.DataFrame]:
+    """Season ids come from any call; the full 37-stat vocabulary only from a call with a real
+    season id (an empty season returns the five top stats)."""
+    seasons = {s["name"]: s["id"] for s in _deep_stats(league_id, "")["seasons"]}
+    stats = pd.DataFrame(_deep_stats(league_id, max(seasons.values()))["statsList"])
     return seasons, stats[[c for c in ("name", "title", "category") if c in stats.columns]]
 
 
