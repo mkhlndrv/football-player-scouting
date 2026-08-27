@@ -11,5 +11,7 @@ def test_league_tables_are_consistent():
     assert set(config.BIG5) == {"GB1", "ES1", "IT1", "L1", "FR1"}
     assert set(config.FEEDERS) == {"BE1", "NL1", "PO1", "TR1", "C1", "BRA1", "A1", "DK1"}
     assert set(config.WORKRATE_PRIMARY) == set(config.BIG5) | set(config.FEEDERS)
+    assert set(config.SOFASCORE_TOURNAMENTS) == set(config.BIG5) | set(config.FEEDERS)
+    assert set(config.FOTMOB_LEAGUES) == set(config.BIG5) | set(config.FEEDERS)
     assert config.WORKRATE_PRIMARY["BE1"] == "fotmob"
     assert config.WORKRATE_PRIMARY["GB1"] == "sofascore"

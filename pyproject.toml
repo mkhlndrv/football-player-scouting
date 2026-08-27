@@ -15,7 +15,11 @@ dependencies = [
 ]
 
 [dependency-groups]
-dev = ["ruff>=0.5", "pytest>=8"]
+dev = [
+    "ruff>=0.5",
+    "pytest>=8",
+    "jupyter>=1.1.1",
+]
 
 [build-system]
 requires = ["hatchling"]
@@ -27,7 +31,7 @@ packages = ["src/scout"]
 [tool.ruff]
 line-length = 100
 target-version = "py312"
-extend-exclude = ["legacy", "docs"]
+extend-exclude = ["legacy", "docs", "notebooks"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP"]
