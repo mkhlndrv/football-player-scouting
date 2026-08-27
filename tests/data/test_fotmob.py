@@ -126,3 +126,12 @@ def test_pull_league_writes_long_file_per_season_and_resumes(tmp_path, monkeypat
 def test_season_name_for_calendar_leagues():
     assert fotmob.season_name("BRA1", 2023) == "2023"
     assert fotmob.season_name("BE1", 2023) == "2023/2024"
+
+
+def test_stat_table_treats_404_as_empty():
+    def not_found(url, params=None, headers=None, **kwargs):
+        return _response({}, status=404)
+
+    with patch.object(fotmob, "polite_get", not_found):
+        table = fotmob.stat_table(40, 20957, "_goals_prevented")
+    assert table.empty and "stat" in table.columns

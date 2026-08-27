@@ -38,11 +38,14 @@ def league_seasons_and_stats(league_id: int) -> tuple[dict[str, int], pd.DataFra
     response.raise_for_status()
     payload = response.json()
     seasons = {s["name"]: s["id"] for s in payload["seasons"]}
-    return seasons, pd.DataFrame(payload["statsList"])[["name", "title", "category"]]
+    stats = pd.DataFrame(payload["statsList"])
+    return seasons, stats[[c for c in ("name", "title", "category") if c in stats.columns]]
 
 
 def stat_table(league_id: int, season_id: int, stat: str) -> pd.DataFrame:
     response = polite_get(STATIC_STAT.format(league_id=league_id, season_id=season_id, stat=stat))
+    if response.status_code == 404:  # derived stats may have no static file: not an error
+        return pd.DataFrame(columns=["stat", *ROW_COLUMNS.values()])
     response.raise_for_status()
     rows = response.json()["TopLists"][0]["StatList"]
     table = pd.DataFrame(rows)
