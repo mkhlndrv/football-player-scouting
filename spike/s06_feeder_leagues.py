@@ -27,7 +27,7 @@ SELECT COALESCE(m.from_comp, 'UNKNOWN') AS competition_id,
        SUM(CASE WHEN m.transfer_fee > 0 THEN 1 ELSE 0 END) AS paid_transfers,
        COUNT(DISTINCT m.player_id) AS players
 FROM moves m LEFT JOIN competitions c ON m.from_comp = c.competition_id
-GROUP BY ALL ORDER BY transfers DESC
+GROUP BY ALL ORDER BY transfers DESC, competition_id
 """
 ranking = con.execute(sql).df()
 
@@ -46,7 +46,7 @@ FROM transfers t LEFT JOIN clubs fc ON t.from_club_id = TRY_CAST(fc.club_id AS I
 WHERE t.to_club_id IN (SELECT club_id FROM ranked WHERE rk > 6)
   AND TRY_CAST(SUBSTR(t.transfer_season, 1, 2) AS INTEGER) BETWEEN 14 AND 25
   AND fc.club_id IS NULL
-GROUP BY 1 ORDER BY 2 DESC
+GROUP BY 1 ORDER BY 2 DESC, 1
 """
 unknown = con.execute(unknown_sql).df()
 reserve = unknown.from_club_name.str.contains(

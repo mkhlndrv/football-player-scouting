@@ -63,19 +63,19 @@
         "n": 24
       },
       {
-        "from_club_name": "Bristol City",
-        "n": 23
-      },
-      {
         "from_club_name": "Barnsley",
         "n": 23
       },
       {
-        "from_club_name": "Charlton",
+        "from_club_name": "Betis Deportivo",
         "n": 23
       },
       {
-        "from_club_name": "Betis Deportivo",
+        "from_club_name": "Bristol City",
+        "n": 23
+      },
+      {
+        "from_club_name": "Charlton",
         "n": 23
       },
       {
@@ -87,11 +87,11 @@
         "n": 20
       },
       {
-        "from_club_name": "Pau FC",
+        "from_club_name": "Albacete",
         "n": 19
       },
       {
-        "from_club_name": "Albacete",
+        "from_club_name": "Pau FC",
         "n": 19
       },
       {
@@ -103,7 +103,7 @@
         "n": 17
       },
       {
-        "from_club_name": "Karlsruher SC",
+        "from_club_name": "Blackpool",
         "n": 16
       },
       {
@@ -111,15 +111,15 @@
         "n": 16
       },
       {
+        "from_club_name": "Karlsruher SC",
+        "n": 16
+      },
+      {
         "from_club_name": "MK Dons",
         "n": 16
       },
       {
-        "from_club_name": "USL Dunkerque",
-        "n": 16
-      },
-      {
-        "from_club_name": "Ternana",
+        "from_club_name": "Racing",
         "n": 16
       },
       {
@@ -276,20 +276,20 @@
       "players": 76
     },
     {
-      "competition_id": "SE1",
-      "competition_name": "allsvenskan",
-      "country": "Sweden",
-      "transfers": 87,
-      "paid_transfers": 59.0,
-      "players": 75
-    },
-    {
       "competition_id": "KR1",
       "competition_name": "supersport-hnl",
       "country": "Croatia",
       "transfers": 87,
       "paid_transfers": 37.0,
       "players": 72
+    },
+    {
+      "competition_id": "SE1",
+      "competition_name": "allsvenskan",
+      "country": "Sweden",
+      "transfers": 87,
+      "paid_transfers": 59.0,
+      "players": 75
     },
     {
       "competition_id": "RU1",
@@ -356,20 +356,20 @@
       "players": 27
     },
     {
-      "competition_id": "SA1",
-      "competition_name": "saudi-pro-league",
-      "country": "Saudi Arabia",
-      "transfers": 29,
-      "paid_transfers": 3.0,
-      "players": 28
-    },
-    {
       "competition_id": "COL1",
       "competition_name": "club not in dataset",
       "country": "",
       "transfers": 29,
       "paid_transfers": 11.0,
       "players": 17
+    },
+    {
+      "competition_id": "SA1",
+      "competition_name": "saudi-pro-league",
+      "country": "Saudi Arabia",
+      "transfers": 29,
+      "paid_transfers": 3.0,
+      "players": 28
     },
     {
       "competition_id": "AUS1",

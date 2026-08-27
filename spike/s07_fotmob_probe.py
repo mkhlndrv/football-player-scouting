@@ -16,7 +16,11 @@ TITLE = re.compile(r'"title"\s*:\s*"([^"]+)"')
 def sample_players():
     tm = pd.read_parquet(SPIKE / "tm_pcs.parquet")
     per = tm.groupby(["competition_id", "player_id", "name"]).season.nunique().reset_index()
-    big5 = per.sort_values("season", ascending=False).groupby("competition_id").head(2)
+    big5 = (
+        per.sort_values(["season", "player_id"], ascending=[False, True])
+        .groupby("competition_id")
+        .head(2)
+    )
     feeders = json.loads((OUT / "feeder_leagues.json").read_text())["FEEDER_TOP8"]
     con = tm_connect()
     comps = ",".join(f"'{c}'" for c in feeders)
@@ -31,9 +35,12 @@ def sample_players():
                 WHERE c.domestic_competition_id IN ({comps})
                   AND CAST(g.season AS INTEGER) >= 2014
                 GROUP BY 1, 2, 3
-            ) QUALIFY ROW_NUMBER() OVER (PARTITION BY competition_id ORDER BY seasons DESC) = 1"""
+            ) QUALIFY ROW_NUMBER() OVER (
+                PARTITION BY competition_id ORDER BY seasons DESC, player_id
+            ) <= 2"""
     ).df()
-    return pd.concat([big5, extra])[["competition_id", "name"]].to_dict("records")
+    sample = pd.concat([big5, extra])[["competition_id", "name"]]
+    return sample.sort_values(["competition_id", "name"]).to_dict("records")
 
 
 def season_stats(pid, entry_id):
