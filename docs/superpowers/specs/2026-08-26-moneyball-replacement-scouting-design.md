@@ -90,10 +90,10 @@ tested for season-to-season stability in Phase 0/2; if unstable, keepers are cut
 | Transfermarkt (dcaribou DuckDB, weekly) | market-value history, transfers with fees, DOB, detailed position, current contract end, appearances with club-at-the-time, lineups, game events | valuation-date, transfer, player-match | single file download |
 | Transfermarkt injury pages (conditional) | injury spells with dates | player-spell | scrape; enters only if Phase 0 shows it is feasible for the Big-5 panel |
 | ClubElo | team strength on any date | team-day | download |
-| FBref (basic) | cards, appearance cross-checks; the committed 2024-25 Opta snapshot as a validation set for derived metrics | player-season | existing files; site blocks non-browser clients |
+| Legacy FBref 2024-25 snapshot (committed CSVs under `legacy/data/`) | validation set for derived metrics only; FBref itself is not fetched | player-season | existing files |
 
-FBref lost all Opta advanced stats in January 2026 (historical seasons included); it is not a
-source for xG-grade metrics. The repo's 2024-25 CSVs are irreplaceable; they move to
+FBref lost all Opta advanced stats in January 2026 (historical seasons included) and is not used
+as a source at all; basic stats it still serves are covered by Transfermarkt and Understat. The repo's 2024-25 CSVs are irreplaceable; they move to
 `legacy/data/` and stay committed (the git-ignore on `data/` does not cover `legacy/`).
 
 Two things the DuckDB does *not* have: an injury table, and contract history (contract end is a
