@@ -42,6 +42,16 @@ def _on_disk() -> dict:
     out = {"understat_league_seasons": kinds}
     for name, folder in [("sofascore", "sofascore"), ("fotmob", "fotmob")]:
         out[f"{name}_league_seasons"] = len(list((config.RAW / folder).glob("*.parquet")))
+    thin = {}
+    for path in sorted((config.RAW / "fotmob").glob("*.parquet")):
+        frame = pd.read_parquet(path, columns=["stat", "fotmob_player_id"])
+        players = frame[frame.stat == "mins_played"].fotmob_player_id.nunique()
+        if frame.stat.nunique() < 20 or players < 200:
+            thin[path.stem] = {
+                "stats": int(frame.stat.nunique()),
+                "players_in_mins_played": int(players),
+            }
+    out["fotmob_thin_league_seasons"] = thin  # Bundesliga: 3 stats, no minutes list, every season
     spells = config.RAW / "injuries" / "spells.parquet"
     out["injury_players"] = (
         int(pd.read_parquet(spells).tm_player_id.nunique()) if spells.exists() else 0
