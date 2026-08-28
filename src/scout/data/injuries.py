@@ -44,8 +44,12 @@ def parse_page(html: str) -> pd.DataFrame:
     )
 
 
-def fetch_injuries(profile_url: str) -> pd.DataFrame:
-    """All spells of one player: pages are walked until one is empty or repeats the last."""
+PANEL_START = pd.Timestamp("2014-07-01")  # spells older than the panel are never used
+
+
+def fetch_injuries(profile_url: str, since: pd.Timestamp = PANEL_START) -> pd.DataFrame:
+    """Spells of one player, newest page first; pages are walked until one is empty, repeats
+    the last, or has already reached spells older than `since`."""
     pages: list[pd.DataFrame] = []
     for page in range(1, MAX_PAGES + 1):
         response = polite_get(page_url(profile_url, page))
@@ -54,6 +58,8 @@ def fetch_injuries(profile_url: str) -> pd.DataFrame:
         if spells.empty or (pages and spells.equals(pages[-1])):
             break
         pages.append(spells)
+        if spells["from_date"].min() < since:
+            break
     return pd.concat(pages, ignore_index=True) if pages else pd.DataFrame(columns=COLUMNS)
 
 
@@ -69,9 +75,25 @@ def _append(batch: list[pd.DataFrame]) -> None:
     frame.to_parquet(path, index=False)
 
 
+def panel_players(comps: list[str], seasons: list[int]) -> pd.DataFrame:
+    """tm_player_id, url for every panel player — Big-5 players first (5e and the backtest need
+    them), then feeder-league players, most minutes first within each tier."""
+    from scout import config
+    from scout.data import transfermarkt as tm
+
+    panel = tm.load_player_club_seasons(comps, seasons)
+    panel["tier"] = (~panel.competition_id.isin(config.BIG5)).astype(int)
+    order = panel.groupby("tm_player_id").agg(tier=("tier", "min"), minutes=("minutes", "sum"))
+    order = order.sort_values(["tier", "minutes"], ascending=[True, False])
+    urls = tm.load_table("players")[["player_id", "url"]].rename(
+        columns={"player_id": "tm_player_id"}
+    )
+    return order.reset_index()[["tm_player_id"]].merge(urls, on="tm_player_id")
+
+
 def pull_all(players: pd.DataFrame, log: Callable[[str], None] = print) -> None:
-    """players: tm_player_id, url. A player with no spells gets one marker row (all NaN), so
-    'fetched, none' is distinguishable from 'never fetched'. Appends every 50 players."""
+    """players: tm_player_id, url, in pull order. A player with no spells gets one marker row
+    (all NaN), so 'fetched, none' is distinguishable from 'never fetched'. Appends every 50."""
     done = set(pd.read_parquet(raw_path()).tm_player_id) if raw_path().exists() else set()
     batch: list[pd.DataFrame] = []
     todo = players[~players.tm_player_id.isin(done)]

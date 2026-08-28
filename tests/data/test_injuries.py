@@ -93,3 +93,33 @@ def test_pull_all_appends_and_marks_players_without_spells(tmp_path, monkeypatch
     assert set(spells.tm_player_id) == {1, 2}
     assert len(spells[spells.tm_player_id == 1]) == 2
     assert spells[spells.tm_player_id == 2].season.isna().all()  # fetched, no spells: marker row
+
+
+def test_fetch_injuries_stops_at_pages_older_than_the_panel(monkeypatch):
+    from scout.data import injuries
+
+    def page(page_no):
+        year = 2020 if page_no == 1 else 2010
+        return (
+            "<table><tr><th>Season</th><th>Injury</th><th>from</th><th>until</th><th>Days</th>"
+            f"<th>Games missed</th></tr><tr><td>{year}/{year + 1}</td><td>Knock</td>"
+            f"<td>01/09/{year}</td><td>10/09/{year}</td><td>9 days</td><td>1</td></tr></table>"
+        )
+
+    calls = []
+
+    class Response:
+        def __init__(self, text):
+            self.text = text
+
+        def raise_for_status(self):
+            pass
+
+    def fake_get(url, *args, **kwargs):
+        calls.append(url)
+        return Response(page(2 if "/page/" in url else 1))
+
+    monkeypatch.setattr(injuries, "polite_get", fake_get)
+    spells = injuries.fetch_injuries("https://www.transfermarkt.com/x/profil/spieler/1")
+    assert len(calls) == 2  # page 2 already predates 2014-07-01, page 3 is never asked for
+    assert len(spells) == 2
