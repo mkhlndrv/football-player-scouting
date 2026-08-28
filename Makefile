@@ -1,4 +1,4 @@
-.PHONY: setup lint test spike clean
+.PHONY: setup lint test data spike clean
 
 setup:
 	uv sync --locked
@@ -14,3 +14,6 @@ spike:
 
 clean:
 	rm -rf .venv .pytest_cache .ruff_cache data/spike
+
+data:
+	uv run python -m scout data

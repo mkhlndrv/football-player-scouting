@@ -1,0 +1,714 @@
+{
+  "bars": {
+    "identity_big5_min": 0.95,
+    "minutes_within_5pct": 0.9
+  },
+  "on_disk": {
+    "understat_league_seasons": {
+      "player_season": 60,
+      "player_match": 26,
+      "shots": 26,
+      "team_match": 60,
+      "schedule": 60
+    },
+    "sofascore_league_seasons": 143,
+    "fotmob_league_seasons": 67,
+    "injury_players": 400
+  },
+  "team_lineage_unresolved": {
+    "fotmob": 7,
+    "sofascore": 34,
+    "understat": 0
+  },
+  "identity": {
+    "understat": {
+      "provider_ids": 9531,
+      "by_source": {
+        "cascade": 7442,
+        "reep": 2019,
+        "unmatched": 70
+      },
+      "minutes_rate_overall": 0.9976,
+      "minutes_rate_big5_min": 0.9893,
+      "minutes_rate_by_league_season": {
+        "ES1": {
+          "2014": 0.9941,
+          "2015": 0.998,
+          "2016": 0.9976,
+          "2017": 0.9893,
+          "2018": 0.9901,
+          "2019": 0.9961,
+          "2020": 0.9931,
+          "2021": 0.9916,
+          "2022": 0.993,
+          "2023": 0.9935,
+          "2024": 0.9943,
+          "2025": 0.9929
+        },
+        "FR1": {
+          "2014": 1.0,
+          "2015": 1.0,
+          "2016": 0.9976,
+          "2017": 0.9958,
+          "2018": 0.9953,
+          "2019": 0.9959,
+          "2020": 1.0,
+          "2021": 1.0,
+          "2022": 0.9991,
+          "2023": 0.9978,
+          "2024": 0.994,
+          "2025": 0.9931
+        },
+        "GB1": {
+          "2014": 0.9905,
+          "2015": 1.0,
+          "2016": 1.0,
+          "2017": 1.0,
+          "2018": 1.0,
+          "2019": 1.0,
+          "2020": 1.0,
+          "2021": 1.0,
+          "2022": 1.0,
+          "2023": 1.0,
+          "2024": 1.0,
+          "2025": 1.0
+        },
+        "IT1": {
+          "2014": 0.9954,
+          "2015": 0.9986,
+          "2016": 0.9998,
+          "2017": 0.9996,
+          "2018": 1.0,
+          "2019": 1.0,
+          "2020": 0.9999,
+          "2021": 0.9965,
+          "2022": 0.9968,
+          "2023": 1.0,
+          "2024": 1.0,
+          "2025": 1.0
+        },
+        "L1": {
+          "2014": 1.0,
+          "2015": 1.0,
+          "2016": 1.0,
+          "2017": 1.0,
+          "2018": 0.9985,
+          "2019": 0.9956,
+          "2020": 0.9975,
+          "2021": 0.9991,
+          "2022": 1.0,
+          "2023": 0.9997,
+          "2024": 0.9985,
+          "2025": 0.9977
+        }
+      }
+    },
+    "sofascore": {
+      "provider_ids": 21090,
+      "by_source": {
+        "reep": 16300,
+        "cascade": 3404,
+        "unmatched": 1386
+      },
+      "minutes_rate_overall": 0.9743,
+      "minutes_rate_big5_min": 0.9937,
+      "minutes_rate_by_league_season": {
+        "A1": {
+          "2015": 0.757,
+          "2016": 0.8077,
+          "2017": 0.8642,
+          "2018": 0.827,
+          "2019": 0.8354,
+          "2020": 0.8754,
+          "2021": 0.9076,
+          "2022": 0.9418,
+          "2023": 0.9794,
+          "2024": 0.9998,
+          "2025": 0.9949
+        },
+        "BE1": {
+          "2015": 0.9887,
+          "2016": 0.9877,
+          "2017": 0.9911,
+          "2018": 0.9997,
+          "2019": 1.0,
+          "2020": 1.0,
+          "2021": 0.9997,
+          "2022": 0.9998,
+          "2023": 0.9986,
+          "2024": 0.9955,
+          "2025": 0.9949
+        },
+        "BRA1": {
+          "2015": 0.6399,
+          "2016": 0.6652,
+          "2017": 0.7055,
+          "2018": 0.7442,
+          "2019": 0.798,
+          "2020": 0.854,
+          "2021": 0.8837,
+          "2022": 0.8769,
+          "2023": 0.9417,
+          "2024": 0.9678,
+          "2025": 0.9723
+        },
+        "C1": {
+          "2015": 0.8452,
+          "2016": 0.822,
+          "2017": 0.8344,
+          "2018": 0.8539,
+          "2019": 0.8828,
+          "2020": 0.9132,
+          "2021": 0.9479,
+          "2022": 0.976,
+          "2023": 0.9623,
+          "2024": 0.9998,
+          "2025": 1.0
+        },
+        "DK1": {
+          "2015": 0.9943,
+          "2016": 0.9989,
+          "2017": 1.0,
+          "2018": 1.0,
+          "2019": 0.9996,
+          "2020": 0.9996,
+          "2021": 1.0,
+          "2022": 1.0,
+          "2023": 0.9991,
+          "2024": 0.9997,
+          "2025": 0.9978
+        },
+        "ES1": {
+          "2015": 0.9969,
+          "2016": 0.9962,
+          "2017": 0.9947,
+          "2018": 0.9951,
+          "2019": 0.9969,
+          "2020": 0.9985,
+          "2021": 0.9984,
+          "2022": 1.0,
+          "2023": 0.9985,
+          "2024": 0.9993,
+          "2025": 0.9937
+        },
+        "FR1": {
+          "2015": 1.0,
+          "2016": 1.0,
+          "2017": 1.0,
+          "2018": 1.0,
+          "2019": 1.0,
+          "2020": 1.0,
+          "2021": 1.0,
+          "2022": 1.0,
+          "2023": 1.0,
+          "2024": 1.0,
+          "2025": 0.9999
+        },
+        "GB1": {
+          "2015": 0.9996,
+          "2016": 1.0,
+          "2017": 1.0,
+          "2018": 1.0,
+          "2019": 1.0,
+          "2020": 1.0,
+          "2021": 1.0,
+          "2022": 1.0,
+          "2023": 1.0,
+          "2024": 1.0,
+          "2025": 1.0
+        },
+        "IT1": {
+          "2015": 0.9995,
+          "2016": 0.9998,
+          "2017": 1.0,
+          "2018": 1.0,
+          "2019": 1.0,
+          "2020": 1.0,
+          "2021": 1.0,
+          "2022": 1.0,
+          "2023": 1.0,
+          "2024": 1.0,
+          "2025": 1.0
+        },
+        "L1": {
+          "2015": 1.0,
+          "2016": 1.0,
+          "2017": 1.0,
+          "2018": 1.0,
+          "2019": 1.0,
+          "2020": 1.0,
+          "2021": 1.0,
+          "2022": 1.0,
+          "2023": 1.0,
+          "2024": 1.0,
+          "2025": 1.0
+        },
+        "NL1": {
+          "2015": 1.0,
+          "2016": 1.0,
+          "2017": 1.0,
+          "2018": 1.0,
+          "2019": 1.0,
+          "2020": 1.0,
+          "2021": 1.0,
+          "2022": 1.0,
+          "2023": 1.0,
+          "2024": 1.0,
+          "2025": 1.0
+        },
+        "PO1": {
+          "2015": null,
+          "2016": 0.9991,
+          "2017": 0.9985,
+          "2018": 0.9997,
+          "2019": 0.9974,
+          "2020": 0.9949,
+          "2021": 0.9999,
+          "2022": 0.9942,
+          "2023": 0.9917,
+          "2024": 0.9899,
+          "2025": 0.984
+        },
+        "TR1": {
+          "2015": 0.9961,
+          "2016": 0.9988,
+          "2017": 0.9984,
+          "2018": 1.0,
+          "2019": 1.0,
+          "2020": 0.9993,
+          "2021": 1.0,
+          "2022": 0.9992,
+          "2023": 1.0,
+          "2024": 1.0,
+          "2025": 1.0
+        }
+      }
+    },
+    "fotmob": {
+      "provider_ids": 10023,
+      "by_source": {
+        "cascade": 7732,
+        "reep": 2208,
+        "unmatched": 83
+      },
+      "minutes_rate_overall": 0.9984,
+      "minutes_rate_big5_min": 0.9943,
+      "minutes_rate_by_league_season": {
+        "BE1": {
+          "2016": null,
+          "2017": null,
+          "2018": 1.0,
+          "2019": 0.9961,
+          "2020": 0.9886,
+          "2021": 0.9876,
+          "2022": 0.9984,
+          "2023": 0.9973,
+          "2024": 0.9939,
+          "2025": 0.999
+        },
+        "ES1": {
+          "2016": 0.997,
+          "2017": 0.9955,
+          "2018": 0.9943,
+          "2019": 0.996,
+          "2020": 0.9981,
+          "2021": 0.9984,
+          "2022": 1.0,
+          "2023": 0.9995,
+          "2024": 0.9999,
+          "2025": 0.9999
+        },
+        "FR1": {
+          "2016": 0.9965,
+          "2017": 0.997,
+          "2018": 0.9978,
+          "2019": 0.9996,
+          "2020": 0.9986,
+          "2021": 0.9989,
+          "2022": 1.0,
+          "2023": 1.0,
+          "2024": 0.9982,
+          "2025": 0.9962
+        },
+        "GB1": {
+          "2016": 1.0,
+          "2017": 0.9979,
+          "2018": 0.9982,
+          "2019": 0.9999,
+          "2020": 1.0,
+          "2021": 1.0,
+          "2022": 1.0,
+          "2023": 1.0,
+          "2024": 1.0,
+          "2025": 1.0
+        },
+        "IT1": {
+          "2016": 0.9998,
+          "2017": 0.9985,
+          "2018": 1.0,
+          "2019": 1.0,
+          "2020": 0.9999,
+          "2021": 1.0,
+          "2022": 1.0,
+          "2023": 0.9999,
+          "2024": 0.9988,
+          "2025": 1.0
+        },
+        "NL1": {
+          "2016": null,
+          "2017": 0.9999,
+          "2018": 0.9997,
+          "2019": 1.0,
+          "2020": 0.9997,
+          "2021": 1.0,
+          "2022": 1.0,
+          "2023": 0.9977,
+          "2024": 0.9969,
+          "2025": 0.9976
+        }
+      }
+    }
+  },
+  "minutes_reconciliation_per_match": {
+    "club_seasons": 518,
+    "within_5pct_share": 0.9479,
+    "transfermarkt_short": 27,
+    "transfermarkt_long": 0,
+    "within_5pct_by_league": {
+      "ES1": 0.9542,
+      "GB1": 0.9792,
+      "IT1": 0.7105
+    }
+  },
+  "roles": {
+    "minutes_with_role_share": 0.9976,
+    "thinnest_role_players": 22,
+    "league_seasons_with_all_six_roles": 26
+  },
+  "values": {
+    "stints": 77794,
+    "lineup_only_share": 0.2011,
+    "coverage_by_season": {
+      "2014": {
+        "value_at_start": 0.8069,
+        "value_july": 0.8893
+      },
+      "2015": {
+        "value_at_start": 0.8394,
+        "value_july": 0.8987
+      },
+      "2016": {
+        "value_at_start": 0.8333,
+        "value_july": 0.8947
+      },
+      "2017": {
+        "value_at_start": 0.839,
+        "value_july": 0.9085
+      },
+      "2018": {
+        "value_at_start": 0.8194,
+        "value_july": 0.8851
+      },
+      "2019": {
+        "value_at_start": 0.8121,
+        "value_july": 0.8875
+      },
+      "2020": {
+        "value_at_start": 0.7989,
+        "value_july": 0.8644
+      },
+      "2021": {
+        "value_at_start": 0.725,
+        "value_july": 0.8802
+      },
+      "2022": {
+        "value_at_start": 0.8031,
+        "value_july": 0.8872
+      },
+      "2023": {
+        "value_at_start": 0.7999,
+        "value_july": 0.8856
+      },
+      "2024": {
+        "value_at_start": 0.617,
+        "value_july": 0.8252
+      },
+      "2025": {
+        "value_at_start": 0.6133,
+        "value_july": 0.824
+      }
+    }
+  },
+  "sofascore_coverage": {
+    "first_season_with_90pct_coverage": {
+      "A1": {
+        "tackles": 2016,
+        "interceptions": 2016,
+        "ballRecovery": 2023,
+        "clearances": 2016,
+        "successfulDribbles": 2016,
+        "keyPasses": 2016,
+        "bigChancesCreated": 2016,
+        "accuratePasses": 2016,
+        "accurateLongBalls": 2016,
+        "expectedGoals": 2025,
+        "expectedAssists": 2025,
+        "goals": 2015,
+        "assists": 2017,
+        "fouls": 2016,
+        "saves": 2016,
+        "goalsConceded": 2016,
+        "possessionWonAttThird": 2016
+      },
+      "BE1": {
+        "tackles": 2020,
+        "interceptions": 2020,
+        "ballRecovery": 2023,
+        "clearances": 2020,
+        "successfulDribbles": 2020,
+        "keyPasses": 2020,
+        "bigChancesCreated": 2020,
+        "accuratePasses": 2020,
+        "accurateLongBalls": 2020,
+        "expectedGoals": null,
+        "expectedAssists": 2025,
+        "goals": 2015,
+        "assists": 2021,
+        "fouls": 2020,
+        "saves": 2020,
+        "goalsConceded": 2020,
+        "possessionWonAttThird": 2020
+      },
+      "BRA1": {
+        "tackles": 2016,
+        "interceptions": 2016,
+        "ballRecovery": 2024,
+        "clearances": 2016,
+        "successfulDribbles": 2016,
+        "keyPasses": 2016,
+        "bigChancesCreated": 2016,
+        "accuratePasses": 2016,
+        "accurateLongBalls": 2016,
+        "expectedGoals": 2022,
+        "expectedAssists": 2022,
+        "goals": 2015,
+        "assists": 2017,
+        "fouls": 2016,
+        "saves": 2016,
+        "goalsConceded": 2016,
+        "possessionWonAttThird": 2016
+      },
+      "C1": {
+        "tackles": 2019,
+        "interceptions": 2019,
+        "ballRecovery": 2023,
+        "clearances": 2019,
+        "successfulDribbles": 2019,
+        "keyPasses": 2019,
+        "bigChancesCreated": 2019,
+        "accuratePasses": 2019,
+        "accurateLongBalls": 2019,
+        "expectedGoals": 2025,
+        "expectedAssists": 2025,
+        "goals": 2015,
+        "assists": 2020,
+        "fouls": 2019,
+        "saves": 2019,
+        "goalsConceded": 2019,
+        "possessionWonAttThird": 2019
+      },
+      "DK1": {
+        "tackles": 2019,
+        "interceptions": 2019,
+        "ballRecovery": 2023,
+        "clearances": 2019,
+        "successfulDribbles": 2019,
+        "keyPasses": 2019,
+        "bigChancesCreated": 2019,
+        "accuratePasses": 2019,
+        "accurateLongBalls": 2019,
+        "expectedGoals": null,
+        "expectedAssists": 2025,
+        "goals": 2015,
+        "assists": 2020,
+        "fouls": 2019,
+        "saves": 2019,
+        "goalsConceded": 2019,
+        "possessionWonAttThird": 2019
+      },
+      "ES1": {
+        "tackles": 2015,
+        "interceptions": 2015,
+        "ballRecovery": 2023,
+        "clearances": 2015,
+        "successfulDribbles": 2015,
+        "keyPasses": 2015,
+        "bigChancesCreated": 2015,
+        "accuratePasses": 2015,
+        "accurateLongBalls": 2015,
+        "expectedGoals": 2022,
+        "expectedAssists": 2022,
+        "goals": 2015,
+        "assists": 2016,
+        "fouls": 2015,
+        "saves": 2015,
+        "goalsConceded": 2015,
+        "possessionWonAttThird": 2015
+      },
+      "FR1": {
+        "tackles": 2015,
+        "interceptions": 2015,
+        "ballRecovery": 2023,
+        "clearances": 2015,
+        "successfulDribbles": 2015,
+        "keyPasses": 2015,
+        "bigChancesCreated": 2015,
+        "accuratePasses": 2015,
+        "accurateLongBalls": 2015,
+        "expectedGoals": 2022,
+        "expectedAssists": 2022,
+        "goals": 2015,
+        "assists": 2016,
+        "fouls": 2015,
+        "saves": 2015,
+        "goalsConceded": 2015,
+        "possessionWonAttThird": 2015
+      },
+      "GB1": {
+        "tackles": 2015,
+        "interceptions": 2015,
+        "ballRecovery": 2023,
+        "clearances": 2015,
+        "successfulDribbles": 2015,
+        "keyPasses": 2015,
+        "bigChancesCreated": 2015,
+        "accuratePasses": 2015,
+        "accurateLongBalls": 2015,
+        "expectedGoals": 2022,
+        "expectedAssists": 2022,
+        "goals": 2015,
+        "assists": 2016,
+        "fouls": 2015,
+        "saves": 2015,
+        "goalsConceded": 2015,
+        "possessionWonAttThird": 2015
+      },
+      "IT1": {
+        "tackles": 2015,
+        "interceptions": 2015,
+        "ballRecovery": 2023,
+        "clearances": 2015,
+        "successfulDribbles": 2015,
+        "keyPasses": 2015,
+        "bigChancesCreated": 2015,
+        "accuratePasses": 2015,
+        "accurateLongBalls": 2015,
+        "expectedGoals": 2022,
+        "expectedAssists": 2022,
+        "goals": 2015,
+        "assists": 2016,
+        "fouls": 2015,
+        "saves": 2015,
+        "goalsConceded": 2015,
+        "possessionWonAttThird": 2015
+      },
+      "L1": {
+        "tackles": 2015,
+        "interceptions": 2015,
+        "ballRecovery": 2023,
+        "clearances": 2015,
+        "successfulDribbles": 2015,
+        "keyPasses": 2015,
+        "bigChancesCreated": 2015,
+        "accuratePasses": 2015,
+        "accurateLongBalls": 2015,
+        "expectedGoals": 2022,
+        "expectedAssists": 2022,
+        "goals": 2015,
+        "assists": 2015,
+        "fouls": 2015,
+        "saves": 2015,
+        "goalsConceded": 2016,
+        "possessionWonAttThird": 2015
+      },
+      "NL1": {
+        "tackles": 2015,
+        "interceptions": 2015,
+        "ballRecovery": 2015,
+        "clearances": 2015,
+        "successfulDribbles": 2015,
+        "keyPasses": 2015,
+        "bigChancesCreated": 2015,
+        "accuratePasses": 2015,
+        "accurateLongBalls": 2015,
+        "expectedGoals": 2023,
+        "expectedAssists": 2023,
+        "goals": 2015,
+        "assists": 2015,
+        "fouls": 2015,
+        "saves": 2015,
+        "goalsConceded": 2017,
+        "possessionWonAttThird": 2015
+      },
+      "PO1": {
+        "tackles": 2016,
+        "interceptions": 2016,
+        "ballRecovery": 2023,
+        "clearances": 2016,
+        "successfulDribbles": 2016,
+        "keyPasses": 2016,
+        "bigChancesCreated": 2016,
+        "accuratePasses": 2016,
+        "accurateLongBalls": 2016,
+        "expectedGoals": 2023,
+        "expectedAssists": 2023,
+        "goals": 2016,
+        "assists": 2016,
+        "fouls": 2016,
+        "saves": 2016,
+        "goalsConceded": 2016,
+        "possessionWonAttThird": 2016
+      },
+      "TR1": {
+        "tackles": 2015,
+        "interceptions": 2015,
+        "ballRecovery": 2023,
+        "clearances": 2015,
+        "successfulDribbles": 2015,
+        "keyPasses": 2015,
+        "bigChancesCreated": 2015,
+        "accuratePasses": 2015,
+        "accurateLongBalls": 2015,
+        "expectedGoals": 2023,
+        "expectedAssists": 2023,
+        "goals": 2015,
+        "assists": 2016,
+        "fouls": 2015,
+        "saves": 2015,
+        "goalsConceded": 2015,
+        "possessionWonAttThird": 2015
+      }
+    }
+  },
+  "opponent_elo": {
+    "club_seasons_rated_on_1_july_by_league": {
+      "A1": 0.9167,
+      "BE1": 0.9798,
+      "BRA1": 0.0,
+      "C1": 0.9583,
+      "DK1": 0.9671,
+      "ES1": 1.0,
+      "FR1": 1.0,
+      "GB1": 1.0,
+      "IT1": 1.0,
+      "L1": 1.0,
+      "NL1": 0.9583,
+      "PO1": 0.9491,
+      "TR1": 0.9733
+    }
+  },
+  "passes": {
+    "identity_big5_min": true,
+    "minutes_within_5pct": true
+  }
+}
