@@ -1,6 +1,7 @@
 import pandas as pd
 
 from scout.data import understat
+from scout.panel import freeze
 
 SIDE_STATS = ["xg", "np_xg", "ppda", "deep_completions", "expected_points", "goals"]
 # notebook 01 Step 5c: every season mean has year-to-year r >= 0.58; xg duplicates np_xg
@@ -44,5 +45,13 @@ def season_means(long: pd.DataFrame) -> pd.DataFrame:
     return means.reset_index()
 
 
-def build(leagues: list[str] | None = None, seasons: list[int] | None = None) -> pd.DataFrame:
-    return season_means(team_match_long(understat.load("team_match", leagues, seasons)))
+def build(
+    leagues: list[str] | None = None,
+    seasons: list[int] | None = None,
+    as_of: pd.Timestamp | None = None,
+) -> pd.DataFrame:
+    matches = understat.load("team_match", leagues, seasons)
+    if as_of is not None:
+        freeze.refuse_after(seasons, as_of)
+        matches = freeze.cut(matches, as_of, date_col="date")
+    return season_means(team_match_long(matches))

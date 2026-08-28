@@ -1,6 +1,7 @@
 import pandas as pd
 
 from scout.data import understat
+from scout.panel import freeze
 
 # notebook 01 Step 5a: Understat codes are formation slots; six roles pass 20 players x 900 min
 # in every league-season, AMC folds into W on its per-90 profile
@@ -52,5 +53,13 @@ def assign_roles(rows: pd.DataFrame) -> pd.DataFrame:
     return out.drop(columns="_main_role")
 
 
-def build(leagues: list[str] | None = None, seasons: list[int] | None = None) -> pd.DataFrame:
-    return assign_roles(understat.load("player_match", leagues, seasons))
+def build(
+    leagues: list[str] | None = None,
+    seasons: list[int] | None = None,
+    as_of: pd.Timestamp | None = None,
+) -> pd.DataFrame:
+    rows = understat.load("player_match", leagues, seasons)
+    if as_of is not None:
+        freeze.refuse_after(seasons, as_of)
+        rows = freeze.cut(rows, as_of, date_col="date")
+    return assign_roles(rows)

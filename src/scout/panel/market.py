@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 
 from scout.data import transfermarkt as tm
+from scout.panel import freeze
 
 MIRROR_MONTHS = (
     36  # notebook 01 Part 2d: 0.22% of loans run past 36 months; 48 sweeps in re-purchases
@@ -64,5 +65,10 @@ def add_cost(moves: pd.DataFrame) -> pd.DataFrame:
     return out
 
 
-def build(con: duckdb.DuckDBPyConnection | None = None) -> pd.DataFrame:
-    return add_cost(classify(con or tm.connect()))
+def build(
+    con: duckdb.DuckDBPyConnection | None = None, as_of: pd.Timestamp | None = None
+) -> pd.DataFrame:
+    moves = classify(con or tm.connect())
+    if as_of is not None:
+        moves = freeze.cut(moves, as_of, date_col="transfer_date")
+    return add_cost(moves)

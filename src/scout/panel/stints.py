@@ -2,6 +2,7 @@ import duckdb
 import pandas as pd
 
 from scout.data import transfermarkt as tm
+from scout.panel import freeze
 from scout.panel.values import value_at
 
 # notebook 01 Step 5b: no minutes floor — lineup-only rows stay with NaN minutes; the value is
@@ -36,8 +37,13 @@ def add_values(stints: pd.DataFrame, valuations: pd.DataFrame) -> pd.DataFrame:
 
 
 def build(
-    comps: list[str], seasons: list[int], con: duckdb.DuckDBPyConnection | None = None
+    comps: list[str],
+    seasons: list[int],
+    con: duckdb.DuckDBPyConnection | None = None,
+    as_of: pd.Timestamp | None = None,
 ) -> pd.DataFrame:
+    if as_of is not None:
+        freeze.refuse_after(seasons, as_of)
     con = con or tm.connect()
     panel = tm.load_player_club_seasons(comps, seasons, con)
     dates = appearance_dates(comps, seasons, con)
@@ -45,4 +51,6 @@ def build(
     valuations = con.execute(
         "SELECT player_id, date, market_value_in_eur FROM player_valuations"
     ).df()
+    if as_of is not None:
+        valuations = freeze.cut(valuations, as_of, date_col="date")
     return add_values(stints, valuations)
