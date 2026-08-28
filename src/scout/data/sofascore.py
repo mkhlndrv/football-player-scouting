@@ -71,8 +71,11 @@ def list_seasons(tournament_id: int) -> pd.DataFrame:
     )
 
 
-def season_year(comp: str, season: int) -> str:
-    return str(season) if comp in CALENDAR_YEAR_LEAGUES else config.season_short(season)
+def season_years(comp: str, season: int) -> list[str]:
+    """Labels to try, in order. Calendar-year leagues use "2023", except seasons that ran across
+    the year boundary (Brazil 2020, COVID) which the provider labels "20/21"."""
+    short = config.season_short(season)
+    return [str(season), short] if comp in CALENDAR_YEAR_LEAGUES else [short]
 
 
 def position_group_stats(
@@ -119,8 +122,10 @@ def pull_league(comp: str, seasons: list[int], log: Callable[[str], None] = prin
         path = raw_path(comp, season)
         if path.exists():
             continue
-        year = season_year(comp, season)
-        if year not in season_ids.index:
+        year = next(
+            (label for label in season_years(comp, season) if label in season_ids.index), None
+        )
+        if year is None:
             log(f"sofascore {comp} {season}: no such season on provider")
             continue
         season_id = int(season_ids[year])

@@ -87,6 +87,9 @@ def test_pull_league_writes_one_file_per_season_and_resumes(tmp_path, monkeypatc
     assert len(saved) == 8
 
 
-def test_season_year_for_calendar_leagues():
-    assert sofascore.season_year("BRA1", 2023) == "2023"
-    assert sofascore.season_year("GB1", 2023) == "23/24"
+def test_season_labels_for_calendar_leagues():
+    assert sofascore.season_years("BRA1", 2023) == [
+        "2023",
+        "23/24",
+    ]  # 2020 is "20/21" on the provider
+    assert sofascore.season_years("GB1", 2023) == ["23/24"]
