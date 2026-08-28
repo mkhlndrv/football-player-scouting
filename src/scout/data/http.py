@@ -69,7 +69,8 @@ def polite_get(
         time.sleep(wait)
     response = _live(url, params, {**HEADERS, **(headers or {})}, tls)
     _last_hit_by_host[host] = time.monotonic()
-    if response.status_code not in BLOCKED_STATUSES and response.status_code < 500:
+    cacheable = response.status_code not in BLOCKED_STATUSES and response.status_code < 500
+    if cacheable and response.text.strip():  # an empty body is a soft block, not a result
         cached.write_text(
             json.dumps({"status": response.status_code, "body": response.text, "url": url})
         )

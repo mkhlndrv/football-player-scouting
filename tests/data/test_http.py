@@ -52,3 +52,16 @@ def test_params_are_part_of_the_cache_key(tmp_path):
         http.polite_get("https://h.test/x", params={"offset": 100}, cache_dir=tmp_path)
         http.polite_get("https://h.test/x", params={"offset": 0}, cache_dir=tmp_path)
     assert calls == [{"offset": 0}, {"offset": 100}]
+
+
+def test_empty_body_is_not_cached(tmp_path):
+    calls = []
+
+    def fake_get(url, params=None, headers=None, timeout=30):
+        calls.append(url)
+        return _response(200, body="" if len(calls) == 1 else "{}")
+
+    with patch.object(http.requests, "get", fake_get), patch.object(http.time, "sleep"):
+        first = http.polite_get("https://h.test/soft", cache_dir=tmp_path)
+        second = http.polite_get("https://h.test/soft", cache_dir=tmp_path)
+    assert first.text == "" and second.text == "{}" and len(calls) == 2
