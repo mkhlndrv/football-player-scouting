@@ -25,7 +25,12 @@ def _unique_lookup(frame: pd.DataFrame, keys: list[str]) -> pd.DataFrame:
     return frame[counts == 1].drop_duplicates(keys)[keys + ["right_id"]]
 
 
-def match_players(left: pd.DataFrame, right: pd.DataFrame, *, min_fuzzy: int = 92) -> pd.DataFrame:
+MIN_FUZZY = 85  # notebook 01 Step 4: every Big-5 hit in 84–92 is a spelling variant
+
+
+def match_players(
+    left: pd.DataFrame, right: pd.DataFrame, *, min_fuzzy: int = MIN_FUZZY
+) -> pd.DataFrame:
     left = left.copy()
     right = right.copy()
     left["_norm"] = left["name"].map(normalize_name)
@@ -34,15 +39,20 @@ def match_players(left: pd.DataFrame, right: pd.DataFrame, *, min_fuzzy: int = 9
     right["_last"] = right["name"].map(last_token)
     left["right_id"] = pd.NA
     left["method"] = "unmatched"
+    # a one-word name unique in a league-season is still a namesake risk (Step 4: 27 of 75
+    # verifiable mononym hits were wrong), so name_unique only sees multi-token names
+    multi_token = left["_norm"].str.contains(" ")
 
     stages = [
-        ("exact", ["_norm", "club_key", "season"]),
-        ("last_token", ["_last", "club_key", "season"]),
-        ("name_unique", ["_norm", "season"]),
+        ("exact", ["_norm", "club_key", "season"], None),
+        ("last_token", ["_last", "club_key", "season"], None),
+        ("name_unique", ["_norm", "season"], multi_token),
     ]
-    for method, keys in stages:
+    for method, keys, eligible in stages:
         lookup = _unique_lookup(right, keys).rename(columns={"right_id": "_hit"})
         pending = left["right_id"].isna()
+        if eligible is not None:
+            pending &= eligible
         merged = left.loc[pending, keys].merge(lookup, on=keys, how="left")
         hits = merged["_hit"].to_numpy()
         idx = left.index[pending]
@@ -66,6 +76,27 @@ def match_players(left: pd.DataFrame, right: pd.DataFrame, *, min_fuzzy: int = 9
             left.at[i, "method"] = "fuzzy"
 
     return left.drop(columns=["_norm", "_last"])
+
+
+def resolve_player_ids(matches: pd.DataFrame, reep_keys: pd.Series) -> pd.DataFrame:
+    """One Transfermarkt id per provider id: the reep key when there is one, else the cascade
+    id that played the most minutes across the provider id's matched rows.
+    `matches` = match_players output plus `provider_id` and `minutes`; `reep_keys` = provider id
+    → Transfermarkt id (both as str)."""
+    provider_ids = matches["provider_id"].astype(str)
+    cascade = matches.assign(_pid=provider_ids).dropna(subset=["right_id"])
+    weight = cascade.groupby(["_pid", "right_id"])["minutes"].sum(min_count=1).fillna(0)
+    modal = weight.reset_index().sort_values("minutes", ascending=False).drop_duplicates("_pid")
+    modal = modal.set_index("_pid")["right_id"].astype(int).astype(str)
+
+    out = pd.DataFrame(index=pd.Index(provider_ids.unique(), name="provider_id"))
+    out["tm_player_id"] = out.index.map(reep_keys)
+    out["source"] = "reep"
+    from_cascade = out["tm_player_id"].isna()
+    out.loc[from_cascade, "tm_player_id"] = out.index[from_cascade].map(modal)
+    out.loc[from_cascade, "source"] = "cascade"
+    out.loc[out["tm_player_id"].isna(), "source"] = "unmatched"
+    return out.reset_index()
 
 
 OVERRIDES_DIR = Path(__file__).parent / "overrides"

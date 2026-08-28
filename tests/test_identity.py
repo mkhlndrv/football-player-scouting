@@ -6,6 +6,7 @@ from scout.identity import (
     load_overrides,
     match_players,
     normalize_name,
+    resolve_player_ids,
 )
 
 
@@ -106,3 +107,46 @@ def test_load_overrides_reads_committed_file():
     teams = load_overrides("teams")
     assert list(teams.columns) == ["provider", "competition_id", "team_name", "club_id"]
     assert (teams.provider == "understat").sum() == 11
+
+
+def test_name_unique_ignores_mononyms():
+    left = pd.DataFrame(
+        {"name": ["Rafinha", "Bruno Henrique"], "club_key": ["a", "a"], "season": [2024, 2024]}
+    )
+    right = pd.DataFrame(
+        {
+            "right_id": [1, 2],
+            "name": ["Rafinha", "Bruno Henrique"],
+            "club_key": ["b", "b"],
+            "season": [2024, 2024],
+        }
+    )
+    out = match_players(left, right)
+    assert out.loc[0, "method"] == "unmatched"
+    assert out.loc[1, "right_id"] == 2 and out.loc[1, "method"] == "name_unique"
+
+
+def test_default_fuzzy_threshold_keeps_spelling_variants():
+    left = pd.DataFrame({"name": ["Yegor Yarmoliuk"], "club_key": ["x"], "season": [2023]})
+    right = pd.DataFrame(
+        {"right_id": [1], "name": ["Yehor Yarmolyuk"], "club_key": ["x"], "season": [2023]}
+    )
+    out = match_players(left, right)
+    assert out.loc[0, "right_id"] == 1 and out.loc[0, "method"] == "fuzzy"
+    assert match_players(left, right, min_fuzzy=92).loc[0, "method"] == "unmatched"
+
+
+def test_resolve_player_ids_prefers_reep_then_minutes_weighted_mode():
+    matches = pd.DataFrame(
+        {
+            "provider_id": [1, 1, 2, 2, 2, 3, 4],
+            "right_id": [10, 11, 20, 21, 21, 30, pd.NA],
+            "minutes": [3000, 100, 900, 500, 500, float("nan"), float("nan")],
+        }
+    )
+    reep_keys = pd.Series({"1": "99"})
+    out = resolve_player_ids(matches, reep_keys).set_index("provider_id")
+    assert out.loc["1", "tm_player_id"] == "99" and out.loc["1", "source"] == "reep"
+    assert out.loc["2", "tm_player_id"] == "21" and out.loc["2", "source"] == "cascade"
+    assert out.loc["3", "tm_player_id"] == "30"
+    assert pd.isna(out.loc["4", "tm_player_id"]) and out.loc["4", "source"] == "unmatched"

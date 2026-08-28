@@ -70,6 +70,7 @@ WORKRATE_PRIMARY.update({"BE1": "fotmob", "DK1": "fotmob"})
 TM_DUCKDB_URL = (
     "https://pub-e682421888d945d684bcae8890b0ec20.r2.dev/data/transfermarkt-datasets.duckdb"
 )
+REEP_URL = "https://raw.githubusercontent.com/withqwerty/reep/main/data"
 
 
 def season_label(start: int) -> str:
