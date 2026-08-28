@@ -3,7 +3,7 @@
 set -euo pipefail
 HOST="$1"; KEY="${2:-}"; SSH="ssh${KEY:+ -i $KEY}"
 RSYNC=(rsync -az -e "$SSH")
-"${RSYNC[@]}" --exclude .venv --exclude data --exclude .git --exclude '__pycache__' --exclude .pytest_cache --exclude .ruff_cache \
+"${RSYNC[@]}" --exclude /.venv --exclude /data --exclude /.git --exclude '__pycache__' --exclude .pytest_cache --exclude .ruff_cache \
   ./ "$HOST:football-player-scouting/"
 # resume state: injury spells so far, and the ClubElo answers already collected (tiny; the 1 GB page cache stays here)
 "${RSYNC[@]}" --relative data/raw/injuries/spells.parquet "$HOST:football-player-scouting/" || true
