@@ -65,3 +65,21 @@ def test_empty_body_is_not_cached(tmp_path):
         first = http.polite_get("https://h.test/soft", cache_dir=tmp_path)
         second = http.polite_get("https://h.test/soft", cache_dir=tmp_path)
     assert first.text == "" and second.text == "{}" and len(calls) == 2
+
+
+def test_transport_failure_status_raises_and_is_not_cached(tmp_path):
+    import pytest
+
+    calls = []
+
+    def fake_get(url, params=None, headers=None, timeout=30):
+        calls.append(url)
+        return _response(
+            0 if len(calls) == 1 else 200, body="failed to do request" if len(calls) == 1 else "{}"
+        )
+
+    with patch.object(http.requests, "get", fake_get), patch.object(http.time, "sleep"):
+        with pytest.raises(ConnectionError):
+            http.polite_get("https://h.test/t", cache_dir=tmp_path)
+        assert http.polite_get("https://h.test/t", cache_dir=tmp_path).text == "{}"
+    assert len(calls) == 2
