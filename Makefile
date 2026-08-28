@@ -1,4 +1,4 @@
-.PHONY: setup lint test data spike clean
+.PHONY: setup lint test data clean
 
 setup:
 	uv sync --locked
@@ -9,11 +9,8 @@ lint:
 test:
 	uv run pytest -q
 
-spike:
-	for s in spike/s*.py; do echo "== $$s"; uv run python $$s || exit 1; done
-
 clean:
-	rm -rf .venv .pytest_cache .ruff_cache data/spike
+	rm -rf .venv .pytest_cache .ruff_cache
 
 data:
 	uv run python -m scout data
