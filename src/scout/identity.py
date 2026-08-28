@@ -126,7 +126,9 @@ def _best_club(team_name: str, choices: dict[str, tuple[int, str]]) -> tuple[flo
     score = hits[0][1]
     # token_set_ratio scores a token subset as 100 ("Barcelona" vs both "FC Barcelona" and
     # "RCD Espanyol Barcelona"); the shortest candidate among the ties is the club itself.
-    return score, min((h[0] for h in hits if h[1] == score), key=len)
+    # Equal lengths ("Hellas Verona" / "Chievo Verona") fall back to alphabetical order so the
+    # result never depends on the row order the database happened to return.
+    return score, min((h[0] for h in hits if h[1] == score), key=lambda name: (len(name), name))
 
 
 def build_team_lineage(

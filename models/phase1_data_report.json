@@ -12,11 +12,11 @@
       "schedule": 60
     },
     "sofascore_league_seasons": 143,
-    "fotmob_league_seasons": 67,
-    "injury_players": 400
+    "fotmob_league_seasons": 69,
+    "injury_players": 450
   },
   "team_lineage_unresolved": {
-    "fotmob": 7,
+    "fotmob": 9,
     "sofascore": 34,
     "understat": 0
   },
@@ -24,11 +24,11 @@
     "understat": {
       "provider_ids": 9531,
       "by_source": {
-        "cascade": 7442,
+        "cascade": 7452,
         "reep": 2019,
-        "unmatched": 70
+        "unmatched": 60
       },
-      "minutes_rate_overall": 0.9976,
+      "minutes_rate_overall": 0.9977,
       "minutes_rate_big5_min": 0.9893,
       "minutes_rate_by_league_season": {
         "ES1": {
@@ -74,10 +74,10 @@
           "2025": 1.0
         },
         "IT1": {
-          "2014": 0.9954,
-          "2015": 0.9986,
+          "2014": 0.9998,
+          "2015": 0.9999,
           "2016": 0.9998,
-          "2017": 0.9996,
+          "2017": 1.0,
           "2018": 1.0,
           "2019": 1.0,
           "2020": 0.9999,
@@ -285,13 +285,13 @@
       }
     },
     "fotmob": {
-      "provider_ids": 10023,
+      "provider_ids": 10642,
       "by_source": {
-        "cascade": 7732,
-        "reep": 2208,
-        "unmatched": 83
+        "cascade": 8327,
+        "reep": 2209,
+        "unmatched": 106
       },
-      "minutes_rate_overall": 0.9984,
+      "minutes_rate_overall": 0.9977,
       "minutes_rate_big5_min": 0.9943,
       "minutes_rate_by_league_season": {
         "BE1": {
@@ -319,8 +319,8 @@
           "2025": 0.9999
         },
         "FR1": {
-          "2016": 0.9965,
-          "2017": 0.997,
+          "2016": 0.9972,
+          "2017": 0.9973,
           "2018": 0.9978,
           "2019": 0.9996,
           "2020": 0.9986,
@@ -344,14 +344,14 @@
         },
         "IT1": {
           "2016": 0.9998,
-          "2017": 0.9985,
+          "2017": 1.0,
           "2018": 1.0,
           "2019": 1.0,
           "2020": 0.9999,
           "2021": 1.0,
           "2022": 1.0,
-          "2023": 0.9999,
-          "2024": 0.9988,
+          "2023": 1.0,
+          "2024": 1.0,
           "2025": 1.0
         },
         "NL1": {
@@ -365,19 +365,31 @@
           "2023": 0.9977,
           "2024": 0.9969,
           "2025": 0.9976
+        },
+        "PO1": {
+          "2016": null,
+          "2017": 0.9824,
+          "2018": 0.9617,
+          "2019": null,
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": null
         }
       }
     }
   },
   "minutes_reconciliation_per_match": {
-    "club_seasons": 518,
-    "within_5pct_share": 0.9479,
-    "transfermarkt_short": 27,
+    "club_seasons": 520,
+    "within_5pct_share": 0.95,
+    "transfermarkt_short": 26,
     "transfermarkt_long": 0,
     "within_5pct_by_league": {
       "ES1": 0.9542,
       "GB1": 0.9792,
-      "IT1": 0.7105
+      "IT1": 0.75
     }
   },
   "roles": {

@@ -106,7 +106,7 @@ def test_team_lineage_leaves_low_scores_unresolved_and_keeps_provider_ids():
 def test_load_overrides_reads_committed_file():
     teams = load_overrides("teams")
     assert list(teams.columns) == ["provider", "competition_id", "team_name", "club_id"]
-    assert (teams.provider == "understat").sum() == 11
+    assert (teams.provider == "understat").sum() == 12
 
 
 def test_name_unique_ignores_mononyms():
@@ -150,3 +150,18 @@ def test_resolve_player_ids_prefers_reep_then_minutes_weighted_mode():
     assert out.loc["2", "tm_player_id"] == "21" and out.loc["2", "source"] == "cascade"
     assert out.loc["3", "tm_player_id"] == "30"
     assert pd.isna(out.loc["4", "tm_player_id"]) and out.loc["4", "source"] == "unmatched"
+
+
+def test_team_lineage_tie_break_is_deterministic_for_equal_lengths():
+    tm_clubs = pd.DataFrame(
+        {
+            "club_id": [862, 276],
+            "club_name": ["Chievo Verona", "Hellas Verona"],
+            "competition_id": ["IT1", "IT1"],
+        }
+    )
+    teams = {"understat": pd.DataFrame({"competition_id": ["IT1"], "team_name": ["Verona"]})}
+    overrides = pd.DataFrame(columns=["provider", "competition_id", "team_name", "club_id"])
+    forward = build_team_lineage(tm_clubs, teams, overrides).club_id.iloc[0]
+    reversed_ = build_team_lineage(tm_clubs.iloc[::-1], teams, overrides).club_id.iloc[0]
+    assert forward == reversed_ == 862  # alphabetical among equal lengths; the override fixes it
