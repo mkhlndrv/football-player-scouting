@@ -1,0 +1,13 @@
+.venv
+.git
+data
+notebooks
+docs
+legacy
+models
+reports
+deploy
+*.pem
+__pycache__
+.pytest_cache
+.ruff_cache
