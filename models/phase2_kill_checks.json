@@ -1,0 +1,218 @@
+{
+ "roles": {
+  "CB": {
+   "mu": 0.07439972038378205,
+   "tau": 0.027766119221499155,
+   "inflation": 1.4590455235034663,
+   "median_k": 0.515739020594905,
+   "y2y_r_raw": 0.3189686075208792,
+   "coverage_80_out_of_sample": 0.7938053097345132,
+   "n_out_of_sample": 1130,
+   "mae_raw": 0.04484371258492195,
+   "mae_shrunk": 0.03935244057887651,
+   "y2y_r_goals_assists": 0.15014247085640964
+  },
+  "CM": {
+   "mu": 0.17593835783306327,
+   "tau": 0.10194051513737244,
+   "inflation": 1.4723800388822204,
+   "median_k": 0.848129673801371,
+   "y2y_r_raw": 0.6918579576768991,
+   "coverage_80_out_of_sample": 0.8116063919259883,
+   "n_out_of_sample": 1189,
+   "mae_raw": 0.07067383068521714,
+   "mae_shrunk": 0.06719636353378337,
+   "y2y_r_goals_assists": 0.49680979890397126
+  },
+  "FB": {
+   "mu": 0.1457729596588389,
+   "tau": 0.0731131432822501,
+   "inflation": 1.3869673342925544,
+   "median_k": 0.7618529766045796,
+   "y2y_r_raw": 0.604618330118614,
+   "coverage_80_out_of_sample": 0.7995930824008138,
+   "n_out_of_sample": 983,
+   "mae_raw": 0.0696358258747428,
+   "mae_shrunk": 0.06447678430159129,
+   "y2y_r_goals_assists": 0.36947977662479303
+  },
+  "ST": {
+   "mu": 0.5704300432833592,
+   "tau": 0.1698297892853551,
+   "inflation": 1.2005193758740118,
+   "median_k": 0.7212690333374732,
+   "y2y_r_raw": 0.5966223610350002,
+   "coverage_80_out_of_sample": 0.8006756756756757,
+   "n_out_of_sample": 592,
+   "mae_raw": 0.15961362588384154,
+   "mae_shrunk": 0.14296436006126917,
+   "y2y_r_goals_assists": 0.48445723205945146
+  },
+  "W": {
+   "mu": 0.42602957645634376,
+   "tau": 0.15148881411490306,
+   "inflation": 1.2748745538428994,
+   "median_k": 0.7627446622670835,
+   "y2y_r_raw": 0.641710654311137,
+   "coverage_80_out_of_sample": 0.797644539614561,
+   "n_out_of_sample": 934,
+   "mae_raw": 0.13215207080476335,
+   "mae_shrunk": 0.12074174785247935,
+   "y2y_r_goals_assists": 0.4507651480767173
+  },
+  "GK": {
+   "mu": -0.5068274165215685,
+   "tau": 0.12498402353924394,
+   "inflation": 1.1147434648328594,
+   "median_k": 0.383873591668786,
+   "y2y_r_raw": 0.3364119880440322,
+   "coverage_80_out_of_sample": 0.8175,
+   "n_out_of_sample": 400,
+   "mae_raw": 0.1928616302166982,
+   "mae_shrunk": 0.15984486598548872
+  }
+ },
+ "checks": {
+  "contribution_stability_beats_goals_assists": {
+   "CB": {
+    "raw": 0.3189686075208792,
+    "goals_assists": 0.15014247085640964,
+    "pass": true
+   },
+   "CM": {
+    "raw": 0.6918579576768991,
+    "goals_assists": 0.49680979890397126,
+    "pass": true
+   },
+   "FB": {
+    "raw": 0.604618330118614,
+    "goals_assists": 0.36947977662479303,
+    "pass": true
+   },
+   "ST": {
+    "raw": 0.5966223610350002,
+    "goals_assists": 0.48445723205945146,
+    "pass": true
+   },
+   "W": {
+    "raw": 0.641710654311137,
+    "goals_assists": 0.4507651480767173,
+    "pass": true
+   }
+  },
+  "contribution_variant": "raw expected output; team-share and plus-minus rejected on movers (notebook 02 Step 2)",
+  "defensive_value_on_off": "fails: y2y r -0.03..0.08 in every role (notebook 02 Step 6)",
+  "finishing_residual": "fails persistence as expected: y2y r 0.02-0.09 (notebook 02 Step 5)",
+  "opponent_slope": "pending: opponent Elo on the match date (ClubElo histories)",
+  "keeper_proxy_stability": {
+   "y2y_r": 0.3364119880440322,
+   "pass": true
+  },
+  "interval_calibration_80": {
+   "CB": {
+    "coverage": 0.7938053097345132,
+    "n": 1130,
+    "inflation": 1.4590455235034663
+   },
+   "CM": {
+    "coverage": 0.8116063919259883,
+    "n": 1189,
+    "inflation": 1.4723800388822204
+   },
+   "FB": {
+    "coverage": 0.7995930824008138,
+    "n": 983,
+    "inflation": 1.3869673342925544
+   },
+   "ST": {
+    "coverage": 0.8006756756756757,
+    "n": 592,
+    "inflation": 1.2005193758740118
+   },
+   "W": {
+    "coverage": 0.797644539614561,
+    "n": 934,
+    "inflation": 1.2748745538428994
+   }
+  },
+  "shrinkage_improves_mae": {
+   "CB": {
+    "raw": 0.04484371258492195,
+    "shrunk": 0.03935244057887651,
+    "pass": true
+   },
+   "CM": {
+    "raw": 0.07067383068521714,
+    "shrunk": 0.06719636353378337,
+    "pass": true
+   },
+   "FB": {
+    "raw": 0.0696358258747428,
+    "shrunk": 0.06447678430159129,
+    "pass": true
+   },
+   "ST": {
+    "raw": 0.15961362588384154,
+    "shrunk": 0.14296436006126917,
+    "pass": true
+   },
+   "W": {
+    "raw": 0.13215207080476335,
+    "shrunk": 0.12074174785247935,
+    "pass": true
+   }
+  },
+  "league_factors": [
+   {
+    "from": "big5",
+    "to": "big5",
+    "movers": 224,
+    "factor": 0.847121111428079,
+    "p10": 0.8079060700101746,
+    "p90": 0.8866909119403017,
+    "spread_lo": -0.5841466447862399,
+    "spread_hi": 0.6135561167788142
+   },
+   {
+    "from": "big5",
+    "to": "feeder",
+    "movers": 103,
+    "factor": 1.2089836610913456,
+    "p10": 1.1802803430662108,
+    "p90": 1.3120752911068867,
+    "spread_lo": -0.8391953085538079,
+    "spread_hi": 0.5437848897294385
+   },
+   {
+    "from": "feeder",
+    "to": "big5",
+    "movers": 194,
+    "factor": 0.6679575326117925,
+    "p10": 0.6259956120338127,
+    "p90": 0.7097658871351353,
+    "spread_lo": -0.5726917590463542,
+    "spread_hi": 0.4655290799132667
+   },
+   {
+    "from": "feeder",
+    "to": "feeder",
+    "movers": 197,
+    "factor": 0.9053319508637518,
+    "p10": 0.8727248887009259,
+    "p90": 0.938993418050719,
+    "spread_lo": -0.7101959225871252,
+    "spread_hi": 0.536761473113223
+   },
+   {
+    "from": "FR1",
+    "to": "GB1",
+    "movers": 35,
+    "factor": 0.6707095843219422,
+    "p10": 0.6040308537168368,
+    "p90": 0.7330889065087777,
+    "spread_lo": -0.5544952972116527,
+    "spread_hi": 0.4454644429271224
+   }
+  ]
+ }
+}

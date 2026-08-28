@@ -1,0 +1,52 @@
+[
+ {
+  "from": "big5",
+  "to": "big5",
+  "movers": 224,
+  "factor": 0.8471,
+  "p10": 0.8079,
+  "p90": 0.8867,
+  "spread_lo": -0.5841,
+  "spread_hi": 0.6136
+ },
+ {
+  "from": "big5",
+  "to": "feeder",
+  "movers": 103,
+  "factor": 1.209,
+  "p10": 1.1803,
+  "p90": 1.3121,
+  "spread_lo": -0.8392,
+  "spread_hi": 0.5438
+ },
+ {
+  "from": "feeder",
+  "to": "big5",
+  "movers": 194,
+  "factor": 0.668,
+  "p10": 0.626,
+  "p90": 0.7098,
+  "spread_lo": -0.5727,
+  "spread_hi": 0.4655
+ },
+ {
+  "from": "feeder",
+  "to": "feeder",
+  "movers": 197,
+  "factor": 0.9053,
+  "p10": 0.8727,
+  "p90": 0.939,
+  "spread_lo": -0.7102,
+  "spread_hi": 0.5368
+ },
+ {
+  "from": "FR1",
+  "to": "GB1",
+  "movers": 35,
+  "factor": 0.6707,
+  "p10": 0.604,
+  "p90": 0.7331,
+  "spread_lo": -0.5545,
+  "spread_hi": 0.4455
+ }
+]

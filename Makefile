@@ -1,4 +1,4 @@
-.PHONY: setup lint test data clean
+.PHONY: setup lint test data train clean
 
 setup:
 	uv sync --locked
@@ -14,3 +14,6 @@ clean:
 
 data:
 	uv run python -m scout data
+
+train:
+	uv run python -m scout train contribution
