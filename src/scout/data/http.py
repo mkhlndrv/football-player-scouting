@@ -32,13 +32,15 @@ def _from_cache(path: Path) -> requests.Response:
     return response
 
 
-def _live(url: str, params: dict | None, headers: dict, tls: bool) -> requests.Response:
+def _live(
+    url: str, params: dict | None, headers: dict, tls: bool, timeout_s: float
+) -> requests.Response:
     if not tls:
-        return requests.get(url, params=params, headers=headers, timeout=30)
+        return requests.get(url, params=params, headers=headers, timeout=timeout_s)
     import tls_requests  # browser TLS fingerprint: Sofascore 403s plain clients
 
     full_url = url if not params else f"{url}?{urlencode(params)}"
-    raw = tls_requests.get(full_url, headers=headers, timeout=30)
+    raw = tls_requests.get(full_url, headers=headers, timeout=timeout_s)
     response = requests.Response()
     response.status_code, response._content, response.url = (
         raw.status_code,
@@ -55,6 +57,7 @@ def polite_get(
     *,
     tls: bool = False,
     min_gap_s: float = 3.0,
+    timeout_s: float = 30,
     cache_dir: Path = CACHE / "http",
 ) -> requests.Response:
     """GET with a disk cache (so reruns never re-hit a site) and >= min_gap_s between live
@@ -67,7 +70,7 @@ def polite_get(
     wait = min_gap_s - (time.monotonic() - _last_hit_by_host.get(host, -1e9))
     if wait > 0:
         time.sleep(wait)
-    response = _live(url, params, {**HEADERS, **(headers or {})}, tls)
+    response = _live(url, params, {**HEADERS, **(headers or {})}, tls, timeout_s)
     _last_hit_by_host[host] = time.monotonic()
     if not 200 <= response.status_code < 500:  # 0 = TLS client transport failure; 5xx = server
         raise ConnectionError(f"{url}: status {response.status_code}: {response.text[:120]}")

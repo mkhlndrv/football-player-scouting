@@ -10,7 +10,7 @@ COLUMNS = ["Rank", "Club", "Country", "Level", "Elo", "From", "To"]
 
 
 def _csv(key: str) -> pd.DataFrame:
-    response = polite_get(API.format(key=key))
+    response = polite_get(API.format(key=key), timeout_s=120)  # api.clubelo.com often needs >30 s
     response.raise_for_status()
     frame = pd.read_csv(StringIO(response.text))
     if frame.empty:  # an unknown key answers 200 with the header only (notebook 01, Part 7b)
