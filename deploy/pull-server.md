@@ -21,8 +21,14 @@ ssh -i ~/.ssh/key.pem ubuntu@HOST 'cd football-player-scouting && ~/.local/bin/u
 
 ```bash
 ssh -i ~/.ssh/key.pem ubuntu@HOST 'cd football-player-scouting && \
-  nohup ~/.local/bin/uv run python -u -m scout fetch --only transfermarkt,reep,clubelo > clubelo.log 2>&1 &
-  nohup ~/.local/bin/uv run python -u -m scout fetch --only transfermarkt,reep,injuries > injuries.log 2>&1 &'
+  nohup ~/.local/bin/uv run python -u -m scout fetch --only transfermarkt,reep,injuries > injuries.log 2>&1 < /dev/null & disown'
+ssh -i ~/.ssh/key.pem ubuntu@HOST 'cd football-player-scouting && \
+  nohup ~/.local/bin/uv run python -u -m scout fetch --only transfermarkt,reep,clubelo > clubelo.log 2>&1 < /dev/null & disown'
+```
+
+`< /dev/null & disown` matters: without it the detached process keeps the SSH session open.
+
+```bash
 ```
 
 `transfermarkt,reep` first so each process has the DuckDB and the reep files before it needs

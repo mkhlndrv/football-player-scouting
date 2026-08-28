@@ -10,7 +10,9 @@ COLUMNS = ["Rank", "Club", "Country", "Level", "Elo", "From", "To"]
 
 
 def _csv(key: str) -> pd.DataFrame:
-    response = polite_get(API.format(key=key), timeout_s=120)  # api.clubelo.com often needs >30 s
+    response = polite_get(
+        API.format(key=key), timeout_s=300
+    )  # api.clubelo.com: 60-240 s per answer
     response.raise_for_status()
     frame = pd.read_csv(StringIO(response.text))
     if frame.empty:  # an unknown key answers 200 with the header only (notebook 01, Part 7b)
@@ -80,9 +82,9 @@ def resolved_clubs(comps: list[str], seasons: list[int]) -> pd.DataFrame:
     return lineage.sort_values(["tier", "team_name"])[["team_name", "club_id", "competition_id"]]
 
 
-def pull_histories(names: list[str], workers: int = 2, log=print) -> int:
+def pull_histories(names: list[str], workers: int = 3, log=print) -> int:
     """Cache the rating history of every club; the host answers in 60-120 s and 502s under
-    load, so two requests in flight roughly halve the wall time. Returns the non-empty count."""
+    load, so a few requests in flight divide the wall time. Returns the non-empty count."""
     from concurrent.futures import ThreadPoolExecutor
 
     from scout.data import retry
