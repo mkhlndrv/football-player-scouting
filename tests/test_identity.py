@@ -1,6 +1,12 @@
 import pandas as pd
 
-from scout.identity import last_token, match_players, normalize_name
+from scout.identity import (
+    build_team_lineage,
+    last_token,
+    load_overrides,
+    match_players,
+    normalize_name,
+)
 
 
 def test_normalize_name_strips_accents_case_and_punctuation():
@@ -48,3 +54,55 @@ def test_match_players_last_token_requires_uniqueness():
     )
     out = match_players(left, right)
     assert out.loc[0, "method"] == "unmatched"
+
+
+def test_team_lineage_prefers_shortest_on_ties_and_applies_overrides():
+    tm_clubs = pd.DataFrame(
+        {
+            "club_id": [131, 714, 621],
+            "club_name": ["FC Barcelona", "RCD Espanyol Barcelona", "Athletic Bilbao"],
+            "competition_id": ["ES1"] * 3,
+        }
+    )
+    provider_teams = {
+        "understat": pd.DataFrame(
+            {"competition_id": ["ES1"] * 3, "team_name": ["Barcelona", "Espanyol", "Athletic Club"]}
+        )
+    }
+    overrides = pd.DataFrame(
+        {
+            "provider": ["understat"],
+            "competition_id": ["ES1"],
+            "team_name": ["Athletic Club"],
+            "club_id": [621],
+        }
+    )
+    lineage = build_team_lineage(tm_clubs, provider_teams, overrides).set_index("team_name")
+    assert lineage.loc["Barcelona", "club_id"] == 131  # not Espanyol: shortest tie wins
+    assert lineage.loc["Espanyol", "club_id"] == 714
+    assert lineage.loc["Athletic Club", "club_id"] == 621
+    assert lineage.loc["Athletic Club", "source"] == "override"
+
+
+def test_team_lineage_leaves_low_scores_unresolved_and_keeps_provider_ids():
+    tm_clubs = pd.DataFrame(
+        {"club_id": [3911], "club_name": ["Stade Brestois 29"], "competition_id": ["FR1"]}
+    )
+    provider_teams = {
+        "sofascore": pd.DataFrame(
+            {"competition_id": ["FR1"], "team_name": ["Brest"], "provider_team_id": [1715]}
+        )
+    }
+    lineage = build_team_lineage(
+        tm_clubs,
+        provider_teams,
+        pd.DataFrame(columns=["provider", "competition_id", "team_name", "club_id"]),
+    )
+    row = lineage.iloc[0]
+    assert pd.isna(row.club_id) and row.source == "auto" and row.provider_team_id == 1715
+
+
+def test_load_overrides_reads_committed_file():
+    teams = load_overrides("teams")
+    assert list(teams.columns) == ["provider", "competition_id", "team_name", "club_id"]
+    assert (teams.provider == "understat").sum() == 11
