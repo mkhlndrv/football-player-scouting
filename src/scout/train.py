@@ -200,7 +200,11 @@ def run_contribution(models_dir: Path = config.MODELS) -> dict[str, Path]:
         ),
         "defensive_value_on_off": "fails: y2y r -0.03..0.08 in every role (notebook 02 Step 6)",
         "finishing_residual": "fails persistence as expected: y2y r 0.02-0.09 (notebook 02 Step 5)",
-        "opponent_slope": "pending: opponent Elo on the match date (ClubElo histories)",
+        "opponent_slope": (
+            "dropped: per-player slope not persistent (y2y r 0.01-0.10, shrinkage keeps 2-22%), "
+            "adjusting movers' output changes next-club prediction by 0.000; role-average slope "
+            "-0.06 (ST) / -0.045 (W) xG+xA per 90 per +100 opponent Elo (notebook 02 Step 3)"
+        ),
         "keeper_proxy_stability": {
             "y2y_r": keeper_facts["GK"]["y2y_r_raw"],
             "pass": keeper_facts["GK"]["y2y_r_raw"] >= 0.3,
