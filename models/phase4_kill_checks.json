@@ -1,0 +1,26 @@
+{
+ "role_switch_cost": "not identifiable: within-role z flips sign between attacking and non-attacking roles (W->CM +1.04, CM->W -0.99) - role level plus selection; eligible switches treated as free (notebook 04 Step 1)",
+ "style_fit_matched_transfer": {
+  "movers": 2604,
+  "distance_effect_per_sd": 0.0088,
+  "ci80": [
+   -0.0025,
+   0.0202
+  ],
+  "matched_cells_effect": 0.0058,
+  "matched_ci80": [
+   -0.0227,
+   0.0347
+  ],
+  "held_out_mae_base": 0.3187,
+  "held_out_mae_best": 0.3172,
+  "pass": false,
+  "verdict": "descriptive only (notebook 04 Step 2)"
+ },
+ "similarity_validity": {
+  "own_history_r": 0.512,
+  "own_plus_neighbours_r": 0.525,
+  "top10_overlap_year_to_year": 0.122,
+  "verdict": "validated, small; descriptive lens (notebook 04 Step 3)"
+ }
+}
