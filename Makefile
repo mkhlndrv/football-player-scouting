@@ -16,4 +16,4 @@ data:
 	uv run python -m scout data
 
 train:
-	uv run python -m scout train contribution
+	uv run python -m scout train all
