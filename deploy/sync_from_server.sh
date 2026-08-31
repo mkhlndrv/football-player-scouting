@@ -3,6 +3,6 @@
 set -euo pipefail
 HOST="$1"; KEY="${2:-}"; SSH="ssh${KEY:+ -i $KEY}"
 rsync -az -e "$SSH" "$HOST:football-player-scouting/data/raw/injuries/" data/raw/injuries/
-$SSH "$HOST" "cd football-player-scouting && grep -l '\"Rank,Club,Country' data/cache/http/*" > /tmp/clubelo_server_files.txt
+$SSH "$HOST" "cd football-player-scouting && find data/cache/http -type f | xargs grep -l '\"Rank,Club,Country'" > /tmp/clubelo_server_files.txt
 rsync -az -e "$SSH" --files-from=/tmp/clubelo_server_files.txt "$HOST:football-player-scouting/" ./
 echo "pulled from $HOST — now: make data"
