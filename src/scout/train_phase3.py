@@ -324,8 +324,8 @@ def run_kill_checks(models_dir: Path = config.MODELS) -> Path:
             ),
         },
         "availability_injuries": (
-            "no improvement on the partial file (774.3 vs 774.0 minutes MAE; notebook 03 Step 5) "
-            "- re-run on the complete file"
+            "no improvement on the complete file (746.2 vs 746.0 minutes MAE, baseline 803.0; "
+            "notebook 03 Step 5, re-checked 2026-08-31 on 23,837 players)"
         ),
         "resale_calibration_base_2021": resale_art["calibration_base_2021"],
     }
