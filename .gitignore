@@ -8,3 +8,6 @@ data/*
 .DS_Store
 
 *.pem
+
+# local working documents, not part of the published repo
+docs/
