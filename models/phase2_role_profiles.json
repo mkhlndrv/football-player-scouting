@@ -1,464 +1,434 @@
 {
- "rule": "a stat appears for a role only if it repeats year to year with r >= 0.3 at 600+ minutes",
- "ranked_number": "npxg + xa per 90 within role (Phase 2 Steps 2 and 10: no other stat earned a weight)",
- "profiles": {
-  "GK": {
-   "passing": [
-    {
-     "stat": "accurate_passes",
-     "year_to_year_r": 0.72
+  "rule": "a stat appears for a role only if it repeats year to year with r >= 0.3 at 600+ minutes",
+  "ranked_number": "npxg + xa per 90 within role (Phase 2 Steps 2 and 10: no other stat earned a weight)",
+  "profiles": {
+    "GK": {
+      "passing": [
+        {
+          "stat": "accurate_passes",
+          "year_to_year_r": 0.72
+        },
+        {
+          "stat": "accurate_long_balls",
+          "year_to_year_r": 0.68
+        }
+      ],
+      "build-up": [
+        {
+          "stat": "xg_chain",
+          "year_to_year_r": 0.65
+        },
+        {
+          "stat": "xg_buildup",
+          "year_to_year_r": 0.65
+        }
+      ],
+      "defending": [
+        {
+          "stat": "recoveries",
+          "year_to_year_r": 0.54
+        },
+        {
+          "stat": "clearances",
+          "year_to_year_r": 0.51
+        }
+      ],
+      "keeper": [
+        {
+          "stat": "goals_conceded",
+          "year_to_year_r": 0.45
+        },
+        {
+          "stat": "saves",
+          "year_to_year_r": 0.32
+        },
+        {
+          "stat": "prevented_per90 (Understat proxy)",
+          "year_to_year_r": 0.34
+        }
+      ]
     },
-    {
-     "stat": "accurate_long_balls",
-     "year_to_year_r": 0.68
+    "CB": {
+      "passing": [
+        {
+          "stat": "accurate_passes",
+          "year_to_year_r": 0.77
+        },
+        {
+          "stat": "accurate_long_balls",
+          "year_to_year_r": 0.69
+        }
+      ],
+      "build-up": [
+        {
+          "stat": "xg_chain",
+          "year_to_year_r": 0.71
+        },
+        {
+          "stat": "xg_buildup",
+          "year_to_year_r": 0.71
+        }
+      ],
+      "defending": [
+        {
+          "stat": "clearances",
+          "year_to_year_r": 0.64
+        },
+        {
+          "stat": "interceptions",
+          "year_to_year_r": 0.61
+        },
+        {
+          "stat": "recoveries",
+          "year_to_year_r": 0.59
+        },
+        {
+          "stat": "tackles",
+          "year_to_year_r": 0.57
+        },
+        {
+          "stat": "possession_won_att_third",
+          "year_to_year_r": 0.35
+        }
+      ],
+      "creation": [
+        {
+          "stat": "dribbles",
+          "year_to_year_r": 0.57
+        },
+        {
+          "stat": "key_passes",
+          "year_to_year_r": 0.45
+        }
+      ],
+      "discipline": [
+        {
+          "stat": "fouls",
+          "year_to_year_r": 0.53
+        }
+      ],
+      "finishing": [
+        {
+          "stat": "shots",
+          "year_to_year_r": 0.52
+        },
+        {
+          "stat": "npxg",
+          "year_to_year_r": 0.3
+        }
+      ]
+    },
+    "FB": {
+      "passing": [
+        {
+          "stat": "accurate_passes",
+          "year_to_year_r": 0.81
+        },
+        {
+          "stat": "accurate_long_balls",
+          "year_to_year_r": 0.7
+        }
+      ],
+      "creation": [
+        {
+          "stat": "dribbles",
+          "year_to_year_r": 0.72
+        },
+        {
+          "stat": "key_passes",
+          "year_to_year_r": 0.65
+        },
+        {
+          "stat": "xa",
+          "year_to_year_r": 0.53
+        },
+        {
+          "stat": "big_chances_created",
+          "year_to_year_r": 0.43
+        }
+      ],
+      "build-up": [
+        {
+          "stat": "xg_chain",
+          "year_to_year_r": 0.67
+        },
+        {
+          "stat": "xg_buildup",
+          "year_to_year_r": 0.66
+        }
+      ],
+      "finishing": [
+        {
+          "stat": "shots",
+          "year_to_year_r": 0.66
+        },
+        {
+          "stat": "npxg",
+          "year_to_year_r": 0.52
+        }
+      ],
+      "defending": [
+        {
+          "stat": "interceptions",
+          "year_to_year_r": 0.65
+        },
+        {
+          "stat": "clearances",
+          "year_to_year_r": 0.62
+        },
+        {
+          "stat": "tackles",
+          "year_to_year_r": 0.61
+        },
+        {
+          "stat": "recoveries",
+          "year_to_year_r": 0.56
+        },
+        {
+          "stat": "possession_won_att_third",
+          "year_to_year_r": 0.52
+        }
+      ],
+      "discipline": [
+        {
+          "stat": "fouls",
+          "year_to_year_r": 0.58
+        }
+      ]
+    },
+    "CM": {
+      "passing": [
+        {
+          "stat": "accurate_passes",
+          "year_to_year_r": 0.82
+        },
+        {
+          "stat": "accurate_long_balls",
+          "year_to_year_r": 0.79
+        }
+      ],
+      "creation": [
+        {
+          "stat": "dribbles",
+          "year_to_year_r": 0.74
+        },
+        {
+          "stat": "key_passes",
+          "year_to_year_r": 0.71
+        },
+        {
+          "stat": "xa",
+          "year_to_year_r": 0.65
+        },
+        {
+          "stat": "big_chances_created",
+          "year_to_year_r": 0.53
+        }
+      ],
+      "build-up": [
+        {
+          "stat": "xg_chain",
+          "year_to_year_r": 0.73
+        },
+        {
+          "stat": "xg_buildup",
+          "year_to_year_r": 0.7
+        }
+      ],
+      "finishing": [
+        {
+          "stat": "shots",
+          "year_to_year_r": 0.72
+        },
+        {
+          "stat": "npxg",
+          "year_to_year_r": 0.59
+        }
+      ],
+      "defending": [
+        {
+          "stat": "clearances",
+          "year_to_year_r": 0.67
+        },
+        {
+          "stat": "tackles",
+          "year_to_year_r": 0.64
+        },
+        {
+          "stat": "interceptions",
+          "year_to_year_r": 0.64
+        },
+        {
+          "stat": "possession_won_att_third",
+          "year_to_year_r": 0.56
+        },
+        {
+          "stat": "recoveries",
+          "year_to_year_r": 0.53
+        }
+      ],
+      "discipline": [
+        {
+          "stat": "fouls",
+          "year_to_year_r": 0.66
+        }
+      ]
+    },
+    "W": {
+      "passing": [
+        {
+          "stat": "accurate_passes",
+          "year_to_year_r": 0.85
+        },
+        {
+          "stat": "accurate_long_balls",
+          "year_to_year_r": 0.79
+        }
+      ],
+      "creation": [
+        {
+          "stat": "dribbles",
+          "year_to_year_r": 0.77
+        },
+        {
+          "stat": "key_passes",
+          "year_to_year_r": 0.62
+        },
+        {
+          "stat": "xa",
+          "year_to_year_r": 0.5
+        },
+        {
+          "stat": "big_chances_created",
+          "year_to_year_r": 0.42
+        }
+      ],
+      "discipline": [
+        {
+          "stat": "fouls",
+          "year_to_year_r": 0.7
+        }
+      ],
+      "finishing": [
+        {
+          "stat": "shots",
+          "year_to_year_r": 0.69
+        },
+        {
+          "stat": "npxg",
+          "year_to_year_r": 0.64
+        }
+      ],
+      "build-up": [
+        {
+          "stat": "xg_chain",
+          "year_to_year_r": 0.67
+        },
+        {
+          "stat": "xg_buildup",
+          "year_to_year_r": 0.59
+        }
+      ],
+      "defending": [
+        {
+          "stat": "tackles",
+          "year_to_year_r": 0.65
+        },
+        {
+          "stat": "interceptions",
+          "year_to_year_r": 0.6
+        },
+        {
+          "stat": "clearances",
+          "year_to_year_r": 0.6
+        },
+        {
+          "stat": "possession_won_att_third",
+          "year_to_year_r": 0.6
+        },
+        {
+          "stat": "recoveries",
+          "year_to_year_r": 0.53
+        }
+      ]
+    },
+    "ST": {
+      "passing": [
+        {
+          "stat": "accurate_passes",
+          "year_to_year_r": 0.86
+        },
+        {
+          "stat": "accurate_long_balls",
+          "year_to_year_r": 0.76
+        }
+      ],
+      "creation": [
+        {
+          "stat": "dribbles",
+          "year_to_year_r": 0.72
+        },
+        {
+          "stat": "key_passes",
+          "year_to_year_r": 0.63
+        },
+        {
+          "stat": "xa",
+          "year_to_year_r": 0.45
+        },
+        {
+          "stat": "big_chances_created",
+          "year_to_year_r": 0.35
+        }
+      ],
+      "discipline": [
+        {
+          "stat": "fouls",
+          "year_to_year_r": 0.71
+        }
+      ],
+      "finishing": [
+        {
+          "stat": "shots",
+          "year_to_year_r": 0.63
+        },
+        {
+          "stat": "npxg",
+          "year_to_year_r": 0.59
+        }
+      ],
+      "build-up": [
+        {
+          "stat": "xg_chain",
+          "year_to_year_r": 0.6
+        },
+        {
+          "stat": "xg_buildup",
+          "year_to_year_r": 0.57
+        }
+      ],
+      "defending": [
+        {
+          "stat": "clearances",
+          "year_to_year_r": 0.6
+        },
+        {
+          "stat": "tackles",
+          "year_to_year_r": 0.59
+        },
+        {
+          "stat": "possession_won_att_third",
+          "year_to_year_r": 0.56
+        },
+        {
+          "stat": "recoveries",
+          "year_to_year_r": 0.49
+        },
+        {
+          "stat": "interceptions",
+          "year_to_year_r": 0.47
+        }
+      ]
     }
-   ],
-   "build-up": [
-    {
-     "stat": "xg_chain",
-     "year_to_year_r": 0.65
-    },
-    {
-     "stat": "xg_buildup",
-     "year_to_year_r": 0.65
-    }
-   ],
-   "defending": [
-    {
-     "stat": "recoveries",
-     "year_to_year_r": 0.54
-    },
-    {
-     "stat": "clearances",
-     "year_to_year_r": 0.51
-    }
-   ],
-   "keeper": [
-    {
-     "stat": "goals_conceded",
-     "year_to_year_r": 0.45
-    },
-    {
-     "stat": "saves",
-     "year_to_year_r": 0.32
-    },
-    {
-     "stat": "prevented_per90 (Understat proxy)",
-     "year_to_year_r": 0.34
-    }
-   ]
-  },
-  "CB": {
-   "passing": [
-    {
-     "stat": "accurate_passes",
-     "year_to_year_r": 0.77
-    },
-    {
-     "stat": "accurate_long_balls",
-     "year_to_year_r": 0.69
-    }
-   ],
-   "build-up": [
-    {
-     "stat": "xg_chain",
-     "year_to_year_r": 0.71
-    },
-    {
-     "stat": "xg_buildup",
-     "year_to_year_r": 0.71
-    }
-   ],
-   "defending": [
-    {
-     "stat": "clearances",
-     "year_to_year_r": 0.64
-    },
-    {
-     "stat": "interceptions",
-     "year_to_year_r": 0.61
-    },
-    {
-     "stat": "recoveries",
-     "year_to_year_r": 0.59
-    },
-    {
-     "stat": "tackles",
-     "year_to_year_r": 0.57
-    },
-    {
-     "stat": "possession_won_att_third",
-     "year_to_year_r": 0.35
-    }
-   ],
-   "creation": [
-    {
-     "stat": "dribbles",
-     "year_to_year_r": 0.57
-    },
-    {
-     "stat": "key_passes",
-     "year_to_year_r": 0.45
-    }
-   ],
-   "discipline": [
-    {
-     "stat": "fouls",
-     "year_to_year_r": 0.53
-    }
-   ],
-   "finishing": [
-    {
-     "stat": "shots",
-     "year_to_year_r": 0.52
-    },
-    {
-     "stat": "npxg",
-     "year_to_year_r": 0.3
-    }
-   ],
-   "keeper": [
-    {
-     "stat": "goals_conceded",
-     "year_to_year_r": 0.41
-    }
-   ]
-  },
-  "FB": {
-   "passing": [
-    {
-     "stat": "accurate_passes",
-     "year_to_year_r": 0.81
-    },
-    {
-     "stat": "accurate_long_balls",
-     "year_to_year_r": 0.7
-    }
-   ],
-   "creation": [
-    {
-     "stat": "dribbles",
-     "year_to_year_r": 0.72
-    },
-    {
-     "stat": "key_passes",
-     "year_to_year_r": 0.65
-    },
-    {
-     "stat": "xa",
-     "year_to_year_r": 0.53
-    },
-    {
-     "stat": "big_chances_created",
-     "year_to_year_r": 0.43
-    }
-   ],
-   "build-up": [
-    {
-     "stat": "xg_chain",
-     "year_to_year_r": 0.67
-    },
-    {
-     "stat": "xg_buildup",
-     "year_to_year_r": 0.66
-    }
-   ],
-   "finishing": [
-    {
-     "stat": "shots",
-     "year_to_year_r": 0.66
-    },
-    {
-     "stat": "npxg",
-     "year_to_year_r": 0.52
-    }
-   ],
-   "defending": [
-    {
-     "stat": "interceptions",
-     "year_to_year_r": 0.65
-    },
-    {
-     "stat": "clearances",
-     "year_to_year_r": 0.62
-    },
-    {
-     "stat": "tackles",
-     "year_to_year_r": 0.61
-    },
-    {
-     "stat": "recoveries",
-     "year_to_year_r": 0.56
-    },
-    {
-     "stat": "possession_won_att_third",
-     "year_to_year_r": 0.52
-    }
-   ],
-   "discipline": [
-    {
-     "stat": "fouls",
-     "year_to_year_r": 0.58
-    }
-   ],
-   "keeper": [
-    {
-     "stat": "goals_conceded",
-     "year_to_year_r": 0.38
-    }
-   ]
-  },
-  "CM": {
-   "passing": [
-    {
-     "stat": "accurate_passes",
-     "year_to_year_r": 0.82
-    },
-    {
-     "stat": "accurate_long_balls",
-     "year_to_year_r": 0.79
-    }
-   ],
-   "creation": [
-    {
-     "stat": "dribbles",
-     "year_to_year_r": 0.74
-    },
-    {
-     "stat": "key_passes",
-     "year_to_year_r": 0.71
-    },
-    {
-     "stat": "xa",
-     "year_to_year_r": 0.65
-    },
-    {
-     "stat": "big_chances_created",
-     "year_to_year_r": 0.53
-    }
-   ],
-   "build-up": [
-    {
-     "stat": "xg_chain",
-     "year_to_year_r": 0.73
-    },
-    {
-     "stat": "xg_buildup",
-     "year_to_year_r": 0.7
-    }
-   ],
-   "finishing": [
-    {
-     "stat": "shots",
-     "year_to_year_r": 0.72
-    },
-    {
-     "stat": "npxg",
-     "year_to_year_r": 0.59
-    }
-   ],
-   "defending": [
-    {
-     "stat": "clearances",
-     "year_to_year_r": 0.67
-    },
-    {
-     "stat": "tackles",
-     "year_to_year_r": 0.64
-    },
-    {
-     "stat": "interceptions",
-     "year_to_year_r": 0.64
-    },
-    {
-     "stat": "possession_won_att_third",
-     "year_to_year_r": 0.56
-    },
-    {
-     "stat": "recoveries",
-     "year_to_year_r": 0.53
-    }
-   ],
-   "discipline": [
-    {
-     "stat": "fouls",
-     "year_to_year_r": 0.66
-    }
-   ],
-   "keeper": [
-    {
-     "stat": "goals_conceded",
-     "year_to_year_r": 0.36
-    }
-   ]
-  },
-  "W": {
-   "passing": [
-    {
-     "stat": "accurate_passes",
-     "year_to_year_r": 0.85
-    },
-    {
-     "stat": "accurate_long_balls",
-     "year_to_year_r": 0.79
-    }
-   ],
-   "creation": [
-    {
-     "stat": "dribbles",
-     "year_to_year_r": 0.77
-    },
-    {
-     "stat": "key_passes",
-     "year_to_year_r": 0.62
-    },
-    {
-     "stat": "xa",
-     "year_to_year_r": 0.5
-    },
-    {
-     "stat": "big_chances_created",
-     "year_to_year_r": 0.42
-    }
-   ],
-   "discipline": [
-    {
-     "stat": "fouls",
-     "year_to_year_r": 0.7
-    }
-   ],
-   "finishing": [
-    {
-     "stat": "shots",
-     "year_to_year_r": 0.69
-    },
-    {
-     "stat": "npxg",
-     "year_to_year_r": 0.64
-    }
-   ],
-   "build-up": [
-    {
-     "stat": "xg_chain",
-     "year_to_year_r": 0.67
-    },
-    {
-     "stat": "xg_buildup",
-     "year_to_year_r": 0.59
-    }
-   ],
-   "defending": [
-    {
-     "stat": "tackles",
-     "year_to_year_r": 0.65
-    },
-    {
-     "stat": "interceptions",
-     "year_to_year_r": 0.6
-    },
-    {
-     "stat": "clearances",
-     "year_to_year_r": 0.6
-    },
-    {
-     "stat": "possession_won_att_third",
-     "year_to_year_r": 0.6
-    },
-    {
-     "stat": "recoveries",
-     "year_to_year_r": 0.53
-    }
-   ],
-   "keeper": [
-    {
-     "stat": "goals_conceded",
-     "year_to_year_r": 0.35
-    }
-   ]
-  },
-  "ST": {
-   "passing": [
-    {
-     "stat": "accurate_passes",
-     "year_to_year_r": 0.86
-    },
-    {
-     "stat": "accurate_long_balls",
-     "year_to_year_r": 0.76
-    }
-   ],
-   "creation": [
-    {
-     "stat": "dribbles",
-     "year_to_year_r": 0.72
-    },
-    {
-     "stat": "key_passes",
-     "year_to_year_r": 0.63
-    },
-    {
-     "stat": "xa",
-     "year_to_year_r": 0.45
-    },
-    {
-     "stat": "big_chances_created",
-     "year_to_year_r": 0.35
-    }
-   ],
-   "discipline": [
-    {
-     "stat": "fouls",
-     "year_to_year_r": 0.71
-    }
-   ],
-   "finishing": [
-    {
-     "stat": "shots",
-     "year_to_year_r": 0.63
-    },
-    {
-     "stat": "npxg",
-     "year_to_year_r": 0.59
-    }
-   ],
-   "build-up": [
-    {
-     "stat": "xg_chain",
-     "year_to_year_r": 0.6
-    },
-    {
-     "stat": "xg_buildup",
-     "year_to_year_r": 0.57
-    }
-   ],
-   "defending": [
-    {
-     "stat": "clearances",
-     "year_to_year_r": 0.6
-    },
-    {
-     "stat": "tackles",
-     "year_to_year_r": 0.59
-    },
-    {
-     "stat": "possession_won_att_third",
-     "year_to_year_r": 0.56
-    },
-    {
-     "stat": "recoveries",
-     "year_to_year_r": 0.49
-    },
-    {
-     "stat": "interceptions",
-     "year_to_year_r": 0.47
-    }
-   ],
-   "keeper": [
-    {
-     "stat": "goals_conceded",
-     "year_to_year_r": 0.32
-    }
-   ]
   }
- }
 }
