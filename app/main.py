@@ -10,6 +10,22 @@ import streamlit as st
 MODELS = Path(__file__).resolve().parent.parent / "models"
 
 GROUP_ORDER = ["finishing", "creation", "build-up", "passing", "defending", "discipline", "keeper"]
+ROLE_NAMES = {
+    "GK": "Goalkeeper",
+    "CB": "Centre-back",
+    "FB": "Full-back",
+    "CM": "Central midfielder",
+    "W": "Winger / attacking midfielder",
+    "ST": "Striker",
+}
+PRETTY_STATS = {
+    "npxg": "npxG",
+    "xa": "xA",
+    "xg_chain": "xG chain",
+    "xg_buildup": "xG build-up",
+    "possession_won_att_third": "possession won, attacking third",
+}
+MARQUEE = ["Rodri", "Bukayo Saka", "Vinicius Junior", "Jude Bellingham", "Florian Wirtz"]
 GRAVEYARD_TITLES = {
     "finishing_residual": "Finishing skill",
     "defensive_value_on_off": "Defensive value from goals conceded (on/off)",
@@ -54,6 +70,24 @@ def shortlist_table(rows):
     )
 
 
+def pick_player(demo, label):
+    roles = ["All positions", *ROLE_NAMES]
+    role_pick = st.selectbox(
+        "Position", roles, format_func=lambda r: ROLE_NAMES.get(r, r), key="role_filter"
+    )
+    names = sorted(
+        n
+        for n, e in demo["players"].items()
+        if role_pick == "All positions" or e["role"] == role_pick
+    )
+    default = st.session_state.get("player_pick_value")
+    if default not in names:
+        default = next((m for m in MARQUEE if m in names), names[0])
+    picked = st.selectbox(label, names, index=names.index(default), key="player_select")
+    st.session_state["player_pick_value"] = picked
+    return picked
+
+
 st.set_page_config(page_title="Moneyball replacement scouting", layout="wide")
 page = st.sidebar.radio(
     "Pages", ["We're losing X", "Players like X", "The backtest", "The graveyard"]
@@ -67,11 +101,18 @@ if page == "We're losing X":
         "season's data. Every candidate plays his role, resembles his profile, and costs no "
         "more than his market value."
     )
-    name = st.selectbox("The player you are losing", sorted(demo["players"]))
+    st.markdown(
+        "A smaller club is losing a player and wants the same contribution for far less "
+        "money. Pick the departing player: every candidate below plays his position, "
+        "resembles his statistical profile, and costs no more than his market value. "
+        "Whether these lists actually beat real scouting was tested on ten years of "
+        "transfers — see *The backtest*."
+    )
+    name = pick_player(demo, "The player you are losing")
     entry = demo["players"][name]
     left, right = st.columns([3, 2])
     with left:
-        st.subheader(f"{name} — {entry['role']}, {entry['club']}")
+        st.subheader(f"{name} — {ROLE_NAMES[entry['role']]}, {entry['club']}")
         st.metric("Market value", f"€{entry['value_eur'] / 1e6:.0f}m")
         labels = {
             "default": "Best keeper (goals prevented)" if entry["role"] == "GK" else "Best value",
@@ -96,7 +137,7 @@ if page == "We're losing X":
             groups = load("phase2_role_profiles")["profiles"].get(entry["role"], {})
             group_of = {s["stat"]: g for g, stats in groups.items() for s in stats}
             card["group"] = card["stat"].map(group_of)
-            card["stat"] = card["stat"].str.replace("_", " ")
+            card["stat"] = card["stat"].map(lambda s: PRETTY_STATS.get(s, s.replace("_", " ")))
             card = card.sort_values(
                 "group", key=lambda s: s.map({g: i for i, g in enumerate(GROUP_ORDER)})
             )
@@ -117,10 +158,10 @@ if page == "We're losing X":
 elif page == "Players like X":
     demo = load("phase6_shortlists")
     st.title("Players like X")
-    name = st.selectbox("Player", sorted(demo["players"]))
+    name = pick_player(demo, "Player")
     entry = demo["players"][name]
     st.caption(
-        f"{entry['role']} — nearest statistical neighbours in his role last season, "
+        f"{ROLE_NAMES[entry['role']]} — nearest statistical neighbours in his role last season, "
         "over the fifteen stable profile traits. No budget filter."
     )
     shortlist_table(entry["similar"])
@@ -156,9 +197,20 @@ elif page == "The backtest":
     )
     st.dataframe(seasons, hide_index=True)
     st.subheader("Browse a real case")
+    fcol1, fcol2 = st.columns(2)
+    with fcol1:
+        role_pick = st.selectbox(
+            "Position", ["All positions", *ROLE_NAMES], format_func=lambda r: ROLE_NAMES.get(r, r)
+        )
+    with fcol2:
+        season_pick = st.selectbox(
+            "Summer", ["All"] + sorted({c["season"] for c in cases.values()}, reverse=True)
+        )
     label_of = {
         cid: f"{c['season']} — {c['departed']} ({c['seller']}, €{c['fee_eur'] / 1e6:.0f}m)"
         for cid, c in cases.items()
+        if (role_pick == "All positions" or c["role"] == role_pick)
+        and (season_pick == "All" or c["season"] == season_pick)
     }
     cid = st.selectbox("Departure", sorted(label_of, key=label_of.get), format_func=label_of.get)
     case = cases[cid]
