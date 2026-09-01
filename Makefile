@@ -1,4 +1,4 @@
-.PHONY: setup lint test data train clean
+.PHONY: setup lint test data train clean app
 
 setup:
 	uv sync --locked
