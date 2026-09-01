@@ -41,6 +41,9 @@ METRIC_HELP = {
     "Production next season": "contribution above a freely available player, multiplied by "
     "expected minutes. This is what a player is expected to add over a season, not just his "
     "rate while on the pitch.",
+    "Duel quality": "ground and aerial duels won, standardised within the position. It is a "
+    "measured trait that repeats year to year and survives a transfer, but it is not defensive "
+    "value in goals, which no public data measures.",
     "P(≥ his level)": "the calibrated probability that he matches the departing player's "
     "per-90 contribution next season (for keepers: goals prevented). When this says 70%, "
     "it happens about 70% of the time.",
@@ -108,6 +111,9 @@ def shortlist_table(rows):
             "production": st.column_config.NumberColumn(
                 "Production next season", format="%.1f", help=METRIC_HELP["Production next season"]
             ),
+            "duel_quality": st.column_config.NumberColumn(
+                "Duel quality", format="%.2f", help=METRIC_HELP["Duel quality"]
+            ),
             "expected_minutes": st.column_config.NumberColumn("Expected minutes", format="%.0f"),
             "outcome_minutes": st.column_config.NumberColumn("Minutes next season", format="%.0f"),
             "outcome_ga90": st.column_config.NumberColumn("G+A/90 next season", format="%.2f"),
@@ -115,7 +121,15 @@ def shortlist_table(rows):
     )
 
 
-def ordered(pool, key, n=10):
+def ordered(pool, key, n=10, defence_weight=0.0):
+    if defence_weight and key in ("formula", "production") and "duel_quality" in pool:
+        usable = pool.dropna(subset=["duel_quality"])
+        if len(usable) >= n:
+            base = "prod_per_eur" if key == "formula" else "production"
+            rank = (1 - defence_weight) * (-usable[base]).rank() + defence_weight * (
+                -usable["duel_quality"]
+            ).rank()
+            return usable.assign(_k=rank).nsmallest(n, "_k").drop(columns="_k")
     if key == "production":
         rank = (-pool["production"]).rank()
     elif key == "output":
@@ -208,6 +222,24 @@ if page == "We're losing X":
             )
         with fcol2:
             max_age = st.slider("Max age", min_value=18, max_value=40, value=40)
+        defence_weight = 0.0
+        if entry["role"] in ("CB", "FB", "CM"):
+            defence_weight = st.slider(
+                "Weight on defensive quality",
+                0.0,
+                1.0,
+                0.0,
+                0.25,
+                help="Your judgement, not a validated setting. In the backtest a weight of 0.25 "
+                "beat what real clubs achieved on duel quality at centre-back and midfield, at "
+                "1 to 3 percent of expected production, but it lost on minutes and value per "
+                "euro, which are the columns with nine years of validation behind them.",
+            )
+            if defence_weight:
+                st.caption(
+                    "Ranking now trades measured production per euro for duel quality. "
+                    "See the backtest page for what each weight delivered."
+                )
         filtered = pool[(pool["value_eur"] <= budget * 1e6) & (pool["age"].fillna(0) <= max_age)]
         explain_metrics()
         if filtered.empty:
@@ -242,7 +274,9 @@ if page == "We're losing X":
                             "won the backtest. It favours proven, affordable players. "
                             "Tighten the budget slider or switch tabs for other views."
                         )
-                    shortlist_table(ordered(filtered, keys.get(key, key)))
+                    shortlist_table(
+                        ordered(filtered, keys.get(key, key), defence_weight=defence_weight)
+                    )
     with right:
         st.subheader("His profile card")
         st.caption("Only stats that repeat year to year for his position (r ≥ 0.3).")

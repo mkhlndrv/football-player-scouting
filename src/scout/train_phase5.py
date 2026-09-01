@@ -307,9 +307,10 @@ def run_backtest(models_dir: Path = config.MODELS) -> Path:
     pool_frames = []
     for summer, group in cases.groupby("transfer_season"):
         past = pm[pm["season"] < summer]
-        profiles = similarity.profile(
-            past, shots[shots["season"] < summer], traits[traits["season"] < summer]
-        )
+        # Defensive traits were tested here and made every measured outcome worse (see the
+        # state log): style matching reproduces the departing player's defending, weaknesses
+        # included. The traits stay in the cards and in the outcome column, not in the filter.
+        profiles = similarity.profile(past, shots[shots["season"] < summer])
         profiles = profiles[profiles["season"] == summer - 1]
         eligible = fit_model.eligible_slots(
             fit_model.role_shares(past[past["season"] == summer - 1])
@@ -424,6 +425,10 @@ def run_backtest(models_dir: Path = config.MODELS) -> Path:
     val_next = price.drop_duplicates(["tm_player_id", "season"]).set_index(
         ["tm_player_id", "season"]
     )["value_july"]
+    duel_before = duels.set_index(["tm_player_id", "season"])["duel_z"]
+    pools["duel_z_before"] = duel_before.reindex(
+        pd.MultiIndex.from_arrays([pools["tm_player_id"], pools["transfer_season"] - 1])
+    ).to_numpy()
     pools["out_duel_z"] = duel_next.reindex(
         pd.MultiIndex.from_arrays([pools["tm_player_id"], pools["transfer_season"]])
     ).to_numpy()
@@ -568,6 +573,75 @@ def run_backtest(models_dir: Path = config.MODELS) -> Path:
                 ),
             }
 
+    def weighted_defence(pool: pd.DataFrame, weight: float, n: int = backtest.SHORTLIST):
+        usable = pool.dropna(subset=["prod_per_eur", "duel_z_before"])
+        if len(usable) < n:
+            return usable.head(0)
+        key = (1 - weight) * (-usable["prod_per_eur"]).rank() + weight * (
+            -usable["duel_z_before"]
+        ).rank()
+        return usable.assign(_k=key).nsmallest(n, "_k")
+
+    weighted_rows = []
+    for case_id, group in pools[pools["dep_role"].isin(sorted(backtest.FIT_ROLES))].groupby(
+        "case_id"
+    ):
+        top = weighted_defence(group, 0.25)
+        if len(top) == backtest.SHORTLIST:
+            weighted_rows.append({"case_id": case_id, **backtest.score_case(top)})
+    entrants["defence_weighted"] = pd.DataFrame(weighted_rows).set_index("case_id")
+
+    # The owner's question: what if defence carries an explicit weight in the ranking?
+    # No exchange rate between goals and duels exists, so the weight is not fitted. Each setting
+    # is scored on both outcomes and the trade-off is published instead.
+    tradeoff = {}
+    defensive_pools = pools[pools["dep_role"].isin(sorted(backtest.FIT_ROLES))]
+    for weight in (0.0, 0.25, 0.5, 0.75, 1.0):
+        rows = []
+        for case_id, group in defensive_pools.groupby("case_id"):
+            usable = group.dropna(subset=["prod_per_eur", "duel_z_before"])
+            if len(usable) < backtest.SHORTLIST:
+                continue
+            key = (1 - weight) * (-usable["prod_per_eur"]).rank() + weight * (
+                -usable["duel_z_before"]
+            ).rank()
+            top = usable.assign(_k=key).nsmallest(backtest.SHORTLIST, "_k")
+            rows.append(
+                {
+                    "case_id": case_id,
+                    "role": group["dep_role"].iloc[0],
+                    "production": (top["surplus"] * top["expected_minutes"] / 90).mean(),
+                    "duel_quality": top["out_duel_z"].mean(),
+                    "minutes_per_meur": top["out_minutes"].fillna(0).sum()
+                    / (top["value"].sum() / 1e6),
+                    "value_ratio": top["out_value_next"].sum() / top["value"].sum(),
+                }
+            )
+        frame = pd.DataFrame(rows)
+        tradeoff[str(weight)] = {
+            role: {
+                "n": int(len(group)),
+                "duel_quality_delivered": round(float(group["duel_quality"].mean()), 4),
+                "production_expected": round(float(group["production"].mean()), 3),
+                "minutes_per_meur": round(float(group["minutes_per_meur"].mean()), 1),
+                "value_ratio": round(float(group["value_ratio"].mean()), 3),
+            }
+            for role, group in frame.groupby("role")
+        }
+
+    weighted_verdicts = {
+        role: {
+            "vs_actual": backtest.verdict(
+                entrants["defence_weighted"], entrants["actual"], group.index
+            ),
+            "vs_formula": backtest.verdict(
+                entrants["defence_weighted"], entrants["prod_per_eur"], group.index
+            ),
+        }
+        for role, group in case_meta.groupby("dep_role")
+        if role in backtest.FIT_ROLES
+    }
+
     common = entrants["model"].index.intersection(entrants["actual"].index)
     _, majority = backtest.case_wins(entrants["model"], entrants["actual"], common)
     per_season = (
@@ -644,6 +718,8 @@ def run_backtest(models_dir: Path = config.MODELS) -> Path:
         "smaller_club_split_elo_rank_gt_6": smaller_club,
         "formula_all_roles": formula_all_roles,
         "defensive_quality_vs_actual": defensive_quality,
+        "defence_weight_tradeoff": tradeoff,
+        "defence_weighted_verdicts": weighted_verdicts,
         "final_design_pending_future_confirmation": {
             "outfield": "profile gate -> (point - replacement p20) x expected minutes / price",
             "GK": "P(>= bar) on the prevented proxy (formula fails: 0.26)",

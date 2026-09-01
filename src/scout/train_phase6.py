@@ -21,7 +21,6 @@ from scout.train_phase5 import (
     _identity_bridge,
     _quality,
     _universe,
-    defensive_traits,
 )
 
 COMPS = list(config.BIG5) + list(config.FEEDERS)
@@ -76,10 +75,7 @@ def run_shortlists(models_dir: Path = config.MODELS) -> Path:
     )
 
     past = pm[pm["season"] < DEMO_SUMMER]
-    traits = defensive_traits(ss, ss_ids, us_ids)
-    profiles = similarity.profile(
-        past, shots[shots["season"] < DEMO_SUMMER], traits[traits["season"] < DEMO_SUMMER]
-    )
+    profiles = similarity.profile(past, shots[shots["season"] < DEMO_SUMMER])
     profiles = profiles[profiles["season"] == DEMO_SUMMER - 1]
     eligible = fit_model.eligible_slots(
         fit_model.role_shares(past[past["season"] == DEMO_SUMMER - 1])
@@ -218,9 +214,15 @@ def run_shortlists(models_dir: Path = config.MODELS) -> Path:
             gated["value"] / 1e6
         )
         gated = gated.merge(qual_now.drop(columns=["season"]), on="tm_player_id", how="left")
+        gated["duel_raw"] = gated[["groundDuelsWonPercentage", "aerialDuelsWonPercentage"]].mean(
+            axis=1
+        )
         gated["dep_role"] = role
         gated["transfer_season"] = DEMO_SUMMER
         gated["qual_z"] = backtest.quality_z(gated)
+        gated["duel_z_before"] = (gated["duel_raw"] - gated["duel_raw"].mean()) / (
+            gated["duel_raw"].std() if gated["duel_raw"].std() > 0 else 1.0
+        )
         similar = cand.dropna(subset=["dist"]).nsmallest(TOP_N, "dist")
         card = []
         key = (departing.tm_player_id, role)
@@ -250,6 +252,9 @@ def run_shortlists(models_dir: Path = config.MODELS) -> Path:
                 else round(float(r.expected_minutes), 0),
                 "point": round(float(r.point), 3),
                 "surplus": round(float(r.surplus), 3),
+                "duel_quality": None
+                if pd.isna(r.duel_z_before)
+                else round(float(r.duel_z_before), 2),
                 # production above a freely available player. The keeper metric is negative for
                 # everyone, so point x minutes would invert their ranking; surplus does not.
                 "production": None
