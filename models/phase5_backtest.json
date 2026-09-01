@@ -1,0 +1,861 @@
+{
+ "population": {
+  "cases_scored": 1059,
+  "pool_rows": 49939,
+  "cases_with_actual_signing": 559,
+  "seasons": [
+   2015,
+   2024
+  ],
+  "note": "summer paid departures, >=600-min role season, top-flight Big-5 sellers; Big-5 candidate pools"
+ },
+ "decisions": {
+  "gate": "top-50 most similar within role",
+  "budget": "candidate value <= the departing player's sale fee",
+  "orderings": {
+   "CB/FB/CM": "f3",
+   "W/ST/GK": "o2"
+  },
+  "probability": "normal on the Phase 2 interval",
+  "shortlist": 5
+ },
+ "verdicts": {
+  "CB": {
+   "actual": {
+    "out_of_tuning_2020_plus": {
+     "n": 83,
+     "case_win": 0.4699,
+     "lo": 0.4084,
+     "hi": 0.5422,
+     "columns": {
+      "minutes_per_meur": 0.5904,
+      "ga90_mean": 0.5385,
+      "value_ratio": 0.3243
+     }
+    },
+    "all_seasons": {
+     "n": 106,
+     "case_win": 0.4906,
+     "lo": 0.433,
+     "hi": 0.5472,
+     "columns": {
+      "minutes_per_meur": 0.6226,
+      "ga90_mean": 0.53,
+      "value_ratio": 0.3579
+     }
+    }
+   },
+   "market": {
+    "out_of_tuning_2020_plus": {
+     "n": 127,
+     "case_win": 0.7402,
+     "lo": 0.6929,
+     "hi": 0.7874,
+     "columns": {
+      "minutes_per_meur": 0.9685,
+      "ga90_mean": 0.5591,
+      "value_ratio": 0.5039
+     }
+    },
+    "all_seasons": {
+     "n": 190,
+     "case_win": 0.7474,
+     "lo": 0.7053,
+     "hi": 0.7895,
+     "columns": {
+      "minutes_per_meur": 0.9789,
+      "ga90_mean": 0.5474,
+      "value_ratio": 0.5158
+     }
+    }
+   },
+   "naive": {
+    "out_of_tuning_2020_plus": {
+     "n": 127,
+     "case_win": 0.4882,
+     "lo": 0.4323,
+     "hi": 0.5433,
+     "columns": {
+      "minutes_per_meur": 0.3858,
+      "ga90_mean": 0.5197,
+      "value_ratio": 0.5827
+     }
+    },
+    "all_seasons": {
+     "n": 190,
+     "case_win": 0.4632,
+     "lo": 0.4158,
+     "hi": 0.5105,
+     "columns": {
+      "minutes_per_meur": 0.3842,
+      "ga90_mean": 0.4474,
+      "value_ratio": 0.5632
+     }
+    }
+   }
+  },
+  "CM": {
+   "actual": {
+    "out_of_tuning_2020_plus": {
+     "n": 91,
+     "case_win": 0.5165,
+     "lo": 0.4505,
+     "hi": 0.5824,
+     "columns": {
+      "minutes_per_meur": 0.7033,
+      "ga90_mean": 0.5977,
+      "value_ratio": 0.3837
+     }
+    },
+    "all_seasons": {
+     "n": 139,
+     "case_win": 0.4748,
+     "lo": 0.4173,
+     "hi": 0.5252,
+     "columns": {
+      "minutes_per_meur": 0.6763,
+      "ga90_mean": 0.5758,
+      "value_ratio": 0.3684
+     }
+    }
+   },
+   "market": {
+    "out_of_tuning_2020_plus": {
+     "n": 141,
+     "case_win": 0.7163,
+     "lo": 0.6667,
+     "hi": 0.766,
+     "columns": {
+      "minutes_per_meur": 0.9362,
+      "ga90_mean": 0.4681,
+      "value_ratio": 0.5248
+     }
+    },
+    "all_seasons": {
+     "n": 250,
+     "case_win": 0.72,
+     "lo": 0.684,
+     "hi": 0.756,
+     "columns": {
+      "minutes_per_meur": 0.952,
+      "ga90_mean": 0.48,
+      "value_ratio": 0.524
+     }
+    }
+   },
+   "naive": {
+    "out_of_tuning_2020_plus": {
+     "n": 141,
+     "case_win": 0.5674,
+     "lo": 0.5106,
+     "hi": 0.617,
+     "columns": {
+      "minutes_per_meur": 0.617,
+      "ga90_mean": 0.3688,
+      "value_ratio": 0.6312
+     }
+    },
+    "all_seasons": {
+     "n": 250,
+     "case_win": 0.548,
+     "lo": 0.508,
+     "hi": 0.584,
+     "columns": {
+      "minutes_per_meur": 0.628,
+      "ga90_mean": 0.348,
+      "value_ratio": 0.604
+     }
+    }
+   }
+  },
+  "FB": {
+   "actual": {
+    "out_of_tuning_2020_plus": {
+     "n": 46,
+     "case_win": 0.3261,
+     "lo": 0.2391,
+     "hi": 0.413,
+     "columns": {
+      "minutes_per_meur": 0.587,
+      "ga90_mean": 0.3571,
+      "value_ratio": 0.3636
+     }
+    },
+    "all_seasons": {
+     "n": 78,
+     "case_win": 0.4359,
+     "lo": 0.3718,
+     "hi": 0.5128,
+     "columns": {
+      "minutes_per_meur": 0.6026,
+      "ga90_mean": 0.4324,
+      "value_ratio": 0.4324
+     }
+    }
+   },
+   "market": {
+    "out_of_tuning_2020_plus": {
+     "n": 84,
+     "case_win": 0.5714,
+     "lo": 0.5,
+     "hi": 0.6429,
+     "columns": {
+      "minutes_per_meur": 0.9167,
+      "ga90_mean": 0.381,
+      "value_ratio": 0.4762
+     }
+    },
+    "all_seasons": {
+     "n": 158,
+     "case_win": 0.6392,
+     "lo": 0.5886,
+     "hi": 0.6899,
+     "columns": {
+      "minutes_per_meur": 0.943,
+      "ga90_mean": 0.3734,
+      "value_ratio": 0.5443
+     }
+    }
+   },
+   "naive": {
+    "out_of_tuning_2020_plus": {
+     "n": 84,
+     "case_win": 0.3452,
+     "lo": 0.2857,
+     "hi": 0.4048,
+     "columns": {
+      "minutes_per_meur": 0.5,
+      "ga90_mean": 0.2976,
+      "value_ratio": 0.381
+     }
+    },
+    "all_seasons": {
+     "n": 158,
+     "case_win": 0.4114,
+     "lo": 0.3608,
+     "hi": 0.462,
+     "columns": {
+      "minutes_per_meur": 0.4873,
+      "ga90_mean": 0.2975,
+      "value_ratio": 0.4873
+     }
+    }
+   }
+  },
+  "GK": {
+   "actual": {
+    "out_of_tuning_2020_plus": {
+     "n": 16,
+     "case_win": 0.4375,
+     "lo": 0.25,
+     "hi": 0.625,
+     "columns": {
+      "minutes_per_meur": 0.5625,
+      "ga90_mean": 0.0,
+      "value_ratio": 0.6667
+     }
+    },
+    "all_seasons": {
+     "n": 30,
+     "case_win": 0.4,
+     "lo": 0.3,
+     "hi": 0.5033,
+     "columns": {
+      "minutes_per_meur": 0.5667,
+      "ga90_mean": 0.1071,
+      "value_ratio": 0.5385
+     }
+    }
+   },
+   "market": {
+    "out_of_tuning_2020_plus": {
+     "n": 30,
+     "case_win": 0.6333,
+     "lo": 0.5,
+     "hi": 0.7333,
+     "columns": {
+      "minutes_per_meur": 0.9333,
+      "ga90_mean": 0.0667,
+      "value_ratio": 0.5667
+     }
+    },
+    "all_seasons": {
+     "n": 59,
+     "case_win": 0.661,
+     "lo": 0.5763,
+     "hi": 0.7458,
+     "columns": {
+      "minutes_per_meur": 0.9153,
+      "ga90_mean": 0.1525,
+      "value_ratio": 0.5932
+     }
+    }
+   },
+   "naive": {
+    "out_of_tuning_2020_plus": {
+     "n": 30,
+     "case_win": 0.4667,
+     "lo": 0.3333,
+     "hi": 0.6,
+     "columns": {
+      "minutes_per_meur": 0.6,
+      "ga90_mean": 0.0667,
+      "value_ratio": 0.6667
+     }
+    },
+    "all_seasons": {
+     "n": 59,
+     "case_win": 0.4915,
+     "lo": 0.4068,
+     "hi": 0.5763,
+     "columns": {
+      "minutes_per_meur": 0.5593,
+      "ga90_mean": 0.1695,
+      "value_ratio": 0.661
+     }
+    }
+   }
+  },
+  "ST": {
+   "actual": {
+    "out_of_tuning_2020_plus": {
+     "n": 63,
+     "case_win": 0.4762,
+     "lo": 0.3968,
+     "hi": 0.5556,
+     "columns": {
+      "minutes_per_meur": 0.619,
+      "ga90_mean": 0.6842,
+      "value_ratio": 0.2632
+     }
+    },
+    "all_seasons": {
+     "n": 86,
+     "case_win": 0.5,
+     "lo": 0.4302,
+     "hi": 0.5698,
+     "columns": {
+      "minutes_per_meur": 0.6163,
+      "ga90_mean": 0.6329,
+      "value_ratio": 0.3375
+     }
+    }
+   },
+   "market": {
+    "out_of_tuning_2020_plus": {
+     "n": 101,
+     "case_win": 0.6832,
+     "lo": 0.6238,
+     "hi": 0.7426,
+     "columns": {
+      "minutes_per_meur": 0.9109,
+      "ga90_mean": 0.6535,
+      "value_ratio": 0.3267
+     }
+    },
+    "all_seasons": {
+     "n": 166,
+     "case_win": 0.7229,
+     "lo": 0.6807,
+     "hi": 0.7651,
+     "columns": {
+      "minutes_per_meur": 0.9458,
+      "ga90_mean": 0.6386,
+      "value_ratio": 0.4096
+     }
+    }
+   },
+   "naive": {
+    "out_of_tuning_2020_plus": {
+     "n": 101,
+     "case_win": 0.5446,
+     "lo": 0.4842,
+     "hi": 0.604,
+     "columns": {
+      "minutes_per_meur": 0.5644,
+      "ga90_mean": 0.5842,
+      "value_ratio": 0.4455
+     }
+    },
+    "all_seasons": {
+     "n": 166,
+     "case_win": 0.6145,
+     "lo": 0.5602,
+     "hi": 0.6687,
+     "columns": {
+      "minutes_per_meur": 0.5843,
+      "ga90_mean": 0.6566,
+      "value_ratio": 0.488
+     }
+    }
+   }
+  },
+  "W": {
+   "actual": {
+    "out_of_tuning_2020_plus": {
+     "n": 59,
+     "case_win": 0.5424,
+     "lo": 0.4576,
+     "hi": 0.6271,
+     "columns": {
+      "minutes_per_meur": 0.7119,
+      "ga90_mean": 0.6786,
+      "value_ratio": 0.3818
+     }
+    },
+    "all_seasons": {
+     "n": 116,
+     "case_win": 0.5862,
+     "lo": 0.5259,
+     "hi": 0.6466,
+     "columns": {
+      "minutes_per_meur": 0.7069,
+      "ga90_mean": 0.6422,
+      "value_ratio": 0.4414
+     }
+    }
+   },
+   "market": {
+    "out_of_tuning_2020_plus": {
+     "n": 112,
+     "case_win": 0.8125,
+     "lo": 0.7679,
+     "hi": 0.8571,
+     "columns": {
+      "minutes_per_meur": 0.9464,
+      "ga90_mean": 0.6518,
+      "value_ratio": 0.5179
+     }
+    },
+    "all_seasons": {
+     "n": 227,
+     "case_win": 0.7665,
+     "lo": 0.7313,
+     "hi": 0.8062,
+     "columns": {
+      "minutes_per_meur": 0.8943,
+      "ga90_mean": 0.6079,
+      "value_ratio": 0.5374
+     }
+    }
+   },
+   "naive": {
+    "out_of_tuning_2020_plus": {
+     "n": 112,
+     "case_win": 0.5357,
+     "lo": 0.4732,
+     "hi": 0.5982,
+     "columns": {
+      "minutes_per_meur": 0.6071,
+      "ga90_mean": 0.4643,
+      "value_ratio": 0.5
+     }
+    },
+    "all_seasons": {
+     "n": 227,
+     "case_win": 0.5198,
+     "lo": 0.4802,
+     "hi": 0.5595,
+     "columns": {
+      "minutes_per_meur": 0.5374,
+      "ga90_mean": 0.5198,
+      "value_ratio": 0.4934
+     }
+    }
+   }
+  }
+ },
+ "tournament_defensive_roles": {
+  "CB": {
+   "fit_vs_output": {
+    "n": 190,
+    "case_win": 0.4211,
+    "lo": 0.3737,
+    "hi": 0.4684,
+    "columns": {
+     "minutes_per_meur": 0.3579,
+     "ga90_mean": 0.4737,
+     "value_ratio": 0.5421
+    }
+   },
+   "quality_vs_output": {
+    "n": 180,
+    "case_win": 0.3556,
+    "lo": 0.3111,
+    "hi": 0.4056,
+    "columns": {
+     "minutes_per_meur": 0.4444,
+     "ga90_mean": 0.3167,
+     "value_ratio": 0.3944
+    }
+   },
+   "blend_vs_output": {
+    "n": 190,
+    "case_win": 0.4526,
+    "lo": 0.4053,
+    "hi": 0.4947,
+    "columns": {
+     "minutes_per_meur": 0.5368,
+     "ga90_mean": 0.4368,
+     "value_ratio": 0.4526
+    }
+   },
+   "blend_vs_fit": {
+    "n": 190,
+    "case_win": 0.5211,
+    "lo": 0.4737,
+    "hi": 0.5632,
+    "columns": {
+     "minutes_per_meur": 0.6263,
+     "ga90_mean": 0.4632,
+     "value_ratio": 0.4737
+    }
+   },
+   "fit_vs_defence": {
+    "n": 180,
+    "case_win": 0.4167,
+    "lo": 0.3667,
+    "hi": 0.4611,
+    "columns": {
+     "minutes_per_meur": 0.3111,
+     "ga90_mean": 0.5,
+     "value_ratio": 0.5167
+    }
+   }
+  },
+  "CM": {
+   "fit_vs_output": {
+    "n": 250,
+    "case_win": 0.392,
+    "lo": 0.352,
+    "hi": 0.432,
+    "columns": {
+     "minutes_per_meur": 0.5,
+     "ga90_mean": 0.216,
+     "value_ratio": 0.58
+    }
+   },
+   "quality_vs_output": {
+    "n": 230,
+    "case_win": 0.3565,
+    "lo": 0.3174,
+    "hi": 0.3957,
+    "columns": {
+     "minutes_per_meur": 0.5435,
+     "ga90_mean": 0.0739,
+     "value_ratio": 0.5304
+    }
+   },
+   "blend_vs_output": {
+    "n": 250,
+    "case_win": 0.4,
+    "lo": 0.36,
+    "hi": 0.44,
+    "columns": {
+     "minutes_per_meur": 0.472,
+     "ga90_mean": 0.364,
+     "value_ratio": 0.46
+    }
+   },
+   "blend_vs_fit": {
+    "n": 250,
+    "case_win": 0.5,
+    "lo": 0.46,
+    "hi": 0.54,
+    "columns": {
+     "minutes_per_meur": 0.468,
+     "ga90_mean": 0.672,
+     "value_ratio": 0.364
+    }
+   }
+  },
+  "FB": {
+   "fit_vs_output": {
+    "n": 158,
+    "case_win": 0.3861,
+    "lo": 0.3354,
+    "hi": 0.4367,
+    "columns": {
+     "minutes_per_meur": 0.4873,
+     "ga90_mean": 0.2468,
+     "value_ratio": 0.4747
+    }
+   },
+   "quality_vs_output": {
+    "n": 149,
+    "case_win": 0.3289,
+    "lo": 0.2819,
+    "hi": 0.3758,
+    "columns": {
+     "minutes_per_meur": 0.5168,
+     "ga90_mean": 0.1879,
+     "value_ratio": 0.4362
+    }
+   },
+   "blend_vs_output": {
+    "n": 158,
+    "case_win": 0.4177,
+    "lo": 0.3671,
+    "hi": 0.4684,
+    "columns": {
+     "minutes_per_meur": 0.4557,
+     "ga90_mean": 0.3228,
+     "value_ratio": 0.5127
+    }
+   },
+   "blend_vs_fit": {
+    "n": 158,
+    "case_win": 0.5823,
+    "lo": 0.5316,
+    "hi": 0.6329,
+    "columns": {
+     "minutes_per_meur": 0.4873,
+     "ga90_mean": 0.6519,
+     "value_ratio": 0.5063
+    }
+   },
+   "fit_vs_defence": {
+    "n": 149,
+    "case_win": 0.4698,
+    "lo": 0.4161,
+    "hi": 0.5235,
+    "columns": {
+     "minutes_per_meur": 0.4362,
+     "ga90_mean": 0.5973,
+     "value_ratio": 0.4832
+    }
+   }
+  }
+ },
+ "smaller_club_split_elo_rank_gt_6": {
+  "actual": {
+   "n": 305,
+   "case_win": 0.423,
+   "lo": 0.3869,
+   "hi": 0.459,
+   "columns": {
+    "minutes_per_meur": 0.5246,
+    "ga90_mean": 0.5799,
+    "value_ratio": 0.3395
+   }
+  },
+  "market": {
+   "n": 601,
+   "case_win": 0.7238,
+   "lo": 0.7005,
+   "hi": 0.7471,
+   "columns": {
+    "minutes_per_meur": 0.9351,
+    "ga90_mean": 0.5092,
+    "value_ratio": 0.5141
+   }
+  },
+  "naive": {
+   "n": 601,
+   "case_win": 0.5324,
+   "lo": 0.5075,
+   "hi": 0.5557,
+   "columns": {
+    "minutes_per_meur": 0.5691,
+    "ga90_mean": 0.4276,
+    "value_ratio": 0.5574
+   }
+  }
+ },
+ "formula_all_roles": {
+  "CB": {
+   "vs_output": {
+    "n": 190,
+    "case_win": 0.6053,
+    "lo": 0.5626,
+    "hi": 0.6474,
+    "columns": {
+     "minutes_per_meur": 0.9789,
+     "ga90_mean": 0.4737,
+     "value_ratio": 0.3737
+    }
+   },
+   "vs_actual": {
+    "n": 106,
+    "case_win": 0.566,
+    "lo": 0.5,
+    "hi": 0.6321,
+    "columns": {
+     "minutes_per_meur": 0.8868,
+     "ga90_mean": 0.51,
+     "value_ratio": 0.3474
+    }
+   }
+  },
+  "CM": {
+   "vs_output": {
+    "n": 250,
+    "case_win": 0.58,
+    "lo": 0.544,
+    "hi": 0.62,
+    "columns": {
+     "minutes_per_meur": 0.936,
+     "ga90_mean": 0.348,
+     "value_ratio": 0.416
+    }
+   },
+   "vs_actual": {
+    "n": 139,
+    "case_win": 0.6331,
+    "lo": 0.5755,
+    "hi": 0.6835,
+    "columns": {
+     "minutes_per_meur": 0.9137,
+     "ga90_mean": 0.6061,
+     "value_ratio": 0.3158
+    }
+   }
+  },
+  "FB": {
+   "vs_output": {
+    "n": 158,
+    "case_win": 0.4873,
+    "lo": 0.4367,
+    "hi": 0.538,
+    "columns": {
+     "minutes_per_meur": 0.9051,
+     "ga90_mean": 0.2532,
+     "value_ratio": 0.4177
+    }
+   },
+   "vs_actual": {
+    "n": 78,
+    "case_win": 0.5385,
+    "lo": 0.4615,
+    "hi": 0.6154,
+    "columns": {
+     "minutes_per_meur": 0.859,
+     "ga90_mean": 0.5,
+     "value_ratio": 0.3108
+    }
+   }
+  },
+  "GK": {
+   "vs_output": {
+    "n": 59,
+    "case_win": 0.2373,
+    "lo": 0.1695,
+    "hi": 0.3051,
+    "columns": {
+     "minutes_per_meur": 0.8983,
+     "ga90_mean": 0.0,
+     "value_ratio": 0.2373
+    }
+   },
+   "vs_actual": {
+    "n": 30,
+    "case_win": 0.2667,
+    "lo": 0.1667,
+    "hi": 0.3667,
+    "columns": {
+     "minutes_per_meur": 0.8333,
+     "ga90_mean": 0.0,
+     "value_ratio": 0.3077
+    }
+   }
+  },
+  "ST": {
+   "vs_output": {
+    "n": 166,
+    "case_win": 0.5542,
+    "lo": 0.5,
+    "hi": 0.6024,
+    "columns": {
+     "minutes_per_meur": 0.9458,
+     "ga90_mean": 0.2831,
+     "value_ratio": 0.4157
+    }
+   },
+   "vs_actual": {
+    "n": 86,
+    "case_win": 0.4884,
+    "lo": 0.4186,
+    "hi": 0.5581,
+    "columns": {
+     "minutes_per_meur": 0.8605,
+     "ga90_mean": 0.481,
+     "value_ratio": 0.3125
+    }
+   }
+  },
+  "W": {
+   "vs_output": {
+    "n": 227,
+    "case_win": 0.6432,
+    "lo": 0.6035,
+    "hi": 0.6828,
+    "columns": {
+     "minutes_per_meur": 0.9251,
+     "ga90_mean": 0.3436,
+     "value_ratio": 0.5419
+    }
+   },
+   "vs_actual": {
+    "n": 116,
+    "case_win": 0.6552,
+    "lo": 0.5948,
+    "hi": 0.7155,
+    "columns": {
+     "minutes_per_meur": 0.9138,
+     "ga90_mean": 0.5688,
+     "value_ratio": 0.4505
+    }
+   }
+  }
+ },
+ "final_design_pending_future_confirmation": {
+  "outfield": "profile gate -> (point - replacement p20) x expected minutes / price",
+  "GK": "P(>= bar) on the prevented proxy (formula fails: 0.26)",
+  "kept_alternatives": [
+   "output-within-gate",
+   "similarity+output blend"
+  ]
+ },
+ "per_season_vs_actual": {
+  "2015": {
+   "case_win": 0.6071,
+   "n": 28
+  },
+  "2016": {
+   "case_win": 0.5769,
+   "n": 26
+  },
+  "2017": {
+   "case_win": 0.6053,
+   "n": 38
+  },
+  "2018": {
+   "case_win": 0.4762,
+   "n": 42
+  },
+  "2019": {
+   "case_win": 0.4762,
+   "n": 63
+  },
+  "2020": {
+   "case_win": 0.5588,
+   "n": 34
+  },
+  "2021": {
+   "case_win": 0.2727,
+   "n": 44
+  },
+  "2022": {
+   "case_win": 0.4133,
+   "n": 75
+  },
+  "2023": {
+   "case_win": 0.5378,
+   "n": 119
+  },
+  "2024": {
+   "case_win": 0.5116,
+   "n": 86
+  }
+ }
+}
