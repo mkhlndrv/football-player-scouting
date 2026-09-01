@@ -1,4 +1,4 @@
-"""Moneyball replacement scouting — reads committed artifacts only, recomputes nothing.
+"""Moneyball replacement scouting. Reads committed artifacts only, recomputes nothing.
 
 Shortlists are sorted in-app from the stored candidate pools by the fixed ordering keys;
 no model output is computed here.
@@ -40,7 +40,7 @@ METRIC_HELP = {
     "per-90 contribution next season (for keepers: goals prevented). When this says 70%, "
     "it happens about 70% of the time.",
     "Surplus per €m": "expected contribution above a freely-available player, times expected "
-    "minutes, divided by price — the number that won the ten-year backtest.",
+    "minutes, divided by price. This is the number that won the ten-year backtest.",
     "Expected minutes": "forecast league minutes next season, from his last three seasons and age.",
 }
 GRAVEYARD_TITLES = {
@@ -60,10 +60,22 @@ def load(name):
     return json.loads((MODELS / f"{name}.json").read_text())
 
 
+def plain(text):
+    """Artifact strings are written for the state log. Tidy them for a reader."""
+    text = re.sub(r"[;,]?\s*\bnotebook \d+[^)\n]*", "", text)
+    text = re.sub(r"\s*\(\s*\)", "", text)
+    text = text.replace("y2y", "year to year")
+    text = re.sub(r";\s*", ". ", text)
+    text = re.sub(r"\s+", " ", text).strip(" ;,")
+    if text.count("(") > text.count(")"):
+        text += ")"
+    return re.sub(r"(^|\. )([a-z])", lambda m: m.group(1) + m.group(2).upper(), text)
+
+
 def explain_metrics():
     with st.expander("What do these numbers mean?"):
         for metric, meaning in METRIC_HELP.items():
-            st.markdown(f"**{metric}** — {meaning}")
+            st.markdown(f"**{metric}**: {meaning}")
 
 
 def shortlist_table(rows):
@@ -147,12 +159,12 @@ def pick_player(demo, label):
 
 st.set_page_config(page_title="Moneyball replacement scouting", layout="wide")
 page = st.sidebar.radio(
-    "Pages", ["We're losing X", "Players like X", "The backtest", "The graveyard"]
+    "Pages", ["We're losing X", "Players like X", "The backtest", "What failed"]
 )
 
 if page == "We're losing X":
     demo = load("phase6_shortlists")
-    st.title("We're losing X — who replaces him?")
+    st.title("We're losing X. Who replaces him?")
     st.caption(
         f"Precomputed for a summer-{demo['as_of_summer']} departure from the last completed "
         "season's data."
@@ -161,14 +173,14 @@ if page == "We're losing X":
         "A smaller club is losing a player and wants the same contribution for far less "
         "money. Pick the departing player: every candidate below plays his position and "
         "resembles his statistical profile. Whether these lists actually beat real scouting "
-        "was tested on ten years of transfers — see *The backtest*."
+        "was tested on ten years of transfers. See *The backtest*."
     )
     name = pick_player(demo, "The player you are losing")
     entry = demo["players"][name]
     pool = pd.DataFrame(entry["pool"])
     left, right = st.columns([3, 2])
     with left:
-        st.subheader(f"{name} — {ROLE_NAMES[entry['role']]}, {entry['club']}")
+        st.subheader(f"{name}, {ROLE_NAMES[entry['role']]}, {entry['club']}")
         st.metric("Market value", f"€{entry['value_eur'] / 1e6:.0f}m")
         max_budget = float(max(round(entry["value_eur"] / 1e6), 1))
         fcol1, fcol2 = st.columns(2)
@@ -178,15 +190,15 @@ if page == "We're losing X":
                 min_value=1.0,
                 max_value=max_budget,
                 value=max_budget,
-                help="Candidates never cost more than the departing player's own value; "
-                "tighten the budget to see only cheaper options.",
+                help="Candidates never cost more than the departing player's own value. "
+                "Tighten the budget to see only cheaper options.",
             )
         with fcol2:
             max_age = st.slider("Max age", min_value=18, max_value=40, value=40)
         filtered = pool[(pool["value_eur"] <= budget * 1e6) & (pool["age"].fillna(0) <= max_age)]
         explain_metrics()
         if filtered.empty:
-            st.info("No candidates inside these filters — widen the budget or age range.")
+            st.info("No candidates inside these filters. Widen the budget or age range.")
         else:
             labels = {
                 "formula": "Best keeper (goals prevented)"
@@ -201,9 +213,9 @@ if page == "We're losing X":
                 with tab:
                     if key == "formula" and entry["role"] != "GK":
                         st.caption(
-                            "Maximum delivered contribution per euro — the ordering that "
-                            "won the backtest. It favours proven, affordable players; "
-                            "tighten the budget slider or switch tabs for other views."
+                            "Maximum delivered contribution per euro. This ordering "
+                            "won the backtest. It favours proven, affordable players. "
+                            "Tighten the budget slider or switch tabs for other views."
                         )
                     shortlist_table(ordered(filtered, keys.get(key, key)))
     with right:
@@ -213,7 +225,7 @@ if page == "We're losing X":
 
     if not filtered.empty:
         st.divider()
-        st.subheader(f"Side by side — {name} vs a candidate")
+        st.subheader(f"Side by side: {name} vs a candidate")
         order_key = "output" if entry["role"] == "GK" else "formula"
         cand_names = [n for n in ordered(filtered, order_key, n=50)["name"] if n in demo["players"]]
         if cand_names:
@@ -222,13 +234,13 @@ if page == "We're losing X":
             c1, c2 = st.columns(2)
             with c1:
                 st.markdown(
-                    f"**{name}** — {ROLE_NAMES[entry['role']]}, {entry['club']}, "
+                    f"**{name}**, {ROLE_NAMES[entry['role']]}, {entry['club']}, "
                     f"€{entry['value_eur'] / 1e6:.0f}m"
                 )
                 profile_card(entry)
             with c2:
                 st.markdown(
-                    f"**{pick}** — {ROLE_NAMES[cand_entry['role']]}, {cand_entry['club']}, "
+                    f"**{pick}**, {ROLE_NAMES[cand_entry['role']]}, {cand_entry['club']}, "
                     f"€{cand_entry['value_eur'] / 1e6:.0f}m"
                 )
                 profile_card(cand_entry)
@@ -241,7 +253,7 @@ elif page == "Players like X":
     name = pick_player(demo, "Player")
     entry = demo["players"][name]
     st.caption(
-        f"{ROLE_NAMES[entry['role']]} — nearest statistical neighbours in his role last "
+        f"{ROLE_NAMES[entry['role']]}. Nearest statistical neighbours in his role last "
         "season, over the fifteen stable profile traits. No budget filter."
     )
     shortlist_table(entry["similar"])
@@ -288,7 +300,7 @@ elif page == "The backtest":
             "Summer", ["All"] + sorted({c["season"] for c in cases.values()}, reverse=True)
         )
     label_of = {
-        cid: f"{c['season']} — {c['departed']} ({c['seller']}, €{c['fee_eur'] / 1e6:.0f}m)"
+        cid: f"{c['season']}: {c['departed']} ({c['seller']}, €{c['fee_eur'] / 1e6:.0f}m)"
         for cid, c in cases.items()
         if (role_pick == "All positions" or c["role"] == role_pick)
         and (season_pick == "All" or c["season"] == season_pick)
@@ -298,8 +310,8 @@ elif page == "The backtest":
     if "actual_signing" in case:
         a = case["actual_signing"]
         st.write(
-            f"The club actually signed **{a['name']}** for €{a['fee_eur'] / 1e6:.0f}m — "
-            f"{a['outcome_minutes'] or 0:.0f} minutes, "
+            f"The club actually signed **{a['name']}** for €{a['fee_eur'] / 1e6:.0f}m. "
+            f"He played {a['outcome_minutes'] or 0:.0f} minutes with "
             f"{a['outcome_ga90'] or 0} G+A/90 the following season."
         )
     for key, title in [
@@ -311,7 +323,7 @@ elif page == "The backtest":
         shortlist_table(case["orderings"][key])
 
 else:
-    st.title("The graveyard — ideas the data killed")
+    st.title("Ideas that failed their tests")
     st.caption("Every claim below was tested and failed its pre-declared check.")
     k2 = load("phase2_kill_checks")["checks"]
     k3, k4 = load("phase3_kill_checks"), load("phase4_kill_checks")
@@ -325,11 +337,12 @@ else:
             value = source.get(key)
             st.markdown(f"**{GRAVEYARD_TITLES.get(key, key)}**")
             if isinstance(value, str):
-                st.write(re.sub(r"\s*\(notebook [^)]*\)", "", value))
+                st.write(plain(value))
             elif key == "style_fit_matched_transfer":
                 st.write(
                     f"Moving to a stylistically different club changes output by "
-                    f"{value['distance_effect_per_sd']:+.4f} sd — indistinguishable from zero "
+                    f"{value['distance_effect_per_sd']:+.4f} sd, which cannot be told "
+                    f"apart from zero "
                     f"(80% CI [{value['ci80'][0]:.4f}, {value['ci80'][1]:.4f}], "
                     f"{value['movers']:,} matched transfers)."
                 )
