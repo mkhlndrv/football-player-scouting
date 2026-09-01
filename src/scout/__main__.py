@@ -6,7 +6,7 @@ os.environ.setdefault("OMP_NUM_THREADS", "1")
 import argparse
 from collections.abc import Callable
 
-from scout import config, report, train, train_phase3, train_phase4, train_phase5
+from scout import config, report, train, train_phase3, train_phase4, train_phase5, train_phase6
 from scout.data import clubelo, fotmob, injuries, reep, sofascore, understat
 from scout.data import transfermarkt as tm
 
@@ -69,6 +69,7 @@ def main() -> None:
             *train_phase3.STAGES,
             *train_phase4.STAGES,
             *train_phase5.STAGES,
+            *train_phase6.STAGES,
             "all",
         ],
     )
@@ -89,6 +90,7 @@ def main() -> None:
             **train_phase3.STAGES,
             **train_phase4.STAGES,
             **train_phase5.STAGES,
+            **train_phase6.STAGES,
         }.items():
             if args.stage in (stage, "all"):
                 print(f"{stage}: {run()}")

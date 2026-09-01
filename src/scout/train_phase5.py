@@ -197,7 +197,7 @@ def run_backtest(models_dir: Path = config.MODELS) -> Path:
     pm["competition_id"] = pm["league"].map(LEAGUE_TO_COMP)
     shots = understat.load("shots")
     shots["competition_id"] = shots["league"].map(LEAGUE_TO_COMP)
-    players = tm.load_table("players")[["player_id", "date_of_birth"]]
+    players = tm.load_table("players")[["player_id", "date_of_birth", "name"]]
     players["tm_player_id"] = players["player_id"].astype(str)
     birth_year = (
         players.drop_duplicates("tm_player_id")
@@ -483,6 +483,53 @@ def run_backtest(models_dir: Path = config.MODELS) -> Path:
         .agg(["mean", "size"])
         .round(4)
     )
+
+    name_of = players.drop_duplicates("tm_player_id").set_index("tm_player_id")["name"]
+    club_name = (
+        con.execute("SELECT CAST(club_id AS INTEGER) AS club_id, name FROM clubs")
+        .df()
+        .drop_duplicates("club_id")
+        .set_index("club_id")["name"]
+    )
+    actual_by_case = actual.set_index("case_id")
+    shortlist_rows = {}
+    for case_id, group in pools.groupby("case_id"):
+        meta = case_meta.loc[case_id]
+        entry = {
+            "season": int(meta["transfer_season"]),
+            "role": meta["dep_role"],
+            "departed": name_of.get(case_id.split("_")[2], case_id.split("_")[2]),
+            "seller": club_name.get(meta["from_club_id"], str(meta["from_club_id"])),
+            "fee_eur": float(meta["sale_fee"]),
+            "orderings": {},
+        }
+        for ordering in ["prod_per_eur", "o2", "blend"]:
+            top = backtest.shortlist(group, ordering)
+            entry["orderings"][ordering] = [
+                {
+                    "name": name_of.get(r.tm_player_id, r.tm_player_id),
+                    "value_eur": float(r.value),
+                    "similarity": round(float(r.dist), 2),
+                    "p_bar": round(float(r.p_bar), 3),
+                    "prod_per_eur": None
+                    if pd.isna(r.prod_per_eur)
+                    else round(float(r.prod_per_eur), 3),
+                    "expected_minutes": round(float(r.expected_minutes), 0),
+                    "outcome_minutes": None if pd.isna(r.out_minutes) else float(r.out_minutes),
+                    "outcome_ga90": None if pd.isna(r.out_ga90) else round(float(r.out_ga90), 2),
+                }
+                for r in top.itertuples()
+            ]
+        if case_id in actual_by_case.index:
+            a = actual_by_case.loc[case_id]
+            entry["actual_signing"] = {
+                "name": name_of.get(a["tm_player_id"], a["tm_player_id"]),
+                "fee_eur": float(a["cost"]),
+                "outcome_minutes": None if pd.isna(a["out_minutes"]) else float(a["out_minutes"]),
+                "outcome_ga90": None if pd.isna(a["out_ga90"]) else round(float(a["out_ga90"]), 2),
+            }
+        shortlist_rows[case_id] = entry
+    _write(models_dir / "phase5_shortlists.json", shortlist_rows)
 
     payload = {
         "population": {
