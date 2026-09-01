@@ -38,8 +38,9 @@ METRIC_HELP = {
     "Lower = more similar.",
     "Contribution per 90": "expected non-penalty xG plus xA per 90, smoothed over three "
     "seasons and shrunk toward the position average when a player has few minutes.",
-    "Production next season": "contribution per 90 multiplied by expected minutes. This is "
-    "what a player is expected to deliver over a season, not just his rate while on the pitch.",
+    "Production next season": "contribution above a freely available player, multiplied by "
+    "expected minutes. This is what a player is expected to add over a season, not just his "
+    "rate while on the pitch.",
     "P(≥ his level)": "the calibrated probability that he matches the departing player's "
     "per-90 contribution next season (for keepers: goals prevented). When this says 70%, "
     "it happens about 70% of the time.",
@@ -225,9 +226,15 @@ if page == "We're losing X":
                 with tab:
                     if key == "production":
                         st.caption(
-                            "Contribution per 90 multiplied by expected minutes. Rate alone "
-                            "flatters part-time players, so this ranks on what a player is "
-                            "expected to deliver across a season."
+                            "Contribution above a freely available player, multiplied by "
+                            "expected minutes. Rate alone flatters part-time players. "
+                            + (
+                                "For defenders and midfielders this measures attacking output "
+                                "only, because defending itself is not measurable from these "
+                                "data. See What failed."
+                                if entry["role"] in ("CB", "FB", "CM")
+                                else ""
+                            )
                         )
                     if key == "formula" and entry["role"] != "GK":
                         st.caption(

@@ -237,9 +237,12 @@ def run_shortlists(models_dir: Path = config.MODELS) -> Path:
                 if pd.isna(r.expected_minutes)
                 else round(float(r.expected_minutes), 0),
                 "point": round(float(r.point), 3),
+                "surplus": round(float(r.surplus), 3),
+                # production above a freely available player. The keeper metric is negative for
+                # everyone, so point x minutes would invert their ranking; surplus does not.
                 "production": None
                 if pd.isna(r.expected_minutes)
-                else round(float(r.point) * float(r.expected_minutes) / 90, 1),
+                else round(float(r.surplus) * float(r.expected_minutes) / 90, 1),
             }
             for r in gated.itertuples()
         ]
