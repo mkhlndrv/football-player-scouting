@@ -41,8 +41,7 @@ METRIC_HELP = {
     "it happens about 70% of the time.",
     "Surplus per €m": "expected contribution above a freely-available player, times expected "
     "minutes, divided by price — the number that won the ten-year backtest.",
-    "Expected minutes": "forecast league minutes next season, from his last three seasons "
-    "and age.",
+    "Expected minutes": "forecast league minutes next season, from his last three seasons and age.",
 }
 GRAVEYARD_TITLES = {
     "finishing_residual": "Finishing skill",
@@ -101,6 +100,31 @@ def ordered(pool, key, n=10):
     else:  # blend: equal rank-mix of similarity and probability
         rank = (pool["similarity"].rank() + (-pool["p_bar"]).rank()) / 2
     return pool.assign(_k=rank).dropna(subset=["_k"]).nsmallest(n, "_k").drop(columns="_k")
+
+
+def profile_card(entry, height=520):
+    card = pd.DataFrame(entry["card"])
+    if card.empty:
+        st.info("No profile card for this player.")
+        return
+    groups = load("phase2_role_profiles")["profiles"].get(entry["role"], {})
+    group_of = {s["stat"]: g for g, stats in groups.items() for s in stats}
+    card["group"] = card["stat"].map(group_of)
+    card["stat"] = card["stat"].map(lambda s: PRETTY_STATS.get(s, s.replace("_", " ")))
+    card = card.sort_values("group", key=lambda s: s.map({g: i for i, g in enumerate(GROUP_ORDER)}))
+    st.dataframe(
+        card[["group", "stat", "per90", "role_percentile"]],
+        hide_index=True,
+        height=height,
+        column_config={
+            "group": st.column_config.TextColumn(""),
+            "stat": st.column_config.TextColumn("Stat"),
+            "per90": st.column_config.NumberColumn("Per 90", format="%.2f"),
+            "role_percentile": st.column_config.ProgressColumn(
+                "Percentile in role", min_value=0.0, max_value=1.0, format="%.2f"
+            ),
+        },
+    )
 
 
 def pick_player(demo, label):
@@ -185,28 +209,31 @@ if page == "We're losing X":
     with right:
         st.subheader("His profile card")
         st.caption("Only stats that repeat year to year for his position (r ≥ 0.3).")
-        card = pd.DataFrame(entry["card"])
-        if not card.empty:
-            groups = load("phase2_role_profiles")["profiles"].get(entry["role"], {})
-            group_of = {s["stat"]: g for g, stats in groups.items() for s in stats}
-            card["group"] = card["stat"].map(group_of)
-            card["stat"] = card["stat"].map(lambda s: PRETTY_STATS.get(s, s.replace("_", " ")))
-            card = card.sort_values(
-                "group", key=lambda s: s.map({g: i for i, g in enumerate(GROUP_ORDER)})
-            )
-            st.dataframe(
-                card[["group", "stat", "per90", "role_percentile"]],
-                hide_index=True,
-                height=520,
-                column_config={
-                    "group": st.column_config.TextColumn(""),
-                    "stat": st.column_config.TextColumn("Stat"),
-                    "per90": st.column_config.NumberColumn("Per 90", format="%.2f"),
-                    "role_percentile": st.column_config.ProgressColumn(
-                        "Percentile in role", min_value=0.0, max_value=1.0, format="%.2f"
-                    ),
-                },
-            )
+        profile_card(entry)
+
+    if not filtered.empty:
+        st.divider()
+        st.subheader(f"Side by side — {name} vs a candidate")
+        order_key = "output" if entry["role"] == "GK" else "formula"
+        cand_names = [n for n in ordered(filtered, order_key, n=50)["name"] if n in demo["players"]]
+        if cand_names:
+            pick = st.selectbox("Candidate to compare", cand_names)
+            cand_entry = demo["players"][pick]
+            c1, c2 = st.columns(2)
+            with c1:
+                st.markdown(
+                    f"**{name}** — {ROLE_NAMES[entry['role']]}, {entry['club']}, "
+                    f"€{entry['value_eur'] / 1e6:.0f}m"
+                )
+                profile_card(entry)
+            with c2:
+                st.markdown(
+                    f"**{pick}** — {ROLE_NAMES[cand_entry['role']]}, {cand_entry['club']}, "
+                    f"€{cand_entry['value_eur'] / 1e6:.0f}m"
+                )
+                profile_card(cand_entry)
+        else:
+            st.info("No full profile available for the candidates under these filters.")
 
 elif page == "Players like X":
     demo = load("phase6_shortlists")
