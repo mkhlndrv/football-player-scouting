@@ -1,8 +1,8 @@
 {
  "market_held_out": {
-  "rmse_log10": 0.18469999999999998,
-  "mae_log10": 0.13828888888888888,
-  "mdape_eur": 0.2400888888888889,
+  "rmse_log10": 0.18481111111111112,
+  "mae_log10": 0.1383111111111111,
+  "mdape_eur": 0.23948888888888886,
   "seasons": [
    2016,
    2017,
@@ -22,7 +22,7 @@
  "price_gaps": "no persistent component: same player next season r 0.05, club mean gap r 0.12 (notebook 03 Step 3)",
  "trajectory": "role curve ties no-change on held-out MAE at horizons 1-3 (0.057/0.063/0.066); player-level effect worse; kept for the age direction (notebook 03 Step 4)",
  "availability_beats_last_season": {
-  "mae_model": 746.1351263902933,
+  "mae_model": 746.151941354904,
   "mae_baseline": 802.9769464105156,
   "pass": true
  },
@@ -30,20 +30,20 @@
  "resale_calibration_base_2021": {
   "1": {
    "n": 1540,
-   "coverage_80": 0.8175324675324676,
-   "mae_log10": 0.11207295248314966,
+   "coverage_80": 0.8162337662337662,
+   "mae_log10": 0.11198674572355875,
    "no_change_mae_log10": 0.19013159712665903
   },
   "2": {
    "n": 1262,
-   "coverage_80": 0.8090332805071315,
-   "mae_log10": 0.18451227398485506,
+   "coverage_80": 0.8098256735340729,
+   "mae_log10": 0.18393900185881312,
    "no_change_mae_log10": 0.3035487238766191
   },
   "3": {
    "n": 1132,
-   "coverage_80": 0.8162544169611308,
-   "mae_log10": 0.23934377235505833,
+   "coverage_80": 0.8127208480565371,
+   "mae_log10": 0.23898741954855693,
    "no_change_mae_log10": 0.3820948691199153
   }
  }

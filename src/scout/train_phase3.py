@@ -43,7 +43,9 @@ def _contribution_with_ids() -> pd.DataFrame:
 def _season_values() -> pd.DataFrame:
     st = stints.build(COMPS, list(config.SEASONS))
     st["tm_player_id"] = st["tm_player_id"].astype(str)
-    one = st.sort_values("minutes", ascending=False).drop_duplicates(["tm_player_id", "season"])
+    one = st.sort_values(["minutes", "club_id"], ascending=[False, True]).drop_duplicates(
+        ["tm_player_id", "season"]
+    )
     return one[["tm_player_id", "season", "club_id", "value_july"]]
 
 
@@ -108,9 +110,9 @@ def run_market(models_dir: Path = config.MODELS) -> Path:
 
 def run_trajectory(models_dir: Path = config.MODELS) -> Path:
     contrib = _contribution_with_ids()
-    one = contrib.sort_values("minutes", ascending=False).drop_duplicates(
-        ["player_id", "role", "season"]
-    )
+    one = contrib.sort_values(
+        ["minutes", "competition_id", "player_id"], ascending=[False, True, True]
+    ).drop_duplicates(["player_id", "role", "season"])
     nxt = one.assign(season=one["season"] - 1)[["player_id", "role", "season", "point"]].rename(
         columns={"point": "point_next"}
     )
@@ -147,9 +149,9 @@ def run_trajectory(models_dir: Path = config.MODELS) -> Path:
 
 def run_availability(models_dir: Path = config.MODELS) -> Path:
     contrib = _contribution_with_ids()
-    minutes = contrib.sort_values("minutes", ascending=False).drop_duplicates(
-        ["player_id", "season"]
-    )
+    minutes = contrib.sort_values(
+        ["minutes", "competition_id", "player_id"], ascending=[False, True, True]
+    ).drop_duplicates(["player_id", "season"])
     hist = availability.history(minutes[["player_id", "season", "minutes", "age", "role"]])
     st = stints.build(COMPS, list(config.SEASONS))
     st["tm_player_id"] = st["tm_player_id"].astype(str)
@@ -238,9 +240,9 @@ def run_resale(models_dir: Path = config.MODELS) -> Path:
     rows = market_rows(contrib)
     prepared = market.prepare(rows)
     leagues = sorted(prepared["competition_id"].unique())
-    one = contrib.sort_values("minutes", ascending=False).drop_duplicates(
-        ["player_id", "role", "season"]
-    )
+    one = contrib.sort_values(
+        ["minutes", "competition_id", "player_id"], ascending=[False, True, True]
+    ).drop_duplicates(["player_id", "role", "season"])
     nxt = one.assign(season=one["season"] - 1)[["player_id", "role", "season", "point"]].rename(
         columns={"point": "point_next"}
     )

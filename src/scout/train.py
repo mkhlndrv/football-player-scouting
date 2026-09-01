@@ -159,7 +159,9 @@ def _fotmob_movers() -> pd.DataFrame:
     wide["tm_player_id"] = wide["fotmob_player_id"].astype(int).astype(str).map(ids)
     wide = (
         wide.dropna(subset=["tm_player_id"])
-        .sort_values("fm_minutes", ascending=False)
+        .sort_values(
+            ["fm_minutes", "competition_id", "fotmob_player_id"], ascending=[False, True, True]
+        )
         .drop_duplicates(["season", "tm_player_id"])
     )
     players = tm.load_table("players")[["player_id", "date_of_birth"]]

@@ -21,7 +21,7 @@
   {
    "season": 2022,
    "n": 1663,
-   "mae_model": 736.1,
+   "mae_model": 736.2,
    "mae_baseline": 820.5
   },
   {
@@ -80,7 +80,7 @@
    "lag1": 1688.0,
    "lag2": 2093.0,
    "lag3": 1112.0,
-   "expected_minutes": 1420.4
+   "expected_minutes": 1419.9
   },
   {
    "tm_player_id": "193004",
@@ -146,7 +146,7 @@
    "lag1": 926.0,
    "lag2": 602.0,
    "lag3": 1604.0,
-   "expected_minutes": 828.9
+   "expected_minutes": 828.5
   },
   {
    "tm_player_id": "196357",
@@ -168,7 +168,7 @@
    "lag1": 1674.0,
    "lag2": 1999.0,
    "lag3": 2618.0,
-   "expected_minutes": 1388.5
+   "expected_minutes": 1388.6
   },
   {
    "tm_player_id": "111455",
@@ -223,7 +223,7 @@
    "lag1": 1630.0,
    "lag2": 2716.0,
    "lag3": 2777.0,
-   "expected_minutes": 1084.9
+   "expected_minutes": 1086.1
   },
   {
    "tm_player_id": "82873",
@@ -245,7 +245,7 @@
    "lag1": 2079.0,
    "lag2": 2022.0,
    "lag3": 831.0,
-   "expected_minutes": 1401.4
+   "expected_minutes": 1401.3
   },
   {
    "tm_player_id": "129674",
@@ -267,7 +267,7 @@
    "lag1": 1511.0,
    "lag2": 1514.0,
    "lag3": 1279.0,
-   "expected_minutes": 1278.7
+   "expected_minutes": 1278.9
   },
   {
    "tm_player_id": "118847",
@@ -333,7 +333,7 @@
    "lag1": 2002.0,
    "lag2": 0.0,
    "lag3": 2063.0,
-   "expected_minutes": 1020.6
+   "expected_minutes": 1021.4
   },
   {
    "tm_player_id": "7161",
@@ -344,7 +344,7 @@
    "lag1": 766.0,
    "lag2": 0.0,
    "lag3": 2081.0,
-   "expected_minutes": 574.4
+   "expected_minutes": 574.1
   },
   {
    "tm_player_id": "153084",
@@ -421,7 +421,7 @@
    "lag1": 659.0,
    "lag2": 1227.0,
    "lag3": 1509.0,
-   "expected_minutes": 602.8
+   "expected_minutes": 602.6
   },
   {
    "tm_player_id": "88755",
@@ -443,7 +443,7 @@
    "lag1": 1168.0,
    "lag2": 0.0,
    "lag3": 963.0,
-   "expected_minutes": 728.0
+   "expected_minutes": 727.9
   },
   {
    "tm_player_id": "3333",
@@ -487,7 +487,7 @@
    "lag1": 943.0,
    "lag2": 0.0,
    "lag3": 716.0,
-   "expected_minutes": 265.8
+   "expected_minutes": 264.4
   },
   {
    "tm_player_id": "242631",
@@ -498,7 +498,7 @@
    "lag1": 1339.0,
    "lag2": 2587.0,
    "lag3": 2041.0,
-   "expected_minutes": 1354.6
+   "expected_minutes": 1354.8
   },
   {
    "tm_player_id": "67063",
@@ -509,7 +509,7 @@
    "lag1": 2286.0,
    "lag2": 2152.0,
    "lag3": 1464.0,
-   "expected_minutes": 1401.6
+   "expected_minutes": 1402.1
   },
   {
    "tm_player_id": "82442",
@@ -520,7 +520,7 @@
    "lag1": 1610.0,
    "lag2": 0.0,
    "lag3": 2397.0,
-   "expected_minutes": 622.5
+   "expected_minutes": 624.8
   },
   {
    "tm_player_id": "12282",
@@ -542,7 +542,7 @@
    "lag1": 1739.0,
    "lag2": 1003.0,
    "lag3": 1766.0,
-   "expected_minutes": 1427.1
+   "expected_minutes": 1427.4
   },
   {
    "tm_player_id": "131978",
@@ -575,7 +575,7 @@
    "lag1": 1935.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 708.0
+   "expected_minutes": 707.9
   },
   {
    "tm_player_id": "207917",
@@ -619,7 +619,7 @@
    "lag1": 1316.0,
    "lag2": 893.0,
    "lag3": 1130.0,
-   "expected_minutes": 867.3
+   "expected_minutes": 867.1
   },
   {
    "tm_player_id": "132098",
@@ -630,7 +630,7 @@
    "lag1": 2115.0,
    "lag2": 2400.0,
    "lag3": 2854.0,
-   "expected_minutes": 1628.4
+   "expected_minutes": 1628.1
   },
   {
    "tm_player_id": "95810",
@@ -663,7 +663,7 @@
    "lag1": 1645.0,
    "lag2": 0.0,
    "lag3": 975.0,
-   "expected_minutes": 1117.4
+   "expected_minutes": 1117.6
   },
   {
    "tm_player_id": "57500",
@@ -685,7 +685,7 @@
    "lag1": 954.0,
    "lag2": 1057.0,
    "lag3": 696.0,
-   "expected_minutes": 291.3
+   "expected_minutes": 289.6
   },
   {
    "tm_player_id": "202886",
@@ -696,7 +696,7 @@
    "lag1": 751.0,
    "lag2": 752.0,
    "lag3": 1211.0,
-   "expected_minutes": 822.5
+   "expected_minutes": 822.7
   },
   {
    "tm_player_id": "131996",
@@ -707,7 +707,7 @@
    "lag1": 675.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 568.6
+   "expected_minutes": 568.8
   },
   {
    "tm_player_id": "74683",
@@ -751,7 +751,7 @@
    "lag1": 2120.0,
    "lag2": 2890.0,
    "lag3": 0.0,
-   "expected_minutes": 1070.7
+   "expected_minutes": 1072.5
   },
   {
    "tm_player_id": "246968",
@@ -762,7 +762,7 @@
    "lag1": 1154.0,
    "lag2": 1987.0,
    "lag3": 2014.0,
-   "expected_minutes": 1024.9
+   "expected_minutes": 1024.8
   },
   {
    "tm_player_id": "316125",
@@ -784,7 +784,7 @@
    "lag1": 1054.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 405.3
+   "expected_minutes": 406.1
   },
   {
    "tm_player_id": "61841",
@@ -883,7 +883,7 @@
    "lag1": 1651.0,
    "lag2": 2350.0,
    "lag3": 1040.0,
-   "expected_minutes": 1101.9
+   "expected_minutes": 1101.4
   },
   {
    "tm_player_id": "15799",
@@ -905,7 +905,7 @@
    "lag1": 1213.0,
    "lag2": 1052.0,
    "lag3": 0.0,
-   "expected_minutes": 939.1
+   "expected_minutes": 939.3
   },
   {
    "tm_player_id": "251876",
@@ -960,7 +960,7 @@
    "lag1": 2106.0,
    "lag2": 1049.0,
    "lag3": 0.0,
-   "expected_minutes": 1532.3
+   "expected_minutes": 1532.0
   },
   {
    "tm_player_id": "261504",
@@ -982,7 +982,7 @@
    "lag1": 2183.0,
    "lag2": 0.0,
    "lag3": 752.0,
-   "expected_minutes": 1382.2
+   "expected_minutes": 1381.8
   },
   {
    "tm_player_id": "197747",
@@ -1037,7 +1037,7 @@
    "lag1": 1088.0,
    "lag2": 0.0,
    "lag3": 2946.0,
-   "expected_minutes": 767.0
+   "expected_minutes": 767.1
   },
   {
    "tm_player_id": "199248",
@@ -1070,7 +1070,7 @@
    "lag1": 1870.0,
    "lag2": 0.0,
    "lag3": 2528.0,
-   "expected_minutes": 1403.0
+   "expected_minutes": 1402.5
   },
   {
    "tm_player_id": "199733",
@@ -1092,7 +1092,7 @@
    "lag1": 736.0,
    "lag2": 0.0,
    "lag3": 1675.0,
-   "expected_minutes": 436.6
+   "expected_minutes": 437.1
   },
   {
    "tm_player_id": "240306",
@@ -1103,7 +1103,7 @@
    "lag1": 1593.0,
    "lag2": 1878.0,
    "lag3": 2880.0,
-   "expected_minutes": 1355.0
+   "expected_minutes": 1355.1
   },
   {
    "tm_player_id": "46413",
@@ -1114,7 +1114,7 @@
    "lag1": 2995.0,
    "lag2": 3008.0,
    "lag3": 2476.0,
-   "expected_minutes": 1975.1
+   "expected_minutes": 1975.3
   },
   {
    "tm_player_id": "242086",
@@ -1125,7 +1125,7 @@
    "lag1": 1915.0,
    "lag2": 1590.0,
    "lag3": 1062.0,
-   "expected_minutes": 1479.0
+   "expected_minutes": 1478.6
   },
   {
    "tm_player_id": "181778",
@@ -1158,7 +1158,7 @@
    "lag1": 2073.0,
    "lag2": 3392.0,
    "lag3": 2556.0,
-   "expected_minutes": 1591.4
+   "expected_minutes": 1591.2
   },
   {
    "tm_player_id": "94529",
@@ -1169,7 +1169,7 @@
    "lag1": 623.0,
    "lag2": 639.0,
    "lag3": 1176.0,
-   "expected_minutes": 502.8
+   "expected_minutes": 502.6
   },
   {
    "tm_player_id": "336960",
@@ -1191,7 +1191,7 @@
    "lag1": 856.0,
    "lag2": 1030.0,
    "lag3": 1364.0,
-   "expected_minutes": 764.0
+   "expected_minutes": 763.7
   },
   {
    "tm_player_id": "364135",
@@ -1246,7 +1246,7 @@
    "lag1": 1198.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 768.2
+   "expected_minutes": 768.3
   },
   {
    "tm_player_id": "335209",
@@ -1268,7 +1268,7 @@
    "lag1": 1028.0,
    "lag2": 1040.0,
    "lag3": 1084.0,
-   "expected_minutes": 1033.3
+   "expected_minutes": 1032.9
   },
   {
    "tm_player_id": "131075",
@@ -1290,7 +1290,7 @@
    "lag1": 1418.0,
    "lag2": 997.0,
    "lag3": 1554.0,
-   "expected_minutes": 1200.9
+   "expected_minutes": 1201.1
   },
   {
    "tm_player_id": "165895",
@@ -1389,7 +1389,7 @@
    "lag1": 1995.0,
    "lag2": 0.0,
    "lag3": 1448.0,
-   "expected_minutes": 1265.1
+   "expected_minutes": 1265.2
   },
   {
    "tm_player_id": "112515",
@@ -1455,7 +1455,7 @@
    "lag1": 989.0,
    "lag2": 2220.0,
    "lag3": 3346.0,
-   "expected_minutes": 1292.3
+   "expected_minutes": 1291.8
   },
   {
    "tm_player_id": "177907",
@@ -1488,7 +1488,7 @@
    "lag1": 2630.0,
    "lag2": 2430.0,
    "lag3": 1968.0,
-   "expected_minutes": 1541.5
+   "expected_minutes": 1541.6
   },
   {
    "tm_player_id": "81512",
@@ -1510,7 +1510,7 @@
    "lag1": 742.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 480.4
+   "expected_minutes": 480.3
   },
   {
    "tm_player_id": "286384",
@@ -1543,7 +1543,7 @@
    "lag1": 2876.0,
    "lag2": 1601.0,
    "lag3": 1620.0,
-   "expected_minutes": 1986.3
+   "expected_minutes": 1986.5
   },
   {
    "tm_player_id": "249089",
@@ -1576,7 +1576,7 @@
    "lag1": 917.0,
    "lag2": 884.0,
    "lag3": 1924.0,
-   "expected_minutes": 760.2
+   "expected_minutes": 760.1
   },
   {
    "tm_player_id": "86202",
@@ -1609,7 +1609,7 @@
    "lag1": 2222.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1222.0
+   "expected_minutes": 1221.9
   },
   {
    "tm_player_id": "167491",
@@ -1642,7 +1642,7 @@
    "lag1": 2127.0,
    "lag2": 2750.0,
    "lag3": 1970.0,
-   "expected_minutes": 1699.8
+   "expected_minutes": 1700.0
   },
   {
    "tm_player_id": "241527",
@@ -1653,7 +1653,7 @@
    "lag1": 2571.0,
    "lag2": 0.0,
    "lag3": 997.0,
-   "expected_minutes": 1686.3
+   "expected_minutes": 1685.9
   },
   {
    "tm_player_id": "84085",
@@ -1675,7 +1675,7 @@
    "lag1": 943.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 201.7
+   "expected_minutes": 203.4
   },
   {
    "tm_player_id": "177467",
@@ -1741,7 +1741,7 @@
    "lag1": 1778.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1169.1
+   "expected_minutes": 1169.4
   },
   {
    "tm_player_id": "234523",
@@ -1752,7 +1752,7 @@
    "lag1": 921.0,
    "lag2": 1321.0,
    "lag3": 1976.0,
-   "expected_minutes": 1026.0
+   "expected_minutes": 1025.6
   },
   {
    "tm_player_id": "61812",
@@ -1774,7 +1774,7 @@
    "lag1": 2727.0,
    "lag2": 2136.0,
    "lag3": 1389.0,
-   "expected_minutes": 2001.2
+   "expected_minutes": 2001.5
   },
   {
    "tm_player_id": "16306",
@@ -1807,7 +1807,7 @@
    "lag1": 1072.0,
    "lag2": 1064.0,
    "lag3": 2128.0,
-   "expected_minutes": 1131.7
+   "expected_minutes": 1131.3
   },
   {
    "tm_player_id": "138927",
@@ -1840,7 +1840,7 @@
    "lag1": 1352.0,
    "lag2": 2110.0,
    "lag3": 2252.0,
-   "expected_minutes": 1057.8
+   "expected_minutes": 1058.0
   },
   {
    "tm_player_id": "281963",
@@ -1884,7 +1884,7 @@
    "lag1": 944.0,
    "lag2": 1449.0,
    "lag3": 1972.0,
-   "expected_minutes": 486.5
+   "expected_minutes": 488.3
   },
   {
    "tm_player_id": "165007",
@@ -1917,7 +1917,7 @@
    "lag1": 1670.0,
    "lag2": 1201.0,
    "lag3": 1180.0,
-   "expected_minutes": 1319.1
+   "expected_minutes": 1319.4
   },
   {
    "tm_player_id": "203043",
@@ -1961,7 +1961,7 @@
    "lag1": 1655.0,
    "lag2": 2485.0,
    "lag3": 2618.0,
-   "expected_minutes": 1448.6
+   "expected_minutes": 1448.2
   },
   {
    "tm_player_id": "355628",
@@ -2104,7 +2104,7 @@
    "lag1": 1903.0,
    "lag2": 1968.0,
    "lag3": 0.0,
-   "expected_minutes": 1277.6
+   "expected_minutes": 1277.4
   },
   {
    "tm_player_id": "328480",
@@ -2137,7 +2137,7 @@
    "lag1": 1427.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1050.0
+   "expected_minutes": 1049.5
   },
   {
    "tm_player_id": "326416",
@@ -2203,7 +2203,7 @@
    "lag1": 1539.0,
    "lag2": 2518.0,
    "lag3": 2658.0,
-   "expected_minutes": 1590.7
+   "expected_minutes": 1590.9
   },
   {
    "tm_player_id": "106405",
@@ -2247,7 +2247,7 @@
    "lag1": 1405.0,
    "lag2": 888.0,
    "lag3": 1773.0,
-   "expected_minutes": 1199.2
+   "expected_minutes": 1199.5
   },
   {
    "tm_player_id": "35047",
@@ -2302,7 +2302,7 @@
    "lag1": 1050.0,
    "lag2": 1040.0,
    "lag3": 1522.0,
-   "expected_minutes": 1072.9
+   "expected_minutes": 1073.1
   },
   {
    "tm_player_id": "80293",
@@ -2379,7 +2379,7 @@
    "lag1": 1343.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1006.0
+   "expected_minutes": 1006.3
   },
   {
    "tm_player_id": "229006",
@@ -2390,7 +2390,7 @@
    "lag1": 1329.0,
    "lag2": 1478.0,
    "lag3": 1249.0,
-   "expected_minutes": 1183.0
+   "expected_minutes": 1183.3
   },
   {
    "tm_player_id": "386552",
@@ -2456,7 +2456,7 @@
    "lag1": 2623.0,
    "lag2": 2848.0,
    "lag3": 1253.0,
-   "expected_minutes": 2055.8
+   "expected_minutes": 2055.5
   },
   {
    "tm_player_id": "205562",
@@ -2467,7 +2467,7 @@
    "lag1": 1026.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 742.1
+   "expected_minutes": 742.3
   },
   {
    "tm_player_id": "170986",
@@ -2489,7 +2489,7 @@
    "lag1": 973.0,
    "lag2": 1884.0,
    "lag3": 1432.0,
-   "expected_minutes": 1112.3
+   "expected_minutes": 1112.6
   },
   {
    "tm_player_id": "322305",
@@ -2533,7 +2533,7 @@
    "lag1": 884.0,
    "lag2": 1054.0,
    "lag3": 1381.0,
-   "expected_minutes": 938.9
+   "expected_minutes": 938.4
   },
   {
    "tm_player_id": "241641",
@@ -2544,7 +2544,7 @@
    "lag1": 2558.0,
    "lag2": 1760.0,
    "lag3": 2069.0,
-   "expected_minutes": 1762.6
+   "expected_minutes": 1762.7
   },
   {
    "tm_player_id": "318508",
@@ -2599,7 +2599,7 @@
    "lag1": 1879.0,
    "lag2": 0.0,
    "lag3": 1212.0,
-   "expected_minutes": 1402.0
+   "expected_minutes": 1401.7
   },
   {
    "tm_player_id": "249636",
@@ -2621,7 +2621,7 @@
    "lag1": 2686.0,
    "lag2": 1167.0,
    "lag3": 2467.0,
-   "expected_minutes": 1909.5
+   "expected_minutes": 1909.7
   },
   {
    "tm_player_id": "290017",
@@ -2643,7 +2643,7 @@
    "lag1": 2366.0,
    "lag2": 2608.0,
    "lag3": 2228.0,
-   "expected_minutes": 1886.1
+   "expected_minutes": 1885.6
   },
   {
    "tm_player_id": "290862",
@@ -2665,7 +2665,7 @@
    "lag1": 2061.0,
    "lag2": 784.0,
    "lag3": 1004.0,
-   "expected_minutes": 1403.0
+   "expected_minutes": 1403.2
   },
   {
    "tm_player_id": "308279",
@@ -2709,7 +2709,7 @@
    "lag1": 2215.0,
    "lag2": 2531.0,
    "lag3": 1423.0,
-   "expected_minutes": 1467.2
+   "expected_minutes": 1467.4
   },
   {
    "tm_player_id": "193098",
@@ -2742,7 +2742,7 @@
    "lag1": 1636.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 856.3
+   "expected_minutes": 856.1
   },
   {
    "tm_player_id": "93707",
@@ -2808,7 +2808,7 @@
    "lag1": 834.0,
    "lag2": 862.0,
    "lag3": 0.0,
-   "expected_minutes": 842.6
+   "expected_minutes": 842.2
   },
   {
    "tm_player_id": "108725",
@@ -2819,7 +2819,7 @@
    "lag1": 913.0,
    "lag2": 3024.0,
    "lag3": 1797.0,
-   "expected_minutes": 899.4
+   "expected_minutes": 899.5
   },
   {
    "tm_player_id": "182894",
@@ -2830,7 +2830,7 @@
    "lag1": 1761.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1097.7
+   "expected_minutes": 1097.6
   },
   {
    "tm_player_id": "238626",
@@ -2852,7 +2852,7 @@
    "lag1": 2610.0,
    "lag2": 2886.0,
    "lag3": 3161.0,
-   "expected_minutes": 2228.0
+   "expected_minutes": 2227.8
   },
   {
    "tm_player_id": "433584",
@@ -2874,7 +2874,7 @@
    "lag1": 908.0,
    "lag2": 2058.0,
    "lag3": 0.0,
-   "expected_minutes": 1040.5
+   "expected_minutes": 1040.2
   },
   {
    "tm_player_id": "323167",
@@ -2962,7 +2962,7 @@
    "lag1": 1778.0,
    "lag2": 1436.0,
    "lag3": 901.0,
-   "expected_minutes": 1476.2
+   "expected_minutes": 1476.4
   },
   {
    "tm_player_id": "249513",
@@ -2995,7 +2995,7 @@
    "lag1": 1694.0,
    "lag2": 2571.0,
    "lag3": 1422.0,
-   "expected_minutes": 1078.4
+   "expected_minutes": 1079.2
   },
   {
    "tm_player_id": "506248",
@@ -3028,7 +3028,7 @@
    "lag1": 2101.0,
    "lag2": 2028.0,
    "lag3": 1533.0,
-   "expected_minutes": 1584.1
+   "expected_minutes": 1584.3
   },
   {
    "tm_player_id": "251878",
@@ -3061,7 +3061,7 @@
    "lag1": 2383.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1424.3
+   "expected_minutes": 1424.2
   },
   {
    "tm_player_id": "420064",
@@ -3083,7 +3083,7 @@
    "lag1": 954.0,
    "lag2": 1445.0,
    "lag3": 2194.0,
-   "expected_minutes": 1006.3
+   "expected_minutes": 1006.5
   },
   {
    "tm_player_id": "398073",
@@ -3116,7 +3116,7 @@
    "lag1": 717.0,
    "lag2": 2822.0,
    "lag3": 2305.0,
-   "expected_minutes": 1225.1
+   "expected_minutes": 1224.9
   },
   {
    "tm_player_id": "227110",
@@ -3160,7 +3160,7 @@
    "lag1": 1757.0,
    "lag2": 1082.0,
    "lag3": 1971.0,
-   "expected_minutes": 1292.3
+   "expected_minutes": 1292.4
   },
   {
    "tm_player_id": "124410",
@@ -3182,7 +3182,7 @@
    "lag1": 930.0,
    "lag2": 872.0,
    "lag3": 0.0,
-   "expected_minutes": 891.0
+   "expected_minutes": 890.6
   },
   {
    "tm_player_id": "93740",
@@ -3292,7 +3292,7 @@
    "lag1": 935.0,
    "lag2": 683.0,
    "lag3": 1197.0,
-   "expected_minutes": 1005.8
+   "expected_minutes": 1006.0
   },
   {
    "tm_player_id": "237662",
@@ -3303,7 +3303,7 @@
    "lag1": 1870.0,
    "lag2": 1614.0,
    "lag3": 0.0,
-   "expected_minutes": 1429.4
+   "expected_minutes": 1429.0
   },
   {
    "tm_player_id": "332697",
@@ -3336,7 +3336,7 @@
    "lag1": 2732.0,
    "lag2": 1625.0,
    "lag3": 2234.0,
-   "expected_minutes": 2015.5
+   "expected_minutes": 2015.0
   },
   {
    "tm_player_id": "315969",
@@ -3347,7 +3347,7 @@
    "lag1": 1988.0,
    "lag2": 2578.0,
    "lag3": 1321.0,
-   "expected_minutes": 1635.2
+   "expected_minutes": 1635.3
   },
   {
    "tm_player_id": "477758",
@@ -3380,7 +3380,7 @@
    "lag1": 2751.0,
    "lag2": 1150.0,
    "lag3": 1576.0,
-   "expected_minutes": 1928.4
+   "expected_minutes": 1928.6
   },
   {
    "tm_player_id": "410425",
@@ -3402,7 +3402,7 @@
    "lag1": 2748.0,
    "lag2": 2376.0,
    "lag3": 3050.0,
-   "expected_minutes": 2172.3
+   "expected_minutes": 2172.4
   },
   {
    "tm_player_id": "441170",
@@ -3457,7 +3457,7 @@
    "lag1": 1481.0,
    "lag2": 986.0,
    "lag3": 0.0,
-   "expected_minutes": 1065.0
+   "expected_minutes": 1065.2
   },
   {
    "tm_player_id": "348026",
@@ -3479,7 +3479,7 @@
    "lag1": 1028.0,
    "lag2": 831.0,
    "lag3": 1666.0,
-   "expected_minutes": 1099.8
+   "expected_minutes": 1100.0
   },
   {
    "tm_player_id": "410225",
@@ -3490,7 +3490,7 @@
    "lag1": 2181.0,
    "lag2": 2738.0,
    "lag3": 1344.0,
-   "expected_minutes": 1836.3
+   "expected_minutes": 1836.6
   },
   {
    "tm_player_id": "100986",
@@ -3523,7 +3523,7 @@
    "lag1": 1768.0,
    "lag2": 710.0,
    "lag3": 785.0,
-   "expected_minutes": 1290.6
+   "expected_minutes": 1290.9
   },
   {
    "tm_player_id": "374040",
@@ -3567,7 +3567,7 @@
    "lag1": 2175.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1365.4
+   "expected_minutes": 1365.6
   },
   {
    "tm_player_id": "420002",
@@ -3578,7 +3578,7 @@
    "lag1": 2225.0,
    "lag2": 2690.0,
    "lag3": 2303.0,
-   "expected_minutes": 1875.7
+   "expected_minutes": 1875.3
   },
   {
    "tm_player_id": "474662",
@@ -3600,7 +3600,7 @@
    "lag1": 954.0,
    "lag2": 1085.0,
    "lag3": 780.0,
-   "expected_minutes": 1022.0
+   "expected_minutes": 1021.7
   },
   {
    "tm_player_id": "344886",
@@ -3622,7 +3622,7 @@
    "lag1": 1977.0,
    "lag2": 1680.0,
    "lag3": 0.0,
-   "expected_minutes": 1534.7
+   "expected_minutes": 1535.0
   },
   {
    "tm_player_id": "371686",
@@ -3655,7 +3655,7 @@
    "lag1": 1908.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1192.8
+   "expected_minutes": 1192.3
   },
   {
    "tm_player_id": "394327",
@@ -3699,7 +3699,7 @@
    "lag1": 1132.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 794.5
+   "expected_minutes": 794.7
   },
   {
    "tm_player_id": "206746",
@@ -3743,7 +3743,7 @@
    "lag1": 1933.0,
    "lag2": 2316.0,
    "lag3": 2750.0,
-   "expected_minutes": 1726.0
+   "expected_minutes": 1725.6
   },
   {
    "tm_player_id": "157507",
@@ -3798,7 +3798,7 @@
    "lag1": 1770.0,
    "lag2": 0.0,
    "lag3": 1222.0,
-   "expected_minutes": 1304.0
+   "expected_minutes": 1304.2
   },
   {
    "tm_player_id": "148153",
@@ -3820,7 +3820,7 @@
    "lag1": 1487.0,
    "lag2": 1110.0,
    "lag3": 2805.0,
-   "expected_minutes": 1521.5
+   "expected_minutes": 1521.6
   },
   {
    "tm_player_id": "199527",
@@ -3831,7 +3831,7 @@
    "lag1": 1447.0,
    "lag2": 2219.0,
    "lag3": 1071.0,
-   "expected_minutes": 1247.0
+   "expected_minutes": 1247.2
   },
   {
    "tm_player_id": "249730",
@@ -3864,7 +3864,7 @@
    "lag1": 626.0,
    "lag2": 775.0,
    "lag3": 2453.0,
-   "expected_minutes": 702.4
+   "expected_minutes": 702.1
   },
   {
    "tm_player_id": "207014",
@@ -3875,7 +3875,7 @@
    "lag1": 1567.0,
    "lag2": 2160.0,
    "lag3": 1597.0,
-   "expected_minutes": 1337.8
+   "expected_minutes": 1338.0
   },
   {
    "tm_player_id": "354362",
@@ -3952,7 +3952,7 @@
    "lag1": 1479.0,
    "lag2": 1067.0,
    "lag3": 1299.0,
-   "expected_minutes": 1219.9
+   "expected_minutes": 1220.1
   },
   {
    "tm_player_id": "334526",
@@ -4029,7 +4029,7 @@
    "lag1": 2146.0,
    "lag2": 1914.0,
    "lag3": 1795.0,
-   "expected_minutes": 1720.9
+   "expected_minutes": 1721.1
   },
   {
    "tm_player_id": "102423",
@@ -4051,7 +4051,7 @@
    "lag1": 1858.0,
    "lag2": 0.0,
    "lag3": 717.0,
-   "expected_minutes": 1219.1
+   "expected_minutes": 1218.6
   },
   {
    "tm_player_id": "413507",
@@ -4095,7 +4095,7 @@
    "lag1": 1530.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1146.8
+   "expected_minutes": 1147.0
   },
   {
    "tm_player_id": "399776",
@@ -4128,7 +4128,7 @@
    "lag1": 844.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 843.3
+   "expected_minutes": 843.1
   },
   {
    "tm_player_id": "369081",
@@ -4161,7 +4161,7 @@
    "lag1": 1318.0,
    "lag2": 0.0,
    "lag3": 1445.0,
-   "expected_minutes": 1180.4
+   "expected_minutes": 1180.2
   },
   {
    "tm_player_id": "328784",
@@ -4183,7 +4183,7 @@
    "lag1": 1560.0,
    "lag2": 1404.0,
    "lag3": 2374.0,
-   "expected_minutes": 1421.7
+   "expected_minutes": 1422.0
   },
   {
    "tm_player_id": "480763",
@@ -4249,7 +4249,7 @@
    "lag1": 1013.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 994.8
+   "expected_minutes": 995.2
   },
   {
    "tm_player_id": "395695",
@@ -4271,7 +4271,7 @@
    "lag1": 860.0,
    "lag2": 1760.0,
    "lag3": 983.0,
-   "expected_minutes": 1146.6
+   "expected_minutes": 1146.7
   },
   {
    "tm_player_id": "186368",
@@ -4337,7 +4337,7 @@
    "lag1": 2599.0,
    "lag2": 1729.0,
    "lag3": 1219.0,
-   "expected_minutes": 2019.8
+   "expected_minutes": 2019.9
   },
   {
    "tm_player_id": "302371",
@@ -4348,7 +4348,7 @@
    "lag1": 2750.0,
    "lag2": 965.0,
    "lag3": 0.0,
-   "expected_minutes": 1799.8
+   "expected_minutes": 1799.4
   },
   {
    "tm_player_id": "418659",
@@ -4359,7 +4359,7 @@
    "lag1": 988.0,
    "lag2": 1326.0,
    "lag3": 1454.0,
-   "expected_minutes": 1185.4
+   "expected_minutes": 1185.5
   },
   {
    "tm_player_id": "236981",
@@ -4414,7 +4414,7 @@
    "lag1": 1053.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 997.1
+   "expected_minutes": 997.2
   },
   {
    "tm_player_id": "314678",
@@ -4425,7 +4425,7 @@
    "lag1": 942.0,
    "lag2": 1307.0,
    "lag3": 1237.0,
-   "expected_minutes": 1118.9
+   "expected_minutes": 1119.1
   },
   {
    "tm_player_id": "378139",
@@ -4436,7 +4436,7 @@
    "lag1": 1113.0,
    "lag2": 956.0,
    "lag3": 897.0,
-   "expected_minutes": 999.3
+   "expected_minutes": 999.6
   },
   {
    "tm_player_id": "411975",
@@ -4447,7 +4447,7 @@
    "lag1": 2247.0,
    "lag2": 2606.0,
    "lag3": 1873.0,
-   "expected_minutes": 1913.7
+   "expected_minutes": 1913.8
   },
   {
    "tm_player_id": "354361",
@@ -4480,7 +4480,7 @@
    "lag1": 1707.0,
    "lag2": 689.0,
    "lag3": 950.0,
-   "expected_minutes": 1456.4
+   "expected_minutes": 1456.5
   },
   {
    "tm_player_id": "280575",
@@ -4502,7 +4502,7 @@
    "lag1": 1667.0,
    "lag2": 1920.0,
    "lag3": 2540.0,
-   "expected_minutes": 1586.1
+   "expected_minutes": 1586.3
   },
   {
    "tm_player_id": "324795",
@@ -4513,7 +4513,7 @@
    "lag1": 2575.0,
    "lag2": 2185.0,
    "lag3": 1122.0,
-   "expected_minutes": 2002.3
+   "expected_minutes": 2002.4
   },
   {
    "tm_player_id": "392768",
@@ -4524,7 +4524,7 @@
    "lag1": 1857.0,
    "lag2": 2131.0,
    "lag3": 1844.0,
-   "expected_minutes": 1737.5
+   "expected_minutes": 1737.6
   },
   {
    "tm_player_id": "248999",
@@ -4535,7 +4535,7 @@
    "lag1": 1218.0,
    "lag2": 1129.0,
    "lag3": 1649.0,
-   "expected_minutes": 1028.9
+   "expected_minutes": 1028.4
   },
   {
    "tm_player_id": "374139",
@@ -4568,7 +4568,7 @@
    "lag1": 1507.0,
    "lag2": 1847.0,
    "lag3": 1592.0,
-   "expected_minutes": 1428.8
+   "expected_minutes": 1428.5
   },
   {
    "tm_player_id": "318523",
@@ -4612,7 +4612,7 @@
    "lag1": 1955.0,
    "lag2": 1525.0,
    "lag3": 2487.0,
-   "expected_minutes": 1544.6
+   "expected_minutes": 1544.1
   },
   {
    "tm_player_id": "314288",
@@ -4623,7 +4623,7 @@
    "lag1": 1076.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 918.9
+   "expected_minutes": 918.6
   },
   {
    "tm_player_id": "413039",
@@ -4634,7 +4634,7 @@
    "lag1": 2055.0,
    "lag2": 2789.0,
    "lag3": 1287.0,
-   "expected_minutes": 1819.9
+   "expected_minutes": 1820.1
   },
   {
    "tm_player_id": "413112",
@@ -4722,7 +4722,7 @@
    "lag1": 1979.0,
    "lag2": 2180.0,
    "lag3": 2960.0,
-   "expected_minutes": 1831.6
+   "expected_minutes": 1831.4
   },
   {
    "tm_player_id": "335103",
@@ -4733,7 +4733,7 @@
    "lag1": 795.0,
    "lag2": 0.0,
    "lag3": 1664.0,
-   "expected_minutes": 946.7
+   "expected_minutes": 946.9
   },
   {
    "tm_player_id": "342048",
@@ -4744,7 +4744,7 @@
    "lag1": 626.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 700.0
+   "expected_minutes": 700.2
   },
   {
    "tm_player_id": "366930",
@@ -4777,7 +4777,7 @@
    "lag1": 1078.0,
    "lag2": 932.0,
    "lag3": 1116.0,
-   "expected_minutes": 1140.2
+   "expected_minutes": 1140.4
   },
   {
    "tm_player_id": "578391",
@@ -4799,7 +4799,7 @@
    "lag1": 1947.0,
    "lag2": 1740.0,
    "lag3": 738.0,
-   "expected_minutes": 1530.0
+   "expected_minutes": 1530.3
   },
   {
    "tm_player_id": "392085",
@@ -4810,7 +4810,7 @@
    "lag1": 1760.0,
    "lag2": 0.0,
    "lag3": 765.0,
-   "expected_minutes": 1350.4
+   "expected_minutes": 1350.3
   },
   {
    "tm_player_id": "392956",
@@ -4843,7 +4843,7 @@
    "lag1": 2655.0,
    "lag2": 0.0,
    "lag3": 2702.0,
-   "expected_minutes": 1895.0
+   "expected_minutes": 1895.3
   },
   {
    "tm_player_id": "564305",
@@ -4898,7 +4898,7 @@
    "lag1": 1184.0,
    "lag2": 1374.0,
    "lag3": 2734.0,
-   "expected_minutes": 1351.7
+   "expected_minutes": 1351.9
   },
   {
    "tm_player_id": "524000",
@@ -4942,7 +4942,7 @@
    "lag1": 1191.0,
    "lag2": 937.0,
    "lag3": 0.0,
-   "expected_minutes": 1024.0
+   "expected_minutes": 1024.3
   },
   {
    "tm_player_id": "123275",
@@ -4964,7 +4964,7 @@
    "lag1": 1764.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1348.5
+   "expected_minutes": 1348.6
   },
   {
    "tm_player_id": "569389",
@@ -4986,7 +4986,7 @@
    "lag1": 2872.0,
    "lag2": 2702.0,
    "lag3": 2907.0,
-   "expected_minutes": 2371.6
+   "expected_minutes": 2371.7
   },
   {
    "tm_player_id": "251075",
@@ -5030,7 +5030,7 @@
    "lag1": 2609.0,
    "lag2": 3044.0,
    "lag3": 3420.0,
-   "expected_minutes": 2373.3
+   "expected_minutes": 2373.4
   },
   {
    "tm_player_id": "192492",
@@ -5074,7 +5074,7 @@
    "lag1": 2834.0,
    "lag2": 2533.0,
    "lag3": 1347.0,
-   "expected_minutes": 1945.7
+   "expected_minutes": 1945.2
   },
   {
    "tm_player_id": "553875",
@@ -5129,7 +5129,7 @@
    "lag1": 612.0,
    "lag2": 1882.0,
    "lag3": 0.0,
-   "expected_minutes": 880.2
+   "expected_minutes": 880.4
   },
   {
    "tm_player_id": "361914",
@@ -5145,13 +5145,13 @@
   {
    "tm_player_id": "538977",
    "player_id": 6937,
-   "role": "ST",
+   "role": "W",
    "season": 2025,
    "age": 25.0,
    "lag1": 1028.0,
    "lag2": 1205.0,
    "lag3": 0.0,
-   "expected_minutes": 1151.0
+   "expected_minutes": 1176.3
   },
   {
    "tm_player_id": "569598",
@@ -5173,7 +5173,7 @@
    "lag1": 2623.0,
    "lag2": 1172.0,
    "lag3": 0.0,
-   "expected_minutes": 1839.1
+   "expected_minutes": 1838.9
   },
   {
    "tm_player_id": "516716",
@@ -5195,7 +5195,7 @@
    "lag1": 934.0,
    "lag2": 2390.0,
    "lag3": 2029.0,
-   "expected_minutes": 1279.0
+   "expected_minutes": 1279.2
   },
   {
    "tm_player_id": "342405",
@@ -5228,7 +5228,7 @@
    "lag1": 1233.0,
    "lag2": 1987.0,
    "lag3": 0.0,
-   "expected_minutes": 1242.3
+   "expected_minutes": 1242.5
   },
   {
    "tm_player_id": "406625",
@@ -5239,7 +5239,7 @@
    "lag1": 2205.0,
    "lag2": 2605.0,
    "lag3": 2688.0,
-   "expected_minutes": 1884.7
+   "expected_minutes": 1884.3
   },
   {
    "tm_player_id": "238266",
@@ -5261,7 +5261,7 @@
    "lag1": 1648.0,
    "lag2": 1404.0,
    "lag3": 1722.0,
-   "expected_minutes": 1553.3
+   "expected_minutes": 1553.4
   },
   {
    "tm_player_id": "340205",
@@ -5272,7 +5272,7 @@
    "lag1": 2270.0,
    "lag2": 1766.0,
    "lag3": 2321.0,
-   "expected_minutes": 1761.6
+   "expected_minutes": 1761.1
   },
   {
    "tm_player_id": "371149",
@@ -5327,7 +5327,7 @@
    "lag1": 2035.0,
    "lag2": 2318.0,
    "lag3": 2447.0,
-   "expected_minutes": 1458.1
+   "expected_minutes": 1457.8
   },
   {
    "tm_player_id": "486031",
@@ -5338,7 +5338,7 @@
    "lag1": 1207.0,
    "lag2": 1291.0,
    "lag3": 1915.0,
-   "expected_minutes": 1251.7
+   "expected_minutes": 1252.0
   },
   {
    "tm_player_id": "346707",
@@ -5360,7 +5360,7 @@
    "lag1": 1804.0,
    "lag2": 2462.0,
    "lag3": 1335.0,
-   "expected_minutes": 1666.8
+   "expected_minutes": 1666.9
   },
   {
    "tm_player_id": "371436",
@@ -5382,7 +5382,7 @@
    "lag1": 972.0,
    "lag2": 1793.0,
    "lag3": 2346.0,
-   "expected_minutes": 1287.4
+   "expected_minutes": 1287.5
   },
   {
    "tm_player_id": "404418",
@@ -5415,7 +5415,7 @@
    "lag1": 1351.0,
    "lag2": 2144.0,
    "lag3": 923.0,
-   "expected_minutes": 1408.4
+   "expected_minutes": 1408.5
   },
   {
    "tm_player_id": "284857",
@@ -5426,7 +5426,7 @@
    "lag1": 2444.0,
    "lag2": 2916.0,
    "lag3": 1788.0,
-   "expected_minutes": 2015.6
+   "expected_minutes": 2015.9
   },
   {
    "tm_player_id": "494237",
@@ -5459,7 +5459,7 @@
    "lag1": 2062.0,
    "lag2": 1988.0,
    "lag3": 1391.0,
-   "expected_minutes": 1550.7
+   "expected_minutes": 1550.9
   },
   {
    "tm_player_id": "501418",
@@ -5481,7 +5481,7 @@
    "lag1": 1874.0,
    "lag2": 2329.0,
    "lag3": 2444.0,
-   "expected_minutes": 1767.0
+   "expected_minutes": 1767.2
   },
   {
    "tm_player_id": "126557",
@@ -5503,7 +5503,7 @@
    "lag1": 1052.0,
    "lag2": 910.0,
    "lag3": 1011.0,
-   "expected_minutes": 1117.7
+   "expected_minutes": 1117.9
   },
   {
    "tm_player_id": "355915",
@@ -5525,7 +5525,7 @@
    "lag1": 1085.0,
    "lag2": 1782.0,
    "lag3": 889.0,
-   "expected_minutes": 1075.6
+   "expected_minutes": 1075.1
   },
   {
    "tm_player_id": "392765",
@@ -5558,7 +5558,7 @@
    "lag1": 2255.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1501.6
+   "expected_minutes": 1501.3
   },
   {
    "tm_player_id": "536508",
@@ -5580,7 +5580,7 @@
    "lag1": 2481.0,
    "lag2": 2331.0,
    "lag3": 2131.0,
-   "expected_minutes": 2187.4
+   "expected_minutes": 2187.5
   },
   {
    "tm_player_id": "297583",
@@ -5591,7 +5591,7 @@
    "lag1": 1044.0,
    "lag2": 1308.0,
    "lag3": 0.0,
-   "expected_minutes": 1081.4
+   "expected_minutes": 1081.6
   },
   {
    "tm_player_id": "463605",
@@ -5679,7 +5679,7 @@
    "lag1": 1715.0,
    "lag2": 1271.0,
    "lag3": 1396.0,
-   "expected_minutes": 1587.8
+   "expected_minutes": 1587.7
   },
   {
    "tm_player_id": "557149",
@@ -5690,7 +5690,7 @@
    "lag1": 885.0,
    "lag2": 895.0,
    "lag3": 943.0,
-   "expected_minutes": 1107.9
+   "expected_minutes": 1107.8
   },
   {
    "tm_player_id": "334221",
@@ -5712,7 +5712,7 @@
    "lag1": 2239.0,
    "lag2": 1763.0,
    "lag3": 2990.0,
-   "expected_minutes": 2009.1
+   "expected_minutes": 2009.0
   },
   {
    "tm_player_id": "395237",
@@ -5745,7 +5745,7 @@
    "lag1": 1607.0,
    "lag2": 1618.0,
    "lag3": 0.0,
-   "expected_minutes": 1469.6
+   "expected_minutes": 1469.5
   },
   {
    "tm_player_id": "378293",
@@ -5789,7 +5789,7 @@
    "lag1": 935.0,
    "lag2": 1482.0,
    "lag3": 2496.0,
-   "expected_minutes": 1129.3
+   "expected_minutes": 1129.5
   },
   {
    "tm_player_id": "432092",
@@ -5800,7 +5800,7 @@
    "lag1": 1653.0,
    "lag2": 3180.0,
    "lag3": 1245.0,
-   "expected_minutes": 1715.9
+   "expected_minutes": 1716.2
   },
   {
    "tm_player_id": "361260",
@@ -5910,7 +5910,7 @@
    "lag1": 1398.0,
    "lag2": 1201.0,
    "lag3": 2774.0,
-   "expected_minutes": 1522.2
+   "expected_minutes": 1522.1
   },
   {
    "tm_player_id": "624690",
@@ -5965,7 +5965,7 @@
    "lag1": 2435.0,
    "lag2": 2526.0,
    "lag3": 2165.0,
-   "expected_minutes": 2123.1
+   "expected_minutes": 2123.0
   },
   {
    "tm_player_id": "467623",
@@ -5987,7 +5987,7 @@
    "lag1": 694.0,
    "lag2": 703.0,
    "lag3": 1077.0,
-   "expected_minutes": 966.2
+   "expected_minutes": 966.3
   },
   {
    "tm_player_id": "358008",
@@ -6031,7 +6031,7 @@
    "lag1": 660.0,
    "lag2": 1150.0,
    "lag3": 1686.0,
-   "expected_minutes": 1054.6
+   "expected_minutes": 1055.0
   },
   {
    "tm_player_id": "341278",
@@ -6064,7 +6064,7 @@
    "lag1": 1071.0,
    "lag2": 0.0,
    "lag3": 1030.0,
-   "expected_minutes": 1079.3
+   "expected_minutes": 1079.4
   },
   {
    "tm_player_id": "412829",
@@ -6086,7 +6086,7 @@
    "lag1": 1510.0,
    "lag2": 0.0,
    "lag3": 2062.0,
-   "expected_minutes": 1369.7
+   "expected_minutes": 1369.8
   },
   {
    "tm_player_id": "475411",
@@ -6141,7 +6141,7 @@
    "lag1": 1693.0,
    "lag2": 0.0,
    "lag3": 1381.0,
-   "expected_minutes": 1449.5
+   "expected_minutes": 1449.4
   },
   {
    "tm_player_id": "258987",
@@ -6163,7 +6163,7 @@
    "lag1": 2026.0,
    "lag2": 1555.0,
    "lag3": 1106.0,
-   "expected_minutes": 1410.7
+   "expected_minutes": 1410.8
   },
   {
    "tm_player_id": "346779",
@@ -6174,7 +6174,7 @@
    "lag1": 1831.0,
    "lag2": 2650.0,
    "lag3": 0.0,
-   "expected_minutes": 1467.4
+   "expected_minutes": 1466.9
   },
   {
    "tm_player_id": "193116",
@@ -6240,7 +6240,7 @@
    "lag1": 1139.0,
    "lag2": 1344.0,
    "lag3": 1083.0,
-   "expected_minutes": 1064.0
+   "expected_minutes": 1064.2
   },
   {
    "tm_player_id": "325223",
@@ -6251,7 +6251,7 @@
    "lag1": 626.0,
    "lag2": 839.0,
    "lag3": 0.0,
-   "expected_minutes": 642.6
+   "expected_minutes": 642.1
   },
   {
    "tm_player_id": "694507",
@@ -6339,7 +6339,7 @@
    "lag1": 854.0,
    "lag2": 626.0,
    "lag3": 0.0,
-   "expected_minutes": 919.7
+   "expected_minutes": 919.9
   },
   {
    "tm_player_id": "571020",
@@ -6394,7 +6394,7 @@
    "lag1": 1599.0,
    "lag2": 693.0,
    "lag3": 1849.0,
-   "expected_minutes": 1381.3
+   "expected_minutes": 1381.6
   },
   {
    "tm_player_id": "632741",
@@ -6405,7 +6405,7 @@
    "lag1": 664.0,
    "lag2": 623.0,
    "lag3": 0.0,
-   "expected_minutes": 904.6
+   "expected_minutes": 904.5
   },
   {
    "tm_player_id": "358250",
@@ -6482,7 +6482,7 @@
    "lag1": 2588.0,
    "lag2": 2549.0,
    "lag3": 2576.0,
-   "expected_minutes": 1829.5
+   "expected_minutes": 1829.4
   },
   {
    "tm_player_id": "75921",
@@ -6515,7 +6515,7 @@
    "lag1": 1121.0,
    "lag2": 822.0,
    "lag3": 713.0,
-   "expected_minutes": 800.2
+   "expected_minutes": 800.1
   },
   {
    "tm_player_id": "188888",
@@ -6526,7 +6526,7 @@
    "lag1": 975.0,
    "lag2": 768.0,
    "lag3": 0.0,
-   "expected_minutes": 808.0
+   "expected_minutes": 807.6
   },
   {
    "tm_player_id": "74294",
@@ -6570,7 +6570,7 @@
    "lag1": 1117.0,
    "lag2": 852.0,
    "lag3": 0.0,
-   "expected_minutes": 1072.2
+   "expected_minutes": 1072.3
   },
   {
    "tm_player_id": "412045",
@@ -6647,7 +6647,7 @@
    "lag1": 936.0,
    "lag2": 2577.0,
    "lag3": 945.0,
-   "expected_minutes": 1128.3
+   "expected_minutes": 1128.5
   },
   {
    "tm_player_id": "207877",
@@ -6680,7 +6680,7 @@
    "lag1": 1058.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1071.6
+   "expected_minutes": 1071.3
   },
   {
    "tm_player_id": "538918",
@@ -6691,7 +6691,7 @@
    "lag1": 1971.0,
    "lag2": 1550.0,
    "lag3": 0.0,
-   "expected_minutes": 1651.4
+   "expected_minutes": 1652.1
   },
   {
    "tm_player_id": "423744",
@@ -6746,7 +6746,7 @@
    "lag1": 788.0,
    "lag2": 0.0,
    "lag3": 1239.0,
-   "expected_minutes": 954.3
+   "expected_minutes": 954.4
   },
   {
    "tm_player_id": "500689",
@@ -6757,7 +6757,7 @@
    "lag1": 920.0,
    "lag2": 1822.0,
    "lag3": 1418.0,
-   "expected_minutes": 1251.2
+   "expected_minutes": 1251.1
   },
   {
    "tm_player_id": "392516",
@@ -6779,7 +6779,7 @@
    "lag1": 1424.0,
    "lag2": 2862.0,
    "lag3": 1313.0,
-   "expected_minutes": 1372.1
+   "expected_minutes": 1372.4
   },
   {
    "tm_player_id": "345458",
@@ -6801,7 +6801,7 @@
    "lag1": 926.0,
    "lag2": 673.0,
    "lag3": 1328.0,
-   "expected_minutes": 1080.9
+   "expected_minutes": 1081.0
   },
   {
    "tm_player_id": "466794",
@@ -6834,7 +6834,7 @@
    "lag1": 804.0,
    "lag2": 2270.0,
    "lag3": 2185.0,
-   "expected_minutes": 1301.6
+   "expected_minutes": 1302.3
   },
   {
    "tm_player_id": "367466",
@@ -6856,7 +6856,7 @@
    "lag1": 1128.0,
    "lag2": 973.0,
    "lag3": 0.0,
-   "expected_minutes": 996.5
+   "expected_minutes": 996.7
   },
   {
    "tm_player_id": "472423",
@@ -6922,7 +6922,7 @@
    "lag1": 1465.0,
    "lag2": 1870.0,
    "lag3": 1618.0,
-   "expected_minutes": 1604.5
+   "expected_minutes": 1604.0
   },
   {
    "tm_player_id": "455181",
@@ -6933,7 +6933,7 @@
    "lag1": 1456.0,
    "lag2": 2319.0,
    "lag3": 1499.0,
-   "expected_minutes": 1399.1
+   "expected_minutes": 1399.3
   },
   {
    "tm_player_id": "455661",
@@ -6944,7 +6944,7 @@
    "lag1": 1617.0,
    "lag2": 1447.0,
    "lag3": 682.0,
-   "expected_minutes": 1514.7
+   "expected_minutes": 1515.4
   },
   {
    "tm_player_id": "649020",
@@ -6977,7 +6977,7 @@
    "lag1": 1523.0,
    "lag2": 1442.0,
    "lag3": 0.0,
-   "expected_minutes": 1444.8
+   "expected_minutes": 1444.5
   },
   {
    "tm_player_id": "502821",
@@ -6999,7 +6999,7 @@
    "lag1": 1322.0,
    "lag2": 1021.0,
    "lag3": 2129.0,
-   "expected_minutes": 1429.5
+   "expected_minutes": 1430.2
   },
   {
    "tm_player_id": "503733",
@@ -7010,7 +7010,7 @@
    "lag1": 1214.0,
    "lag2": 2294.0,
    "lag3": 2726.0,
-   "expected_minutes": 1536.5
+   "expected_minutes": 1536.4
   },
   {
    "tm_player_id": "539134",
@@ -7021,7 +7021,7 @@
    "lag1": 692.0,
    "lag2": 1264.0,
    "lag3": 0.0,
-   "expected_minutes": 982.1
+   "expected_minutes": 982.0
   },
   {
    "tm_player_id": "569384",
@@ -7065,7 +7065,7 @@
    "lag1": 2155.0,
    "lag2": 1127.0,
    "lag3": 1767.0,
-   "expected_minutes": 1764.7
+   "expected_minutes": 1764.8
   },
   {
    "tm_player_id": "532775",
@@ -7109,7 +7109,7 @@
    "lag1": 1036.0,
    "lag2": 0.0,
    "lag3": 623.0,
-   "expected_minutes": 1033.0
+   "expected_minutes": 1033.1
   },
   {
    "tm_player_id": "730893",
@@ -7142,7 +7142,7 @@
    "lag1": 831.0,
    "lag2": 2269.0,
    "lag3": 2035.0,
-   "expected_minutes": 1016.1
+   "expected_minutes": 1016.3
   },
   {
    "tm_player_id": "497291",
@@ -7164,7 +7164,7 @@
    "lag1": 2979.0,
    "lag2": 2749.0,
    "lag3": 2581.0,
-   "expected_minutes": 2391.1
+   "expected_minutes": 2391.2
   },
   {
    "tm_player_id": "342385",
@@ -7186,7 +7186,7 @@
    "lag1": 2175.0,
    "lag2": 1182.0,
    "lag3": 1430.0,
-   "expected_minutes": 1788.4
+   "expected_minutes": 1788.7
   },
   {
    "tm_player_id": "395234",
@@ -7219,7 +7219,7 @@
    "lag1": 1550.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 848.3
+   "expected_minutes": 848.2
   },
   {
    "tm_player_id": "283628",
@@ -7241,7 +7241,7 @@
    "lag1": 1322.0,
    "lag2": 971.0,
    "lag3": 1397.0,
-   "expected_minutes": 1239.9
+   "expected_minutes": 1240.1
   },
   {
    "tm_player_id": "381950",
@@ -7395,7 +7395,7 @@
    "lag1": 822.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 900.4
+   "expected_minutes": 900.8
   },
   {
    "tm_player_id": "598577",
@@ -7406,7 +7406,7 @@
    "lag1": 2156.0,
    "lag2": 2194.0,
    "lag3": 2393.0,
-   "expected_minutes": 2033.4
+   "expected_minutes": 2032.9
   },
   {
    "tm_player_id": "524285",
@@ -7428,7 +7428,7 @@
    "lag1": 1702.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1364.3
+   "expected_minutes": 1365.0
   },
   {
    "tm_player_id": "676042",
@@ -7461,7 +7461,7 @@
    "lag1": 875.0,
    "lag2": 2397.0,
    "lag3": 2238.0,
-   "expected_minutes": 1344.5
+   "expected_minutes": 1344.4
   },
   {
    "tm_player_id": "580195",
@@ -7472,7 +7472,7 @@
    "lag1": 617.0,
    "lag2": 1744.0,
    "lag3": 1795.0,
-   "expected_minutes": 1185.5
+   "expected_minutes": 1185.0
   },
   {
    "tm_player_id": "580560",
@@ -7516,7 +7516,7 @@
    "lag1": 811.0,
    "lag2": 738.0,
    "lag3": 0.0,
-   "expected_minutes": 909.6
+   "expected_minutes": 909.8
   },
   {
    "tm_player_id": "487843",
@@ -7527,7 +7527,7 @@
    "lag1": 2373.0,
    "lag2": 1903.0,
    "lag3": 1351.0,
-   "expected_minutes": 1981.3
+   "expected_minutes": 1982.0
   },
   {
    "tm_player_id": "494880",
@@ -7549,7 +7549,7 @@
    "lag1": 1917.0,
    "lag2": 3228.0,
    "lag3": 2279.0,
-   "expected_minutes": 1979.2
+   "expected_minutes": 1979.0
   },
   {
    "tm_player_id": "590690",
@@ -7560,7 +7560,7 @@
    "lag1": 1065.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 868.6
+   "expected_minutes": 868.9
   },
   {
    "tm_player_id": "631007",
@@ -7593,7 +7593,7 @@
    "lag1": 1191.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1024.0
+   "expected_minutes": 1024.2
   },
   {
    "tm_player_id": "646747",
@@ -7615,7 +7615,7 @@
    "lag1": 628.0,
    "lag2": 2352.0,
    "lag3": 0.0,
-   "expected_minutes": 1092.9
+   "expected_minutes": 1092.6
   },
   {
    "tm_player_id": "316934",
@@ -7659,7 +7659,7 @@
    "lag1": 1784.0,
    "lag2": 2535.0,
    "lag3": 2662.0,
-   "expected_minutes": 1785.0
+   "expected_minutes": 1785.1
   },
   {
    "tm_player_id": "654539",
@@ -7736,7 +7736,7 @@
    "lag1": 1184.0,
    "lag2": 2166.0,
    "lag3": 1690.0,
-   "expected_minutes": 1397.4
+   "expected_minutes": 1397.5
   },
   {
    "tm_player_id": "474800",
@@ -7791,7 +7791,7 @@
    "lag1": 1151.0,
    "lag2": 1216.0,
    "lag3": 875.0,
-   "expected_minutes": 1322.9
+   "expected_minutes": 1324.5
   },
   {
    "tm_player_id": "568696",
@@ -7802,7 +7802,7 @@
    "lag1": 897.0,
    "lag2": 0.0,
    "lag3": 1408.0,
-   "expected_minutes": 978.9
+   "expected_minutes": 979.1
   },
   {
    "tm_player_id": "358515",
@@ -7813,7 +7813,7 @@
    "lag1": 1082.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 879.5
+   "expected_minutes": 879.0
   },
   {
    "tm_player_id": "500067",
@@ -7824,7 +7824,7 @@
    "lag1": 866.0,
    "lag2": 917.0,
    "lag3": 0.0,
-   "expected_minutes": 909.8
+   "expected_minutes": 910.0
   },
   {
    "tm_player_id": "485963",
@@ -7857,7 +7857,7 @@
    "lag1": 1646.0,
    "lag2": 2081.0,
    "lag3": 2738.0,
-   "expected_minutes": 1794.7
+   "expected_minutes": 1794.2
   },
   {
    "tm_player_id": "702441",
@@ -7879,7 +7879,7 @@
    "lag1": 1399.0,
    "lag2": 2635.0,
    "lag3": 1835.0,
-   "expected_minutes": 1474.5
+   "expected_minutes": 1474.8
   },
   {
    "tm_player_id": "410708",
@@ -7901,7 +7901,7 @@
    "lag1": 893.0,
    "lag2": 2102.0,
    "lag3": 2229.0,
-   "expected_minutes": 1099.3
+   "expected_minutes": 1099.5
   },
   {
    "tm_player_id": "281989",
@@ -7956,7 +7956,7 @@
    "lag1": 1246.0,
    "lag2": 1302.0,
    "lag3": 2029.0,
-   "expected_minutes": 1438.3
+   "expected_minutes": 1438.1
   },
   {
    "tm_player_id": "487469",
@@ -7989,7 +7989,7 @@
    "lag1": 1986.0,
    "lag2": 2901.0,
    "lag3": 1465.0,
-   "expected_minutes": 1764.8
+   "expected_minutes": 1765.0
   },
   {
    "tm_player_id": "393512",
@@ -8066,7 +8066,7 @@
    "lag1": 1077.0,
    "lag2": 0.0,
    "lag3": 1364.0,
-   "expected_minutes": 919.7
+   "expected_minutes": 920.0
   },
   {
    "tm_player_id": "503160",
@@ -8077,7 +8077,7 @@
    "lag1": 1277.0,
    "lag2": 2347.0,
    "lag3": 0.0,
-   "expected_minutes": 1413.2
+   "expected_minutes": 1412.9
   },
   {
    "tm_player_id": "434224",
@@ -8121,7 +8121,7 @@
    "lag1": 1850.0,
    "lag2": 2297.0,
    "lag3": 797.0,
-   "expected_minutes": 1676.1
+   "expected_minutes": 1676.2
   },
   {
    "tm_player_id": "625651",
@@ -8154,7 +8154,7 @@
    "lag1": 2908.0,
    "lag2": 2666.0,
    "lag3": 3250.0,
-   "expected_minutes": 2183.3
+   "expected_minutes": 2182.9
   },
   {
    "tm_player_id": "466802",
@@ -8176,7 +8176,7 @@
    "lag1": 1064.0,
    "lag2": 2671.0,
    "lag3": 0.0,
-   "expected_minutes": 1340.1
+   "expected_minutes": 1341.2
   },
   {
    "tm_player_id": "416380",
@@ -8187,7 +8187,7 @@
    "lag1": 1739.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1246.6
+   "expected_minutes": 1246.3
   },
   {
    "tm_player_id": "616631",
@@ -8209,7 +8209,7 @@
    "lag1": 1357.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1132.5
+   "expected_minutes": 1132.6
   },
   {
    "tm_player_id": "232320",
@@ -8242,7 +8242,7 @@
    "lag1": 859.0,
    "lag2": 2036.0,
    "lag3": 0.0,
-   "expected_minutes": 917.3
+   "expected_minutes": 917.6
   },
   {
    "tm_player_id": "392538",
@@ -8363,7 +8363,7 @@
    "lag1": 2146.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1548.4
+   "expected_minutes": 1548.3
   },
   {
    "tm_player_id": "557612",
@@ -8374,7 +8374,7 @@
    "lag1": 1231.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1131.5
+   "expected_minutes": 1132.2
   },
   {
    "tm_player_id": "495625",
@@ -8418,7 +8418,7 @@
    "lag1": 1783.0,
    "lag2": 1518.0,
    "lag3": 1526.0,
-   "expected_minutes": 1689.4
+   "expected_minutes": 1689.2
   },
   {
    "tm_player_id": "353032",
@@ -8440,7 +8440,7 @@
    "lag1": 841.0,
    "lag2": 1202.0,
    "lag3": 1824.0,
-   "expected_minutes": 1213.6
+   "expected_minutes": 1213.4
   },
   {
    "tm_player_id": "709726",
@@ -8451,7 +8451,7 @@
    "lag1": 1835.0,
    "lag2": 2547.0,
    "lag3": 710.0,
-   "expected_minutes": 1733.8
+   "expected_minutes": 1734.5
   },
   {
    "tm_player_id": "640109",
@@ -8462,7 +8462,7 @@
    "lag1": 1159.0,
    "lag2": 0.0,
    "lag3": 1452.0,
-   "expected_minutes": 1170.3
+   "expected_minutes": 1170.6
   },
   {
    "tm_player_id": "256267",
@@ -8473,7 +8473,7 @@
    "lag1": 3150.0,
    "lag2": 2081.0,
    "lag3": 2335.0,
-   "expected_minutes": 2127.2
+   "expected_minutes": 2126.8
   },
   {
    "tm_player_id": "331505",
@@ -8517,7 +8517,7 @@
    "lag1": 1514.0,
    "lag2": 1470.0,
    "lag3": 1436.0,
-   "expected_minutes": 1295.5
+   "expected_minutes": 1295.0
   },
   {
    "tm_player_id": "568693",
@@ -8539,7 +8539,7 @@
    "lag1": 2044.0,
    "lag2": 1984.0,
    "lag3": 0.0,
-   "expected_minutes": 1756.2
+   "expected_minutes": 1755.9
   },
   {
    "tm_player_id": "507486",
@@ -8550,7 +8550,7 @@
    "lag1": 1232.0,
    "lag2": 2791.0,
    "lag3": 0.0,
-   "expected_minutes": 1464.2
+   "expected_minutes": 1464.3
   },
   {
    "tm_player_id": "550108",
@@ -8561,7 +8561,7 @@
    "lag1": 1143.0,
    "lag2": 742.0,
    "lag3": 829.0,
-   "expected_minutes": 1252.1
+   "expected_minutes": 1252.0
   },
   {
    "tm_player_id": "488362",
@@ -8605,7 +8605,7 @@
    "lag1": 2469.0,
    "lag2": 1786.0,
    "lag3": 1934.0,
-   "expected_minutes": 2012.1
+   "expected_minutes": 2012.2
   },
   {
    "tm_player_id": "550106",
@@ -8616,7 +8616,7 @@
    "lag1": 1650.0,
    "lag2": 1210.0,
    "lag3": 1416.0,
-   "expected_minutes": 1585.3
+   "expected_minutes": 1585.0
   },
   {
    "tm_player_id": "435228",
@@ -8660,7 +8660,7 @@
    "lag1": 3329.0,
    "lag2": 2339.0,
    "lag3": 817.0,
-   "expected_minutes": 2548.9
+   "expected_minutes": 2549.0
   },
   {
    "tm_player_id": "473050",
@@ -8682,7 +8682,7 @@
    "lag1": 937.0,
    "lag2": 0.0,
    "lag3": 1717.0,
-   "expected_minutes": 1133.9
+   "expected_minutes": 1135.1
   },
   {
    "tm_player_id": "645774",
@@ -8693,7 +8693,7 @@
    "lag1": 1311.0,
    "lag2": 1099.0,
    "lag3": 2402.0,
-   "expected_minutes": 1442.6
+   "expected_minutes": 1442.5
   },
   {
    "tm_player_id": "406640",
@@ -8726,7 +8726,7 @@
    "lag1": 1715.0,
    "lag2": 1994.0,
    "lag3": 2336.0,
-   "expected_minutes": 1760.8
+   "expected_minutes": 1760.5
   },
   {
    "tm_player_id": "623024",
@@ -8781,7 +8781,7 @@
    "lag1": 625.0,
    "lag2": 1382.0,
    "lag3": 0.0,
-   "expected_minutes": 881.7
+   "expected_minutes": 881.9
   },
   {
    "tm_player_id": "617074",
@@ -8814,7 +8814,7 @@
    "lag1": 1475.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1223.2
+   "expected_minutes": 1223.5
   },
   {
    "tm_player_id": "490426",
@@ -8825,7 +8825,7 @@
    "lag1": 877.0,
    "lag2": 0.0,
    "lag3": 895.0,
-   "expected_minutes": 932.5
+   "expected_minutes": 932.7
   },
   {
    "tm_player_id": "495621",
@@ -8858,7 +8858,7 @@
    "lag1": 2805.0,
    "lag2": 2478.0,
    "lag3": 1001.0,
-   "expected_minutes": 2180.6
+   "expected_minutes": 2180.7
   },
   {
    "tm_player_id": "484547",
@@ -8880,7 +8880,7 @@
    "lag1": 1239.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1074.2
+   "expected_minutes": 1074.3
   },
   {
    "tm_player_id": "659459",
@@ -8891,7 +8891,7 @@
    "lag1": 803.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 976.3
+   "expected_minutes": 975.8
   },
   {
    "tm_player_id": "557613",
@@ -8913,7 +8913,7 @@
    "lag1": 2124.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1564.2
+   "expected_minutes": 1564.1
   },
   {
    "tm_player_id": "673514",
@@ -9001,7 +9001,7 @@
    "lag1": 1975.0,
    "lag2": 2065.0,
    "lag3": 652.0,
-   "expected_minutes": 1776.5
+   "expected_minutes": 1777.6
   },
   {
    "tm_player_id": "711996",
@@ -9023,7 +9023,7 @@
    "lag1": 2265.0,
    "lag2": 760.0,
    "lag3": 0.0,
-   "expected_minutes": 1709.5
+   "expected_minutes": 1709.4
   },
   {
    "tm_player_id": "618472",
@@ -9089,7 +9089,7 @@
    "lag1": 1289.0,
    "lag2": 2093.0,
    "lag3": 2070.0,
-   "expected_minutes": 1541.1
+   "expected_minutes": 1540.9
   },
   {
    "tm_player_id": "743500",
@@ -9122,7 +9122,7 @@
    "lag1": 777.0,
    "lag2": 0.0,
    "lag3": 769.0,
-   "expected_minutes": 987.4
+   "expected_minutes": 988.5
   },
   {
    "tm_player_id": "607224",
@@ -9133,7 +9133,7 @@
    "lag1": 822.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 985.7
+   "expected_minutes": 985.2
   },
   {
    "tm_player_id": "632831",
@@ -9177,7 +9177,7 @@
    "lag1": 993.0,
    "lag2": 1063.0,
    "lag3": 0.0,
-   "expected_minutes": 1145.2
+   "expected_minutes": 1144.9
   },
   {
    "tm_player_id": "332560",
@@ -9232,7 +9232,7 @@
    "lag1": 2157.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1456.7
+   "expected_minutes": 1456.9
   },
   {
    "tm_player_id": "805908",
@@ -9265,7 +9265,7 @@
    "lag1": 2213.0,
    "lag2": 1393.0,
    "lag3": 773.0,
-   "expected_minutes": 1836.0
+   "expected_minutes": 1835.7
   },
   {
    "tm_player_id": "485706",
@@ -9342,7 +9342,7 @@
    "lag1": 2281.0,
    "lag2": 622.0,
    "lag3": 1712.0,
-   "expected_minutes": 1805.2
+   "expected_minutes": 1805.5
   },
   {
    "tm_player_id": "535955",
@@ -9364,7 +9364,7 @@
    "lag1": 1485.0,
    "lag2": 2569.0,
    "lag3": 2027.0,
-   "expected_minutes": 1682.3
+   "expected_minutes": 1682.0
   },
   {
    "tm_player_id": "807165",
@@ -9419,7 +9419,7 @@
    "lag1": 2300.0,
    "lag2": 1546.0,
    "lag3": 1244.0,
-   "expected_minutes": 1893.4
+   "expected_minutes": 1893.3
   },
   {
    "tm_player_id": "318204",
@@ -9452,7 +9452,7 @@
    "lag1": 1376.0,
    "lag2": 800.0,
    "lag3": 0.0,
-   "expected_minutes": 1274.1
+   "expected_minutes": 1274.0
   },
   {
    "tm_player_id": "469050",
@@ -9474,7 +9474,7 @@
    "lag1": 2469.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1610.9
+   "expected_minutes": 1611.1
   },
   {
    "tm_player_id": "295630",
@@ -9496,7 +9496,7 @@
    "lag1": 1499.0,
    "lag2": 0.0,
    "lag3": 1707.0,
-   "expected_minutes": 1297.7
+   "expected_minutes": 1297.9
   },
   {
    "tm_player_id": "126751",
@@ -9540,7 +9540,7 @@
    "lag1": 1100.0,
    "lag2": 0.0,
    "lag3": 792.0,
-   "expected_minutes": 1230.4
+   "expected_minutes": 1229.3
   },
   {
    "tm_player_id": "314398",
@@ -9551,7 +9551,7 @@
    "lag1": 1392.0,
    "lag2": 2621.0,
    "lag3": 2060.0,
-   "expected_minutes": 1142.9
+   "expected_minutes": 1142.6
   },
   {
    "tm_player_id": "451276",
@@ -9562,7 +9562,7 @@
    "lag1": 1796.0,
    "lag2": 2227.0,
    "lag3": 2135.0,
-   "expected_minutes": 1737.6
+   "expected_minutes": 1737.7
   },
   {
    "tm_player_id": "473169",
@@ -9573,7 +9573,7 @@
    "lag1": 1943.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1483.4
+   "expected_minutes": 1484.1
   },
   {
    "tm_player_id": "475959",
@@ -9595,7 +9595,7 @@
    "lag1": 2067.0,
    "lag2": 1988.0,
    "lag3": 617.0,
-   "expected_minutes": 1811.9
+   "expected_minutes": 1811.6
   },
   {
    "tm_player_id": "466805",
@@ -9672,7 +9672,7 @@
    "lag1": 1499.0,
    "lag2": 1299.0,
    "lag3": 2684.0,
-   "expected_minutes": 1237.1
+   "expected_minutes": 1237.2
   },
   {
    "tm_player_id": "525578",
@@ -9727,7 +9727,7 @@
    "lag1": 867.0,
    "lag2": 0.0,
    "lag3": 1104.0,
-   "expected_minutes": 704.4
+   "expected_minutes": 703.9
   },
   {
    "tm_player_id": "358003",
@@ -9760,7 +9760,7 @@
    "lag1": 1501.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1290.6
+   "expected_minutes": 1290.3
   },
   {
    "tm_player_id": "392966",
@@ -9870,7 +9870,7 @@
    "lag1": 1390.0,
    "lag2": 0.0,
    "lag3": 1714.0,
-   "expected_minutes": 1199.5
+   "expected_minutes": 1199.8
   },
   {
    "tm_player_id": "503881",
@@ -9914,7 +9914,7 @@
    "lag1": 2308.0,
    "lag2": 2307.0,
    "lag3": 1281.0,
-   "expected_minutes": 1975.7
+   "expected_minutes": 1975.6
   },
   {
    "tm_player_id": "716276",
@@ -9958,7 +9958,7 @@
    "lag1": 1988.0,
    "lag2": 1399.0,
    "lag3": 2826.0,
-   "expected_minutes": 1902.1
+   "expected_minutes": 1901.6
   },
   {
    "tm_player_id": "360518",
@@ -9991,7 +9991,7 @@
    "lag1": 1268.0,
    "lag2": 0.0,
    "lag3": 1551.0,
-   "expected_minutes": 1316.5
+   "expected_minutes": 1316.0
   },
   {
    "tm_player_id": "595809",
@@ -10002,7 +10002,7 @@
    "lag1": 1552.0,
    "lag2": 1520.0,
    "lag3": 898.0,
-   "expected_minutes": 1369.2
+   "expected_minutes": 1368.9
   },
   {
    "tm_player_id": "532937",
@@ -10035,7 +10035,7 @@
    "lag1": 1135.0,
    "lag2": 1249.0,
    "lag3": 0.0,
-   "expected_minutes": 1161.8
+   "expected_minutes": 1161.9
   },
   {
    "tm_player_id": "416386",
@@ -10068,7 +10068,7 @@
    "lag1": 1598.0,
    "lag2": 2223.0,
    "lag3": 1514.0,
-   "expected_minutes": 1667.2
+   "expected_minutes": 1667.0
   },
   {
    "tm_player_id": "646750",
@@ -10101,7 +10101,7 @@
    "lag1": 928.0,
    "lag2": 2294.0,
    "lag3": 2565.0,
-   "expected_minutes": 1363.4
+   "expected_minutes": 1363.7
   },
   {
    "tm_player_id": "557459",
@@ -10123,7 +10123,7 @@
    "lag1": 2089.0,
    "lag2": 2419.0,
    "lag3": 1459.0,
-   "expected_minutes": 1925.5
+   "expected_minutes": 1925.2
   },
   {
    "tm_player_id": "568333",
@@ -10134,7 +10134,7 @@
    "lag1": 2379.0,
    "lag2": 917.0,
    "lag3": 839.0,
-   "expected_minutes": 1881.0
+   "expected_minutes": 1881.1
   },
   {
    "tm_player_id": "704270",
@@ -10145,7 +10145,7 @@
    "lag1": 891.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 934.5
+   "expected_minutes": 934.9
   },
   {
    "tm_player_id": "708086",
@@ -10178,7 +10178,7 @@
    "lag1": 990.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1068.7
+   "expected_minutes": 1068.2
   },
   {
    "tm_player_id": "618494",
@@ -10211,7 +10211,7 @@
    "lag1": 1473.0,
    "lag2": 1083.0,
    "lag3": 639.0,
-   "expected_minutes": 1460.6
+   "expected_minutes": 1460.1
   },
   {
    "tm_player_id": "707274",
@@ -10233,7 +10233,7 @@
    "lag1": 1551.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1289.7
+   "expected_minutes": 1290.4
   },
   {
    "tm_player_id": "624258",
@@ -10255,7 +10255,7 @@
    "lag1": 876.0,
    "lag2": 604.0,
    "lag3": 1517.0,
-   "expected_minutes": 1207.6
+   "expected_minutes": 1206.8
   },
   {
    "tm_player_id": "698678",
@@ -10299,7 +10299,7 @@
    "lag1": 1612.0,
    "lag2": 685.0,
    "lag3": 0.0,
-   "expected_minutes": 1444.3
+   "expected_minutes": 1443.8
   },
   {
    "tm_player_id": "581669",
@@ -10321,7 +10321,7 @@
    "lag1": 777.0,
    "lag2": 0.0,
    "lag3": 1364.0,
-   "expected_minutes": 1052.0
+   "expected_minutes": 1053.6
   },
   {
    "tm_player_id": "922693",
@@ -10365,7 +10365,7 @@
    "lag1": 690.0,
    "lag2": 1422.0,
    "lag3": 869.0,
-   "expected_minutes": 970.4
+   "expected_minutes": 970.2
   },
   {
    "tm_player_id": "662261",
@@ -10387,7 +10387,7 @@
    "lag1": 890.0,
    "lag2": 2002.0,
    "lag3": 0.0,
-   "expected_minutes": 1153.4
+   "expected_minutes": 1153.3
   },
   {
    "tm_player_id": "670858",
@@ -10420,7 +10420,7 @@
    "lag1": 625.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 888.3
+   "expected_minutes": 887.8
   },
   {
    "tm_player_id": "970279",
@@ -10442,7 +10442,7 @@
    "lag1": 2016.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1626.7
+   "expected_minutes": 1625.6
   },
   {
    "tm_player_id": "654234",
@@ -10453,7 +10453,7 @@
    "lag1": 1027.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1114.2
+   "expected_minutes": 1113.5
   },
   {
    "tm_player_id": "822959",
@@ -10497,7 +10497,7 @@
    "lag1": 1747.0,
    "lag2": 1047.0,
    "lag3": 0.0,
-   "expected_minutes": 1516.2
+   "expected_minutes": 1516.0
   },
   {
    "tm_player_id": "919515",
@@ -10552,7 +10552,7 @@
    "lag1": 1799.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1437.9
+   "expected_minutes": 1437.6
   },
   {
    "tm_player_id": "741238",
@@ -10563,7 +10563,7 @@
    "lag1": 1664.0,
    "lag2": 2620.0,
    "lag3": 0.0,
-   "expected_minutes": 1662.3
+   "expected_minutes": 1661.8
   },
   {
    "tm_player_id": "565821",
@@ -10574,7 +10574,7 @@
    "lag1": 967.0,
    "lag2": 1255.0,
    "lag3": 0.0,
-   "expected_minutes": 1151.4
+   "expected_minutes": 1152.5
   },
   {
    "tm_player_id": "533568",
@@ -10596,7 +10596,7 @@
    "lag1": 3093.0,
    "lag2": 3115.0,
    "lag3": 2794.0,
-   "expected_minutes": 2615.0
+   "expected_minutes": 2615.1
   },
   {
    "tm_player_id": "305947",
@@ -10607,7 +10607,7 @@
    "lag1": 1626.0,
    "lag2": 983.0,
    "lag3": 2603.0,
-   "expected_minutes": 1431.3
+   "expected_minutes": 1430.8
   },
   {
    "tm_player_id": "616344",
@@ -10618,7 +10618,7 @@
    "lag1": 908.0,
    "lag2": 1193.0,
    "lag3": 845.0,
-   "expected_minutes": 1176.2
+   "expected_minutes": 1175.9
   },
   {
    "tm_player_id": "298583",
@@ -10651,7 +10651,7 @@
    "lag1": 731.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 796.7
+   "expected_minutes": 796.8
   },
   {
    "tm_player_id": "786436",
@@ -10695,7 +10695,7 @@
    "lag1": 2464.0,
    "lag2": 1313.0,
    "lag3": 2706.0,
-   "expected_minutes": 1883.1
+   "expected_minutes": 1883.4
   },
   {
    "tm_player_id": "914562",
@@ -10706,7 +10706,7 @@
    "lag1": 1057.0,
    "lag2": 978.0,
    "lag3": 1286.0,
-   "expected_minutes": 1341.5
+   "expected_minutes": 1340.4
   },
   {
    "tm_player_id": "622380",
@@ -10805,7 +10805,7 @@
    "lag1": 1285.0,
    "lag2": 2176.0,
    "lag3": 2601.0,
-   "expected_minutes": 1643.1
+   "expected_minutes": 1642.4
   },
   {
    "tm_player_id": "923831",
@@ -10860,7 +10860,7 @@
    "lag1": 1086.0,
    "lag2": 621.0,
    "lag3": 698.0,
-   "expected_minutes": 1110.0
+   "expected_minutes": 1110.1
   },
   {
    "tm_player_id": "340456",
@@ -10926,7 +10926,7 @@
    "lag1": 872.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 866.4
+   "expected_minutes": 866.5
   },
   {
    "tm_player_id": "735571",
@@ -10937,7 +10937,7 @@
    "lag1": 1001.0,
    "lag2": 922.0,
    "lag3": 1602.0,
-   "expected_minutes": 1194.5
+   "expected_minutes": 1194.9
   },
   {
    "tm_player_id": "541231",
@@ -10981,7 +10981,7 @@
    "lag1": 1681.0,
    "lag2": 634.0,
    "lag3": 0.0,
-   "expected_minutes": 1442.6
+   "expected_minutes": 1442.3
   },
   {
    "tm_player_id": "289835",
@@ -11014,7 +11014,7 @@
    "lag1": 2156.0,
    "lag2": 1840.0,
    "lag3": 2163.0,
-   "expected_minutes": 1837.8
+   "expected_minutes": 1838.0
   },
   {
    "tm_player_id": "188077",
@@ -11036,7 +11036,7 @@
    "lag1": 2777.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1807.9
+   "expected_minutes": 1808.1
   },
   {
    "tm_player_id": "611793",
@@ -11080,7 +11080,7 @@
    "lag1": 1623.0,
    "lag2": 2178.0,
    "lag3": 2174.0,
-   "expected_minutes": 1687.8
+   "expected_minutes": 1687.7
   },
   {
    "tm_player_id": "483348",
@@ -11113,7 +11113,7 @@
    "lag1": 1029.0,
    "lag2": 1172.0,
    "lag3": 913.0,
-   "expected_minutes": 1238.8
+   "expected_minutes": 1238.5
   },
   {
    "tm_player_id": "810092",
@@ -11168,7 +11168,7 @@
    "lag1": 1325.0,
    "lag2": 881.0,
    "lag3": 1329.0,
-   "expected_minutes": 1385.7
+   "expected_minutes": 1385.5
   },
   {
    "tm_player_id": "538964",
@@ -11179,7 +11179,7 @@
    "lag1": 785.0,
    "lag2": 1124.0,
    "lag3": 2526.0,
-   "expected_minutes": 1141.3
+   "expected_minutes": 1141.4
   },
   {
    "tm_player_id": "480762",
@@ -11201,7 +11201,7 @@
    "lag1": 1804.0,
    "lag2": 1140.0,
    "lag3": 1624.0,
-   "expected_minutes": 1419.4
+   "expected_minutes": 1418.9
   },
   {
    "tm_player_id": "504849",
@@ -11212,7 +11212,7 @@
    "lag1": 1723.0,
    "lag2": 2608.0,
    "lag3": 1392.0,
-   "expected_minutes": 1552.1
+   "expected_minutes": 1552.4
   },
   {
    "tm_player_id": "576314",
@@ -11245,7 +11245,7 @@
    "lag1": 1584.0,
    "lag2": 1784.0,
    "lag3": 0.0,
-   "expected_minutes": 1386.4
+   "expected_minutes": 1386.2
   },
   {
    "tm_player_id": "743496",
@@ -11267,7 +11267,7 @@
    "lag1": 946.0,
    "lag2": 845.0,
    "lag3": 1545.0,
-   "expected_minutes": 1268.1
+   "expected_minutes": 1267.4
   },
   {
    "tm_player_id": "462348",
@@ -11278,7 +11278,7 @@
    "lag1": 1152.0,
    "lag2": 1216.0,
    "lag3": 2052.0,
-   "expected_minutes": 1181.0
+   "expected_minutes": 1180.5
   },
   {
    "tm_player_id": "717118",
@@ -11300,7 +11300,7 @@
    "lag1": 1926.0,
    "lag2": 2468.0,
    "lag3": 1636.0,
-   "expected_minutes": 1775.5
+   "expected_minutes": 1775.6
   },
   {
    "tm_player_id": "683895",
@@ -11344,7 +11344,7 @@
    "lag1": 1253.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1168.0
+   "expected_minutes": 1167.7
   },
   {
    "tm_player_id": "730484",
@@ -11388,7 +11388,7 @@
    "lag1": 1237.0,
    "lag2": 1250.0,
    "lag3": 0.0,
-   "expected_minutes": 1342.3
+   "expected_minutes": 1341.5
   },
   {
    "tm_player_id": "663581",
@@ -11421,7 +11421,7 @@
    "lag1": 2044.0,
    "lag2": 1440.0,
    "lag3": 1514.0,
-   "expected_minutes": 1775.6
+   "expected_minutes": 1775.5
   },
   {
    "tm_player_id": "585982",
@@ -11476,7 +11476,7 @@
    "lag1": 1003.0,
    "lag2": 2059.0,
    "lag3": 0.0,
-   "expected_minutes": 1135.8
+   "expected_minutes": 1136.0
   },
   {
    "tm_player_id": "1038950",
@@ -11487,7 +11487,7 @@
    "lag1": 1657.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1367.6
+   "expected_minutes": 1368.8
   },
   {
    "tm_player_id": "401529",
@@ -11520,7 +11520,7 @@
    "lag1": 1226.0,
    "lag2": 0.0,
    "lag3": 2135.0,
-   "expected_minutes": 1306.5
+   "expected_minutes": 1306.3
   },
   {
    "tm_player_id": "438001",
@@ -11564,7 +11564,7 @@
    "lag1": 1430.0,
    "lag2": 2407.0,
    "lag3": 1650.0,
-   "expected_minutes": 1450.6
+   "expected_minutes": 1450.3
   },
   {
    "tm_player_id": "826224",
@@ -11586,7 +11586,7 @@
    "lag1": 1373.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1308.9
+   "expected_minutes": 1307.8
   },
   {
    "tm_player_id": "496745",
@@ -11630,7 +11630,7 @@
    "lag1": 1036.0,
    "lag2": 0.0,
    "lag3": 1267.0,
-   "expected_minutes": 1116.6
+   "expected_minutes": 1116.5
   },
   {
    "tm_player_id": "520840",
@@ -11718,7 +11718,7 @@
    "lag1": 1353.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1145.4
+   "expected_minutes": 1145.5
   },
   {
    "tm_player_id": "804711",
@@ -11751,7 +11751,7 @@
    "lag1": 1379.0,
    "lag2": 0.0,
    "lag3": 632.0,
-   "expected_minutes": 1306.0
+   "expected_minutes": 1305.5
   },
   {
    "tm_player_id": "445126",
@@ -11795,7 +11795,7 @@
    "lag1": 1419.0,
    "lag2": 833.0,
    "lag3": 1529.0,
-   "expected_minutes": 1328.3
+   "expected_minutes": 1328.5
   },
   {
    "tm_player_id": "982855",
@@ -11828,7 +11828,7 @@
    "lag1": 2784.0,
    "lag2": 2032.0,
    "lag3": 2210.0,
-   "expected_minutes": 2283.9
+   "expected_minutes": 2285.0
   },
   {
    "tm_player_id": "375382",
@@ -11850,7 +11850,7 @@
    "lag1": 1580.0,
    "lag2": 1168.0,
    "lag3": 0.0,
-   "expected_minutes": 1503.7
+   "expected_minutes": 1502.9
   },
   {
    "tm_player_id": "1009596",
@@ -11861,7 +11861,7 @@
    "lag1": 1555.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1372.4
+   "expected_minutes": 1372.3
   },
   {
    "tm_player_id": "917778",
@@ -11872,7 +11872,7 @@
    "lag1": 1000.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1073.7
+   "expected_minutes": 1073.2
   },
   {
    "tm_player_id": "429983",
@@ -11883,7 +11883,7 @@
    "lag1": 2353.0,
    "lag2": 2624.0,
    "lag3": 2719.0,
-   "expected_minutes": 2079.1
+   "expected_minutes": 2079.2
   },
   {
    "tm_player_id": "724104",
@@ -11938,7 +11938,7 @@
    "lag1": 886.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 736.8
+   "expected_minutes": 736.3
   },
   {
    "tm_player_id": "1005240",
@@ -11993,7 +11993,7 @@
    "lag1": 925.0,
    "lag2": 811.0,
    "lag3": 0.0,
-   "expected_minutes": 1031.9
+   "expected_minutes": 1032.3
   },
   {
    "tm_player_id": "951579",
@@ -12015,7 +12015,7 @@
    "lag1": 1602.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1371.2
+   "expected_minutes": 1370.7
   },
   {
    "tm_player_id": "820374",
@@ -12048,7 +12048,7 @@
    "lag1": 2199.0,
    "lag2": 831.0,
    "lag3": 0.0,
-   "expected_minutes": 1740.4
+   "expected_minutes": 1742.0
   },
   {
    "tm_player_id": "834742",
@@ -12059,7 +12059,7 @@
    "lag1": 1064.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1105.3
+   "expected_minutes": 1104.8
   },
   {
    "tm_player_id": "961297",
@@ -12081,7 +12081,7 @@
    "lag1": 1445.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1303.9
+   "expected_minutes": 1306.1
   },
   {
    "tm_player_id": "692737",
@@ -12125,7 +12125,7 @@
    "lag1": 1764.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1451.3
+   "expected_minutes": 1450.8
   },
   {
    "tm_player_id": "867688",
@@ -12136,7 +12136,7 @@
    "lag1": 1128.0,
    "lag2": 908.0,
    "lag3": 800.0,
-   "expected_minutes": 1335.0
+   "expected_minutes": 1333.9
   },
   {
    "tm_player_id": "798929",
@@ -12191,7 +12191,7 @@
    "lag1": 2081.0,
    "lag2": 1970.0,
    "lag3": 1259.0,
-   "expected_minutes": 1749.3
+   "expected_minutes": 1749.5
   },
   {
    "tm_player_id": "748319",
@@ -12202,7 +12202,7 @@
    "lag1": 681.0,
    "lag2": 748.0,
    "lag3": 0.0,
-   "expected_minutes": 959.6
+   "expected_minutes": 959.4
   },
   {
    "tm_player_id": "358032",
@@ -12235,7 +12235,7 @@
    "lag1": 716.0,
    "lag2": 607.0,
    "lag3": 1671.0,
-   "expected_minutes": 1139.8
+   "expected_minutes": 1139.0
   },
   {
    "tm_player_id": "701757",
@@ -12246,7 +12246,7 @@
    "lag1": 617.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 875.9
+   "expected_minutes": 877.4
   },
   {
    "tm_player_id": "646402",
@@ -12268,7 +12268,7 @@
    "lag1": 2408.0,
    "lag2": 1784.0,
    "lag3": 2051.0,
-   "expected_minutes": 1855.7
+   "expected_minutes": 1855.9
   },
   {
    "tm_player_id": "385105",
@@ -12301,7 +12301,7 @@
    "lag1": 979.0,
    "lag2": 1940.0,
    "lag3": 0.0,
-   "expected_minutes": 1170.9
+   "expected_minutes": 1171.2
   },
   {
    "tm_player_id": "668606",
@@ -12312,7 +12312,7 @@
    "lag1": 1645.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1327.5
+   "expected_minutes": 1327.4
   },
   {
    "tm_player_id": "648195",
@@ -12334,7 +12334,7 @@
    "lag1": 1246.0,
    "lag2": 2031.0,
    "lag3": 1066.0,
-   "expected_minutes": 1442.3
+   "expected_minutes": 1442.0
   },
   {
    "tm_player_id": "583255",
@@ -12367,7 +12367,7 @@
    "lag1": 1281.0,
    "lag2": 846.0,
    "lag3": 921.0,
-   "expected_minutes": 1244.6
+   "expected_minutes": 1244.7
   },
   {
    "tm_player_id": "805714",
@@ -12433,7 +12433,7 @@
    "lag1": 1853.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1464.5
+   "expected_minutes": 1464.3
   },
   {
    "tm_player_id": "709372",
@@ -12466,7 +12466,7 @@
    "lag1": 1385.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1314.9
+   "expected_minutes": 1313.8
   },
   {
    "tm_player_id": "659089",
@@ -12488,7 +12488,7 @@
    "lag1": 1297.0,
    "lag2": 0.0,
    "lag3": 1006.0,
-   "expected_minutes": 1363.1
+   "expected_minutes": 1361.7
   },
   {
    "tm_player_id": "750904",
@@ -12499,7 +12499,7 @@
    "lag1": 769.0,
    "lag2": 669.0,
    "lag3": 0.0,
-   "expected_minutes": 1026.0
+   "expected_minutes": 1025.5
   },
   {
    "tm_player_id": "708635",
@@ -12521,7 +12521,7 @@
    "lag1": 2291.0,
    "lag2": 2879.0,
    "lag3": 2096.0,
-   "expected_minutes": 2234.8
+   "expected_minutes": 2233.0
   },
   {
    "tm_player_id": "834752",
@@ -12532,7 +12532,7 @@
    "lag1": 871.0,
    "lag2": 1067.0,
    "lag3": 772.0,
-   "expected_minutes": 1170.9
+   "expected_minutes": 1170.4
   },
   {
    "tm_player_id": "948294",
@@ -12543,7 +12543,7 @@
    "lag1": 2753.0,
    "lag2": 2364.0,
    "lag3": 0.0,
-   "expected_minutes": 2202.3
+   "expected_minutes": 2201.6
   },
   {
    "tm_player_id": "1004301",
@@ -12609,7 +12609,7 @@
    "lag1": 731.0,
    "lag2": 624.0,
    "lag3": 0.0,
-   "expected_minutes": 1013.1
+   "expected_minutes": 1015.2
   },
   {
    "tm_player_id": "933900",
@@ -12620,7 +12620,7 @@
    "lag1": 779.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1035.5
+   "expected_minutes": 1034.1
   },
   {
    "tm_player_id": "392179",
@@ -12653,7 +12653,7 @@
    "lag1": 2271.0,
    "lag2": 3359.0,
    "lag3": 1892.0,
-   "expected_minutes": 2170.6
+   "expected_minutes": 2170.7
   },
   {
    "tm_player_id": "658536",
@@ -12664,7 +12664,7 @@
    "lag1": 665.0,
    "lag2": 999.0,
    "lag3": 2183.0,
-   "expected_minutes": 1132.0
+   "expected_minutes": 1131.7
   },
   {
    "tm_player_id": "461883",
@@ -12675,7 +12675,7 @@
    "lag1": 2433.0,
    "lag2": 2892.0,
    "lag3": 2278.0,
-   "expected_minutes": 2109.0
+   "expected_minutes": 2109.1
   },
   {
    "tm_player_id": "743591",
@@ -12686,7 +12686,7 @@
    "lag1": 792.0,
    "lag2": 1801.0,
    "lag3": 3062.0,
-   "expected_minutes": 1395.0
+   "expected_minutes": 1394.2
   },
   {
    "tm_player_id": "588426",
@@ -12697,7 +12697,7 @@
    "lag1": 3093.0,
    "lag2": 2851.0,
    "lag3": 2286.0,
-   "expected_minutes": 2431.7
+   "expected_minutes": 2431.8
   },
   {
    "tm_player_id": "678406",
@@ -12730,7 +12730,7 @@
    "lag1": 2443.0,
    "lag2": 1712.0,
    "lag3": 1191.0,
-   "expected_minutes": 2041.8
+   "expected_minutes": 2041.3
   },
   {
    "tm_player_id": "763079",
@@ -12763,7 +12763,7 @@
    "lag1": 1293.0,
    "lag2": 1047.0,
    "lag3": 1432.0,
-   "expected_minutes": 1339.2
+   "expected_minutes": 1339.5
   },
   {
    "tm_player_id": "651005",
@@ -12807,7 +12807,7 @@
    "lag1": 1267.0,
    "lag2": 990.0,
    "lag3": 1603.0,
-   "expected_minutes": 1180.9
+   "expected_minutes": 1181.2
   },
   {
    "tm_player_id": "607034",
@@ -12818,7 +12818,7 @@
    "lag1": 2048.0,
    "lag2": 1079.0,
    "lag3": 2304.0,
-   "expected_minutes": 1745.2
+   "expected_minutes": 1745.3
   },
   {
    "tm_player_id": "122840",
@@ -12851,7 +12851,7 @@
    "lag1": 1136.0,
    "lag2": 1448.0,
    "lag3": 1042.0,
-   "expected_minutes": 1294.0
+   "expected_minutes": 1293.9
   },
   {
    "tm_player_id": "662242",
@@ -12983,7 +12983,7 @@
    "lag1": 1178.0,
    "lag2": 1164.0,
    "lag3": 957.0,
-   "expected_minutes": 1345.5
+   "expected_minutes": 1345.0
   },
   {
    "tm_player_id": "927768",
@@ -13016,7 +13016,7 @@
    "lag1": 2586.0,
    "lag2": 2780.0,
    "lag3": 1787.0,
-   "expected_minutes": 2169.3
+   "expected_minutes": 2169.4
   },
   {
    "tm_player_id": "288340",
@@ -13027,7 +13027,7 @@
    "lag1": 1652.0,
    "lag2": 1683.0,
    "lag3": 2470.0,
-   "expected_minutes": 1504.2
+   "expected_minutes": 1503.8
   },
   {
    "tm_player_id": "382478",
@@ -13060,7 +13060,7 @@
    "lag1": 699.0,
    "lag2": 1218.0,
    "lag3": 716.0,
-   "expected_minutes": 859.7
+   "expected_minutes": 860.0
   },
   {
    "tm_player_id": "471055",
@@ -13071,7 +13071,7 @@
    "lag1": 1469.0,
    "lag2": 2125.0,
    "lag3": 960.0,
-   "expected_minutes": 1431.8
+   "expected_minutes": 1431.6
   },
   {
    "tm_player_id": "388294",
@@ -13093,7 +13093,7 @@
    "lag1": 737.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 561.6
+   "expected_minutes": 561.1
   },
   {
    "tm_player_id": "227084",
@@ -13170,7 +13170,7 @@
    "lag1": 1291.0,
    "lag2": 0.0,
    "lag3": 1458.0,
-   "expected_minutes": 1132.4
+   "expected_minutes": 1132.6
   },
   {
    "tm_player_id": "459988",
@@ -13203,7 +13203,7 @@
    "lag1": 1377.0,
    "lag2": 1539.0,
    "lag3": 982.0,
-   "expected_minutes": 1417.9
+   "expected_minutes": 1417.8
   },
   {
    "tm_player_id": "746712",
@@ -13225,7 +13225,7 @@
    "lag1": 1046.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1096.4
+   "expected_minutes": 1095.9
   },
   {
    "tm_player_id": "661171",
@@ -13258,7 +13258,7 @@
    "lag1": 1126.0,
    "lag2": 705.0,
    "lag3": 770.0,
-   "expected_minutes": 971.8
+   "expected_minutes": 972.0
   },
   {
    "tm_player_id": "692070",
@@ -13291,7 +13291,7 @@
    "lag1": 2620.0,
    "lag2": 2414.0,
    "lag3": 834.0,
-   "expected_minutes": 2224.6
+   "expected_minutes": 2223.5
   },
   {
    "tm_player_id": "890290",
@@ -13313,7 +13313,7 @@
    "lag1": 838.0,
    "lag2": 1035.0,
    "lag3": 980.0,
-   "expected_minutes": 1193.4
+   "expected_minutes": 1192.7
   },
   {
    "tm_player_id": "442703",
@@ -13346,7 +13346,7 @@
    "lag1": 1606.0,
    "lag2": 2254.0,
    "lag3": 1001.0,
-   "expected_minutes": 1603.5
+   "expected_minutes": 1603.4
   },
   {
    "tm_player_id": "466801",
@@ -13368,7 +13368,7 @@
    "lag1": 850.0,
    "lag2": 1834.0,
    "lag3": 2978.0,
-   "expected_minutes": 1225.1
+   "expected_minutes": 1225.2
   },
   {
    "tm_player_id": "613393",
@@ -13379,7 +13379,7 @@
    "lag1": 794.0,
    "lag2": 1364.0,
    "lag3": 745.0,
-   "expected_minutes": 1129.7
+   "expected_minutes": 1129.5
   },
   {
    "tm_player_id": "876298",
@@ -13423,7 +13423,7 @@
    "lag1": 644.0,
    "lag2": 873.0,
    "lag3": 724.0,
-   "expected_minutes": 1036.0
+   "expected_minutes": 1035.5
   },
   {
    "tm_player_id": "460939",
@@ -13445,7 +13445,7 @@
    "lag1": 1062.0,
    "lag2": 0.0,
    "lag3": 671.0,
-   "expected_minutes": 1049.3
+   "expected_minutes": 1049.4
   },
   {
    "tm_player_id": "887638",
@@ -13467,7 +13467,7 @@
    "lag1": 1636.0,
    "lag2": 2070.0,
    "lag3": 1523.0,
-   "expected_minutes": 1671.4
+   "expected_minutes": 1672.5
   },
   {
    "tm_player_id": "655006",
@@ -13489,7 +13489,7 @@
    "lag1": 1721.0,
    "lag2": 0.0,
    "lag3": 2399.0,
-   "expected_minutes": 1456.7
+   "expected_minutes": 1456.8
   },
   {
    "tm_player_id": "521407",
@@ -13500,7 +13500,7 @@
    "lag1": 1193.0,
    "lag2": 0.0,
    "lag3": 2076.0,
-   "expected_minutes": 1124.4
+   "expected_minutes": 1124.1
   },
   {
    "tm_player_id": "787151",
@@ -13511,7 +13511,7 @@
    "lag1": 1211.0,
    "lag2": 1949.0,
    "lag3": 0.0,
-   "expected_minutes": 1392.5
+   "expected_minutes": 1392.6
   },
   {
    "tm_player_id": "962110",
@@ -13533,7 +13533,7 @@
    "lag1": 1781.0,
    "lag2": 3096.0,
    "lag3": 2401.0,
-   "expected_minutes": 1820.7
+   "expected_minutes": 1820.8
   },
   {
    "tm_player_id": "583404",
@@ -13544,7 +13544,7 @@
    "lag1": 1460.0,
    "lag2": 1300.0,
    "lag3": 1580.0,
-   "expected_minutes": 1453.0
+   "expected_minutes": 1453.1
   },
   {
    "tm_player_id": "711544",
@@ -13588,7 +13588,7 @@
    "lag1": 2279.0,
    "lag2": 690.0,
    "lag3": 756.0,
-   "expected_minutes": 1674.9
+   "expected_minutes": 1674.8
   },
   {
    "tm_player_id": "935230",
@@ -13599,7 +13599,7 @@
    "lag1": 875.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1003.4
+   "expected_minutes": 1005.0
   },
   {
    "tm_player_id": "507341",
@@ -13610,7 +13610,7 @@
    "lag1": 1667.0,
    "lag2": 855.0,
    "lag3": 0.0,
-   "expected_minutes": 1457.6
+   "expected_minutes": 1457.3
   },
   {
    "tm_player_id": "698259",
@@ -13643,7 +13643,7 @@
    "lag1": 782.0,
    "lag2": 0.0,
    "lag3": 634.0,
-   "expected_minutes": 822.2
+   "expected_minutes": 822.4
   },
   {
    "tm_player_id": "815078",
@@ -13687,7 +13687,7 @@
    "lag1": 1098.0,
    "lag2": 1186.0,
    "lag3": 1093.0,
-   "expected_minutes": 1368.7
+   "expected_minutes": 1367.6
   },
   {
    "tm_player_id": "555820",
@@ -13742,7 +13742,7 @@
    "lag1": 2132.0,
    "lag2": 3199.0,
    "lag3": 2813.0,
-   "expected_minutes": 2144.6
+   "expected_minutes": 2144.7
   },
   {
    "tm_player_id": "855256",
@@ -13775,7 +13775,7 @@
    "lag1": 2488.0,
    "lag2": 2589.0,
    "lag3": 1670.0,
-   "expected_minutes": 2185.3
+   "expected_minutes": 2184.8
   },
   {
    "tm_player_id": "1097139",
@@ -13808,7 +13808,7 @@
    "lag1": 2478.0,
    "lag2": 2220.0,
    "lag3": 0.0,
-   "expected_minutes": 2049.2
+   "expected_minutes": 2049.3
   },
   {
    "tm_player_id": "661145",
@@ -13852,7 +13852,7 @@
    "lag1": 1192.0,
    "lag2": 1173.0,
    "lag3": 0.0,
-   "expected_minutes": 1383.8
+   "expected_minutes": 1383.9
   },
   {
    "tm_player_id": "591957",
@@ -13874,7 +13874,7 @@
    "lag1": 671.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 957.8
+   "expected_minutes": 961.8
   },
   {
    "tm_player_id": "938729",
@@ -13929,7 +13929,7 @@
    "lag1": 1250.0,
    "lag2": 2844.0,
    "lag3": 1125.0,
-   "expected_minutes": 1416.0
+   "expected_minutes": 1416.2
   },
   {
    "tm_player_id": "687609",
@@ -13940,7 +13940,7 @@
    "lag1": 1352.0,
    "lag2": 2124.0,
    "lag3": 1079.0,
-   "expected_minutes": 1418.0
+   "expected_minutes": 1418.1
   },
   {
    "tm_player_id": "955281",
@@ -13962,7 +13962,7 @@
    "lag1": 1873.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1361.1
+   "expected_minutes": 1361.3
   },
   {
    "tm_player_id": "689505",
@@ -13995,7 +13995,7 @@
    "lag1": 766.0,
    "lag2": 1484.0,
    "lag3": 0.0,
-   "expected_minutes": 1156.5
+   "expected_minutes": 1155.4
   },
   {
    "tm_player_id": "903693",
@@ -14050,7 +14050,7 @@
    "lag1": 2661.0,
    "lag2": 1963.0,
    "lag3": 0.0,
-   "expected_minutes": 2024.8
+   "expected_minutes": 2024.7
   },
   {
    "tm_player_id": "1018259",
@@ -14061,7 +14061,7 @@
    "lag1": 2055.0,
    "lag2": 679.0,
    "lag3": 0.0,
-   "expected_minutes": 1606.3
+   "expected_minutes": 1607.0
   },
   {
    "tm_player_id": "457736",
@@ -14072,7 +14072,7 @@
    "lag1": 884.0,
    "lag2": 682.0,
    "lag3": 876.0,
-   "expected_minutes": 993.2
+   "expected_minutes": 993.0
   },
   {
    "tm_player_id": "816308",
@@ -14105,7 +14105,7 @@
    "lag1": 664.0,
    "lag2": 0.0,
    "lag3": 1073.0,
-   "expected_minutes": 898.7
+   "expected_minutes": 899.0
   },
   {
    "tm_player_id": "926694",
@@ -14127,7 +14127,7 @@
    "lag1": 2417.0,
    "lag2": 3237.0,
    "lag3": 1440.0,
-   "expected_minutes": 1923.3
+   "expected_minutes": 1923.4
   },
   {
    "tm_player_id": "744149",
@@ -14149,7 +14149,7 @@
    "lag1": 1235.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1277.5
+   "expected_minutes": 1275.7
   },
   {
    "tm_player_id": "503743",
@@ -14160,7 +14160,7 @@
    "lag1": 3031.0,
    "lag2": 3011.0,
    "lag3": 652.0,
-   "expected_minutes": 2392.5
+   "expected_minutes": 2392.2
   },
   {
    "tm_player_id": "1064871",
@@ -14171,7 +14171,7 @@
    "lag1": 2112.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1566.9
+   "expected_minutes": 1567.7
   },
   {
    "tm_player_id": "726701",
@@ -14182,7 +14182,7 @@
    "lag1": 629.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 900.6
+   "expected_minutes": 902.8
   },
   {
    "tm_player_id": "583699",
@@ -14193,7 +14193,7 @@
    "lag1": 2148.0,
    "lag2": 954.0,
    "lag3": 0.0,
-   "expected_minutes": 1618.3
+   "expected_minutes": 1618.4
   },
   {
    "tm_player_id": "684315",
@@ -14259,7 +14259,7 @@
    "lag1": 2381.0,
    "lag2": 2313.0,
    "lag3": 0.0,
-   "expected_minutes": 1977.7
+   "expected_minutes": 1979.2
   },
   {
    "tm_player_id": "939374",
@@ -14336,7 +14336,7 @@
    "lag1": 911.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1130.5
+   "expected_minutes": 1128.3
   },
   {
    "tm_player_id": "670681",
@@ -14358,7 +14358,7 @@
    "lag1": 642.0,
    "lag2": 1000.0,
    "lag3": 0.0,
-   "expected_minutes": 965.4
+   "expected_minutes": 965.2
   },
   {
    "tm_player_id": "667121",
@@ -14369,7 +14369,7 @@
    "lag1": 658.0,
    "lag2": 626.0,
    "lag3": 0.0,
-   "expected_minutes": 966.9
+   "expected_minutes": 966.4
   },
   {
    "tm_player_id": "415381",
@@ -14391,7 +14391,7 @@
    "lag1": 2410.0,
    "lag2": 1742.0,
    "lag3": 0.0,
-   "expected_minutes": 1971.0
+   "expected_minutes": 1970.2
   },
   {
    "tm_player_id": "405385",
@@ -14413,7 +14413,7 @@
    "lag1": 787.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 994.2
+   "expected_minutes": 996.9
   },
   {
    "tm_player_id": "459665",
@@ -14468,7 +14468,7 @@
    "lag1": 1112.0,
    "lag2": 2580.0,
    "lag3": 0.0,
-   "expected_minutes": 1354.8
+   "expected_minutes": 1355.9
   },
   {
    "tm_player_id": "658115",
@@ -14490,7 +14490,7 @@
    "lag1": 1129.0,
    "lag2": 853.0,
    "lag3": 0.0,
-   "expected_minutes": 1249.5
+   "expected_minutes": 1248.7
   },
   {
    "tm_player_id": "1018920",
@@ -14567,7 +14567,7 @@
    "lag1": 799.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1045.4
+   "expected_minutes": 1044.0
   },
   {
    "tm_player_id": "1119456",
@@ -14589,7 +14589,7 @@
    "lag1": 984.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1091.6
+   "expected_minutes": 1094.3
   },
   {
    "tm_player_id": "111811",
@@ -14611,7 +14611,7 @@
    "lag1": 2761.0,
    "lag2": 1638.0,
    "lag3": 0.0,
-   "expected_minutes": 1989.3
+   "expected_minutes": 1989.4
   },
   {
    "tm_player_id": "222855",
@@ -14688,7 +14688,7 @@
    "lag1": 1494.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1287.1
+   "expected_minutes": 1288.2
   },
   {
    "tm_player_id": "971570",
@@ -14699,7 +14699,7 @@
    "lag1": 824.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1057.8
+   "expected_minutes": 1056.3
   },
   {
    "tm_player_id": "836441",
@@ -14732,7 +14732,7 @@
    "lag1": 1160.0,
    "lag2": 687.0,
    "lag3": 0.0,
-   "expected_minutes": 1248.3
+   "expected_minutes": 1247.5
   },
   {
    "tm_player_id": "708072",
@@ -14776,7 +14776,7 @@
    "lag1": 1628.0,
    "lag2": 1397.0,
    "lag3": 0.0,
-   "expected_minutes": 1354.4
+   "expected_minutes": 1354.3
   },
   {
    "tm_player_id": "937941",
@@ -14787,7 +14787,7 @@
    "lag1": 1921.0,
    "lag2": 2322.0,
    "lag3": 0.0,
-   "expected_minutes": 1703.4
+   "expected_minutes": 1704.1
   },
   {
    "tm_player_id": "643574",
@@ -14820,7 +14820,7 @@
    "lag1": 1407.0,
    "lag2": 860.0,
    "lag3": 0.0,
-   "expected_minutes": 1171.5
+   "expected_minutes": 1171.7
   },
   {
    "tm_player_id": "863759",
@@ -14853,7 +14853,7 @@
    "lag1": 1023.0,
    "lag2": 985.0,
    "lag3": 0.0,
-   "expected_minutes": 1118.0
+   "expected_minutes": 1117.9
   },
   {
    "tm_player_id": "550580",
@@ -14864,7 +14864,7 @@
    "lag1": 801.0,
    "lag2": 1233.0,
    "lag3": 0.0,
-   "expected_minutes": 944.6
+   "expected_minutes": 944.5
   },
   {
    "tm_player_id": "592534",
@@ -14886,7 +14886,7 @@
    "lag1": 2048.0,
    "lag2": 940.0,
    "lag3": 0.0,
-   "expected_minutes": 1736.0
+   "expected_minutes": 1734.9
   },
   {
    "tm_player_id": "880245",
@@ -14930,7 +14930,7 @@
    "lag1": 1536.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1307.8
+   "expected_minutes": 1309.0
   },
   {
    "tm_player_id": "816585",
@@ -14941,7 +14941,7 @@
    "lag1": 734.0,
    "lag2": 637.0,
    "lag3": 0.0,
-   "expected_minutes": 1056.4
+   "expected_minutes": 1055.4
   },
   {
    "tm_player_id": "635645",
@@ -14974,7 +14974,7 @@
    "lag1": 2810.0,
    "lag2": 2376.0,
    "lag3": 0.0,
-   "expected_minutes": 2051.2
+   "expected_minutes": 2051.0
   },
   {
    "tm_player_id": "579928",
@@ -14985,7 +14985,7 @@
    "lag1": 1039.0,
    "lag2": 1823.0,
    "lag3": 0.0,
-   "expected_minutes": 1243.5
+   "expected_minutes": 1243.2
   },
   {
    "tm_player_id": "139304",
@@ -15062,7 +15062,7 @@
    "lag1": 1580.0,
    "lag2": 749.0,
    "lag3": 0.0,
-   "expected_minutes": 1197.6
+   "expected_minutes": 1197.9
   },
   {
    "tm_player_id": "236966",
@@ -15095,7 +15095,7 @@
    "lag1": 845.0,
    "lag2": 1268.0,
    "lag3": 0.0,
-   "expected_minutes": 885.9
+   "expected_minutes": 886.2
   },
   {
    "tm_player_id": "749552",
@@ -15106,7 +15106,7 @@
    "lag1": 959.0,
    "lag2": 1474.0,
    "lag3": 0.0,
-   "expected_minutes": 1135.0
+   "expected_minutes": 1134.9
   },
   {
    "tm_player_id": "953901",
@@ -15139,7 +15139,7 @@
    "lag1": 2424.0,
    "lag2": 789.0,
    "lag3": 0.0,
-   "expected_minutes": 1473.8
+   "expected_minutes": 1473.4
   },
   {
    "tm_player_id": "654982",
@@ -15150,7 +15150,7 @@
    "lag1": 1569.0,
    "lag2": 2242.0,
    "lag3": 0.0,
-   "expected_minutes": 1605.0
+   "expected_minutes": 1604.2
   },
   {
    "tm_player_id": "800176",
@@ -15172,7 +15172,7 @@
    "lag1": 822.0,
    "lag2": 929.0,
    "lag3": 0.0,
-   "expected_minutes": 1069.5
+   "expected_minutes": 1071.1
   },
   {
    "tm_player_id": "490423",
@@ -15194,7 +15194,7 @@
    "lag1": 1321.0,
    "lag2": 990.0,
    "lag3": 0.0,
-   "expected_minutes": 1341.1
+   "expected_minutes": 1343.2
   },
   {
    "tm_player_id": "487474",
@@ -15205,7 +15205,7 @@
    "lag1": 1957.0,
    "lag2": 1320.0,
    "lag3": 0.0,
-   "expected_minutes": 1647.2
+   "expected_minutes": 1646.9
   },
   {
    "tm_player_id": "631927",
@@ -15227,7 +15227,7 @@
    "lag1": 1728.0,
    "lag2": 1143.0,
    "lag3": 0.0,
-   "expected_minutes": 1598.0
+   "expected_minutes": 1596.9
   },
   {
    "tm_player_id": "746910",
@@ -15238,7 +15238,7 @@
    "lag1": 1137.0,
    "lag2": 2023.0,
    "lag3": 0.0,
-   "expected_minutes": 1224.9
+   "expected_minutes": 1225.0
   },
   {
    "tm_player_id": "669380",
@@ -15260,7 +15260,7 @@
    "lag1": 801.0,
    "lag2": 912.0,
    "lag3": 0.0,
-   "expected_minutes": 976.4
+   "expected_minutes": 976.3
   },
   {
    "tm_player_id": "369316",
@@ -15513,7 +15513,7 @@
    "lag1": 3292.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 2121.2
+   "expected_minutes": 2121.6
   },
   {
    "tm_player_id": "935231",
@@ -15524,7 +15524,7 @@
    "lag1": 2538.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1833.8
+   "expected_minutes": 1833.3
   },
   {
    "tm_player_id": "860992",
@@ -15557,7 +15557,7 @@
    "lag1": 1058.0,
    "lag2": 947.0,
    "lag3": 0.0,
-   "expected_minutes": 814.4
+   "expected_minutes": 813.9
   },
   {
    "tm_player_id": "393321",
@@ -15590,7 +15590,7 @@
    "lag1": 669.0,
    "lag2": 852.0,
    "lag3": 0.0,
-   "expected_minutes": 877.2
+   "expected_minutes": 877.3
   },
   {
    "tm_player_id": "720518",
@@ -15601,7 +15601,7 @@
    "lag1": 2388.0,
    "lag2": 1537.0,
    "lag3": 0.0,
-   "expected_minutes": 1856.2
+   "expected_minutes": 1856.9
   },
   {
    "tm_player_id": "576028",
@@ -15612,7 +15612,7 @@
    "lag1": 1103.0,
    "lag2": 934.0,
    "lag3": 0.0,
-   "expected_minutes": 1152.5
+   "expected_minutes": 1152.4
   },
   {
    "tm_player_id": "996897",
@@ -15623,7 +15623,7 @@
    "lag1": 1838.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1487.9
+   "expected_minutes": 1487.4
   },
   {
    "tm_player_id": "1005575",
@@ -15634,7 +15634,7 @@
    "lag1": 3137.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 2224.8
+   "expected_minutes": 2224.9
   },
   {
    "tm_player_id": "663237",
@@ -15645,7 +15645,7 @@
    "lag1": 707.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 898.1
+   "expected_minutes": 897.9
   },
   {
    "tm_player_id": "557407",
@@ -15755,7 +15755,7 @@
    "lag1": 1742.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1511.5
+   "expected_minutes": 1510.0
   },
   {
    "tm_player_id": "530173",
@@ -15799,7 +15799,7 @@
    "lag1": 3012.0,
    "lag2": 742.0,
    "lag3": 0.0,
-   "expected_minutes": 2056.6
+   "expected_minutes": 2056.9
   },
   {
    "tm_player_id": "644408",
@@ -15821,7 +15821,7 @@
    "lag1": 3316.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 2049.8
+   "expected_minutes": 2049.7
   },
   {
    "tm_player_id": "552955",
@@ -15832,7 +15832,7 @@
    "lag1": 905.0,
    "lag2": 665.0,
    "lag3": 0.0,
-   "expected_minutes": 1007.5
+   "expected_minutes": 1007.9
   },
   {
    "tm_player_id": "890385",
@@ -15854,7 +15854,7 @@
    "lag1": 1172.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1246.4
+   "expected_minutes": 1244.6
   },
   {
    "tm_player_id": "1084638",
@@ -15876,7 +15876,7 @@
    "lag1": 712.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 957.2
+   "expected_minutes": 959.9
   },
   {
    "tm_player_id": "1390649",
@@ -15887,7 +15887,7 @@
    "lag1": 2507.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1889.6
+   "expected_minutes": 1888.1
   },
   {
    "tm_player_id": "1075147",
@@ -15898,7 +15898,7 @@
    "lag1": 1268.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1307.0
+   "expected_minutes": 1304.7
   },
   {
    "tm_player_id": "1241211",
@@ -15931,7 +15931,7 @@
    "lag1": 1257.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1238.7
+   "expected_minutes": 1242.0
   },
   {
    "tm_player_id": "1032280",
@@ -15997,7 +15997,7 @@
    "lag1": 1868.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1265.5
+   "expected_minutes": 1265.7
   },
   {
    "tm_player_id": "593412",
@@ -16008,7 +16008,7 @@
    "lag1": 2497.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1748.6
+   "expected_minutes": 1748.5
   },
   {
    "tm_player_id": "578419",
@@ -16019,7 +16019,7 @@
    "lag1": 2151.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1450.2
+   "expected_minutes": 1449.9
   },
   {
    "tm_player_id": "429915",
@@ -16085,7 +16085,7 @@
    "lag1": 1556.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1399.4
+   "expected_minutes": 1398.3
   },
   {
    "tm_player_id": "967346",
@@ -16096,7 +16096,7 @@
    "lag1": 650.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 911.0
+   "expected_minutes": 913.1
   },
   {
    "tm_player_id": "947411",
@@ -16107,7 +16107,7 @@
    "lag1": 744.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1034.9
+   "expected_minutes": 1033.0
   },
   {
    "tm_player_id": "1111589",
@@ -16173,7 +16173,7 @@
    "lag1": 1795.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1274.3
+   "expected_minutes": 1273.9
   },
   {
    "tm_player_id": "314367",
@@ -16184,7 +16184,7 @@
    "lag1": 1054.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 911.5
+   "expected_minutes": 911.7
   },
   {
    "tm_player_id": "655217",
@@ -16217,7 +16217,7 @@
    "lag1": 922.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1035.1
+   "expected_minutes": 1034.6
   },
   {
    "tm_player_id": "500053",
@@ -16228,7 +16228,7 @@
    "lag1": 945.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 928.9
+   "expected_minutes": 929.0
   },
   {
    "tm_player_id": "1187942",
@@ -16239,7 +16239,7 @@
    "lag1": 817.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1070.9
+   "expected_minutes": 1069.1
   },
   {
    "tm_player_id": "952282",
@@ -16250,7 +16250,7 @@
    "lag1": 1338.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1291.6
+   "expected_minutes": 1290.5
   },
   {
    "tm_player_id": "661427",
@@ -16272,7 +16272,7 @@
    "lag1": 812.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 743.6
+   "expected_minutes": 743.8
   },
   {
    "tm_player_id": "405389",
@@ -16327,7 +16327,7 @@
    "lag1": 1212.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1229.4
+   "expected_minutes": 1228.3
   },
   {
    "tm_player_id": "1200427",
@@ -16360,7 +16360,7 @@
    "lag1": 706.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 825.6
+   "expected_minutes": 825.7
   },
   {
    "tm_player_id": "255495",
@@ -16382,7 +16382,7 @@
    "lag1": 932.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 751.0
+   "expected_minutes": 751.3
   },
   {
    "tm_player_id": "1063338",
@@ -16393,7 +16393,7 @@
    "lag1": 1328.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1246.1
+   "expected_minutes": 1248.2
   },
   {
    "tm_player_id": "1056993",
@@ -16404,7 +16404,7 @@
    "lag1": 854.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1089.2
+   "expected_minutes": 1087.4
   },
   {
    "tm_player_id": "904802",
@@ -16426,7 +16426,7 @@
    "lag1": 2294.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1627.9
+   "expected_minutes": 1628.3
   },
   {
    "tm_player_id": "548254",
@@ -16470,7 +16470,7 @@
    "lag1": 1151.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1158.6
+   "expected_minutes": 1160.7
   },
   {
    "tm_player_id": "1110406",
@@ -16481,7 +16481,7 @@
    "lag1": 631.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 918.5
+   "expected_minutes": 917.7
   },
   {
    "tm_player_id": "796865",
@@ -16503,7 +16503,7 @@
    "lag1": 2642.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1906.1
+   "expected_minutes": 1906.0
   },
   {
    "tm_player_id": "969447",
@@ -16514,7 +16514,7 @@
    "lag1": 1371.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1257.0
+   "expected_minutes": 1256.5
   },
   {
    "tm_player_id": "668167",
@@ -16536,7 +16536,7 @@
    "lag1": 667.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 620.0
+   "expected_minutes": 620.3
   },
   {
    "tm_player_id": "973949",
@@ -16569,7 +16569,7 @@
    "lag1": 2025.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1477.5
+   "expected_minutes": 1477.6
   },
   {
    "tm_player_id": "1178489",
@@ -16591,7 +16591,7 @@
    "lag1": 606.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 878.9
+   "expected_minutes": 878.4
   },
   {
    "tm_player_id": "926978",
@@ -16635,7 +16635,7 @@
    "lag1": 2481.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1740.7
+   "expected_minutes": 1740.6
   },
   {
    "tm_player_id": "489359",
@@ -16646,7 +16646,7 @@
    "lag1": 1330.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1090.0
+   "expected_minutes": 1089.9
   },
   {
    "tm_player_id": "626953",
@@ -16712,7 +16712,7 @@
    "lag1": 954.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1138.7
+   "expected_minutes": 1136.8
   },
   {
    "tm_player_id": "565424",
@@ -16723,7 +16723,7 @@
    "lag1": 764.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 957.0
+   "expected_minutes": 956.5
   },
   {
    "tm_player_id": "957874",
@@ -16734,7 +16734,7 @@
    "lag1": 2168.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1594.6
+   "expected_minutes": 1595.3
   },
   {
    "tm_player_id": "1364454",
@@ -16745,7 +16745,7 @@
    "lag1": 1152.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1174.6
+   "expected_minutes": 1177.3
   },
   {
    "tm_player_id": "718303",
@@ -16756,7 +16756,7 @@
    "lag1": 1144.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1172.1
+   "expected_minutes": 1171.3
   },
   {
    "tm_player_id": "412953",
@@ -16800,7 +16800,7 @@
    "lag1": 1349.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1273.4
+   "expected_minutes": 1272.6
   },
   {
    "tm_player_id": "818495",
@@ -16811,7 +16811,7 @@
    "lag1": 1822.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1473.3
+   "expected_minutes": 1473.2
   },
   {
    "tm_player_id": "604113",
@@ -16844,7 +16844,7 @@
    "lag1": 645.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 754.2
+   "expected_minutes": 754.3
   },
   {
    "tm_player_id": "599733",
@@ -16866,7 +16866,7 @@
    "lag1": 1463.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1271.8
+   "expected_minutes": 1271.5
   },
   {
    "tm_player_id": "605265",
@@ -16877,7 +16877,7 @@
    "lag1": 911.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 999.0
+   "expected_minutes": 998.7
   },
   {
    "tm_player_id": "704155",
@@ -16888,7 +16888,7 @@
    "lag1": 1030.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1032.2
+   "expected_minutes": 1032.9
   },
   {
    "tm_player_id": "796297",
@@ -16910,7 +16910,7 @@
    "lag1": 2098.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1513.6
+   "expected_minutes": 1513.7
   },
   {
    "tm_player_id": "964580",
@@ -17053,7 +17053,7 @@
    "lag1": 1177.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1232.2
+   "expected_minutes": 1230.8
   },
   {
    "tm_player_id": "640556",
@@ -17086,7 +17086,7 @@
    "lag1": 806.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 977.8
+   "expected_minutes": 977.3
   },
   {
    "tm_player_id": "529895",
@@ -17141,7 +17141,7 @@
    "lag1": 1631.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1300.3
+   "expected_minutes": 1300.6
   },
   {
    "tm_player_id": "885226",
@@ -17163,7 +17163,7 @@
    "lag1": 973.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1070.7
+   "expected_minutes": 1072.8
   },
   {
    "tm_player_id": "336012",
@@ -17185,7 +17185,7 @@
    "lag1": 1419.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1280.8
+   "expected_minutes": 1280.3
   },
   {
    "tm_player_id": "711374",
@@ -17218,7 +17218,7 @@
    "lag1": 1503.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 884.3
+   "expected_minutes": 884.0
   },
   {
    "tm_player_id": "628365",
@@ -17317,7 +17317,7 @@
    "lag1": 1401.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1241.1
+   "expected_minutes": 1242.2
   },
   {
    "tm_player_id": "864306",
@@ -17350,7 +17350,7 @@
    "lag1": 1331.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1084.0
+   "expected_minutes": 1083.8
   },
   {
    "tm_player_id": "671590",
@@ -17372,7 +17372,7 @@
    "lag1": 1713.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1340.8
+   "expected_minutes": 1341.1
   },
   {
    "tm_player_id": "579459",
@@ -17416,7 +17416,7 @@
    "lag1": 688.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 970.4
+   "expected_minutes": 969.3
   },
   {
    "tm_player_id": "1159864",
@@ -17460,7 +17460,7 @@
    "lag1": 1627.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1454.6
+   "expected_minutes": 1453.2
   },
   {
    "tm_player_id": "972465",
@@ -17493,7 +17493,7 @@
    "lag1": 1535.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1348.4
+   "expected_minutes": 1350.5
   },
   {
    "tm_player_id": "664708",
@@ -17548,7 +17548,7 @@
    "lag1": 796.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 983.2
+   "expected_minutes": 985.3
   },
   {
    "tm_player_id": "881297",
@@ -17559,7 +17559,7 @@
    "lag1": 1073.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1160.7
+   "expected_minutes": 1159.6
   },
   {
    "tm_player_id": "900195",
@@ -17570,7 +17570,7 @@
    "lag1": 1002.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1074.7
+   "expected_minutes": 1074.2
   },
   {
    "tm_player_id": "569845",
@@ -17592,7 +17592,7 @@
    "lag1": 2003.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1513.1
+   "expected_minutes": 1513.8
   },
   {
    "tm_player_id": "989621",
@@ -17636,7 +17636,7 @@
    "lag1": 1028.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1087.5
+   "expected_minutes": 1087.0
   },
   {
    "tm_player_id": "449592",
@@ -17658,7 +17658,7 @@
    "lag1": 1118.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 939.7
+   "expected_minutes": 939.3
   },
   {
    "tm_player_id": "792331",
@@ -17669,7 +17669,7 @@
    "lag1": 612.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 932.8
+   "expected_minutes": 931.7
   },
   {
    "tm_player_id": "1228231",
@@ -17691,7 +17691,7 @@
    "lag1": 1607.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1365.2
+   "expected_minutes": 1366.7
   },
   {
    "tm_player_id": "1058514",
@@ -17735,7 +17735,7 @@
    "lag1": 1183.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1215.0
+   "expected_minutes": 1213.9
   },
   {
    "tm_player_id": "817665",
@@ -17746,7 +17746,7 @@
    "lag1": 844.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1023.8
+   "expected_minutes": 1023.0
   },
   {
    "tm_player_id": "462070",
@@ -17845,7 +17845,7 @@
    "lag1": 1232.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1103.1
+   "expected_minutes": 1103.4
   },
   {
    "tm_player_id": "1124136",
@@ -17867,7 +17867,7 @@
    "lag1": 919.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1060.9
+   "expected_minutes": 1060.1
   },
   {
    "tm_player_id": "1012564",
@@ -17878,7 +17878,7 @@
    "lag1": 1146.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1216.9
+   "expected_minutes": 1215.5
   },
   {
    "tm_player_id": "539795",
@@ -17911,7 +17911,7 @@
    "lag1": 1211.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 1121.6
+   "expected_minutes": 1122.3
   },
   {
    "tm_player_id": "830365",
@@ -17922,7 +17922,7 @@
    "lag1": 836.0,
    "lag2": 0.0,
    "lag3": 0.0,
-   "expected_minutes": 961.9
+   "expected_minutes": 961.6
   },
   {
    "tm_player_id": "944724",
