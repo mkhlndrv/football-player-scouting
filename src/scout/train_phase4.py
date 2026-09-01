@@ -42,18 +42,49 @@ def run_fit(models_dir: Path = config.MODELS) -> Path:
     return path
 
 
+def _traits() -> pd.DataFrame:
+    """Defensive traits for the similarity filter, built exactly as the backtest builds them."""
+    from scout.data import reep, sofascore
+    from scout.data import transfermarkt as tm
+    from scout.identity import build_team_lineage, load_overrides
+    from scout.panel import identity as pid
+    from scout.train_phase5 import _identity_bridge, defensive_traits
+
+    comps = list(config.BIG5) + list(config.FEEDERS)
+    tm_panel = tm.load_player_club_seasons(comps, list(config.SEASONS))
+    tm_clubs = tm_panel[["club_id", "club_name", "competition_id"]].drop_duplicates()
+    us = understat.load("player_season")
+    us["competition_id"] = us["league"].map({league: comp for comp, league in config.BIG5.items()})
+    _, us_ids = _identity_bridge(tm_panel, tm_clubs, us)
+    ss = sofascore.load()
+    ss_lineage = build_team_lineage(
+        tm_clubs,
+        {"sofascore": ss[["competition_id", "team_name"]].drop_duplicates()},
+        load_overrides("teams"),
+    )
+    ss_ids = (
+        pid.resolve_provider(
+            "sofascore", ss, pid.transfermarkt_side(tm_panel), ss_lineage, reep.load_people()
+        )
+        .drop_duplicates("provider_id")
+        .set_index("provider_id")["tm_player_id"]
+    )
+    return defensive_traits(ss, ss_ids, us_ids)
+
+
 def run_similarity(models_dir: Path = config.MODELS) -> Path:
     pm, shots = _inputs()
-    profiles = similarity.profile(pm, shots)
+    profiles = similarity.profile(pm, shots, _traits())
     latest = profiles["season"].max()
     current = profiles[profiles["season"] == latest]
     neighbours = similarity.neighbours(current)
-    columns = ["competition_id", "season", "player_id", "role", "minutes", *similarity.FEATURES]
+    features = [c for c in similarity.FEATURES + similarity.TRAITS if c in current.columns]
+    columns = ["competition_id", "season", "player_id", "role", "minutes", *features]
     path = models_dir / "phase4_similarity.json"
     _write(
         path,
         {
-            "features": similarity.FEATURES,
+            "features": features,
             "k": similarity.K,
             "profiles": current[columns].round(3).to_dict(orient="records"),
             "neighbours": neighbours.to_dict(orient="records"),

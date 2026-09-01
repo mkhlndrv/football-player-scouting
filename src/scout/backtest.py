@@ -50,11 +50,16 @@ def shortlist(pool: pd.DataFrame, ordering: str, n: int = SHORTLIST) -> pd.DataF
 
 
 def score_case(top: pd.DataFrame) -> dict:
-    return {
+    scores = {
         "minutes_per_meur": top["out_minutes"].fillna(0).sum() / (top["value"].sum() / 1e6),
         "ga90_mean": top["out_ga90"].mean(),
         "value_ratio": top["out_value_next"].sum() / top["value"].sum(),
     }
+    if "out_duel_z" in top:
+        # Reported for the defensive roles, never part of the majority verdict: the three
+        # columns above are the graded ones and must stay comparable across the tournament.
+        scores["duel_quality"] = top["out_duel_z"].mean()
+    return scores
 
 
 def scores(pools: pd.DataFrame, ordering: str, n: int = SHORTLIST) -> pd.DataFrame:
