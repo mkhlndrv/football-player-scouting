@@ -1,4 +1,8 @@
-"""Moneyball replacement scouting — reads committed artifacts only, recomputes nothing."""
+"""Moneyball replacement scouting — reads committed artifacts only, recomputes nothing.
+
+Shortlists are sorted in-app from the stored candidate pools by the fixed ordering keys;
+no model output is computed here.
+"""
 
 import json
 import re
@@ -26,6 +30,20 @@ PRETTY_STATS = {
     "possession_won_att_third": "possession won, attacking third",
 }
 MARQUEE = ["Rodri", "Bukayo Saka", "Vinicius Junior", "Jude Bellingham", "Florian Wirtz"]
+METRIC_HELP = {
+    "Value (€m)": "the player's market value at 1 July.",
+    "Age": "age at the transfer summer.",
+    "Distance to X": "how differently he plays from the departing player, over fifteen "
+    "stable traits (chance quality, build-up, defending, duels, shot locations). "
+    "Lower = more similar.",
+    "P(≥ his level)": "the calibrated probability that he matches the departing player's "
+    "per-90 contribution next season (for keepers: goals prevented). When this says 70%, "
+    "it happens about 70% of the time.",
+    "Surplus per €m": "expected contribution above a freely-available player, times expected "
+    "minutes, divided by price — the number that won the ten-year backtest.",
+    "Expected minutes": "forecast league minutes next season, from his last three seasons "
+    "and age.",
+}
 GRAVEYARD_TITLES = {
     "finishing_residual": "Finishing skill",
     "defensive_value_on_off": "Defensive value from goals conceded (on/off)",
@@ -43,6 +61,12 @@ def load(name):
     return json.loads((MODELS / f"{name}.json").read_text())
 
 
+def explain_metrics():
+    with st.expander("What do these numbers mean?"):
+        for metric, meaning in METRIC_HELP.items():
+            st.markdown(f"**{metric}** — {meaning}")
+
+
 def shortlist_table(rows):
     frame = pd.DataFrame(rows)
     frame["value_eur"] = frame["value_eur"] / 1e6
@@ -51,23 +75,32 @@ def shortlist_table(rows):
         hide_index=True,
         column_config={
             "name": st.column_config.TextColumn("Player"),
+            "age": st.column_config.NumberColumn("Age", format="%.0f"),
             "value_eur": st.column_config.NumberColumn("Value (€m)", format="%.1f"),
             "similarity": st.column_config.NumberColumn(
-                "Distance to X", format="%.2f", help="Lower = more similar to the departing player"
+                "Distance to X", format="%.2f", help=METRIC_HELP["Distance to X"]
             ),
             "p_bar": st.column_config.ProgressColumn(
                 "P(≥ his level)", min_value=0.0, max_value=1.0, format="%.2f"
             ),
             "prod_per_eur": st.column_config.NumberColumn(
-                "Surplus per €m",
-                format="%.2f",
-                help="Expected production above a freely-available player, per €m",
+                "Surplus per €m", format="%.2f", help=METRIC_HELP["Surplus per €m"]
             ),
             "expected_minutes": st.column_config.NumberColumn("Expected minutes", format="%.0f"),
             "outcome_minutes": st.column_config.NumberColumn("Minutes next season", format="%.0f"),
             "outcome_ga90": st.column_config.NumberColumn("G+A/90 next season", format="%.2f"),
         },
     )
+
+
+def ordered(pool, key, n=10):
+    if key == "output":
+        rank = (-pool["p_bar"]).rank()
+    elif key == "formula":
+        rank = (-pool["prod_per_eur"]).rank()
+    else:  # blend: equal rank-mix of similarity and probability
+        rank = (pool["similarity"].rank() + (-pool["p_bar"]).rank()) / 2
+    return pool.assign(_k=rank).dropna(subset=["_k"]).nsmallest(n, "_k").drop(columns="_k")
 
 
 def pick_player(demo, label):
@@ -98,37 +131,57 @@ if page == "We're losing X":
     st.title("We're losing X — who replaces him?")
     st.caption(
         f"Precomputed for a summer-{demo['as_of_summer']} departure from the last completed "
-        "season's data. Every candidate plays his role, resembles his profile, and costs no "
-        "more than his market value."
+        "season's data."
     )
     st.markdown(
         "A smaller club is losing a player and wants the same contribution for far less "
-        "money. Pick the departing player: every candidate below plays his position, "
-        "resembles his statistical profile, and costs no more than his market value. "
-        "Whether these lists actually beat real scouting was tested on ten years of "
-        "transfers — see *The backtest*."
+        "money. Pick the departing player: every candidate below plays his position and "
+        "resembles his statistical profile. Whether these lists actually beat real scouting "
+        "was tested on ten years of transfers — see *The backtest*."
     )
     name = pick_player(demo, "The player you are losing")
     entry = demo["players"][name]
+    pool = pd.DataFrame(entry["pool"])
     left, right = st.columns([3, 2])
     with left:
         st.subheader(f"{name} — {ROLE_NAMES[entry['role']]}, {entry['club']}")
         st.metric("Market value", f"€{entry['value_eur'] / 1e6:.0f}m")
-        labels = {
-            "default": "Best keeper (goals prevented)" if entry["role"] == "GK" else "Best value",
-            "output": "Best player (P ≥ his level)",
-            "blend": "Most like him, productive",
-        }
-        tabs = st.tabs(list(labels.values()))
-        for tab, key in zip(tabs, labels, strict=True):
-            with tab:
-                if key == "default" and entry["role"] != "GK":
-                    st.caption(
-                        "Maximum delivered contribution per euro — the ordering that won the "
-                        "backtest. It favours proven, affordable players; for the marquee "
-                        "names see 'Best player'."
-                    )
-                shortlist_table(entry["shortlists"][key])
+        max_budget = float(max(round(entry["value_eur"] / 1e6), 1))
+        fcol1, fcol2 = st.columns(2)
+        with fcol1:
+            budget = st.slider(
+                "Budget (max candidate value, €m)",
+                min_value=1.0,
+                max_value=max_budget,
+                value=max_budget,
+                help="Candidates never cost more than the departing player's own value; "
+                "tighten the budget to see only cheaper options.",
+            )
+        with fcol2:
+            max_age = st.slider("Max age", min_value=18, max_value=40, value=40)
+        filtered = pool[(pool["value_eur"] <= budget * 1e6) & (pool["age"].fillna(0) <= max_age)]
+        explain_metrics()
+        if filtered.empty:
+            st.info("No candidates inside these filters — widen the budget or age range.")
+        else:
+            labels = {
+                "formula": "Best keeper (goals prevented)"
+                if entry["role"] == "GK"
+                else "Best value",
+                "output": "Best player (P ≥ his level)",
+                "blend": "Most like him, productive",
+            }
+            keys = {"formula": "output" if entry["role"] == "GK" else "formula"}
+            tabs = st.tabs(list(labels.values()))
+            for tab, key in zip(tabs, labels, strict=True):
+                with tab:
+                    if key == "formula" and entry["role"] != "GK":
+                        st.caption(
+                            "Maximum delivered contribution per euro — the ordering that "
+                            "won the backtest. It favours proven, affordable players; "
+                            "tighten the budget slider or switch tabs for other views."
+                        )
+                    shortlist_table(ordered(filtered, keys.get(key, key)))
     with right:
         st.subheader("His profile card")
         st.caption("Only stats that repeat year to year for his position (r ≥ 0.3).")
@@ -161,8 +214,8 @@ elif page == "Players like X":
     name = pick_player(demo, "Player")
     entry = demo["players"][name]
     st.caption(
-        f"{ROLE_NAMES[entry['role']]} — nearest statistical neighbours in his role last season, "
-        "over the fifteen stable profile traits. No budget filter."
+        f"{ROLE_NAMES[entry['role']]} — nearest statistical neighbours in his role last "
+        "season, over the fifteen stable profile traits. No budget filter."
     )
     shortlist_table(entry["similar"])
 
@@ -197,6 +250,7 @@ elif page == "The backtest":
     )
     st.dataframe(seasons, hide_index=True)
     st.subheader("Browse a real case")
+    explain_metrics()
     fcol1, fcol2 = st.columns(2)
     with fcol1:
         role_pick = st.selectbox(

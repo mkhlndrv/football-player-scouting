@@ -189,6 +189,7 @@ def run_shortlists(models_dir: Path = config.MODELS) -> Path:
             .copy()
         )
         cand["value"] = cand["tm_player_id"].map(price)
+        cand["age"] = DEMO_SUMMER - cand["tm_player_id"].map(birth_year)
         cand = cand.dropna(subset=["value"])
         matrix = sub[similarity.FEATURES].to_numpy(float)
         mine = sub.loc[departing.player_id, similarity.FEATURES].to_numpy(float)
@@ -222,38 +223,39 @@ def run_shortlists(models_dir: Path = config.MODELS) -> Path:
                             "role_percentile": round(float(row[f"pct_{column}"]), 2),
                         }
                     )
-        ordering = "o2" if role == "GK" else "prod_per_eur"
+        pool_rows = [
+            {
+                "name": name_of.get(r.tm_player_id, r.tm_player_id),
+                "age": None if pd.isna(r.age) else int(r.age),
+                "value_eur": float(r.value),
+                "similarity": round(float(r.dist), 2),
+                "p_bar": round(float(r.p_bar), 3),
+                "prod_per_eur": None
+                if pd.isna(r.prod_per_eur)
+                else round(float(r.prod_per_eur), 3),
+                "expected_minutes": None
+                if pd.isna(r.expected_minutes)
+                else round(float(r.expected_minutes), 0),
+            }
+            for r in gated.itertuples()
+        ]
         entry = {
             "role": role,
             "club": club_name.get(club_now.get(departing.tm_player_id), None),
             "value_eur": float(budget),
             "point": round(float(departing.point), 3),
-            "shortlists": {},
+            "pool": pool_rows,
             "card": card,
             "similar": [
                 {
                     "name": name_of.get(r.tm_player_id, r.tm_player_id),
+                    "age": None if pd.isna(r.age) else int(r.age),
                     "similarity": round(float(r.dist), 2),
                     "value_eur": float(r.value),
                 }
                 for r in similar.itertuples()
             ],
         }
-        for name, key in [("default", ordering), ("output", "o2"), ("blend", "blend")]:
-            top = backtest.shortlist(gated, key, TOP_N)
-            entry["shortlists"][name] = [
-                {
-                    "name": name_of.get(r.tm_player_id, r.tm_player_id),
-                    "value_eur": float(r.value),
-                    "similarity": round(float(r.dist), 2),
-                    "p_bar": round(float(r.p_bar), 3),
-                    "prod_per_eur": None
-                    if pd.isna(r.prod_per_eur)
-                    else round(float(r.prod_per_eur), 3),
-                    "expected_minutes": round(float(r.expected_minutes), 0),
-                }
-                for r in top.itertuples()
-            ]
         demo[str(name_of.get(departing.tm_player_id, departing.tm_player_id))] = entry
     payload = {
         "as_of_summer": DEMO_SUMMER,
