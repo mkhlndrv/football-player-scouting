@@ -10,10 +10,10 @@ from scout import backtest, config
 from scout.data import reep, sofascore, understat
 from scout.data import transfermarkt as tm
 from scout.identity import build_team_lineage, load_overrides
-from scout.models import availability, similarity
+from scout.models import availability, quantities, similarity
 from scout.models import fit as fit_model
 from scout.panel import identity as pid
-from scout.panel import player_match, stints
+from scout.panel import player_match, stints, workrate
 from scout.train import _write
 from scout.train_phase5 import LEAGUE_TO_COMP, Z80, _identity_bridge, _quality, _universe
 
@@ -99,6 +99,60 @@ def run_shortlists(models_dir: Path = config.MODELS) -> Path:
     quality = _quality(ss, ss_ids, season_value)
     qual_now = quality[quality["season"] == DEMO_SUMMER - 1].drop_duplicates("tm_player_id")
 
+    per90 = quantities.season_role_per90(pm, shots)
+    per90_now = per90[
+        (per90["season"] == DEMO_SUMMER - 1) & (per90["minutes"] >= quantities.MIN_MINUTES)
+    ]
+    wr = pd.concat(
+        [
+            ss[["competition_id", "season", "sofascore_player_id", "minutesPlayed"]],
+            workrate.sofascore_per90(ss),
+        ],
+        axis=1,
+    )
+    wr["tm_player_id"] = wr["sofascore_player_id"].astype(int).astype(str).map(ss_ids)
+    wr = (
+        wr.dropna(subset=["tm_player_id"])
+        .assign(minutes=lambda d: pd.to_numeric(d["minutesPlayed"]))
+        .rename(columns={"possession_won_att_third_sofascore": "possession_won_att_third"})
+    )
+    wr_now = (
+        wr[(wr["season"] == DEMO_SUMMER - 1) & (wr["minutes"] >= quantities.MIN_MINUTES)]
+        .sort_values(
+            ["minutes", "competition_id", "sofascore_player_id"], ascending=[False, True, True]
+        )
+        .drop_duplicates("tm_player_id")
+    )
+    id_link = universe[universe["season"] == DEMO_SUMMER - 1][
+        ["player_id", "tm_player_id", "role", "per90"]
+    ].drop_duplicates(["tm_player_id", "role"])
+    card_frame = (
+        per90_now.merge(id_link, on="player_id", suffixes=("", "_link"))
+        .merge(
+            wr_now.drop(columns=["competition_id", "season", "minutes"]),
+            on="tm_player_id",
+            how="left",
+        )
+        .merge(qual_now.drop(columns=["season"]), on="tm_player_id", how="left")
+    )
+    card_frame = card_frame[card_frame["role"] == card_frame["role_link"]].drop_duplicates(
+        ["tm_player_id", "role"]
+    )
+    import json as _json
+
+    role_profiles = _json.loads((models_dir / "phase2_role_profiles.json").read_text())["profiles"]
+    card_stats = {
+        role: [s["stat"] for group in cats.values() for s in group]
+        for role, cats in role_profiles.items()
+    }
+    stat_cols = sorted(
+        {c for stats in card_stats.values() for c in stats if c in card_frame.columns}
+    )
+    pct_frame = card_frame.copy()
+    for column in stat_cols:
+        pct_frame[f"pct_{column}"] = card_frame.groupby("role")[column].rank(pct=True)
+    pct_frame = pct_frame.set_index(["tm_player_id", "role"])
+
     uni_now = universe[universe["season"] == DEMO_SUMMER - 1]
     club_name = (
         con.execute("SELECT CAST(club_id AS INTEGER) AS club_id, name FROM clubs")
@@ -154,6 +208,20 @@ def run_shortlists(models_dir: Path = config.MODELS) -> Path:
         gated["dep_role"] = role
         gated["transfer_season"] = DEMO_SUMMER
         gated["qual_z"] = backtest.quality_z(gated)
+        similar = cand.dropna(subset=["dist"]).nsmallest(TOP_N, "dist")
+        card = []
+        key = (departing.tm_player_id, role)
+        if key in pct_frame.index:
+            row = pct_frame.loc[key]
+            for column in card_stats.get(role, []):
+                if column in stat_cols and pd.notna(row.get(column)):
+                    card.append(
+                        {
+                            "stat": column,
+                            "per90": round(float(row[column]), 2),
+                            "role_percentile": round(float(row[f"pct_{column}"]), 2),
+                        }
+                    )
         ordering = "o2" if role == "GK" else "prod_per_eur"
         entry = {
             "role": role,
@@ -161,6 +229,15 @@ def run_shortlists(models_dir: Path = config.MODELS) -> Path:
             "value_eur": float(budget),
             "point": round(float(departing.point), 3),
             "shortlists": {},
+            "card": card,
+            "similar": [
+                {
+                    "name": name_of.get(r.tm_player_id, r.tm_player_id),
+                    "similarity": round(float(r.dist), 2),
+                    "value_eur": float(r.value),
+                }
+                for r in similar.itertuples()
+            ],
         }
         for name, key in [("default", ordering), ("output", "o2"), ("blend", "blend")]:
             top = backtest.shortlist(gated, key, TOP_N)

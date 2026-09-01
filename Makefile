@@ -17,3 +17,6 @@ data:
 
 train:
 	uv run python -m scout train all
+
+app:
+	uv run streamlit run app/main.py
