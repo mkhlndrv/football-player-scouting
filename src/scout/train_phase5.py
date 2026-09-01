@@ -171,6 +171,44 @@ def _quality(ss, ss_ids, season_value):
     return q.drop_duplicates(["tm_player_id", "season"])[["tm_player_id", "season"] + fields]
 
 
+DUEL_FIELDS = {
+    "groundDuelsWonPercentage": "ground_duels_pct",
+    "aerialDuelsWonPercentage": "aerial_duels_pct",
+    "dribbledPast": "dribbled_past",
+    "possessionLost": "possession_lost",
+}
+
+
+def defensive_traits(ss: pd.DataFrame, ss_ids: pd.Series, us_ids: pd.Series) -> pd.DataFrame:
+    """Sofascore defensive traits per Understat player-season, for the similarity filter."""
+    actions = ["tackles", "interceptions", "clearances"]
+    rows = pd.concat(
+        [
+            ss[["competition_id", "season", "sofascore_player_id", "minutesPlayed"]],
+            ss[list(DUEL_FIELDS)].rename(columns=DUEL_FIELDS),
+            workrate.sofascore_per90(ss)[actions],
+        ],
+        axis=1,
+    )
+    rows["minutes"] = pd.to_numeric(rows["minutesPlayed"])
+    rows["tm_player_id"] = rows["sofascore_player_id"].astype(int).astype(str).map(ss_ids)
+    rows = rows.dropna(subset=["tm_player_id"])
+    for column in DUEL_FIELDS.values():
+        rows[column] = pd.to_numeric(rows[column], errors="coerce")
+        if "pct" not in column:
+            rows[column] = rows[column] / rows["minutes"] * 90
+    rows = rows[rows["minutes"] >= quantities.MIN_MINUTES].sort_values(
+        ["minutes", "competition_id", "sofascore_player_id"], ascending=[False, True, True]
+    )
+    rows = rows.drop_duplicates(["tm_player_id", "season"])
+    reverse = pd.Series(us_ids.index.astype(int).values, index=us_ids.to_numpy())
+    reverse = reverse[~reverse.index.duplicated(keep="first")]
+    rows["player_id"] = rows["tm_player_id"].map(reverse)
+    kept = rows.dropna(subset=["player_id"]).copy()
+    kept["player_id"] = kept["player_id"].astype(int)
+    return kept[["player_id", "season", *similarity.TRAITS]]
+
+
 def run_backtest(models_dir: Path = config.MODELS) -> Path:
     tm_panel = tm.load_player_club_seasons(COMPS, list(config.SEASONS))
     tm_clubs = tm_panel[["club_id", "club_name", "competition_id"]].drop_duplicates()
@@ -263,12 +301,15 @@ def run_backtest(models_dir: Path = config.MODELS) -> Path:
     )
     ga["ga90"] = (ga["goals"] + ga["assists"]) / ga["minutes"] * 90
     quality = _quality(ss, ss_ids, season_value)
+    traits = defensive_traits(ss, ss_ids, us_ids)
     price = season_value[["tm_player_id", "season", "value_july"]]
 
     pool_frames = []
     for summer, group in cases.groupby("transfer_season"):
         past = pm[pm["season"] < summer]
-        profiles = similarity.profile(past, shots[shots["season"] < summer])
+        profiles = similarity.profile(
+            past, shots[shots["season"] < summer], traits[traits["season"] < summer]
+        )
         profiles = profiles[profiles["season"] == summer - 1]
         eligible = fit_model.eligible_slots(
             fit_model.role_shares(past[past["season"] == summer - 1])
@@ -320,8 +361,9 @@ def run_backtest(models_dir: Path = config.MODELS) -> Path:
             )
             if my_us_id not in sub.index:
                 continue
-            matrix = sub[similarity.FEATURES].to_numpy(float)
-            mine = sub.loc[my_us_id, similarity.FEATURES].to_numpy(float)
+            distance_columns = similarity.feature_columns(sub)
+            matrix = sub[distance_columns].to_numpy(float)
+            mine = sub.loc[my_us_id, distance_columns].to_numpy(float)
             distances = pd.Series(np.sqrt(((matrix - mine) ** 2).sum(axis=1)), index=sub.index)
             cand["dist"] = cand["player_id"].map(distances)
             gated = cand.dropna(subset=["dist"])
@@ -366,9 +408,25 @@ def run_backtest(models_dir: Path = config.MODELS) -> Path:
     pools["out_ga90"] = ga_next.reindex(
         pd.MultiIndex.from_arrays([pools["tm_player_id"], pools["transfer_season"]])
     ).to_numpy()
+    duels = traits.merge(
+        universe[["player_id", "season", "tm_player_id", "role"]].drop_duplicates(
+            ["player_id", "season"]
+        ),
+        on=["player_id", "season"],
+        how="left",
+    ).dropna(subset=["tm_player_id", "role"])
+    duels["duel_raw"] = duels[["ground_duels_pct", "aerial_duels_pct"]].mean(axis=1)
+    duels["duel_z"] = duels.groupby(["role", "season"])["duel_raw"].transform(
+        lambda x: (x - x.mean()) / (x.std() if x.std() > 0 else 1.0)
+    )
+    duel_next = duels.set_index(["tm_player_id", "season"])["duel_z"]
+
     val_next = price.drop_duplicates(["tm_player_id", "season"]).set_index(
         ["tm_player_id", "season"]
     )["value_july"]
+    pools["out_duel_z"] = duel_next.reindex(
+        pd.MultiIndex.from_arrays([pools["tm_player_id"], pools["transfer_season"]])
+    ).to_numpy()
     pools["out_value_next"] = val_next.reindex(
         pd.MultiIndex.from_arrays([pools["tm_player_id"], pools["transfer_season"] + 1])
     ).to_numpy()
@@ -394,12 +452,16 @@ def run_backtest(models_dir: Path = config.MODELS) -> Path:
     actual["out_value_next"] = val_next.reindex(
         pd.MultiIndex.from_arrays([actual["tm_player_id"], actual["transfer_season"] + 1])
     ).to_numpy()
+    actual["out_duel_z"] = duel_next.reindex(
+        pd.MultiIndex.from_arrays([actual["tm_player_id"], actual["transfer_season"]])
+    ).to_numpy()
     actual_scores = pd.DataFrame(
         {
             "case_id": actual["case_id"],
             "minutes_per_meur": actual["out_minutes"].fillna(0) / (actual["cost"] / 1e6),
             "ga90_mean": actual["out_ga90"],
             "value_ratio": actual["out_value_next"] / actual["cost"],
+            "duel_quality": actual["out_duel_z"],
         }
     ).set_index("case_id")
 
@@ -476,6 +538,36 @@ def run_backtest(models_dir: Path = config.MODELS) -> Path:
         opponent: backtest.verdict(entrants["model"], entrants[opponent], ids_small)
         for opponent in ["actual", "market", "naive"]
     }
+    defensive_quality = {}
+    for role, group in case_meta.groupby("dep_role"):
+        for label, name in [("model", "model"), ("formula", "prod_per_eur")]:
+            ids = (
+                entrants[name]
+                .index.intersection(entrants["actual"].index)
+                .intersection(group.index)
+            )
+            both = (
+                pd.concat(
+                    [
+                        entrants[name].loc[ids, "duel_quality"],
+                        entrants["actual"].loc[ids, "duel_quality"],
+                    ],
+                    axis=1,
+                ).dropna()
+                if len(ids) >= 5
+                else pd.DataFrame()
+            )
+            if len(both) < 5:
+                continue
+            defensive_quality.setdefault(role, {})[label] = {
+                "n": int(len(both)),
+                "shortlist_mean_z": round(float(both.iloc[:, 0].mean()), 4),
+                "actual_signing_mean_z": round(float(both.iloc[:, 1].mean()), 4),
+                "share_of_cases_better": round(
+                    float((both.iloc[:, 0] > both.iloc[:, 1]).mean()), 4
+                ),
+            }
+
     common = entrants["model"].index.intersection(entrants["actual"].index)
     _, majority = backtest.case_wins(entrants["model"], entrants["actual"], common)
     per_season = (
@@ -551,6 +643,7 @@ def run_backtest(models_dir: Path = config.MODELS) -> Path:
         "tournament_defensive_roles": tournament,
         "smaller_club_split_elo_rank_gt_6": smaller_club,
         "formula_all_roles": formula_all_roles,
+        "defensive_quality_vs_actual": defensive_quality,
         "final_design_pending_future_confirmation": {
             "outfield": "profile gate -> (point - replacement p20) x expected minutes / price",
             "GK": "P(>= bar) on the prevented proxy (formula fails: 0.26)",

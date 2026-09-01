@@ -15,7 +15,14 @@ from scout.models import fit as fit_model
 from scout.panel import identity as pid
 from scout.panel import player_match, stints, workrate
 from scout.train import _write
-from scout.train_phase5 import LEAGUE_TO_COMP, Z80, _identity_bridge, _quality, _universe
+from scout.train_phase5 import (
+    LEAGUE_TO_COMP,
+    Z80,
+    _identity_bridge,
+    _quality,
+    _universe,
+    defensive_traits,
+)
 
 COMPS = list(config.BIG5) + list(config.FEEDERS)
 DEMO_SUMMER = 2025  # the last completed season is 2024-25: the demo is a summer-2025 departure
@@ -53,8 +60,26 @@ def run_shortlists(models_dir: Path = config.MODELS) -> Path:
         .dt.year
     )
 
+    con = tm.connect()
+    ss = sofascore.load()
+    ss_lineage = build_team_lineage(
+        tm_clubs,
+        {"sofascore": ss[["competition_id", "team_name"]].drop_duplicates()},
+        load_overrides("teams"),
+    )
+    ss_ids = (
+        pid.resolve_provider(
+            "sofascore", ss, pid.transfermarkt_side(tm_panel), ss_lineage, reep.load_people()
+        )
+        .drop_duplicates("provider_id")
+        .set_index("provider_id")["tm_player_id"]
+    )
+
     past = pm[pm["season"] < DEMO_SUMMER]
-    profiles = similarity.profile(past, shots[shots["season"] < DEMO_SUMMER])
+    traits = defensive_traits(ss, ss_ids, us_ids)
+    profiles = similarity.profile(
+        past, shots[shots["season"] < DEMO_SUMMER], traits[traits["season"] < DEMO_SUMMER]
+    )
     profiles = profiles[profiles["season"] == DEMO_SUMMER - 1]
     eligible = fit_model.eligible_slots(
         fit_model.role_shares(past[past["season"] == DEMO_SUMMER - 1])
@@ -82,20 +107,6 @@ def run_shortlists(models_dir: Path = config.MODELS) -> Path:
     hist_now["expected_minutes"] = availability.predict(availability.fit(train_rows), hist_now)
     exp_min = hist_now.drop_duplicates("player_id").set_index("player_id")["expected_minutes"]
 
-    con = tm.connect()
-    ss = sofascore.load()
-    ss_lineage = build_team_lineage(
-        tm_clubs,
-        {"sofascore": ss[["competition_id", "team_name"]].drop_duplicates()},
-        load_overrides("teams"),
-    )
-    ss_ids = (
-        pid.resolve_provider(
-            "sofascore", ss, pid.transfermarkt_side(tm_panel), ss_lineage, reep.load_people()
-        )
-        .drop_duplicates("provider_id")
-        .set_index("provider_id")["tm_player_id"]
-    )
     quality = _quality(ss, ss_ids, season_value)
     qual_now = quality[quality["season"] == DEMO_SUMMER - 1].drop_duplicates("tm_player_id")
 
@@ -191,8 +202,9 @@ def run_shortlists(models_dir: Path = config.MODELS) -> Path:
         cand["value"] = cand["tm_player_id"].map(price)
         cand["age"] = DEMO_SUMMER - cand["tm_player_id"].map(birth_year)
         cand = cand.dropna(subset=["value"])
-        matrix = sub[similarity.FEATURES].to_numpy(float)
-        mine = sub.loc[departing.player_id, similarity.FEATURES].to_numpy(float)
+        distance_columns = similarity.feature_columns(sub)
+        matrix = sub[distance_columns].to_numpy(float)
+        mine = sub.loc[departing.player_id, distance_columns].to_numpy(float)
         distances = pd.Series(np.sqrt(((matrix - mine) ** 2).sum(axis=1)), index=sub.index)
         cand["dist"] = cand["player_id"].map(distances)
         gated = cand.dropna(subset=["dist"])
