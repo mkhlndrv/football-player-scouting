@@ -236,6 +236,10 @@ def run_shortlists(models_dir: Path = config.MODELS) -> Path:
                 "expected_minutes": None
                 if pd.isna(r.expected_minutes)
                 else round(float(r.expected_minutes), 0),
+                "point": round(float(r.point), 3),
+                "production": None
+                if pd.isna(r.expected_minutes)
+                else round(float(r.point) * float(r.expected_minutes) / 90, 1),
             }
             for r in gated.itertuples()
         ]

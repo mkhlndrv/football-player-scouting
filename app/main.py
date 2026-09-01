@@ -36,6 +36,10 @@ METRIC_HELP = {
     "Distance to X": "how differently he plays from the departing player, over fifteen "
     "stable traits (chance quality, build-up, defending, duels, shot locations). "
     "Lower = more similar.",
+    "Contribution per 90": "expected non-penalty xG plus xA per 90, smoothed over three "
+    "seasons and shrunk toward the position average when a player has few minutes.",
+    "Production next season": "contribution per 90 multiplied by expected minutes. This is "
+    "what a player is expected to deliver over a season, not just his rate while on the pitch.",
     "P(≥ his level)": "the calibrated probability that he matches the departing player's "
     "per-90 contribution next season (for keepers: goals prevented). When this says 70%, "
     "it happens about 70% of the time.",
@@ -97,6 +101,12 @@ def shortlist_table(rows):
             "prod_per_eur": st.column_config.NumberColumn(
                 "Surplus per €m", format="%.2f", help=METRIC_HELP["Surplus per €m"]
             ),
+            "point": st.column_config.NumberColumn(
+                "Contribution per 90", format="%.2f", help=METRIC_HELP["Contribution per 90"]
+            ),
+            "production": st.column_config.NumberColumn(
+                "Production next season", format="%.1f", help=METRIC_HELP["Production next season"]
+            ),
             "expected_minutes": st.column_config.NumberColumn("Expected minutes", format="%.0f"),
             "outcome_minutes": st.column_config.NumberColumn("Minutes next season", format="%.0f"),
             "outcome_ga90": st.column_config.NumberColumn("G+A/90 next season", format="%.2f"),
@@ -105,7 +115,9 @@ def shortlist_table(rows):
 
 
 def ordered(pool, key, n=10):
-    if key == "output":
+    if key == "production":
+        rank = (-pool["production"]).rank()
+    elif key == "output":
         rank = (-pool["p_bar"]).rank()
     elif key == "formula":
         rank = (-pool["prod_per_eur"]).rank()
@@ -204,13 +216,19 @@ if page == "We're losing X":
                 "formula": "Best keeper (goals prevented)"
                 if entry["role"] == "GK"
                 else "Best value",
-                "output": "Best player (P ≥ his level)",
+                "production": "Most production next season",
                 "blend": "Most like him, productive",
             }
             keys = {"formula": "output" if entry["role"] == "GK" else "formula"}
             tabs = st.tabs(list(labels.values()))
             for tab, key in zip(tabs, labels, strict=True):
                 with tab:
+                    if key == "production":
+                        st.caption(
+                            "Contribution per 90 multiplied by expected minutes. Rate alone "
+                            "flatters part-time players, so this ranks on what a player is "
+                            "expected to deliver across a season."
+                        )
                     if key == "formula" and entry["role"] != "GK":
                         st.caption(
                             "Maximum delivered contribution per euro. This ordering "
