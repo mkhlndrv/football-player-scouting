@@ -1,7 +1,12 @@
+# determinism: HistGradientBoosting is not bit-reproducible across OpenMP threads
+import os
+
+os.environ.setdefault("OMP_NUM_THREADS", "1")
+
 import argparse
 from collections.abc import Callable
 
-from scout import config, report, train, train_phase3, train_phase4
+from scout import config, report, train, train_phase3, train_phase4, train_phase5
 from scout.data import clubelo, fotmob, injuries, reep, sofascore, understat
 from scout.data import transfermarkt as tm
 
@@ -58,7 +63,14 @@ def main() -> None:
     fetch_cmd.add_argument("--only", help=f"comma-separated subset of {', '.join(SOURCES)}")
     train_cmd = sub.add_parser("train", help="fit a model stage and write its artifacts")
     train_cmd.add_argument(
-        "stage", choices=["contribution", *train_phase3.STAGES, *train_phase4.STAGES, "all"]
+        "stage",
+        choices=[
+            "contribution",
+            *train_phase3.STAGES,
+            *train_phase4.STAGES,
+            *train_phase5.STAGES,
+            "all",
+        ],
     )
     data = sub.add_parser("data", help="fetch raw inputs, build the panel tables, write the report")
     data.add_argument("--skip-fetch", action="store_true", help="use what is on disk")
@@ -73,7 +85,11 @@ def main() -> None:
         if args.stage in ("contribution", "all"):
             for name, path in train.run_contribution().items():
                 print(f"{name}: {path}")
-        for stage, run in {**train_phase3.STAGES, **train_phase4.STAGES}.items():
+        for stage, run in {
+            **train_phase3.STAGES,
+            **train_phase4.STAGES,
+            **train_phase5.STAGES,
+        }.items():
             if args.stage in (stage, "all"):
                 print(f"{stage}: {run()}")
     elif args.command == "data":
