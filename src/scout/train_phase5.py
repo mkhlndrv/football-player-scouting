@@ -65,7 +65,7 @@ def _universe(us_ids):
     ]
 
 
-def _cases(con, universe, tm_panel):
+def _cases(con, universe, tm_panel, seasons_range=SEASONS_RANGE):
     moves = market_panel.add_cost(market_panel.classify(con))
     moves["transfer_season"] = 2000 + moves["transfer_season"].str.slice(0, 2).astype(int)
     moves["month"] = pd.to_datetime(moves["transfer_date"]).dt.month
@@ -76,7 +76,7 @@ def _cases(con, universe, tm_panel):
     sales = moves[
         (moves["kind"] == "paid")
         & moves["from_club_id"].isin(big5_clubs["club_id"])
-        & moves["transfer_season"].between(*SEASONS_RANGE)
+        & moves["transfer_season"].between(*seasons_range)
         & ~moves["month"].isin([1, 2, 3])
     ].copy()
     sales["prev_season"] = sales["transfer_season"] - 1
@@ -97,7 +97,7 @@ def _cases(con, universe, tm_panel):
     incoming = moves[
         moves["kind"].isin(["paid", "free", "undisclosed"])
         & moves["to_club_id"].isin(big5_clubs["club_id"])
-        & moves["transfer_season"].between(*SEASONS_RANGE)
+        & moves["transfer_season"].between(*seasons_range)
         & ~moves["month"].isin([1, 2, 3])
     ].copy()
     incoming["tm_player_id"] = incoming["player_id"].astype(str)
