@@ -205,6 +205,18 @@ def run_shortlists(models_dir: Path = config.MODELS) -> Path:
             .drop_duplicates("tm_player_id")
             .copy()
         )
+        detailed = None
+        if role == "W":
+            detailed = (
+                "Attacking midfielder"
+                if amc_minutes.get(departing.player_id, 0)
+                > wide_minutes.get(departing.player_id, 0)
+                else "Winger"
+            )
+            cand_amc = cand["player_id"].map(amc_minutes).fillna(0)
+            cand_wide = cand["player_id"].map(wide_minutes).fillna(0)
+            cand_detailed = np.where(cand_amc > cand_wide, "Attacking midfielder", "Winger")
+            cand = cand[cand_detailed == detailed]
         cand["value"] = cand["tm_player_id"].map(price)
         cand["age"] = DEMO_SUMMER - cand["tm_player_id"].map(birth_year)
         cand = cand.dropna(subset=["value"])
@@ -281,14 +293,6 @@ def run_shortlists(models_dir: Path = config.MODELS) -> Path:
             }
             for r in gated.itertuples()
         ]
-        detailed = None
-        if role == "W":
-            detailed = (
-                "Attacking midfielder"
-                if amc_minutes.get(departing.player_id, 0)
-                > wide_minutes.get(departing.player_id, 0)
-                else "Winger"
-            )
         entry = {
             "role": role,
             "detailed_position": detailed,

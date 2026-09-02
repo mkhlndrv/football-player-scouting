@@ -67,8 +67,12 @@ GRAVEYARD_TITLES = {
 
 
 @st.cache_data
-def load(name):
+def _load(name, mtime):
     return json.loads((MODELS / f"{name}.json").read_text())
+
+
+def load(name):
+    return _load(name, (MODELS / f"{name}.json").stat().st_mtime)
 
 
 def plain(text):
