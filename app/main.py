@@ -44,6 +44,9 @@ METRIC_HELP = {
     "Duel quality": "ground and aerial duels won, standardised within the position. It is a "
     "measured trait that repeats year to year and survives a transfer, but it is not defensive "
     "value in goals, which no public data measures.",
+    "P(≥ his production)": "the probability that his season production, rate times expected "
+    "minutes, reaches the departing player's. Built on the calibrated per-90 intervals with "
+    "the minutes forecast treated as known (for keepers: goals prevented).",
     "P(≥ his level)": "the calibrated probability that he matches the departing player's "
     "per-90 contribution next season (for keepers: goals prevented). When this says 70%, "
     "it happens about 70% of the time.",
@@ -86,7 +89,7 @@ def explain_metrics():
             st.markdown(f"**{metric}**: {meaning}")
 
 
-def shortlist_table(rows):
+def shortlist_table(rows, p_label="P(≥ his production)"):
     frame = pd.DataFrame(rows)
     frame["value_eur"] = frame["value_eur"] / 1e6
     st.dataframe(
@@ -100,7 +103,7 @@ def shortlist_table(rows):
                 "Distance to X", format="%.2f", help=METRIC_HELP["Distance to X"]
             ),
             "p_bar": st.column_config.ProgressColumn(
-                "P(≥ his level)", min_value=0.0, max_value=1.0, format="%.2f"
+                p_label, min_value=0.0, max_value=1.0, format="%.2f", help=METRIC_HELP[p_label]
             ),
             "prod_per_eur": st.column_config.NumberColumn(
                 "Surplus per €m", format="%.2f", help=METRIC_HELP["Surplus per €m"]
@@ -166,16 +169,28 @@ def profile_card(entry, height=520):
     )
 
 
+def role_label(entry):
+    return entry.get("detailed_position") or ROLE_NAMES[entry["role"]]
+
+
 def pick_player(demo, label):
-    roles = ["All positions", *ROLE_NAMES]
-    role_pick = st.selectbox(
-        "Position", roles, format_func=lambda r: ROLE_NAMES.get(r, r), key="role_filter"
-    )
-    names = sorted(
-        n
-        for n, e in demo["players"].items()
-        if role_pick == "All positions" or e["role"] == role_pick
-    )
+    positions = ["All positions"]
+    for r in ROLE_NAMES:
+        positions += ["W:Winger", "W:Attacking midfielder"] if r == "W" else [r]
+
+    def _label(r):
+        return r.split(":", 1)[1] if ":" in r else ROLE_NAMES.get(r, r)
+
+    def _matches(e):
+        if role_pick == "All positions":
+            return True
+        if role_pick.startswith("W:"):
+            detailed = e.get("detailed_position") or "Winger"
+            return e["role"] == "W" and detailed == role_pick.split(":", 1)[1]
+        return e["role"] == role_pick
+
+    role_pick = st.selectbox("Position", positions, format_func=_label, key="role_filter")
+    names = sorted(n for n, e in demo["players"].items() if _matches(e))
     default = st.session_state.get("player_pick_value")
     if default not in names:
         default = next((m for m in MARQUEE if m in names), names[0])
@@ -207,7 +222,7 @@ if page == "We're losing X":
     pool = pd.DataFrame(entry["pool"])
     left, right = st.columns([3, 2])
     with left:
-        st.subheader(f"{name}, {ROLE_NAMES[entry['role']]}, {entry['club']}")
+        st.subheader(f"{name}, {role_label(entry)}, {entry['club']}")
         st.metric("Market value", f"€{entry['value_eur'] / 1e6:.0f}m")
         max_budget = float(max(round(entry["value_eur"] / 1e6), 1))
         fcol1, fcol2 = st.columns(2)
@@ -293,13 +308,13 @@ if page == "We're losing X":
             c1, c2 = st.columns(2)
             with c1:
                 st.markdown(
-                    f"**{name}**, {ROLE_NAMES[entry['role']]}, {entry['club']}, "
+                    f"**{name}**, {role_label(entry)}, {entry['club']}, "
                     f"€{entry['value_eur'] / 1e6:.0f}m"
                 )
                 profile_card(entry)
             with c2:
                 st.markdown(
-                    f"**{pick}**, {ROLE_NAMES[cand_entry['role']]}, {cand_entry['club']}, "
+                    f"**{pick}**, {role_label(cand_entry)}, {cand_entry['club']}, "
                     f"€{cand_entry['value_eur'] / 1e6:.0f}m"
                 )
                 profile_card(cand_entry)
@@ -312,7 +327,7 @@ elif page == "Players like X":
     name = pick_player(demo, "Player")
     entry = demo["players"][name]
     st.caption(
-        f"{ROLE_NAMES[entry['role']]}. Nearest statistical neighbours in his role last "
+        f"{role_label(entry)}. Nearest statistical neighbours in his role last "
         "season, over the fifteen stable profile traits. No budget filter."
     )
     shortlist_table(entry["similar"])
@@ -379,7 +394,7 @@ elif page == "The backtest":
         ("blend", "Most like him, productive"),
     ]:
         st.markdown(f"**{title}**")
-        shortlist_table(case["orderings"][key])
+        shortlist_table(case["orderings"][key], p_label="P(≥ his level)")
 
 else:
     st.title("Ideas that failed their tests")

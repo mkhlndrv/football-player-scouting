@@ -47,6 +47,16 @@ def run_shortlists(models_dir: Path = config.MODELS) -> Path:
     )
     pm = player_match.build()
     pm["competition_id"] = pm["league"].map(LEAGUE_TO_COMP)
+    wide_codes = {"ML", "MR", "AML", "AMR", "FWL", "FWR"}
+    season_now_pm = pm[pm["season"] == DEMO_SUMMER - 1]
+    amc_minutes = (
+        season_now_pm[season_now_pm["position"] == "AMC"].groupby("player_id")["minutes"].sum()
+    )
+    wide_minutes = (
+        season_now_pm[season_now_pm["position"].isin(wide_codes)]
+        .groupby("player_id")["minutes"]
+        .sum()
+    )
     shots = understat.load("shots")
     shots["competition_id"] = shots["league"].map(LEAGUE_TO_COMP)
     players = tm.load_table("players")[["player_id", "date_of_birth", "name"]]
@@ -208,8 +218,16 @@ def run_shortlists(models_dir: Path = config.MODELS) -> Path:
         if len(gated) < TOP_N:
             continue
         gated["sd"] = (gated["hi"] - gated["lo"]) / (2 * Z80)
-        gated["p_bar"] = 1 - stats.norm.cdf((departing.point - gated["point"]) / gated["sd"])
         gated["expected_minutes"] = gated["player_id"].map(exp_min)
+        # P on season production, not per-90 rate: at a superstar bar the per-90 form rewards
+        # wide intervals, so part-timers outrank starters. Surplus basis, as in production.
+        departing_minutes = exp_min.get(departing.player_id, np.nan)
+        production_bar = departing.surplus * departing_minutes / 90
+        cand_production = gated["surplus"] * gated["expected_minutes"] / 90
+        production_sd = (gated["sd"] * gated["expected_minutes"] / 90).where(
+            gated["expected_minutes"] > 0
+        )
+        gated["p_bar"] = 1 - stats.norm.cdf((production_bar - cand_production) / production_sd)
         gated["prod_per_eur"] = (gated["surplus"] * gated["expected_minutes"] / 90) / (
             gated["value"] / 1e6
         )
@@ -263,8 +281,17 @@ def run_shortlists(models_dir: Path = config.MODELS) -> Path:
             }
             for r in gated.itertuples()
         ]
+        detailed = None
+        if role == "W":
+            detailed = (
+                "Attacking midfielder"
+                if amc_minutes.get(departing.player_id, 0)
+                > wide_minutes.get(departing.player_id, 0)
+                else "Winger"
+            )
         entry = {
             "role": role,
+            "detailed_position": detailed,
             "club": club_name.get(club_now.get(departing.tm_player_id), None),
             "value_eur": float(budget),
             "point": round(float(departing.point), 3),
