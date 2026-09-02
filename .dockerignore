@@ -4,7 +4,6 @@ data
 notebooks
 docs
 legacy
-models
 reports
 deploy
 *.pem

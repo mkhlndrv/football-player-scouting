@@ -7,5 +7,6 @@ COPY pyproject.toml uv.lock .python-version ./
 COPY src ./src
 RUN uv sync --locked --no-dev
 COPY tests ./tests
-COPY Makefile ./
+COPY Makefile README.md ./
+COPY models ./models
 CMD ["uv", "run", "python", "-m", "scout", "data"]
