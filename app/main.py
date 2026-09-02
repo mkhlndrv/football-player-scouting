@@ -320,7 +320,7 @@ elif page == "Players like X":
 elif page == "The backtest":
     bt = load("phase5_backtest")
     cases = load("phase5_shortlists")
-    st.title("The departure backtest, 2015–2024")
+    st.title("The departure backtest, 2015 to 2024")
     st.caption(
         f"{bt['population']['cases_scored']:,} replayed departures, all data frozen at each "
         f"sale; {bt['population']['cases_with_actual_signing']} have the club's actual signing "
