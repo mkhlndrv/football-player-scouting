@@ -34,7 +34,7 @@ METRIC_HELP = {
     "Value (€m)": "the player's market value at 1 July.",
     "Age": "age at the transfer summer.",
     "Distance to X": "how differently he plays from the departing player, over fifteen "
-    "stable traits (chance quality, build-up, defending, duels, shot locations). "
+    "stable traits (chance quality, creation, build-up, shot locations, position usage). "
     "Lower = more similar.",
     "Contribution per 90": "expected non-penalty xG plus xA per 90, smoothed over three "
     "seasons and shrunk toward the position average when a player has few minutes.",
