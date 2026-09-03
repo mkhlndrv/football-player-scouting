@@ -8,7 +8,8 @@ bought.
 
 ## See it in one minute
 
-The app runs from a fresh clone with no data pulls. Every number it shows is read from committed
+The app is live at https://football-player-scouting.streamlit.app/ and needs no install. It
+also runs from a fresh clone with no data pulls. Every number it shows is read from committed
 result files:
 
 ```bash
